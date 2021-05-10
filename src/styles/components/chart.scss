@@ -1,0 +1,125 @@
+.wrap-chart {
+  position: relative;
+  height  : 35vh;
+  width   : 30vw;
+
+  top : 10vh;
+  left: 60vw;
+
+  border-radius: 10px;
+  box-shadow   : -17px 17px 2px 0px #13B6DC,
+    -17px 17px 20px 0px #13B6DC;
+
+  background-color: #504E64;
+
+  div.item {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 8fr 2fr;
+    align-items          : center;
+    column-gap           : 15px;
+
+    height: 20%;
+
+    color          : white;
+    list-style-type: none;
+
+    .serial-number {
+      align-self  : center;
+      justify-self: center;
+      background  : #46445A;
+      height      : 100%;
+      width       : 100%;
+
+      position: relative;
+
+      span {
+        position: relative;
+        top     : 30%;
+        left    : 40%;
+      }
+    }
+    span{
+      font-size   : 1.5rem;
+    }
+    .serial-number.first-num {
+      border-top-left-radius: 10px;
+    }
+
+    img {
+      width     : 100%;
+      display   : block;
+      align-self: center;
+    }
+
+    .line-bg {
+      width           : 100%;
+      height          : 8px;
+      background-color: #424242;
+    }
+  }
+
+  .rhomb {
+    position: absolute;
+    top     : 95%;
+    left    : -10%;
+  }
+
+  .bg-line {
+    display      : block;
+    position     : relative;
+    // width   : 30vw;
+    height       : 7px;
+    border-radius: 5px;
+
+    // outline: 1px yellow dotted;
+  }
+
+  .bg-line.n-1 {
+    top       : -38vh;
+    left      : 2vw;
+    width     : 24vw;
+    background: linear-gradient(90deg, #027BFF, #D784FF);
+  }
+
+  .bg-line.n-2 {
+    top       : 3.5vh;
+    left      : 5vw;
+    width     : 26vw;
+    background: linear-gradient(90deg, #14C2E7, #D9A404);
+  }
+
+  .bg-line.n-3 {
+    top       : 5.5vh;
+    left      : 12vw;
+    width     : 18vw;
+    background: linear-gradient(90deg, #161012, #423201);
+  }
+
+  img {
+    position: relative;
+  }
+
+  .points {
+    top    : -129%;
+    left   : 91.5%;
+    z-index: -1;
+  }
+
+  .down-arrow {
+    top    : -60%;
+    left   : 77%;
+    z-index: -2;
+  }
+
+  .ellipse {
+    top    : -120%;
+    left   : 65%;
+    // z-index: -2;
+  }
+
+  .ellipse-blurred {
+    top    : -180%;
+    left   : 50%;
+    z-index: -2;
+  }
+}
