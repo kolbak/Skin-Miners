@@ -3,8 +3,8 @@
   height  : 35vh;
   width   : 30vw;
 
-  top : 10vh;
-  left: 60vw;
+  top : -7vh;
+  left: 55vw;
 
   border-radius: 10px;
   box-shadow   : -17px 17px 2px 0px #13B6DC,
@@ -20,7 +20,6 @@
 
     height: 20%;
 
-    color          : white;
     list-style-type: none;
 
     .serial-number {
@@ -54,6 +53,7 @@
     .line-bg {
       width           : 100%;
       height          : 8px;
+      border-radius: 10px;
       background-color: #424242;
     }
   }
@@ -67,11 +67,8 @@
   .bg-line {
     display      : block;
     position     : relative;
-    // width   : 30vw;
     height       : 7px;
     border-radius: 5px;
-
-    // outline: 1px yellow dotted;
   }
 
   .bg-line.n-1 {
@@ -100,26 +97,25 @@
   }
 
   .points {
-    top    : -129%;
-    left   : 91.5%;
+    top    : -139%;
+    left   : 89%;
     z-index: -1;
   }
 
   .down-arrow {
-    top    : -60%;
-    left   : 77%;
+    top    : -75%;
+    left   : 68%;
     z-index: -2;
   }
 
   .ellipse {
-    top    : -120%;
-    left   : 65%;
-    // z-index: -2;
+    top    : -125%;
+    left   : 54%;
   }
 
   .ellipse-blurred {
-    top    : -180%;
-    left   : 50%;
+    top    : -210%;
+    left   : 37%;
     z-index: -2;
   }
 }

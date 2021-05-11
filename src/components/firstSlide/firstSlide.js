@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Chart from './chart'
 
-import '../../styles/components/firstSlide.scss'
+import '../../styles/components/firstSlide/firstSlide.scss'
 
 // TODO сделать градиент по фигме .h1-skin-miners
 

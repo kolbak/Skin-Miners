@@ -1,4 +1,51 @@
+@font-face {
+  font-family: "Oswald";
+  src        : url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Alata";
+  src        : url(../fonts/Alata-Regular.ttf);
+}
+
 body {
   background: #000000;
-  padding: 0 3vw;
+  padding   : 0 3vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li {
+  color: white;
+}
+
+.slide {
+  height: 100vh;
+}
+.wrap-slide {
+  position: relative;
+  padding-top: 1vh;
+}
+
+.h1-main {
+  margin-left: 2vw;
+  font-weight: normal;
+  font-size  : 4rem;
+  font-family: Oswald;
+
+  position: relative;
+
+  .slide-number {
+    font-size     : 7rem;
+    font-family   : Alata;
+    position      : absolute;
+    top           : -1.5vh;
+    left          : -3vw;
+  }
 }

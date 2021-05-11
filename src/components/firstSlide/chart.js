@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import '../../styles/components/chart.scss'
+import '../../styles/components/firstSlide/chart.scss'
 
 import rhomb from '../../images/chart-bg-rhomb.svg'
 import points from '../../images/points.svg'
