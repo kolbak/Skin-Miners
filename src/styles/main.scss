@@ -8,6 +8,21 @@
   src        : url(../fonts/Alata-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Roboto";
+  src        : url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src        : url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src        : url(../fonts/NotoSans-Regular.ttf);
+}
+
 body {
   background: #000000;
   padding   : 0 3vw;
@@ -28,8 +43,9 @@ li {
 .slide {
   height: 100vh;
 }
+
 .wrap-slide {
-  position: relative;
+  position   : relative;
   padding-top: 1vh;
 }
 
@@ -42,10 +58,10 @@ li {
   position: relative;
 
   .slide-number {
-    font-size     : 7rem;
-    font-family   : Alata;
-    position      : absolute;
-    top           : -1.5vh;
-    left          : -4vw;
+    font-size  : 7rem;
+    font-family: Alata;
+    position   : absolute;
+    top        : -1.5vh;
+    left       : -4vw;
   }
 }

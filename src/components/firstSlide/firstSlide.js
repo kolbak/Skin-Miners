@@ -9,7 +9,11 @@ import '../../styles/components/firstSlide/firstSlide.scss'
 const FirstSlide = () => {
   return (
     <div>
-      <div><h1 className="h1-skin-miners">Skin Miners</h1></div>
+      <div className="welcome">
+        <h1 className="h1-skin-miners">Skin<br />Miners</h1>
+        <p id="p-slogan">Не трать своё время просто так</p>
+        <button className="btn">Стать участником</button>
+      </div>
       <Chart />
     </div>
   )

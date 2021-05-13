@@ -1,45 +1,76 @@
 .wrap-chart {
-  position: relative;
-  height  : 35vh;
-  width   : 30vw;
-
-  top : -7vh;
-  left: 55vw;
-
+  position     : relative;
+  height       : 50vh;
+  width        : 40vw;
+  top          : 10vh;
+  float        : right;
+  margin-right : 10vw;
   border-radius: 10px;
-  box-shadow   : -17px 17px 2px 0px #13B6DC,
-    -17px 17px 20px 0px #13B6DC;
 
+  box-shadow      : -17px 17px 2px 0px #13b6dc, -17px 17px 20px 0px #13b6dc;
   background-color: #504E64;
+
+  span.name {
+    font-family   : Roboto;
+    font-size     : 18px;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : 21px;
+    letter-spacing: 0.04em;
+    text-align    : left;
+    position      : relative;
+    bottom        : 0.3rem;
+  }
+
+  span.number {
+    font-family   : Roboto;
+    font-size     : 28px;
+    font-style    : normal;
+    font-weight   : 300;
+    line-height   : 33px;
+    letter-spacing: 0.04em;
+    text-align    : left;
+    margin-right  : 1.25rem;
+  }
+
+  span.serial-number>span {
+    font-family   : Raleway;
+    font-size     : 32px;
+    font-style    : normal;
+    font-weight   : 500;
+    line-height   : 38px;
+    letter-spacing: 0.04em;
+    text-align    : left;
+  }
+
 
   div.item {
     display              : grid;
     grid-template-columns: 1fr 1fr 8fr 2fr;
     align-items          : center;
     column-gap           : 15px;
-
-    height: 20%;
-
-    list-style-type: none;
+    height               : 20%;
+    list-style-type      : none;
 
     .serial-number {
       align-self  : center;
       justify-self: center;
-      background  : #46445A;
       height      : 100%;
       width       : 100%;
-
-      position: relative;
+      position    : relative;
+      background  : #424242;
+      background  : linear-gradient(89.3deg, #3C3A50 -92.83%, rgba(80, 78, 100, 0.5) 229.57%);
 
       span {
-        position: relative;
-        top     : 30%;
-        left    : 40%;
+        font-weight: 500;
+        font-size  : 40px;
+        line-height: 47px;
+        position   : relative;
+        top        : 30%;
+        left       : 40%;
       }
     }
-    span{
-      font-size   : 1.5rem;
-    }
+
     .serial-number.first-num {
       border-top-left-radius: 10px;
     }
@@ -51,10 +82,21 @@
     }
 
     .line-bg {
-      width           : 100%;
-      height          : 8px;
+      width        : 100%;
+      height       : 10px;
+      background   : #424242;
+      box-shadow   : -2px 4px 10px 1px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
-      background-color: #424242;
+
+      .line-bg-inner {
+        position        : relative;
+        top             : 0.15rem;
+        left            : 0.15rem;
+        width           : 10vw;
+        border-radius   : 10px;
+        background-color: #61CDBB;
+        border          : 2px solid #61CDBB;
+      }
     }
   }
 
@@ -69,6 +111,7 @@
     position     : relative;
     height       : 7px;
     border-radius: 5px;
+    box-shadow   : -2px 4px 10px 1px rgba(0, 0, 0, 0.25);
   }
 
   .bg-line.n-1 {
@@ -96,6 +139,10 @@
     position: relative;
   }
 
+  img.avatar {
+    border-radius: 50%;
+  }
+
   .points {
     top    : -139%;
     left   : 89%;
@@ -109,13 +156,34 @@
   }
 
   .ellipse {
-    top    : -125%;
-    left   : 54%;
+    top : -125%;
+    left: 54%;
   }
 
   .ellipse-blurred {
-    top    : -210%;
-    left   : 37%;
-    z-index: -2;
+    top       : -110%;
+    // left   : 37%;
+    z-index   : -2;
+  }
+
+  .btn {
+    background   : #3978F9;
+    border-radius: 10px;
+    width        : 110px;
+    height       : 35px;
+
+    position: relative;
+    bottom  : 81%;
+    left    : 25rem;
+
+    font-family   : Roboto;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 16px;
+    line-height   : 19px;
+    letter-spacing: 0.04em;
+    box-shadow    : 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+    border        : none;
+    color         : #FFFFFF;
   }
 }
