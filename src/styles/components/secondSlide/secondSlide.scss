@@ -1,16 +1,23 @@
+img.bw-ammo {
+  margin-left: 5vw;
+}
 
-  img.bw-ammo {
-    margin-left: 5vw;
+ul {
+  position: absolute;
+  top     : 30vh;
+  left    : 40vw;
+  display : inline-block;
+
+  li {
+    font-size    : 1.7rem;
+    margin-bottom: 15px;
   }
-  
-  ul {
-    position: absolute;
-    top     : 30vh;
-    left    : 40vw;
-    display : inline-block;
-    
-    li{
-      font-size: 1.7rem;
-      margin-bottom: 15px;
-    }
-  }
+}
+
+.h1-main {
+  text-decoration           : underline;
+  text-decoration-thickness : 2px;
+  text-decoration-color     : rgba(53, 53, 53, 0.7);
+  -moz-text-decoration-color: rgba(53, 53, 53, 0.7);
+  ;
+}

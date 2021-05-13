@@ -9,12 +9,8 @@ import '../styles/main.scss'
 const IndexPage = () => {
   return (
     <div>
-      <div className="slide">
-        <FirstSlide />
-      </div>
-      <div className="slide">
-        <SecondSlide />
-      </div>
+      <div className="slide" children={<FirstSlide />} />
+      <div className="slide" children={<SecondSlide />} />
     </div>
   )
 }

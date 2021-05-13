@@ -9,8 +9,9 @@ const SecondSlide = () => {
     <div className="wrap-slide">
       <h1 className="h1-main">
         <span className="slide-number">1</span>
-        Что мы делаем?</h1>
-      <img className="bw-ammo" src={bwAmmo} />
+        Что мы делаем?
+      </h1>
+      <img alt="ammo" className="bw-ammo" src={bwAmmo} />
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur</li>
         <li>adipiscing elit, sed do eiusmod tempor</li>
