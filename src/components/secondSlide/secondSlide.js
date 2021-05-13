@@ -6,7 +6,7 @@ import bwAmmo from '../../images/bw-ammo.svg'
 
 const SecondSlide = () => {
   return (
-    <div className="wrap-slide">
+    <div className="wrap-slide slide-2">
       <h1 className="h1-main">
         <span className="slide-number">1</span>
         Что мы делаем?</h1>
