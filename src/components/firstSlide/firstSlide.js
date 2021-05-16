@@ -8,7 +8,7 @@ import '../../styles/components/firstSlide/firstSlide.scss'
 
 const FirstSlide = () => {
   return (
-    <div>
+    <div className="First-slide">
       <div className="welcome">
         <h1 className="h1-skin-miners">Skin<br />Miners</h1>
         <p id="p-slogan">Не трать своё время просто так</p>

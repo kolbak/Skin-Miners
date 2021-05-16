@@ -15,16 +15,10 @@ const IndexPage = () => {
         <meta charSet="utf-8" />
         <title>Skin Miners</title>
       </Helmet>
-      <div className="slide">
-        <FirstSlide />
-      </div>
-      <div className="slide">
-        <SecondSlide />
-      </div>
-      <div className="slide">
-        <ThirdSlide />
-      </div>
-    </div>
+      <div className="slide" children={<FirstSlide />} />
+      <div className="slide" children={<SecondSlide />} />
+      <div className="slide" children={<ThirdSlide />} />
+    </div >
   )
 }
 
