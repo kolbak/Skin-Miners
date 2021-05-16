@@ -1,5 +1,16 @@
+
+.slide.slide_without_padding.slide_without_padding{
+    padding: 0 0vw;
+    margin: 0px;
+    /*background-image: url(../../../images/fourth_background.svg);
+    background-size: 100vw, auto;
+    background-repeat: no-repeat;
+    */
+    
+}
+
 .slide-4{
-   
+    
     .big-capture {
         position: relative;
         
@@ -25,6 +36,23 @@
             left: -67vw;
             top: 72vh;
             position: absolute;
+        }
+        .containers{
+            
+            p{
+                display: block;
+                font-family: PT Serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                left: 10%;
+                top: 10%;
+               
+            }
+            
         }
     }
     .fourth_background{
