@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 import FirstSlide from '../components/firstSlide/firstSlide'
 import SecondSlide from '../components/secondSlide/secondSlide'
 import ThirdSlide from '../components/thirdSlide/thirdSlide'
+import FourthSlide from '../components/fourSlide_why_we/fourthSlide'
 
 import '../styles/main.scss'
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <div className="slide" children={<FirstSlide />} />
       <div className="slide" children={<SecondSlide />} />
       <div className="slide" children={<ThirdSlide />} />
+      <div className="slide" children={<FourthSlide />} />
     </div >
   )
 }
