@@ -3,7 +3,7 @@ import * as React from "react"
 import howItWorks from '../../images/how-it-works.svg'
 import pinkFrame from '../../images/pink-frame.svg'
 
-import '../../styles/components/thirdSlide/mining.scss'
+import '../../styles/components/slide_2_how/mining.scss'
 
 const Mining = () => {
   return (

@@ -2,7 +2,7 @@ import * as React from "react"
 
 import imgDownload from '../../images/download.svg'
 
-import '../../styles/components/thirdSlide/downloadApp.scss'
+import '../../styles/components/slide_2_how/downloadApp.scss'
 
 // TODO попросить дизайнера исправить фон на пикче (разные оттенки)
 

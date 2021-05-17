@@ -1,8 +1,6 @@
 import * as React from "react"
 
-// import imgDownload from '../../images/download.svg'
-
-import '../../styles/components/thirdSlide/howItWorks.scss'
+import '../../styles/components/slide_2_how/howItWorks.scss'
 
 const HowItWorks = () => {
 
@@ -14,7 +12,6 @@ const HowItWorks = () => {
       <i className="bg-line n-3" />
       <i className="bg-line n-4" />
       <i className="bg-line n-5" />
-      {/* <img className="download-img" src={imgDownload} /> */}
     </div>
   )
 }
