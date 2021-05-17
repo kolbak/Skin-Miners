@@ -108,10 +108,9 @@
 
   .bg-line {
     display      : block;
-    position     : relative;
     height       : 7px;
     border-radius: 5px;
-    box-shadow   : -2px 4px 10px 1px rgba(0, 0, 0, 0.25);
+    position: absolute;
   }
 
   .bg-line.n-1 {
@@ -119,7 +118,6 @@
     left      : 2vw;
     width     : 24vw;
     background: linear-gradient(90deg, #027BFF, #D784FF);
-    position: absolute;
   }
 
   .bg-line.n-2 {
@@ -127,7 +125,6 @@
     left      : 5vw;
     width     : 26vw;
     background: linear-gradient(90deg, #14C2E7, #D9A404);
-    position: absolute;
   }
 
   .bg-line.n-3 {
@@ -135,7 +132,6 @@
     left      : 12vw;
     width     : 18vw;
     background: linear-gradient(90deg, #161012, #423201);
-    position: absolute;
   }
 
   img {
