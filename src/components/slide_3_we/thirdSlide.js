@@ -26,6 +26,7 @@ const ThirdSlide = () => {
             className="power_window  three_pictures"
             src={power_window}
           />{" "}
+          <p className="Head_text">Мощность</p>
           <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -38,6 +39,7 @@ const ThirdSlide = () => {
             className="trust_window  three_pictures"
             src={trust_window}
           />{" "}
+          <p className="Head_text">Доверие</p>
           <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,6 +52,7 @@ const ThirdSlide = () => {
             className="safety_window  three_pictures"
             src={safety_window}
           />{" "}
+          <p className="Head_text">Безопасность</p>
           <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
