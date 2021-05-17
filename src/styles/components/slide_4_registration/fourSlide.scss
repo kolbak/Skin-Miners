@@ -1,0 +1,146 @@
+.form-control {
+  display         : block;
+  width           : 100%;
+  padding         : .375rem .75rem;
+  font-size       : 1rem;
+  line-height     : 1.5;
+  color           : #495057;
+  background-color: #fff;
+  background-clip : padding-box;
+  border          : 1px solid #ced4da;
+  border-radius   : .25rem;
+  transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color           : #495057;
+  background-color: #fff;
+  border-color    : #80bdff;
+  outline         : 0;
+  box-shadow      : 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-text {
+  display   : block;
+  margin-top: .25rem;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+form {
+  width        : 460px;
+  margin       : auto;
+  background   : #110f1b;
+  box-shadow   : 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding      : 40px 50px 20px 50px;
+  border-radius: 15px;
+  transition   : all .3s;
+  transition   : border-color 0.9s linear;
+  border       : transparent solid 4px;
+}
+
+label.next-in-group {
+  margin-top   : 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  transition: all 0.9s;
+}
+
+.form-control:focus {
+  border-color: #167bff;
+  box-shadow  : none;
+}
+
+h3 {
+  text-align    : center;
+  margin        : 0;
+  line-height   : 1;
+  padding-bottom: 20px;
+}
+
+input.form-control,
+input.form-control:focus {
+  color: black;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+a.nav-link {
+  margin-top: 0.75rem;
+}
+
+#btn-sign-in {
+  margin-top: 1.75rem;
+}
+
+.errorInput {
+  color: red !important;
+}
+
+.errorInput::placeholder {
+  color: red;
+}
+
+.errorDiv {
+  transition  : all .3s;
+  border-color: tomato;
+}
+
+.error {
+  transition    : all .3s;
+  text-align    : center;
+  color         : tomato;
+  border-radius : 10px;
+  border        : tomato 3px solid;
+  min-height    : 2rem;
+  height        : auto;
+  padding-bottom: 4px;
+}
+
+.loader-left {
+  position: relative;
+  bottom  : 0.25rem;
+  right   : 2.25rem;
+}
+
+.loader-right {
+  position: relative;
+  bottom  : 0.25rem;
+  left    : 2.25rem;
+}
+
+/* РЕГИСТРАЦИЯ */
+#arrow-back {
+  border-radius : 30px;
+  position      : relative;
+  bottom        : 62.5px;
+  right         : 1vw;
+  font-size     : large;
+  padding-bottom: 10px;
+  padding-left  : 16px;
+}
+
+.errorSmall {
+  color: tomato !important
+}
+
+.form-group {
+  transition: all 0.3s;
+}
+
+.form-group:hover {
+  border       : 3px solid #007BFF;
+  border-radius: 10px;
+  padding      : 10px;
+}

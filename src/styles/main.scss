@@ -30,8 +30,9 @@ body {
 }
 
 .slide {
-  padding: 0 3vw;
+  padding: 0 5vw;
   margin : 8px;
+  height : 100vh;
 }
 
 h1,
@@ -44,10 +45,6 @@ p,
 span,
 li {
   color: white;
-}
-
-.slide {
-  height: 100vh;
 }
 
 .wrap-slide {
@@ -70,3 +67,23 @@ li {
     left       : -4vw;
   }
 }
+
+// body {
+//   background-color: black;
+//   color           : aliceblue;
+//   text-align      : center;
+//   overflow-x      : hidden;
+// }
+
+li,
+p,
+h5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+// .nav-link {
+//   text-align : center;
+//   font-size  : larger;
+//   font-weight: bold;
+// }
