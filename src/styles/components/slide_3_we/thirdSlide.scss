@@ -1,0 +1,128 @@
+.slide.slide_without_padding.slide_without_padding {
+  padding            : 0 0vw;
+  margin             : 0px;
+  /*background-image : url(../../../images/fourth_background.svg);
+    background-size  : 100vw, auto;
+    background-repeat: no-repeat;
+    */
+
+}
+
+
+
+.slide-3 {
+  padding: 0 5vw;
+  margin : 8px;
+
+  .big-capture {
+    position: relative;
+
+    float       : right;
+    margin-right: 10vw;
+
+    .grid_window {
+      left    : -64vw;
+      top     : 0vh;
+      z-index : -2;
+      position: absolute;
+      height  : auto;
+      width   : 57vw;
+    }
+
+    .power_container {
+      left    : -27vw;
+      top     : 83vh;
+      position: absolute;
+    }
+
+    .safety_container {
+      left    : -71vw;
+      top     : 25vh;
+      position: absolute;
+    }
+
+    .trust_container {
+      left    : -69vw;
+      top     : 142vh;
+      position: absolute;
+    }
+
+    .nameless_container {
+      left    : -38vw;
+      top     : 1vh;
+      position: absolute;
+    }
+
+    .cardless_container {
+      left    : -68vw;
+      top     : 201vh;
+      width   : 84vw;
+      position: absolute;
+    }
+
+    .containers {
+      p {
+        display       : block;
+        font-family   : PT Serif;
+        font-size     : 20px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 27px;
+        letter-spacing: 0.02em;
+        text-align    : left;
+        left          : 11%;
+        top           : 38%;
+        width         : 54%;
+        position      : absolute;
+      }
+
+      .Head_text {
+        font-family   : Open Sans;
+        font-size     : 32px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 44px;
+        letter-spacing: 0em;
+        text-align    : left;
+        height        : 45px;
+        width         : 251px;
+        border-radius : nullpx;
+        position      : absolute;
+        top           : 12%;
+      }
+
+      .nameless_text {
+        font-family   : PT Serif;
+        font-size     : 22px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 29px;
+        letter-spacing: 0.02em;
+        text-align    : left;
+
+        width   : 74%;
+        left    : 11%;
+        top     : 12%;
+        position: absolute;
+      }
+
+      .cardless_text {
+        font-family   : Open Sans;
+        font-size     : 24px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 33px;
+        letter-spacing: 0.02em;
+        text-align    : center;
+
+      }
+    }
+  }
+
+  .fourth_background {
+    width   : 100vw;
+    z-index : -3;
+    left    : -1vw;
+    position: absolute;
+  }
+}
