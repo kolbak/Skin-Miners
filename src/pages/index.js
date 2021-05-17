@@ -24,6 +24,7 @@ const IndexPage = () => {
       <div className="slide" children={<FirstSlide />} />
       <div className="slide" children={<ThirdSlide />} />
       <div className="slide slide_without_padding" children={<FourthSlide />} />
+        
       <div className="slide" children={<FifthSlide />} />
       <div className="slide" children={<Faq />} />
       <div className="slide" children={<Footer />} />

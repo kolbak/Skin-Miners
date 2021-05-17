@@ -8,8 +8,11 @@
 
 }
 
-.slide-3 {
 
+
+.slide-3 {
+  padding: 0 5vw;
+  margin: 8px;
   .big-capture {
     position: relative;
 
@@ -44,17 +47,18 @@
     .containers {
 
       p {
-        display       : block;
-        font-family   : PT Serif;
-        font-size     : 20px;
-        font-style    : normal;
-        font-weight   : 400;
-        line-height   : 27px;
+        display: block;
+        font-family: PT Serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
         letter-spacing: 0.02em;
-        text-align    : left;
-        left          : 10%;
-        top           : 10%;
-
+        text-align: left;
+        left: 11%;
+        top: 38%;
+        width: 54%;
+        position: absolute;
       }
 
     }
@@ -63,5 +67,7 @@
   .fourth_background {
     width  : 100%;
     z-index: -3;
+    left: -1vw;
+    position: absolute;
   }
 }
