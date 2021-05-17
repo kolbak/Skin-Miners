@@ -26,13 +26,14 @@
 body {
   background: #000000;
   padding   : 0 0vw;
-  margin: 0;
+  margin    : 0;
 }
-.slide{
-  padding   : 0 3vw;
-  margin: 8px;
-  
+
+.slide {
+  padding: 0 3vw;
+  margin : 8px;
 }
+
 h1,
 h2,
 h3,
@@ -55,12 +56,11 @@ li {
 }
 
 .h1-main {
+  position   : relative;
   margin-left: 3vw;
   font-weight: normal;
   font-size  : 4rem;
   font-family: Oswald;
-
-  position: relative;
 
   .slide-number {
     font-size  : 7rem;

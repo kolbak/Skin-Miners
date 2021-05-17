@@ -1,11 +1,11 @@
 import * as React from "react"
 
-import '../../styles/components/footer/footer.scss'
+import '../../styles/components/slide_6_contacts/footer.scss'
 
 
 // TODO: сделать панель контактов
 
-const SixthSlide = () => {
+const Footer = () => {
   return (
     <div className="wrap-slide">
 
@@ -13,4 +13,4 @@ const SixthSlide = () => {
   )
 }
 
-export default SixthSlide
+export default Footer

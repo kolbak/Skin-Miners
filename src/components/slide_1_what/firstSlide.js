@@ -1,12 +1,12 @@
 import * as React from "react"
 
-import '../../styles/components/secondSlide/secondSlide.scss'
+import '../../styles/components/slide_1_what/firstSlide.scss'
 
 import bwAmmo from '../../images/bw-ammo.svg'
 
-const SecondSlide = () => {
+const FirstSlide = () => {
   return (
-    <div className="wrap-slide slide-2">
+    <div className="wrap-slide slide-1">
       <h1 className="h1-main">
         <span className="slide-number">1</span>
         Что мы делаем?
@@ -23,4 +23,4 @@ const SecondSlide = () => {
   )
 }
 
-export default SecondSlide
+export default FirstSlide

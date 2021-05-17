@@ -1,10 +1,10 @@
 import * as React from "react"
 
-import '../../styles/components/sixthSlide_FAQ/sixthSlide.scss'
+import '../../styles/components/slide_5_FAQ/fifthSlide.scss'
 
 // TODO: Найти подходящий код, откуда этот раздел можно было бы адаптировать
 
-const SixthSlide = () => {
+const FifthSlide = () => {
   return (
     <div className="wrap-slide">
 
@@ -12,4 +12,4 @@ const SixthSlide = () => {
   )
 }
 
-export default SixthSlide
+export default FifthSlide

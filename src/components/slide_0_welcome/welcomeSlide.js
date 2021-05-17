@@ -2,11 +2,10 @@ import * as React from "react"
 
 import Chart from './chart'
 
-import '../../styles/components/firstSlide/firstSlide.scss'
+import '../../styles/components/slide_0_welcome/welcomeSlide.scss'
 
-// TODO сделать градиент по фигме .h1-skin-miners
 
-const FirstSlide = () => {
+const WelcomeSlide = () => {
   return (
     <div className="First-slide">
       <div className="welcome">
@@ -19,4 +18,4 @@ const FirstSlide = () => {
   )
 }
 
-export default FirstSlide
+export default WelcomeSlide

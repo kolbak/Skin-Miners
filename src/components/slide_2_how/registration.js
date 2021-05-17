@@ -2,13 +2,13 @@ import * as React from "react"
 
 import imgRegistration from '../../images/registration.png'
 
-import '../../styles/components/thirdSlide/registration.scss'
+import '../../styles/components/slide_2_how/registration.scss'
 
 const Registration = () => {
   return (
     <div className="wrap">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-      <img className="registration-img" src={imgRegistration} />
+      <img alt="registration" className="registration-img" src={imgRegistration} />
     </div>
   )
 }
