@@ -134,6 +134,10 @@ const FourthSlide = () => {
 
   return (
     <div className="wrap-slide">
+      <h1 className="h1-main">
+        <span className="slide-number">4</span>
+        <span className="slide-title">Регистрация</span>
+      </h1>
       <form action="" onSubmit={signUp}>
         <h3>Регистрация</h3>
 

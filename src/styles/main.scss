@@ -1,3 +1,4 @@
+//* Шрифты
 @font-face {
   font-family: "Oswald";
   src        : url(../fonts/Oswald-VariableFont_wght.ttf);
@@ -58,15 +59,29 @@ li {
   position   : relative;
   margin-left: 3vw;
   font-weight: normal;
-  font-size  : 4rem;
   font-family: Oswald;
 
+  .slide-title {
+    font-family   : Oswald;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 42px;
+    line-height   : 62px;
+    letter-spacing: 0.03em;
+    color         : #FFFFFF;
+    border-bottom : 2px solid rgba(53, 53, 53, 0.7);
+  }
+
   .slide-number {
-    font-size  : 7rem;
-    font-family: Alata;
-    position   : absolute;
-    top        : -1.5vh;
-    left       : -4vw;
+    font-family : Alata;
+    font-style  : normal;
+    font-weight : normal;
+    position    : absolute;
+    margin-right: 0.5rem;
+    top         : -21px;
+    left        : -4vw;
+    font-size   : 100px;
+    line-height : 138px;
   }
 }
 
