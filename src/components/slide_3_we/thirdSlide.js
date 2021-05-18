@@ -16,43 +16,29 @@ const ThirdSlide = () => {
     <div className="wrap-slide slide-3">
       <img alt="fourth_background" className="fourth_background" src={fourth_background} />
       <h1 className="h1-main">
-        <span className="slide-number"> 3 </span>
-        Почему мы ?
+        <span className="slide-number">3</span>
+        <span className="slide-title">Почему мы?</span>
       </h1>
       <div className="big-capture">
-        <img alt="grid" className="grid_window" src={grid_window} />
+        <img alt="grid" src={grid_window} className="grid_window" />
         <div className="power_container containers">
-          <img
-            alt="power"
-            className="power_window  three_pictures"
-            src={power_window}
-          />
+          <img alt="power" src={power_window} className="power_window three_pictures" />
           <p className="Head_text">Мощность</p>
           <p>
-            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div className="trust_container containers">
-          <img
-            alt="trust"
-            className="trust_window  three_pictures"
-            src={trust_window}
-          />
+          <img alt="trust" src={trust_window} className="trust_window three_pictures" />
           <p className="Head_text">Доверие</p>
           <p>
-            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div className="safety_container containers">
-          <img
-            alt="safety"
-            className="safety_window  three_pictures"
-            src={safety_window}
-          />
+          <img alt="safety" src={safety_window} className="safety_window  three_pictures" />
           <p className="Head_text">Безопасность</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -60,15 +46,15 @@ const ThirdSlide = () => {
           </p>
         </div>
         <div className="nameless_container containers">
-            <img alt="nameless" className="nameless_window" src={nameless_window} /> 
-            <p className="nameless_text">
+          <img alt="nameless" src={nameless_window} className="nameless_window" />
+          <p className="nameless_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
-        </div> 
+          </p>
+        </div>
         <div className="cardless_container containers">
-            <p className="cardless_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+          <p className="cardless_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
       </div>
     </div>

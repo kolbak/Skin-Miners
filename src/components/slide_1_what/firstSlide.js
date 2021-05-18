@@ -9,7 +9,7 @@ const FirstSlide = () => {
     <div className="wrap-slide slide-1">
       <h1 className="h1-main">
         <span className="slide-number">1</span>
-        Что мы делаем?
+        <span className="slide-title">Что мы делаем?</span>
       </h1>
       <img alt="ammo" className="bw-ammo" src={bwAmmo} />
       <ul>
