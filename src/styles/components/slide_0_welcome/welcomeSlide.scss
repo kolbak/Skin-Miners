@@ -1,5 +1,4 @@
 .First-slide {
-    margin-top: 70px;
     height    : 600px;
     width     : 100%;
     display   : -webkit-flex;
@@ -37,12 +36,13 @@
         line-height   : 33px;
         letter-spacing: 0.02em;
         text-align    : left;
+        margin-bottom: 50px;
     }
 
     .btn {
         background   : #3978f9;
         border-radius: 10px;
-        width        : 100%;
+        width        : 400px;
         height       : 14%;
         font-family  : Roboto;
         font-style   : normal;
