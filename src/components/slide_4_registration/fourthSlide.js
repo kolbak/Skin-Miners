@@ -132,66 +132,92 @@ const FourthSlide = () => {
 
 
 
+  // return (
+  //   <div className="wrap-slide">
+  //     <h1 className="h1-main">
+  //       <span className="slide-number">4</span>
+  //       <span className="slide-title">Регистрация</span>
+  //     </h1>
+  //     <form action="" onSubmit={signUp}>
+  //       <h3>Регистрация</h3>
+
+  //       {errorMessage.isError ?
+  //         <p className="error" style={{ marginTop: "-1.5rem" }}>{errorMessage.message}</p> :
+  //         <br />}
+
+  //       <div className="form-group">
+  //         <label className="next-in-group">→ Логин</label>
+  //         <input value={formData.login} onChange={(e) => inputData(e)} name="login"
+  //           type="login" className="form-control" placeholder="Ваш неповторимый логин" required />
+
+  //         <label className="next-in-group">→ Никнейм</label>
+  //         <input value={formData.name} onChange={(e) => inputData(e)} name="name"
+  //           className="form-control" placeholder="Ваш интересный никнейм" required />
+  //       </div>
+
+  //       <div className="form-group">
+  //         <label className="next-in-group">→ Пароль</label>
+  //         <input value={formData.password} onChange={(e) => inputPassword(e)} name="password"
+  //           type="password" className={"form-control " + (notSame ? "errorInput" : "")}
+  //           placeholder="Ваш неприступный пароль" required />
+
+  //         <label className="next-in-group">→ Проверка пароля</label>
+  //         <input value={formData.passwordRepeat}
+  //           onChange={(e) => { inputData(e); checkSame(e) }} name="passwordRepeat"
+  //           type="password" className={"form-control " + (notSame ? "errorInput" : "")}
+  //           placeholder="Не могли бы вы его повторить?" required />
+  //         {notSame && <small className="errorSmall">Пароли должны совпадать</small>}
+  //       </div>
+  //       <br />
+
+  //       <div className="form-group">
+  //         <label>→ Ваша ссылка Steam</label>
+  //         <input value={formData.steam_url}
+  //           onChange={(e) => { inputData(e); checkSteamLink(e) }} name="steam_url"
+  //           type="text" className={"form-control " + (notSteamLink ? "errorInput" : "")}
+  //           placeholder="https://steamcommunity.com/tradeoffer/new/?partner=[данные]&token=[токен]" required />
+  //         {notSteamLink && <><small className="errorSmall">Некорректная ссылка</small><br /></>}
+  //         <small>Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></small>
+  //       </div>
+  //       <br />
+
+  //       <button type="submit" className="btn btn-primary btn-lg btn-block">
+  //         {loading && <span className="spinner-grow spinner-grow-sm loader-left" style={{ right: "1rem" }} role="status" aria-hidden="true"></span>}
+  //         {loading ? <>Создание аккаунта</> : <>Зарегистрироваться</>}
+  //         {loading && <span className="spinner-grow spinner-grow-sm loader-right" style={{ left: "1rem" }} role="status" aria-hidden="true"></span>}
+  //       </button>
+  //       <br />
+
+  //     </form>
+
+  //   </div>
+  // )
+
+
   return (
-    <div className="wrap-slide">
+    <div className="wrap-slide" style={{ height: "100vh" }}>
       <h1 className="h1-main">
         <span className="slide-number">4</span>
         <span className="slide-title">Регистрация</span>
       </h1>
-      <form action="" onSubmit={signUp}>
-        <h3>Регистрация</h3>
-
-        {errorMessage.isError ?
-          <p className="error" style={{ marginTop: "-1.5rem" }}>{errorMessage.message}</p> :
-          <br />}
-
-        <div className="form-group">
-          <label className="next-in-group">→ Логин</label>
-          <input value={formData.login} onChange={(e) => inputData(e)} name="login"
-            type="login" className="form-control" placeholder="Ваш неповторимый логин" required />
-
-          <label className="next-in-group">→ Никнейм</label>
-          <input value={formData.name} onChange={(e) => inputData(e)} name="name"
-            className="form-control" placeholder="Ваш интересный никнейм" required />
+      <form>
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">Email address</label>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
-
-        <div className="form-group">
-          <label className="next-in-group">→ Пароль</label>
-          <input value={formData.password} onChange={(e) => inputPassword(e)} name="password"
-            type="password" className={"form-control " + (notSame ? "errorInput" : "")}
-            placeholder="Ваш неприступный пароль" required />
-
-          <label className="next-in-group">→ Проверка пароля</label>
-          <input value={formData.passwordRepeat}
-            onChange={(e) => { inputData(e); checkSame(e) }} name="passwordRepeat"
-            type="password" className={"form-control " + (notSame ? "errorInput" : "")}
-            placeholder="Не могли бы вы его повторить?" required />
-          {notSame && <small className="errorSmall">Пароли должны совпадать</small>}
+        <div className="mb-3">
+          <label for="exampleInputPassword1" className="form-label">Password</label>
+          <input type="password" className="form-control" id="exampleInputPassword1" />
         </div>
-        <br />
-
-        <div className="form-group">
-          <label>→ Ваша ссылка Steam</label>
-          <input value={formData.steam_url}
-            onChange={(e) => { inputData(e); checkSteamLink(e) }} name="steam_url"
-            type="text" className={"form-control " + (notSteamLink ? "errorInput" : "")}
-            placeholder="https://steamcommunity.com/tradeoffer/new/?partner=[данные]&token=[токен]" required />
-          {notSteamLink && <><small className="errorSmall">Некорректная ссылка</small><br /></>}
-          <small>Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></small>
+        <div className="mb-3 form-check">
+          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+          <label className="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <br />
-
-        <button type="submit" className="btn btn-primary btn-lg btn-block">
-          {loading && <span className="spinner-grow spinner-grow-sm loader-left" style={{ right: "1rem" }} role="status" aria-hidden="true"></span>}
-          {loading ? <>Создание аккаунта</> : <>Зарегистрироваться</>}
-          {loading && <span className="spinner-grow spinner-grow-sm loader-right" style={{ left: "1rem" }} role="status" aria-hidden="true"></span>}
-        </button>
-        <br />
-
+        <button type="submit" className="btn btn-primary" children={"Submit"} />
       </form>
 
-    </div>
-  )
+    </div>)
 }
 
 export default FourthSlide

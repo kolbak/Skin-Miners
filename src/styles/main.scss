@@ -1,3 +1,5 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 //* Шрифты
 @font-face {
   font-family: "Oswald";
@@ -32,9 +34,9 @@ body {
 }
 
 .slide {
-  padding: 0 5vw;
-  margin : 8px;
-  height : 100%;
+  padding    : 0 5vw;
+  margin     : 8px;
+  height     : 100%;
   margin-left: 210px;
 }
 
