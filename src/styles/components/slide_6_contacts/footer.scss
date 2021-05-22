@@ -15,3 +15,117 @@
 .footer_parts {
     height: 100vh;
 }
+.three_figures{
+    width: 57%;
+    top: 24%;
+    left: 0;
+    position: relative;
+}
+.arrow_to_contacts{
+    left: 48%;
+    top: 1%;
+    width: 68%;
+    position: relative;
+}
+
+.text_developed{
+    top: 11%;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #747474CC;
+}
+
+.text_underline{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #747474CC;
+    text-decoration: underline;
+}
+.mail_and_telephone{
+    left: 47%;
+    top: 9%;
+    position: absolute;
+}
+
+.wrong_card {
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.wrong_card2 {
+    width: 80%;
+    margin-left: 19%;
+    margin-top: 5%;
+}
+
+.dark{
+    background-color: black !important;
+}
+
+.footer-middle {
+    margin-left: 3% !important;
+}
+
+.footer_right{
+    margin-left: 10%;
+}
+
+.policy_market{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #585858;
+    margin-bottom: 16%;
+}
+
+.two_icons{
+    margin-bottom: 6%;
+    margin-top: 54% !important;
+}
+
+.two_lines{
+    left: 13%;
+    top: -12%;
+    position: relative;
+}
+
+.copyright{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF80;
+    position: relative;
+    top: -8%;
+    width: 167%;
+
+}
+#email{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BEC6CD;
+
+}
+
+#telephone{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BEC6CD;
+}
