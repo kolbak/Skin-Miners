@@ -39,6 +39,10 @@ const FifthSlide = () => {
 
   const [info, setInfo] = useState(FAQ[1])
 
+  function changeInfo(num) {
+
+  }
+
   return (
     <div id="FAQ" className="wrap-slide">
 
@@ -48,17 +52,22 @@ const FifthSlide = () => {
 
       <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>
       <div id="leftSide" className="w-50">
-        {FAQ.map(x => <button className="btn btn-dark btn-lg mb-3" type="button">
-          <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
-        </button>)}
+        {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
+          onClick={() => setInfo(FAQ[i])} children={
+            <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
+          } />)}
       </div>
 
       <div id="rightSide" className="w-50">
-        <span id="num">{info.num}</span>
-        <h3 id="question">{info.question}</h3>
-        <div>
-          <div id="line" />
-          <p id="answer">{info.answer}</p>
+        <div style={{ height: "44vh", display: "inline-block" }}>
+          <span id="num" children={info.num} />
+        </div>
+        <div style={{ width: "35vw", float: "right" }}>
+          <h3 id="question">{info.question}</h3>
+          <div>
+            <div id="line" />
+            <p id="answer">{info.answer}</p>
+          </div>
         </div>
       </div>
     </div>
