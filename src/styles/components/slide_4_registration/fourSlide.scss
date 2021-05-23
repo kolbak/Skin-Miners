@@ -1,33 +1,44 @@
-.form-control {
-  display         : block;
-  width           : 100%;
-  padding         : .375rem .75rem;
-  font-size       : 1rem;
-  line-height     : 1.5;
-  color           : #495057;
-  background-color: #fff;
-  background-clip : padding-box;
-  border          : 1px solid #ced4da;
-  border-radius   : .25rem;
-  transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+// .form-control {
+//   display         : block;
+//   width           : 100%;
+//   padding         : .375rem .75rem;
+//   font-size       : 1rem;
+//   line-height     : 1.5;
+//   color           : #495057;
+//   background-color: #fff;
+//   background-clip : padding-box;
+//   border          : 1px solid #ced4da;
+//   border-radius   : .25rem;
+//   transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+// }
 
-.form-control:focus {
-  color           : #495057;
-  background-color: #fff;
-  border-color    : #80bdff;
-  outline         : 0;
-  box-shadow      : 0 0 0 0.2rem rgb(0 123 255 / 25%);
-}
+// .form-control:focus {
+//   color           : #495057;
+//   background-color: #fff;
+//   border-color    : #80bdff;
+//   outline         : 0;
+//   box-shadow      : 0 0 0 0.2rem rgb(0 123 255 / 25%);
+// }
 
-.form-group {
-  margin-bottom: 1rem;
-}
+// .form-group {
+//   margin-bottom: 1rem;
+// }
 
-.form-text {
-  display   : block;
-  margin-top: .25rem;
-}
+// .form-text {
+//   display   : block;
+//   margin-top: .25rem;
+// }
+
+// .form-control:focus {
+//   border-color: #167bff;
+//   box-shadow  : none;
+// }
+
+// .form-group:hover {
+//   border       : 3px solid #007BFF;
+//   border-radius: 10px;
+//   padding      : 10px;
+// }
 
 button,
 input {
@@ -35,29 +46,13 @@ input {
 }
 
 form {
-  width        : 460px;
-  margin       : auto;
-  background   : #110f1b;
-  box-shadow   : 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding      : 40px 50px 20px 50px;
-  border-radius: 15px;
-  transition   : all .3s;
-  transition   : border-color 0.9s linear;
-  border       : transparent solid 4px;
+  padding: 10vh 35vw;
+  margin : auto;
 }
 
 label.next-in-group {
   margin-top   : 0.25rem;
   margin-bottom: 0.25rem;
-}
-
-input {
-  transition: all 0.9s;
-}
-
-.form-control:focus {
-  border-color: #167bff;
-  box-shadow  : none;
 }
 
 h3 {
@@ -67,80 +62,129 @@ h3 {
   padding-bottom: 20px;
 }
 
-input.form-control,
-input.form-control:focus {
-  color: black;
-}
+// input.form-control,
+// input.form-control:focus {
+//   color: black;
+// }
 
-.custom-control-label {
-  font-weight: 400;
-}
 
-a.nav-link {
-  margin-top: 0.75rem;
-}
-
-#btn-sign-in {
-  margin-top: 1.75rem;
-}
-
-.errorInput {
-  color: red !important;
-}
-
-.errorInput::placeholder {
-  color: red;
-}
-
-.errorDiv {
-  transition  : all .3s;
-  border-color: tomato;
-}
-
-.error {
-  transition    : all .3s;
-  text-align    : center;
-  color         : tomato;
-  border-radius : 10px;
-  border        : tomato 3px solid;
-  min-height    : 2rem;
-  height        : auto;
-  padding-bottom: 4px;
-}
-
-.loader-left {
-  position: relative;
-  bottom  : 0.25rem;
-  right   : 2.25rem;
-}
-
-.loader-right {
-  position: relative;
-  bottom  : 0.25rem;
-  left    : 2.25rem;
-}
 
 /* РЕГИСТРАЦИЯ */
-#arrow-back {
-  border-radius : 30px;
-  position      : relative;
-  bottom        : 62.5px;
-  right         : 1vw;
-  font-size     : large;
-  padding-bottom: 10px;
-  padding-left  : 16px;
+.mb-custom-4 {
+  margin-bottom: 2rem;
 }
 
 .errorSmall {
   color: tomato !important
 }
 
-.form-group {
-  transition: all 0.3s;
+input.form-control {
+  background   : #F0F8FF;
+  border-radius: 10px;
 }
 
-.form-group:hover {
-  border       : 3px solid #007BFF;
-  border-radius: 10px;
-  padding      : 10px;
+input.g-light {
+  box-shadow: 0px 0px 20px 3px #31E2C5;
+}
+
+input.r-light {
+  box-shadow: 0px 0px 25px 3px #DD1427;
+}
+
+button {
+  width: 100%;
+}
+
+
+// Стрелочки подсказок
+#hint_email {
+  position: absolute;
+  right   : 26%;
+  top     : 19%;
+}
+
+#hint_nickname {
+  position: absolute;
+  left    : 22%;
+  top     : 28%;
+}
+
+#hint_password_check {
+  position: absolute;
+  left    : 26%;
+  top     : 47%;
+}
+
+#hint_steam {
+  position: absolute;
+  right   : 26%;
+  top     : 51.5%;
+}
+
+// Текст подсказок
+.orange {
+  color      : rgba(217, 164, 4, 1);
+  font-weight: 300;
+}
+
+.hint {
+  font-family   : Roboto;
+  font-size     : 22px;
+  font-style    : normal;
+  font-weight   : 400;
+  line-height   : 32px;
+  letter-spacing: 0em;
+  text-align    : center;
+}
+
+#hint_nickname_text {
+  position: absolute;
+  left    : 9%;
+  top     : 20%;
+}
+
+#hint_email_text {
+  position: absolute;
+  right   : 17%;
+  top     : 29%;
+}
+
+#hint_steam_text {
+  position  : absolute;
+  text-align: left;
+  right     : 7%;
+  top       : 43%;
+}
+
+#hint_password_check_text {
+  position: absolute;
+  left    : 15%;
+  top     : 58%;
+}
+
+// Картинки
+#circle {
+  position: absolute;
+  right   : 12%;
+  top     : 6%;
+  z-index : 1;
+}
+
+#hidden_triangle {
+  position: absolute;
+  right   : 10%;
+  top     : 5%;
+}
+
+#desctiption {
+  position      : absolute;
+  text-align    : right;
+  right         : 5%;
+  bottom        : 15%;
+  font-family   : sans-serif;
+  font-size     : 22px;
+  font-style    : italic;
+  font-weight   : 100;
+  line-height   : 33px;
+  letter-spacing: 0.02em;
 }
