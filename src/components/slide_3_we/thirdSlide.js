@@ -13,6 +13,10 @@ import hidden_circle from '../../images/slide_3_we/circle.svg'
 import hidden_square from '../../images/slide_3_we/square.svg'
 import hidden_triangle from '../../images/slide_3_we/triangle.svg'
 
+import trust from '../../images/slide_3_we/trust.svg'
+import safity from '../../images/slide_3_we/safity.svg'
+import power from '../../images/slide_3_we/power.svg'
+
 // TODO: Нормально расположить текст в 3-х глассоморфные карточки
 
 const ThirdSlide = () => {
@@ -31,25 +35,32 @@ const ThirdSlide = () => {
       <div className="big-capture">
         <img alt="grid" src={grid_window} className="grid_window" />
         <div className="power_container containers">
-          <img alt="power" src={power_window} className="power_window three_pictures" />
+          {/* <img alt="power" src={power_window} className="power_window three_pictures" /> */}
           <p className="Head_text">Мощность</p>
-          <p>
+          <div className="line" />
+          <img alt="power" src={power} className="safity three_pictures" />
+          <p className="thesis">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div className="trust_container containers">
-          <img alt="trust" src={trust_window} className="trust_window three_pictures" />
+          {/* <img alt="trust" src={trust_window} className="trust_window three_pictures" /> */}
           <p className="Head_text">Доверие</p>
-          <p>
+          <div className="line" />
+          <img alt="trust" src={trust} className="safity three_pictures" />
+          <p className="thesis">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div className="safety_container containers">
-          <img alt="safety" src={safety_window} className="safety_window  three_pictures" />
+          {/* <img alt="safety" src={safety_window} className="safety_window  three_pictures" /> */}
+
           <p className="Head_text">Безопасность</p>
-          <p>
+          <div className="line" />
+          <img alt="safity" src={safity} className="safity  three_pictures" />
+          <p className="thesis">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
