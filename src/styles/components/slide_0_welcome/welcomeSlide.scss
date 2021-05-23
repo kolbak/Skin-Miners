@@ -1,8 +1,20 @@
-.First-slide {
+.welcome-slide {
   height : 600px;
   width  : 100%;
   display: -webkit-flex;
   display: flex;
+
+  #hidden_triangle {
+    position: absolute;
+    top     : 7%;
+    left    : 15%;
+  }
+
+  #hidden_square {
+    position: absolute;
+    top     : 34%;
+    left    : 28%;
+  }
 }
 
 .welcome {
@@ -56,7 +68,7 @@
 }
 
 // @media screen and (min-width: 1602px) {
-//     .First-slide {
+//     .welcome-slide {
 //         height: 100vh;
 //     }
 //     .welcome {
@@ -106,7 +118,7 @@
 // }
 
 @media screen and(max-width: 1601px) {
-  .First-slide {
+  .welcome-slide {
     height: 100vh;
   }
 
@@ -166,19 +178,19 @@
 }
 
 @media screen and(max-width: 991px) {
-  .First-slide {
+  .welcome-slide {
     width: 720px;
   }
 }
 
 @media screen and(max-width: 767px) {
-  .First-slide {
+  .welcome-slide {
     width: 540px;
   }
 }
 
 @media screen and(max-width: 575px) {
-  .First-slide {
+  .welcome-slide {
     width: 100%;
   }
 }
