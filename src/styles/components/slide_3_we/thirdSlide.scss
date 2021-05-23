@@ -10,6 +10,10 @@
   padding: 0 5vw;
   margin : 8px;
 
+  p {
+    margin-bottom: 0px;
+  }
+
   .big-capture {
     position: relative;
 
@@ -67,7 +71,7 @@
         letter-spacing: 0.02em;
         text-align    : left;
         left          : 11%;
-        top           : 38%;
+        top           : 43%;
         width         : 54%;
         position      : absolute;
       }
@@ -84,7 +88,7 @@
         width         : 251px;
         border-radius : nullpx;
         position      : absolute;
-        top           : 12%;
+        top           : 19%;
       }
 
       .nameless_text {
@@ -95,11 +99,10 @@
         line-height   : 29px;
         letter-spacing: 0.02em;
         text-align    : left;
-
-        width   : 74%;
-        left    : 11%;
-        top     : 12%;
-        position: absolute;
+        width         : 74%;
+        left          : 11%;
+        top           : 23%;
+        position      : absolute;
       }
 
       .cardless_text {
@@ -120,5 +123,24 @@
     z-index : -3;
     left    : -1vw;
     position: absolute;
+  }
+
+  #hidden_circle {
+    position: absolute;
+    top     : 139.2vh;
+    left    : 7.4vw;
+  }
+
+  #hidden_square {
+    position: absolute;
+    top     : 76.6vh;
+    right   : 6.15vw;
+    width   : 92px;
+  }
+
+  #hidden_triangle {
+    position: absolute;
+    top     : 175vh;
+    right   : 7vw;
   }
 }

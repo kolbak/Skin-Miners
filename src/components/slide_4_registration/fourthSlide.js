@@ -209,7 +209,7 @@ const FourthSlide = () => {
       <img id="circle" alt="circle" src={circle} />
       <img id="hidden_triangle" alt="hidden_triangle" src={hidden_triangle} />
 
-      <form>
+      <form id="formRegistration">
         <div className="mb-custom-4">
           <input type="email" className="form-control g-light" id="inputEmail" placeholder="Email" />
           <p id="hint_email_text" className="hint">Амм, тут должен быть email... <br />
