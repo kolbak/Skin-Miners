@@ -28,16 +28,16 @@
 
 body {
   background: #000000;
-  padding   : 0 0vw;
+  padding   : 0;
   margin    : 0;
   overflow-x: hidden;
 }
 
 .slide {
+  outline: 1px dotted yellow;
   padding    : 0 5vw;
-  margin     : 8px;
+  margin     : 0;
   height     : 100vh;
-  margin-left: 210px;
 }
 
 h1,
@@ -54,7 +54,7 @@ li {
 
 .wrap-slide {
   position   : relative;
-  padding-top: 1vh;
+  // padding-top: 1vh;
 }
 
 .h1-main {
