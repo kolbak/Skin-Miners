@@ -2,16 +2,22 @@ import * as React from "react"
 
 import '../../styles/components/slide_1_what/firstSlide.scss'
 
-import bwAmmo from '../../images/bw-ammo.svg'
+import bwAmmo from '../../images/slide_1_what/bw-ammo.svg'
+import smile from '../../images/slide_1_what/Smile.svg'
+import triangle from '../../images/slide_1_what/Triangle.svg'
 
 const FirstSlide = () => {
   return (
-    <div className="wrap-slide slide-1">
+    <div className="slide-1">
       <h1 className="h1-main">
         <span className="slide-number">1</span>
         <span className="slide-title">Что мы делаем?</span>
       </h1>
-      <img alt="ammo" className="bw-ammo" src={bwAmmo} />
+
+      <img alt="bwAmmo" id="bwAmmo" src={bwAmmo} />
+      <img alt="smile" id="smile" src={smile} />
+      <img alt="triangle" id="triangle" src={triangle} />
+
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur</li>
         <li>adipiscing elit, sed do eiusmod tempor</li>

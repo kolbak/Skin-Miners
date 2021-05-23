@@ -1,19 +1,31 @@
 .slide-1 {
-  margin-top: 100px;
-
-  img.bw-ammo {
-    margin-left: 5vw;
-  }
-
   ul {
-    position: absolute;
-    top     : 30vh;
-    left    : 40vw;
-    display : inline-block;
+    margin-top: 20vh;
+    width     : 50%;
+    float     : right;
 
     li {
       font-size    : 1.7rem;
       margin-bottom: 15px;
     }
   }
+
+  img#bwAmmo {
+    height     : 85vh;
+    width      : 32%;
+    margin-left: 5rem;
+  }
+}
+
+
+
+img#smile {
+  position: absolute;
+  right   : 11%;
+}
+
+img#triangle {
+  position: absolute;
+  bottom  : -79%;
+  right   : 48%;
 }
