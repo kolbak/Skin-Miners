@@ -24,16 +24,21 @@ const Footer = () => {
             <span className="slide-number">5</span>
             <span className="slide-title">Контакты</span>
           </h1>
-          <form class="question_form1">
-             <img alt="" className="card-image two-textboxes" src={two_textboxes} />
-             <div class="form-group justify-content-center">
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
-             </div>
-             <div class="form-group question">
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Вопрос"></textarea>
-             </div>
-             <button type="submit" class="btn btn-primary  question_button">Отправить</button>
-           </form>
+          <div class="card dark text-white textboxes-card">
+            <img alt="" className="card-image two-textboxe1s" src={two_textboxes} />
+            <div class="card-img-overlay">
+              <form class="question_form1">
+                 
+                 <div class="form-group justify-content-center">
+                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+                 </div>
+                 <div class="form-group question">
+                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Вопрос"></textarea>
+                 </div>
+                 <button type="submit" class="btn btn-primary  question_button">Отправить</button>
+               </form>
+            </div>
+          </div>
         </div>
 
 
@@ -78,7 +83,8 @@ const Footer = () => {
                     <p class="text_developed1 fs-2">Developed by <span className="text_underline">Name Surname</span></p>
                   </div>
                   <div class="col-md-5 ">
-                    <p class="copyright1 fs-4">Copyright © skinminers.com, 2021. Все права защищены.</p>
+                    <p class="copyright1 fs-5">Copyright © skinminers.com, 2021.</p>
+                    <p class="copyright1 fs-5">Все права защищены.</p>
                   </div>
                 </div>
            </div>  
