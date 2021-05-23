@@ -1,11 +1,11 @@
 import * as React from "react"
 
-import '../../styles/components/slide_2_how/howItWorks.scss'
+import '../../styles/components/slide_2_how/login.scss'
 
-const HowItWorks = () => {
+const Login = () => {
 
   return (
-    <div className="wrap-how">
+    <div className="wrap-how" id="login">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
       <i className="bg-line n-1" />
       <i className="bg-line n-2" />
@@ -16,4 +16,4 @@ const HowItWorks = () => {
   )
 }
 
-export default HowItWorks
+export default Login
