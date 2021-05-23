@@ -17,16 +17,33 @@ import two_lines from '../../images/two_lines.svg'
 const Footer = () => {
   return (
     <div className="wrap-slide footer_slide container-fluid">
-      <div className="footer_parts footer_left col-md-4">
-        <h1 className="h1-main">
-          <span className="slide-number">5</span>
-          <span className="slide-title">Контакты</span>
-        </h1>
-        <img alt="two_textboxes" className="two_textboxes" src={two_textboxes} />
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
+      <div className="footer_parts containter footer_left col-md-5">
+        <div className="row">
+          <h1 className="h1-main">
+            <span className="slide-number">5</span>
+            <span className="slide-title">Контакты</span>
+          </h1>
+        </div>
+        
+        <form class="question_form">
+          <div class="form-group justify-content-center">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+          </div>
+          <div class="form-group question">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Вопрос"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary  question_button">Отправить</button>
+        </form>
+          
       
-      <div class="containter col-md-4 footer-middle">
+        {/* <div class="container textboxes_cont">
+          <textarea атрибуты>текст</textarea>
+          <img alt="two_textboxes" className="two_textboxes" src={two_textboxes} />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div> */}
+      </div>
+
+      <div class="footer_parts containter col-md-3 footer_middle">
         <div class="card dark text-white">
           <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
          
@@ -38,6 +55,7 @@ const Footer = () => {
         <img alt="three_figures" className="three_figures" src={three_figures} />
         <img alt="arrow_to_contacts" className="arrow_to_contacts" src={arrow_to_contacts} />
         <p class="text_developed fs-2">Developed by <span className="text_underline">Name Surname</span></p>
+      
       </div>
 
       <div className="footer_parts footer_right col-md-2">
@@ -60,8 +78,13 @@ const Footer = () => {
         </div>
         <img alt="" className="two_lines" src={two_lines} />
         <p class="copyright fs-4">Copyright © skinminers.com, 2021. Все права защищены.</p>
+        {/* <div class="row">
+          <div class="col-8">col-8</div>
+          <div class="col-4">col-4</div>
+        </div> */}
       </div>
     </div>
+
   )
 }
 

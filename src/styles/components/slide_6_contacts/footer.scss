@@ -5,31 +5,68 @@
 }
 .footer_left{
     width: 43%;
+   
 }
 .footer_middle{
-    width: 32%;
+    top: 9%;
+    position: relative;
 }
 .footer_right{
    width: 25%;
 }
 .footer_parts {
-    height: 100vh;
+     margin-bottom: 12%;
 }
+
+
+
+.question_form{
+    top: 4%;
+    left: -7%;
+    background-color: transparent;
+    background-image: url('../../../images/two_textboxes.svg');
+    margin: 0 !important;
+    background-size: cover;
+    height: 84%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    padding: 15% 10% 2% 10%;
+}
+
+
+.question_button{
+    float: right;
+    width: 31%;
+}
+
+.question{
+    height: 60%;
+}
+
+#exampleFormControlTextarea1{
+    height: 100%;
+    
+}
+
+
+
+
 .three_figures{
     width: 57%;
-    top: 24%;
-    left: 0;
+    top:48%;
+    left: 12%;
     position: relative;
 }
 .arrow_to_contacts{
-    left: 48%;
-    top: 1%;
+    left: 72%;
+    top: 23%;
     width: 68%;
     position: relative;
 }
 
 .text_developed{
-    top: 11%;
+    top: 34%;
     position: relative;
     font-family: Roboto;
     font-style: normal;
@@ -90,11 +127,11 @@
 
 .two_icons{
     margin-bottom: 6%;
-    margin-top: 54% !important;
+    margin-top: 91% !important;
 }
 
 .two_lines{
-    left: 13%;
+    left: 22%;
     top: -12%;
     position: relative;
 }
@@ -107,7 +144,7 @@
     text-align: left;
     color: #FFFFFF80;
     position: relative;
-    top: -8%;
+    top: -11%;
     width: 167%;
 
 }
