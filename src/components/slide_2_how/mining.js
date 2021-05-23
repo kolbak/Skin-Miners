@@ -7,7 +7,7 @@ import '../../styles/components/slide_2_how/mining.scss'
 
 const Mining = () => {
   return (
-    <div className="wrap-mining">
+    <div className="wrap-mining" id="mining">
       <img className="how-it-works-img" src={howItWorks} />
       <div className="frame">
         <img src={pinkFrame} />

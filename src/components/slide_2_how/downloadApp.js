@@ -9,7 +9,7 @@ import '../../styles/components/slide_2_how/downloadApp.scss'
 const DownloadApp = () => {
 
   return (
-    <div className="wrap-dl">
+    <div className="wrap-dl" id="download">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
       <i className="bg-line n-1" />
       <i className="bg-line n-2" />
