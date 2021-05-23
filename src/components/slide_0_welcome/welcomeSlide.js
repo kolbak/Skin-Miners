@@ -19,7 +19,7 @@ const WelcomeSlide = () => {
           Skin <br /> Miners
         </h1>
         <p id="p-slogan"> Не трать своё время просто так </p>
-        <button className="btn"> Стать участником </button>
+        <button className="btn btn-lg"> Стать участником </button>
       </div>
       <Chart />
     </div>

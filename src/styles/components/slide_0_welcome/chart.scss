@@ -1,10 +1,10 @@
 .wrap-chart {
   height          : calc(4.11rem * 5);
-  width           : 600px;
+  width           : 700px;
   border-radius   : 10px;
   box-shadow      : -17px 17px 2px 0px #13b6dc, -17px 17px 20px 0px #13b6dc;
   background-color: #504e64;
-  margin-top      : auto;
+  margin-top      : 15vh;
 
   span.name {
     font-family   : Roboto;
@@ -102,12 +102,12 @@
   .rhomb {
     position: relative;
     right   : 8rem;
-    bottom  : 5.5rem;
+    bottom  : 0.5rem;
   }
 
   .bg-line {
-    z-index      : -1;
-    position     : absolute;
+    z-index      : 0;
+    position     : relative;
     height       : 7px;
     border-radius: 5px;
     box-shadow   : -2px 4px 10px 1px rgba(0, 0, 0, 0.25);
@@ -116,22 +116,22 @@
   .bg-line.n-1 {
     width     : 500px;
     background: linear-gradient(90deg, #027bff, #d784ff);
-    top       : 175px;
-    right     : 425px;
+    right     : -65px;
+    top       : -510px;
   }
 
   .bg-line.n-2 {
     width     : 570px;
     background: linear-gradient(90deg, #14c2e7, #d9a404);
-    bottom    : 250px;
-    right     : 280px;
+    bottom    : 20px;
+    right     : -150px;
   }
 
   .bg-line.n-3 {
     width     : 400px;
     background: linear-gradient(90deg, #161012, #423201);
-    bottom    : 225px;
-    right     : 300px;
+    bottom    : 0px;
+    right     : -295px;
   }
 
   img {
@@ -145,17 +145,17 @@
   .points {
     z-index : -1;
     position: relative;
-    left    : 17rem;
+    left    : 32rem;
     height  : 128px;
     width   : 128px;
-    bottom  : 26rem;
+    bottom  : 29rem;
   }
 
   .down-arrow {
     z-index : -2;
     position: relative;
-    left    : 11rem;
-    bottom  : 10rem;
+    left    : 26rem;
+    bottom  : 15rem;
     height  : 180px;
     width   : 120px;
   }
@@ -163,16 +163,16 @@
   .ellipse {
     position: relative;
     z-index : 1;
-    left    : 6.25rem;
-    bottom  : 23rem;
+    left    : 21.25rem;
+    bottom  : 25.5rem;
   }
 
   .ellipse-blurred {
     z-index : -2;
     position: relative;
-    left    : 14rem;
+    left    : 19rem;
     height  : 400px;
-    bottom  : 35rem;
+    bottom  : 41rem;
   }
 
   .btn {
@@ -190,7 +190,7 @@
     border        : none;
     color         : #ffffff;
     position      : relative;
-    left          : 19.5rem;
-    bottom        : 24.5rem;
+    left          : 24.5rem;
+    bottom        : 17.5rem;
   }
 }

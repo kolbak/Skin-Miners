@@ -38,9 +38,9 @@ const Chart = () => {
 
       <button className="btn">Обновить</button>
       <img alt="rhomb" className="rhomb" src={rhomb} />
-      <i className="bg-line n-1" />
-      <i className="bg-line n-2" />
-      <i className="bg-line n-3" />
+      <div className="bg-line n-1" />
+      <div className="bg-line n-2" />
+      <div className="bg-line n-3" />
       <img alt="points" className="points" src={points} />
       <img alt="down-arrow" className="down-arrow" src={downArrow} />
       <img alt="ellipse" className="ellipse" src={ellipse} />

@@ -1,27 +1,25 @@
 .welcome-slide {
-  height : 600px;
-  width  : 100%;
-  display: -webkit-flex;
-  display: flex;
+  display        : flex;
+  justify-content: space-evenly;
+  display        : -webkit-flex;
 
   #hidden_triangle {
     position: absolute;
     top     : 7%;
-    left    : 15%;
+    left    : 23%;
   }
 
   #hidden_square {
     position: absolute;
     top     : 34%;
-    left    : 28%;
+    left    : 37%;
   }
 }
 
 .welcome {
-  height      : 50%;
-  width       : 35%;
-  margin-top  : 300px;
-  margin-right: 10%;
+  height    : 50%;
+  width     : 35%;
+  margin-top: 333px;
 
   .h1-skin-miners {
     background             : linear-gradient(129.76deg, #c471ed -34.68%, #007bff 148.35%);
@@ -31,7 +29,7 @@
     font-family            : Oswald;
     font-style             : normal;
     font-weight            : normal;
-    font-size              : 90px;
+    font-size              : 100px;
     line-height            : 100px;
     letter-spacing         : 0.04em;
     margin-block-end       : 0.1rem;
@@ -39,10 +37,10 @@
   }
 
   #p-slogan {
-    margin-top    : 12px;
+    margin-top    : 18px;
     margin-bottom : 12px;
     font-family   : Noto Sans;
-    font-size     : 24px;
+    font-size     : 26px;
     font-style    : normal;
     font-weight   : 400;
     line-height   : 33px;
