@@ -45,6 +45,26 @@ const SecondSlide = () => {
         </div>
       </div>
     </div>
+    // <div className="wrap-slide slide-2">
+    //   <h1 className="h1-main">
+    //     <span className="slide-number">2</span>
+    //     <span className="slide-title">Как это работает?</span>
+    //   </h1>
+    //   <div className="wrap-tabs">
+    //     <ul>
+    //       <li className={tab === 'tab0' || tab === '' ? 'active' : ''} ><i></i> <h2>Регистрация</h2></li>
+    //       <li className={tab === 'tab1' ? 'active' : ''} ><i></i> <h2>Скачать приложение</h2></li>
+    //       <li className={tab === 'tab2' ? 'active' : ''} ><i></i> <h2>Логин</h2></li>
+    //       <li className={tab === 'tab3' ? 'active' : ''} ><i></i> <h2>Майнинг</h2></li>
+    //     </ul>
+    //     <div className="content" onScroll={contentScroll}>
+    //       <Registration />
+    //       <DownloadApp />
+    //       <HowItWorks />
+    //       <Mining />
+    //     </div>
+    //   </div>
+    // </div>
   )
 }
 
