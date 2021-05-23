@@ -1,3 +1,103 @@
+.footer{
+    height: 100vh;
+}
+.border{
+    border: 1px solid red; 
+}
+.left-side{
+    height:100%;
+    margin-top:10%;
+}
+.middle-side{
+    margin-top: 10%;
+}
+.right-side{
+    margin-top: 10%;
+}
+.green-card{
+    margin-top:19%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+// .footer-images{
+//     height: 22vh;
+// }
+
+.two-textboxes{
+    position: absolute;
+    width: 100%;
+    left: 1%;
+    top: -5%;
+}
+
+.question{
+    height: 80%;
+}
+.three_figures1{
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 33%;
+    position: relative;
+}
+
+.arrow_to_contacts1{
+    width: 100%;
+    position: relative;
+    margin-top: 19%;
+}
+
+.four-words{
+    margin: 5%;
+    width: 66%;
+}
+.question_form1{
+    top: 4%;
+    left: -7%;
+    background-color: transparent;
+    //background-image: url('../../../images/two_textboxes.svg');
+    //background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-size: cover;
+    height: 63%;
+    
+    width: 100%;
+    position: relative;
+    padding: 15% 10% 2% 10%;
+}
+.icons{
+    width: 60%;
+    position: relative;
+    margin-top:19%;
+    margin-bottom: 10%;
+}
+.copyright1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF80;
+    position: relative;
+}
+
+#exampleFormControlTextarea1{
+    margin-top: 3%;
+}
+
+.question_button{
+    float: right;
+    width: 31%;
+    margin-top: 3%;
+}
+.text_developed1{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: #747474CC;
+}
 .footer_slide {
     height : 100vh;
     display: -webkit-inline-flex;
@@ -34,15 +134,20 @@
     padding: 15% 10% 2% 10%;
 }
 
-
-.question_button{
-    float: right;
-    width: 31%;
+.policy_market{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: #585858;
+    margin-bottom: 16%;
+    text-align:  center;
 }
 
-.question{
-    height: 60%;
-}
+
+
 
 #exampleFormControlTextarea1{
     height: 100%;
@@ -97,9 +202,40 @@
 
 .wrong_card2 {
     width: 80%;
-    margin-left: 19%;
-    margin-top: 5%;
+    margin-left: 10%;
 }
+
+@media (min-width: 1600px){
+  .policy_market {
+    font-size: 200% !important;
+    margin-top: 20%;
+  }
+  .email-telephone {
+    font-size: 169% !important;
+  }
+  .question_form1{
+    width: 106%;
+    height: 50%;
+  }
+ 
+}
+
+@media (min-width: 1450px) and (max-width: 1600px){
+    .email-telephone {
+      font-size: 142% !important;
+    }
+    .question_form1{
+        width: 106%;
+        height: 50%;
+    }
+    .policy_market {
+        font-size: 269% !important;
+        margin-top: 16%;
+    }
+  }
+
+
+
 
 .dark{
     background-color: black !important;
@@ -113,17 +249,7 @@
     margin-left: 10%;
 }
 
-.policy_market{
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 47px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #585858;
-    margin-bottom: 16%;
-}
+
 
 .two_icons{
     margin-bottom: 6%;
