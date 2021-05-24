@@ -4,9 +4,15 @@
     margin-top     : 10vh;
     margin-left    : -2vw;
 
-    li {
-      // margin-bottom: 10vh;
+    li:first-child{
+      top:35px;
+    }
+
+    li:not(:first-child){
       height  : 15vh;
+    }
+
+    li {
       position: relative;
 
       a {
@@ -26,7 +32,6 @@
         }
 
         i.circle {
-          // background   : #424242;
           width        : 15px;
           height       : 15px;
           border-radius: 100%;
@@ -37,7 +42,7 @@
           position: relative;
           display : block;
           z-index : -1;
-          top     : -17px;
+          top     : 17px;
           left    : 5px;
           width   : 5px;
           height  : 100%;
@@ -69,7 +74,7 @@
 
     li.active {
       a {
-        i.circle {
+        i.circle, i.line {
           background: #61CDBB;
         }
 
