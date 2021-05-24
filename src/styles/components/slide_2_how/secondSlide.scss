@@ -3,52 +3,35 @@
     list-style-type: none;
     margin-top     : 10vh;
     margin-left    : -2vw;
-
-    li:first-child{
-      top:35px;
-    }
-
-    li:not(:first-child){
-      height  : 15vh;
-    }
+    position       : relative;
 
     li {
-      position: relative;
+      margin-bottom: 15vh;
+      position     : relative;
 
-      a {
-        text-decoration: none;
+      i.circle {
+        background: #424242;
+      }
 
-        i.circle,
-        i.line {
-          background: #424242;
-        }
+      i.circle,
+      h2 {
+        display: inline-block;
+        cursor : pointer;
+      }
 
-        i.circle,
-        h2 {
-          transition    : .5s;
-          display       : inline-block;
-          pointer-events: none;
-          cursor        : pointer;
-        }
+      i.circle {
+        width        : 15px;
+        height       : 15px;
+        border-radius: 100%;
+        margin-right : .5vw;
+      }
 
-        i.circle {
-          width        : 15px;
-          height       : 15px;
-          border-radius: 100%;
-          margin-right : .5vw;
-        }
+      h2 {
+        a {
+          transition     : .5s;
+          text-decoration: none;
+          color          : inherit;
 
-        i.line {
-          position: relative;
-          display : block;
-          z-index : -1;
-          top     : 17px;
-          left    : 5px;
-          width   : 5px;
-          height  : 100%;
-        }
-
-        h2 {
           font-family: "Noto Sans";
           font-weight: normal;
           opacity    : 0.3;
@@ -72,15 +55,42 @@
 
     }
 
+    i.line {
+      background: #424242;
+      position  : absolute;
+      display   : block;
+      z-index   : -1;
+      left      : 1.95vw;
+      width     : 5px;
+      height    : 20vh;
+    }
+
+    i.line.l1 {
+      top: 27px;
+    }
+
+    i.line.l2 {
+      top: calc(20vh + 27px);
+    }
+
+    i.line.l3 {
+      top: calc(40vh + 27px);
+    }
+
+    i.line.active {
+      background: #61CDBB;
+    }
+
     li.active {
-      a {
-        i.circle, i.line {
-          background: #61CDBB;
-        }
 
-        h2 {
-          opacity: 1;
+      i.circle {
+        background: #61CDBB;
+      }
 
+      h2 {
+
+        a {
+          opacity              : 1;
           // Запрет на выделение текста
           -webkit-touch-callout: initial;
           -webkit-user-select  : initial;
@@ -88,6 +98,7 @@
           -moz-user-select     : initial;
           -ms-user-select      : initial;
           user-select          : initial;
+
         }
       }
     }
@@ -98,16 +109,12 @@
     grid-template-columns: 2fr 5fr;
 
     .content {
-      overflow-y   : scroll;
-      overflow-x   : hidden;
-      width        : 100%;
-      height       : 100%;
-      margin-top   : -3.7rem;
-      padding-top  : 3.7rem;
-      // position: relative;
-      // top: -12%;
-      // padding: 70px 0 0 0;
-      // height    : calc(100% + 70px);
+      overflow-y : scroll;
+      overflow-x : hidden;
+      width      : 100%;
+      height     : 100%;
+      margin-top : -3.7rem;
+      padding-top: 3.7rem;
 
       #hidden_account {
         position: absolute;
