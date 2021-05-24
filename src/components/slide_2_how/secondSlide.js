@@ -5,9 +5,9 @@ import DownloadApp from './downloadApp'
 import Login from './login'
 import Mining from './mining'
 
-import '../../styles/components/slide_2_how/secondSlide.scss'
+// TODO: импортировать hidden_картинки
 
-// TODO: сделать, а лучше найти норм stepper, карусель, scrollSpy 
+import '../../styles/components/slide_2_how/secondSlide.scss'
 
 const SecondSlide = () => {
   const [tab, setTab] = React.useState('');

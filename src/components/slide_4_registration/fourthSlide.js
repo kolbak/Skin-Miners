@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
 
 import '../../styles/components/slide_4_registration/fourSlide.scss'
 
@@ -11,130 +12,128 @@ import circle from '../../images/slide_4_registration/circle.svg'
 import hidden_triangle from '../../images/slide_4_registration/hidden_triangle.svg'
 
 
-
 const FourthSlide = () => {
-  const URL = "http://178.154.195.155:8000/api";
-  const REGISTER = "/register";
+  // const URL = "http://178.154.195.155:8000/api";
+  // const REGISTER = "/register";
   //* ХУКИ |||||||||||||||||||||||||||
-  const [formData, setFormData] = useState(
-    {
-      login: process.env.NODE_ENV === 'development' ? "development@gmail.com" : "",
-      password: process.env.NODE_ENV === 'development' ? "development" : "",
-      passwordRepeat: process.env.NODE_ENV === 'development' ? "development" : "",
-      name: process.env.NODE_ENV === 'development' ? "developer" : "",
-      steam_url: process.env.NODE_ENV === 'development' ? "https://steamcommunity.com/tradeoffer/new/?partner=your_partner&token=your_token" : ""
-    });
-  const [errorMessage, setErrorMessage] = useState({
-    isError: false, message: "Что-то пошло не так с формой. Решение: спроси у мамы"
-  });
-  const [loading, setLoading] = useState(false);
-  const [notSame, setNotSame] = useState(false);
-  const [notSteamLink, setNotSteamLink] = useState(false);
+  // const [formData, setFormData] = useState(
+  //   {
+  //     login: process.env.NODE_ENV === 'development' ? "development@gmail.com" : "",
+  //     password: process.env.NODE_ENV === 'development' ? "development" : "",
+  //     passwordRepeat: process.env.NODE_ENV === 'development' ? "development" : "",
+  //     name: process.env.NODE_ENV === 'development' ? "developer" : "",
+  //     steam_url: process.env.NODE_ENV === 'development' ? "https://steamcommunity.com/tradeoffer/new/?partner=your_partner&token=your_token" : ""
+  //   });
+  // const [errorMessage, setErrorMessage] = useState({
+  //   isError: false, message: "Что-то пошло не так с формой. Решение: спроси у мамы"
+  // });
+  // const [loading, setLoading] = useState(false);
+  // const [notSame, setNotSame] = useState(false);
+  // const [notSteamLink, setNotSteamLink] = useState(false);
   //* ||||||||||||||||||||||||||||||||
 
-  function inputData(e) {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  }
-  function inputPassword(e) {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value, passwordRepeat: "" }));
-    setNotSame(false);
-  }
-  function checkSame(e) {
+  // function inputData(e) {
+  //   setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  // }
+  // function inputPassword(e) {
+  //   setFormData(prev => ({ ...prev, [e.target.name]: e.target.value, passwordRepeat: "" }));
+  //   setNotSame(false);
+  // }
+  // function checkSame(e) {
 
-    if (e.target.value.length === 0
-      || formData.password === e.target.value
-      || formData.password.length === 0) {
-      setNotSame(false);
-      return;
-    }
-    let error = formData.password.length < e.target.value.length;
+  //   if (e.target.value.length === 0
+  //     || formData.password === e.target.value
+  //     || formData.password.length === 0) {
+  //     setNotSame(false);
+  //     return;
+  //   }
+  //   let error = formData.password.length < e.target.value.length;
 
-    for (let i = 0; i < e.target.value.length; i++) {
-      if (formData.password[i] !== e.target.value[i]) {
-        error = true; break;
-      }
-    }
-    // console.group('same');
-    // console.log(formData.password);
-    // console.log(e.target.value);
-    // console.log(error);
-    // console.groupEnd();
-    setNotSame(error);
-  }
-  function checkSteamLink(e) {
-    const regexArr = e.target.value.match(
-      /^https:\/\/steamcommunity\.com\/tradeoffer\/new\/\?partner=\w*&token=\w*(?!&)$/);
+  //   for (let i = 0; i < e.target.value.length; i++) {
+  //     if (formData.password[i] !== e.target.value[i]) {
+  //       error = true; break;
+  //     }
+  //   }
+  //   // console.group('same');
+  //   // console.log(formData.password);
+  //   // console.log(e.target.value);
+  //   // console.log(error);
+  //   // console.groupEnd();
+  //   setNotSame(error);
+  // }
+  // function checkSteamLink(e) {
+  //   const regexArr = e.target.value.match(
+  //     /^https:\/\/steamcommunity\.com\/tradeoffer\/new\/\?partner=\w*&token=\w*(?!&)$/);
 
-    setNotSteamLink(
-      e.target.value.length !== 0 &&
-      (regexArr === null || regexArr.length !== 1)
-    )
-  }
-  function hideError() {
-    setErrorMessage({ isError: false, message: "" });
-  }
-  function showError(message) {
-    setErrorMessage({ isError: true, message: message });
-    // setFormData(x => ({ ...x, password: "", passwordRepeat: "" }));
-  }
+  //   setNotSteamLink(
+  //     e.target.value.length !== 0 &&
+  //     (regexArr === null || regexArr.length !== 1)
+  //   )
+  // }
+  // function hideError() {
+  //   setErrorMessage({ isError: false, message: "" });
+  // }
+  // function showError(message) {
+  //   setErrorMessage({ isError: true, message: message });
+  //   // setFormData(x => ({ ...x, password: "", passwordRepeat: "" }));
+  // }
 
 
-  async function signUpRequest(formData) {
+  // async function signUpRequest(formData) {
 
-    //* Разбитие steam_url
-    const steam_partner = formData.steam_url.split("partner=")[1].split("&")[0]
-    const steam_token = formData.steam_url.split("token=")[1]
+  //   //* Разбитие steam_url
+  //   const steam_partner = formData.steam_url.split("partner=")[1].split("&")[0]
+  //   const steam_token = formData.steam_url.split("token=")[1]
 
-    // Все данные с формы
-    // console.log(URL + requests.LOGIN, {
-    //   login: formData.login,
-    //   name: formData.name,
-    //   password: formData.password,
-    //   passwordRepeat: formData.passwordRepeat,
-    //   steam_url: formData.steam_url,
-    //   partner: steam_partner,
-    //   token: steam_token
-    // });
+  //   // Все данные с формы
+  //   // console.log(URL + requests.LOGIN, {
+  //   //   login: formData.login,
+  //   //   name: formData.name,
+  //   //   password: formData.password,
+  //   //   passwordRepeat: formData.passwordRepeat,
+  //   //   steam_url: formData.steam_url,
+  //   //   partner: steam_partner,
+  //   //   token: steam_token
+  //   // });
 
-    // Запрос на регистрацию
-    const response = await fetch(URL + REGISTER, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        login: formData.login,
-        name: formData.name,
-        password: formData.password,
-        partner: steam_partner,
-        token: steam_token
-      })
-    })
-      .then(async resp => {
-        const text = await resp.text();
-        try {
-          return { ok: true, message: "ok", data: JSON.parse(text) }
-        } catch (error) {
-          return { ok: false, message: text, data: null }
-        }
-      })
+  //   // Запрос на регистрацию
+  //   const response = await fetch(URL + REGISTER, {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       login: formData.login,
+  //       name: formData.name,
+  //       password: formData.password,
+  //       partner: steam_partner,
+  //       token: steam_token
+  //     })
+  //   })
+  //     .then(async resp => {
+  //       const text = await resp.text();
+  //       try {
+  //         return { ok: true, message: "ok", data: JSON.parse(text) }
+  //       } catch (error) {
+  //         return { ok: false, message: text, data: null }
+  //       }
+  //     })
 
-    return response;
-  }
+  //   return response;
+  // }
 
-  async function signUp(e) {
-    e.preventDefault();
-    setLoading(true);
-    hideError();
-    const response = await signUpRequest(formData);
-    // console.log('/register message :>> ', response.message, response.ok);
+  // async function signUp(e) {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   hideError();
+  //   const response = await signUpRequest(formData);
+  //   // console.log('/register message :>> ', response.message, response.ok);
 
-    if (!response.ok) {
-      setLoading(false);
-      showError(response.message);
-      return;
-    }
-    // history.push("/about");
-  }
-
+  //   if (!response.ok) {
+  //     setLoading(false);
+  //     showError(response.message);
+  //     return;
+  //   }
+  //   // history.push("/about");
+  // }
 
 
   // return (
@@ -236,7 +235,7 @@ const FourthSlide = () => {
         </div>
         <div className="mb-custom-4">
           <input type="link" className="form-control" id="inputSteamLink" placeholder="Ссылка на стим" />
-          <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="">перейдите на <br />официальный сайт Steam</a></p>
+          <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на <br />официальный сайт Steam</a></p>
           <img id="hint_steam" alt="hint_steam" src={hint_steam} />
         </div>
         <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto" children={"Регистрация"} />

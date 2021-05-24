@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import imgRegistration from '../../images/registration.png'
+import imgRegistration from '../../images/slide_2_how/registration.png'
 
 import '../../styles/components/slide_2_how/registration.scss'
 

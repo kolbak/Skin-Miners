@@ -39,9 +39,9 @@ const FifthSlide = () => {
 
   const [info, setInfo] = useState(FAQ[1])
 
-  function changeInfo(num) {
+  // function changeInfo(num) {
 
-  }
+  // }
 
   return (
     <div id="FAQ" className="wrap-slide">

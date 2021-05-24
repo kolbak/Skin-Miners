@@ -1,300 +1,317 @@
-.footer{
-    height: 100vh;
+.footer {
+  height: 100vh;
 }
-.border{
-    border: 1px solid red; 
+
+.border {
+  border: 1px solid red;
 }
-.left-side{
-    height:100%;
-    margin-top:10%;
+
+.left-side {
+  height    : 100%;
+  margin-top: 10%;
 }
-.middle-side{
-    margin-top: 10%;
+
+.middle-side {
+  margin-top: 10%;
 }
-.right-side{
-    margin-top: 10%;
+
+.right-side {
+  margin-top: 10%;
 }
-.green-card{
-    margin-top:19%;
-    margin-left: 5%;
-    margin-right: 5%;
+
+.green-card {
+  margin-top  : 19%;
+  margin-left : 5%;
+  margin-right: 5%;
 }
+
 // .footer-images{
 //     height: 22vh;
 // }
-.textboxes-card{
-    background-color: transparent !important;
-    margin-top: 10%;
-}
-.two-textboxes{
-    position: absolute;
-    width: 100%;
-    left: 1%;
-    top: -5%;
+.textboxes-card {
+  background-color: transparent !important;
+  margin-top      : 10%;
 }
 
-.question{
-    height: 80%;
-}
-.three_figures1{
-    width: 90%;
-    margin-left: 10%;
-    margin-top: 33%;
-    position: relative;
+.two-textboxes {
+  position: absolute;
+  width   : 100%;
+  left    : 1%;
+  top     : -5%;
 }
 
-.arrow_to_contacts1{
-    width: 100%;
-    position: relative;
-    margin-top: 19%;
+.question {
+  height: 80%;
 }
 
-.four-words{
-    margin: 5%;
-    width: 66%;
-}
-.question_form1{
-    padding-top: 0%;
-    
-    top: 4%;
-    left: -7%;
-    background-color: transparent;
-    //background-image: url('../../../images/two_textboxes.svg');
-    //background-repeat: no-repeat;
-    margin-top: 10%;
-    margin-left: 5%;
-    background-size: cover;
-    height: 66% !important;
-    
-    width: 100%;
-    position: relative;
-    padding: 0% 10% 2% 10%;
-}
-.icons{
-    width: 60%;
-    position: relative;
-    margin-top:19%;
-    margin-bottom: 10%;
-}
-.copyright1{
-    margin-bottom: -1%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF80;
-    position: relative;
+.three_figures1 {
+  width      : 90%;
+  margin-left: 10%;
+  margin-top : 33%;
+  position   : relative;
 }
 
-#exampleFormControlTextarea1{
-    margin-top: 3%;
+.arrow_to_contacts1 {
+  width     : 100%;
+  position  : relative;
+  margin-top: 19%;
 }
 
-.question_button{
-    float: right;
-    width: 31%;
-    margin-top: 3%;
+.four-words {
+  margin: 5%;
+  width : 66%;
 }
-.text_developed1{
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    color: #747474CC;
+.question_form1 {
+  padding-top: 0%;
+
+  top                : 4%;
+  left               : -7%;
+  background-color   : transparent;
+  //background-image: url('../../../images/two_textboxes.svg');
+  //background-repeat: no-repeat;
+  margin-top         : 10%;
+  margin-left        : 5%;
+  background-size    : cover;
+  height             : 66% !important;
+
+  width   : 100%;
+  position: relative;
+  padding : 0% 10% 2% 10%;
 }
+
+.icons {
+  width        : 60%;
+  position     : relative;
+  margin-top   : 19%;
+  margin-bottom: 10%;
+}
+
+.copyright1 {
+  margin-bottom : -1%;
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  text-align    : left;
+  color         : #FFFFFF80;
+  position      : relative;
+}
+
+#exampleFormControlTextarea1 {
+  margin-top: 3%;
+}
+
+.question_button {
+  float     : right;
+  width     : 31%;
+  margin-top: 3%;
+}
+
+.text_developed1 {
+
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  color         : #747474CC;
+}
+
 .footer_slide {
-    height : 100vh;
-    display: -webkit-inline-flex;
-    display: inline-flex;
+  height : 100vh;
+  display: -webkit-inline-flex;
+  display: inline-flex;
 }
-.footer_left{
-    width: 43%;
-   
+
+.footer_left {
+  width: 43%;
+
 }
-.footer_middle{
-    top: 9%;
-    position: relative;
+
+.footer_middle {
+  top     : 9%;
+  position: relative;
 }
-.footer_right{
-   width: 25%;
+
+.footer_right {
+  width: 25%;
 }
+
 .footer_parts {
-     margin-bottom: 12%;
+  margin-bottom: 12%;
 }
 
 
 
-.question_form{
-    top: 4%;
-    left: -7%;
-    background-color: transparent;
-    background-image: url('../../../images/two_textboxes.svg');
-    margin: 0 !important;
-    background-size: cover;
-    height: 84%;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: relative;
-    padding: 15% 10% 2% 10%;
+.question_form {
+  top              : 4%;
+  left             : -7%;
+  background-color : transparent;
+  background-image : url('../../../images/slide_6_contacts/two_textboxes.svg');
+  margin           : 0 !important;
+  background-size  : cover;
+  height           : 84%;
+  background-repeat: no-repeat;
+  width            : 100%;
+  position         : relative;
+  padding          : 15% 10% 2% 10%;
 }
 
-.policy_market{
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 47px;
-    letter-spacing: 0em;
-    color: #585858;
-    margin-bottom: 16%;
-    text-align:  center;
-}
-
-
-
-
-#exampleFormControlTextarea1{
-    height: 100%;
-    
+.policy_market {
+  font-family   : Roboto;
+  font-size     : 40px;
+  font-style    : normal;
+  font-weight   : 400;
+  line-height   : 47px;
+  letter-spacing: 0em;
+  color         : #585858;
+  margin-bottom : 16%;
+  text-align    : center;
 }
 
 
+#exampleFormControlTextarea1 {
+  height: 100%;
 
-
-.three_figures{
-    width: 57%;
-    top:48%;
-    left: 12%;
-    position: relative;
-}
-.arrow_to_contacts{
-    left: 72%;
-    top: 23%;
-    width: 68%;
-    position: relative;
 }
 
-.text_developed{
-    top: 34%;
-    position: relative;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    color: #747474CC;
+
+.three_figures {
+  width   : 57%;
+  top     : 48%;
+  left    : 12%;
+  position: relative;
 }
 
-.text_underline{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    color: #747474CC;
-    text-decoration: underline;
+.arrow_to_contacts {
+  left    : 72%;
+  top     : 23%;
+  width   : 68%;
+  position: relative;
 }
-.mail_and_telephone{
-    left: 47%;
-    top: 9%;
-    position: absolute;
+
+.text_developed {
+  top           : 34%;
+  position      : relative;
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  color         : #747474CC;
+}
+
+.text_underline {
+  font-family    : Roboto;
+  font-style     : normal;
+  font-weight    : 400;
+  letter-spacing : 0em;
+  color          : #747474CC;
+  text-decoration: underline;
+}
+
+.mail_and_telephone {
+  left    : 47%;
+  top     : 9%;
+  position: absolute;
 }
 
 .wrong_card {
-    width: 80%;
-    margin-left: 9%;
-    margin-top: 5%;
+  width      : 80%;
+  margin-left: 9%;
+  margin-top : 5%;
 }
 
 .wrong_card2 {
-    width: 80%;
-    margin-left: 10%;
+  width      : 80%;
+  margin-left: 10%;
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1600px) {
   .policy_market {
-    font-size: 200% !important;
+    font-size : 200% !important;
     margin-top: 20%;
   }
+
   .email-telephone {
     font-size: 169% !important;
   }
-  .question_form1{
-    width: 106%;
+
+  .question_form1 {
+    width : 106%;
     height: 50%;
   }
- 
 }
 
-@media (min-width: 1450px) and (max-width: 1600px){
-    .email-telephone {
-      font-size: 142% !important;
-    }
-    .question_form1{
-        width: 106%;
-        height: 50%;
-    }
-    .policy_market {
-        font-size: 269% !important;
-        margin-top: 16%;
-    }
+@media (min-width: 1450px) and (max-width: 1600px) {
+  .email-telephone {
+    font-size: 142% !important;
   }
 
+  .question_form1 {
+    width : 106%;
+    height: 50%;
+  }
+
+  .policy_market {
+    font-size : 269% !important;
+    margin-top: 16%;
+  }
+}
 
 
 
-.dark{
-    background-color: black !important;
+
+.dark {
+  background-color: black !important;
 }
 
 .footer-middle {
-    margin-left: 3% !important;
+  margin-left: 3% !important;
 }
 
-.footer_right{
-    margin-left: 10%;
+.footer_right {
+  margin-left: 10%;
 }
 
 
 
-.two_icons{
-    margin-bottom: 6%;
-    margin-top: 91% !important;
+.two_icons {
+  margin-bottom: 6%;
+  margin-top   : 91% !important;
 }
 
-.two_lines{
-    left: 22%;
-    top: -12%;
-    position: relative;
+.two_lines {
+  left    : 22%;
+  top     : -12%;
+  position: relative;
 }
 
-.copyright{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF80;
-    position: relative;
-    top: -11%;
-    width: 167%;
-
-}
-#email{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #BEC6CD;
-
+.copyright {
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  text-align    : left;
+  color         : #FFFFFF80;
+  position      : relative;
+  top           : -11%;
+  width         : 167%;
 }
 
-#telephone{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #BEC6CD;
+#email {
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  text-align    : left;
+  color         : #BEC6CD;
+}
+
+#telephone {
+  font-family   : Roboto;
+  font-style    : normal;
+  font-weight   : 400;
+  letter-spacing: 0em;
+  text-align    : left;
+  color         : #BEC6CD;
 }
