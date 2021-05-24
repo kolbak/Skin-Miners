@@ -37,10 +37,11 @@ const Login = () => (<div className="wrap-how" id="login">
       <a href="Регистрация">Регистрация</a>
     </div>
     <img alt="pyramid" id="pyramid" src={pyramid} />
-    <img alt="points" id="points" src={points} />
 
   </form>
-  <div className="offset-md-9 col-4 blue-back"></div>
+  <div className="offset-md-9 col-4 blue-back">
+    <img alt="points" id="points" src={points} />
+  </div>
 
 </div>)
 

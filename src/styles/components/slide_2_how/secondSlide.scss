@@ -60,9 +60,9 @@
       position  : absolute;
       display   : block;
       z-index   : -1;
-      left      : 1.95vw;
+      left      : 2.34vw;
       width     : 5px;
-      height    : 20vh;
+      height    : calc(100% - 64vh);
     }
 
     i.line.l1 {
@@ -70,11 +70,11 @@
     }
 
     i.line.l2 {
-      top: calc(20vh + 27px);
+      top: calc(20vh + 42px);
     }
 
     i.line.l3 {
-      top: calc(40vh + 27px);
+      top: calc(40vh + 57px);
     }
 
     i.line.active {
