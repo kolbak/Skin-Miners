@@ -1,0 +1,83 @@
+#menu-btn{
+    background-color: red !important;
+    position: fixed;
+    left: 50vw;
+    top: 1vh;
+}
+.side-bar{
+    position: absolute;
+}
+#sidebar{
+    width: 20vw;
+    position: absolute;
+    height: 750px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(89.73deg, #000000 19.44%, rgba(20, 20, 20, 0) 99.79%);
+    border: 1px solid #000000;
+    background-filter: blur(5px);
+}
+
+.side-navbar {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #100901;
+    transition: 0.5s;
+  }
+  
+  .sidebar-text{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: rgba(116, 116, 116, 0.7) !important;
+  }
+
+  .sidebar-header{
+      
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    
+    color: #747474 !important;
+  }
+
+  .sidebar-numbers{
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 69px;
+    color: #FFFFFF;
+  }
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
