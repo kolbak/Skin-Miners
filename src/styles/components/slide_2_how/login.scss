@@ -5,6 +5,27 @@
   display    : block;
   // top     : 12%;
 
+  form {
+    background   : #24232C;
+    box-shadow   : -5px -5px 30px 5px #D9A404;
+    border-radius: 25px;
+    padding      : 2rem;
+
+    label {
+      font-family: Roboto;
+      font-style : normal;
+      font-weight: normal;
+      font-size  : 20px;
+      line-height: 23px;
+      color      : #E1E1E1;
+    }
+  }
+
+  .blue-back {
+    background   : #007BFF;
+    border-radius: 25px;
+  }
+
   p {
     font-size: 1.5rem;
     position : absolute;
