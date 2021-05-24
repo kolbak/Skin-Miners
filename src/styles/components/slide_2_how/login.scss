@@ -10,6 +10,9 @@
     box-shadow   : -5px -5px 30px 5px #D9A404;
     border-radius: 25px;
     padding      : 2rem;
+    z-index      : 1;
+    margin-top   : 15vh;
+    position     : absolute;
 
     label {
       font-family: Roboto;
@@ -18,6 +21,12 @@
       font-size  : 20px;
       line-height: 23px;
       color      : #E1E1E1;
+    }
+
+    a {
+      text-decoration   : none;
+      text-align        : center;
+      // margin-top     : 1rem;
     }
   }
 
@@ -40,39 +49,40 @@
     height       : 5px;
     border-radius: 5px;
     position     : absolute;
+    z-index      : -1;
   }
 
   .bg-line.n-1 {
     top       : 5.5vh;
-    left      : 10vw;
+    left      : 0vw;
     width     : 39vw;
     background: linear-gradient(90deg, #15C1E5, #D9A404);
   }
 
   .bg-line.n-2 {
     top       : 8.5vh;
-    left      : 23vw;
+    left      : 13vw;
     width     : 25vw;
     background: linear-gradient(90deg, #161012, #413100);
   }
 
   .bg-line.n-3 {
     top       : 11.5vh;
-    left      : 28vw;
+    left      : 18vw;
     width     : 19vw;
     background: linear-gradient(90deg, #151013, #110D00);
   }
 
   .bg-line.n-4 {
-    top       : 62.5vh;
-    left      : 23vw;
+    top       : 68.5vh;
+    left      : 13vw;
     width     : 25vw;
     background: linear-gradient(90deg, #151015, #007AFD);
   }
 
   .bg-line.n-5 {
-    top       : 66vh;
-    left      : 15vw;
+    top       : 73vh;
+    left      : 6vw;
     width     : 34vw;
     background: linear-gradient(90deg, #D484FF, #027BFF);
   }
