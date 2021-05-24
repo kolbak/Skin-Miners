@@ -25,11 +25,11 @@ const Login = () => (<div className="wrap-how" id="login">
   <form className="offset-md-8 col-3">
     <div className="mb-3"><h4 style={{ textAlign: "center" }}>Форма входа</h4></div>
     <br />
-    <div className="mb-3"><input placeholder="Email" type="email" className="form-control" id="inputEmail" /></div>
-    <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" id="inputPassword" /></div>
+    <div className="mb-3"><input placeholder="Email" type="email" className="form-control" /></div>
+    <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" /></div>
     <div className="mb-3 form-check">
       <input type="checkbox" className="form-check-input" id="check" />
-      <label className="form-check-label" for="check">Check me out</label>
+      <label className="form-check-label" htmlFor="check">Check me out</label>
     </div>
     <button type="submit" className="btn btn-primary">Submit</button>
 

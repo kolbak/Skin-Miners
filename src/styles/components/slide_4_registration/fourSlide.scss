@@ -1,45 +1,3 @@
-// .form-control {
-//   display         : block;
-//   width           : 100%;
-//   padding         : .375rem .75rem;
-//   font-size       : 1rem;
-//   line-height     : 1.5;
-//   color           : #495057;
-//   background-color: #fff;
-//   background-clip : padding-box;
-//   border          : 1px solid #ced4da;
-//   border-radius   : .25rem;
-//   transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-// }
-
-// .form-control:focus {
-//   color           : #495057;
-//   background-color: #fff;
-//   border-color    : #80bdff;
-//   outline         : 0;
-//   box-shadow      : 0 0 0 0.2rem rgb(0 123 255 / 25%);
-// }
-
-// .form-group {
-//   margin-bottom: 1rem;
-// }
-
-// .form-text {
-//   display   : block;
-//   margin-top: .25rem;
-// }
-
-// .form-control:focus {
-//   border-color: #167bff;
-//   box-shadow  : none;
-// }
-
-// .form-group:hover {
-//   border       : 3px solid #007BFF;
-//   border-radius: 10px;
-//   padding      : 10px;
-// }
-
 button,
 input {
   overflow: visible;
@@ -62,16 +20,10 @@ h3 {
   padding-bottom: 20px;
 }
 
-// input.form-control,
-// input.form-control:focus {
-//   color: black;
-// }
-
-
-
 /* РЕГИСТРАЦИЯ */
 .mb-custom-4 {
   margin-bottom: 2rem;
+  position     : relative;
 }
 
 .errorSmall {
@@ -99,26 +51,26 @@ button {
 // Стрелочки подсказок
 #hint_email {
   position: absolute;
-  right   : 26%;
-  top     : 19%;
+  left    : 21.5vw;
+  top     : 0.9vh;
 }
 
 #hint_nickname {
   position: absolute;
-  left    : 22%;
-  top     : 28%;
+  right   : 21.5vw;
+  top     : 2.5vh;
 }
 
 #hint_password_check {
   position: absolute;
-  left    : 26%;
-  top     : 47%;
+  right   : 21.8vw;
+  top     : 1.4vh;
 }
 
 #hint_steam {
   position: absolute;
-  right   : 26%;
-  top     : 51.5%;
+  top     : -4vh;
+  left    : 21.5vw;
 }
 
 // Текст подсказок
@@ -137,30 +89,35 @@ button {
   text-align    : center;
 }
 
-#hint_nickname_text {
-  position: absolute;
-  left    : 9%;
-  top     : 20%;
-}
-
 #hint_email_text {
   position: absolute;
-  right   : 17%;
-  top     : 29%;
+  left    : 19vw;
+  top     : 11vh;
+  width   : 24rem;
+}
+
+#hint_nickname_text {
+  position: absolute;
+  right   : 21vw;
+  bottom  : 2vh;
+  width   : 28vw;
+}
+
+#hint_password_check_text {
+  position: absolute;
+  right   : 20vw;
+  top     : 12.5vh;
+  width   : 25vw;
 }
 
 #hint_steam_text {
   position  : absolute;
   text-align: left;
-  right     : 7%;
-  top       : 43%;
+  left      : 24vw;
+  top       : -12vh;
+  width     : 25vw;
 }
 
-#hint_password_check_text {
-  position: absolute;
-  left    : 15%;
-  top     : 58%;
-}
 
 // Картинки
 #circle {
@@ -187,4 +144,85 @@ button {
   font-weight   : 100;
   line-height   : 33px;
   letter-spacing: 0.02em;
+}
+
+// Адаптация 
+
+// Не нужно
+// @media (min-width: 1450px) and (max-width: 1600px) {}
+
+@media (min-width: 1250px) and (max-width: 1450px) {
+  #hint_nickname_text {
+    position: absolute;
+    right   : 21vw;
+    bottom  : 2vh;
+    width   : 35vw;
+  }
+
+  #hint_password_check_text {
+    position: absolute;
+    right   : 20vw;
+    top     : 12.5vh;
+    width   : 35vw;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1249px) {
+  #formRegistration {
+    padding: 10vh 25vw;
+  }
+
+  #hint_email_text {
+    left : 41.5vw;
+    top  : 11vh;
+    width: 16rem;
+  }
+
+  #hint_email {
+    left : 42.5vw;
+    top  : 1vh;
+    width: 14vw;
+  }
+
+  #hint_nickname_text {
+    right : 44vw;
+    bottom: 2vh;
+    width : 20vw;
+  }
+
+  #hint_nickname {
+    right: 41.5vw;
+    top  : 2.5vh;
+    width: 16vw;
+  }
+
+  #hint_password_check_text {
+    right: 42vw;
+    top  : 11vh;
+    width: 25vw;
+  }
+
+  #hint_password_check {
+    right: 42.8vw;
+    top  : 1.2vh;
+    width: 14vw;
+  }
+
+  #hint_steam_text {
+    left : 42vw;
+    top  : -12vh;
+    width: 28vw;
+  }
+
+  #hint_steam {
+    position: absolute;
+    top     : -3.7vh;
+    left    : 42.5vw;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1000px) {
+  #formRegistration {
+    padding: 10vh 10vw !important;
+  }
 }

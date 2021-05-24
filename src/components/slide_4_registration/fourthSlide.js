@@ -235,7 +235,7 @@ const FourthSlide = () => {
         </div>
         <div className="mb-custom-4">
           <input type="link" className="form-control" id="inputSteamLink" placeholder="Ссылка на стим" />
-          <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на <br />официальный сайт Steam</a></p>
+          <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></p>
           <img id="hint_steam" alt="hint_steam" src={hint_steam} />
         </div>
         <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto" children={"Регистрация"} />
