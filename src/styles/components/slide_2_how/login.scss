@@ -28,9 +28,26 @@
       text-align        : center;
       // margin-top     : 1rem;
     }
+
+    #pyramid {
+      position: absolute;
+      left    : 14vw;
+      bottom  : -5vh;
+    }
+
+    #points {
+      position: absolute;
+      bottom  : 47vh;
+      left    : 10.8vw;
+    }
   }
 
   .blue-back {
+    position     : absolute;
+    width        : 300px;
+    height       : 450px;
+    right        : 81px;
+    top          : 158px;
     background   : #007BFF;
     border-radius: 25px;
   }

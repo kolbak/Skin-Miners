@@ -25,6 +25,7 @@ const SecondSlide = () => {
 
   function scrollInto(e) {
     e.preventDefault();
+    console.log('object :>> ', e.target);
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
@@ -42,31 +43,31 @@ const SecondSlide = () => {
     <div className="wrap-tabs">
       <ul>
         <li className={tab >= 0 || tab === '' ? 'active' : ''} >
-          <a onClick={scrollInto} href="#registration">
-            <i className="circle"></i>
-            <h2>Регистрация</h2>
-          </a>
+          <i className="circle"></i>
+          <h2>
+            <a onClick={scrollInto} href="#registration">Регистрация</a>
+          </h2>
         </li>
+        <i className={`line l1 ${tab >= 1 ? 'active' : ''}`}></i>
         <li className={tab >= 1 ? 'active' : ''} >
-          <a onClick={scrollInto} href="#download">
-            <i className="line"></i>
-            <i className="circle"></i>
-            <h2>Скачать приложение</h2>
-          </a>
+          <i className="circle"></i>
+          <h2>
+            <a onClick={scrollInto} href="#download">Скачать приложение</a>
+          </h2>
         </li>
+        <i className={`line l2 ${tab >= 2 ? 'active' : ''}`}></i>
         <li className={tab >= 2 ? 'active' : ''} >
-          <a onClick={scrollInto} href="#login">
-            <i className="line"></i>
-            <i className="circle"></i>
-            <h2>Логин</h2>
-          </a>
+          <i className="circle"></i>
+          <h2>
+            <a onClick={scrollInto} href="#login">Логин</a>
+          </h2>
         </li>
+        <i className={`line l3 ${tab >= 3 ? 'active' : ''}`}></i>
         <li className={tab >= 3 ? 'active' : ''} >
-          <a onClick={scrollInto} href="#mining">
-            <i className="line"></i>
-            <i className="circle"></i>
-            <h2>Майнинг</h2>
-          </a>
+          <i className="circle"></i>
+          <h2>
+            <a onClick={scrollInto} href="#mining">Майнинг</a>
+          </h2>
         </li>
       </ul>
 
