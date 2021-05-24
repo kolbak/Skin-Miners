@@ -28,8 +28,8 @@ const Login = () => (<div className="wrap-how" id="login">
     <div className="mb-3"><input placeholder="Email" type="email" className="form-control" id="inputEmail" /></div>
     <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" id="inputPassword" /></div>
     <div className="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="check" />
-      <label class="form-check-label" for="check">Check me out</label>
+      <input type="checkbox" className="form-check-input" id="check" />
+      <label className="form-check-label" for="check">Check me out</label>
     </div>
     <button type="submit" className="btn btn-primary">Submit</button>
 
