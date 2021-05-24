@@ -59,15 +59,13 @@ const FifthSlide = () => {
       </div>
 
       <div id="rightSide" className="w-50">
-        <div style={{ height: "44vh", display: "inline-block" }}>
+        <div id="numZone">
           <span id="num" children={info.num} />
         </div>
-        <div style={{ width: "35vw", float: "right" }}>
+        <div id="answerZone">
           <h3 id="question">{info.question}</h3>
-          <div>
-            <div id="line" />
-            <p id="answer">{info.answer}</p>
-          </div>
+          <div id="line" />
+          <p id="answer">{info.answer}</p>
         </div>
       </div>
     </div>
