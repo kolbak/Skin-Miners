@@ -115,11 +115,11 @@
   font-weight   : 400;
   letter-spacing: 0em;
   color         : #747474CC;
-  font-size: 107%;
+  font-size     : 107%;
 }
 
-.developed-copyright{
-    margin-top: 8%;
+.developed-copyright {
+  margin-top: 8%;
 }
 
 
@@ -209,38 +209,47 @@
 
 @media (min-width: 1600px) {
   .policy_market {
-    font-size: 207%;
+    font-size : 207%;
     margin-top: 16%;
   }
-  .text_developed1{
+
+  .text_developed1 {
     font-size: 171%;
   }
-  .copyright1{
+
+  .copyright1 {
     font-size: 120%;
   }
+
   .email-telephone {
     font-size: 169%;
   }
+
   @media (min-width: 1900px) {
-    .policy_market {   
+    .policy_market {
       font-size: 293%;
     }
   }
-  @media (min-width: 2200px){
+
+  @media (min-width: 2200px) {
     .policy_market {
-        font-size: 361%;
-        margin-top: 21%;
+      font-size : 361%;
+      margin-top: 21%;
     }
+
     .text_developed1 {
-        font-size: 256%;
+      font-size: 256%;
     }
+
     .copyright1 {
-        font-size: 181%;
+      font-size: 181%;
     }
+
     .email-telephone {
-        font-size: 245%;
+      font-size: 245%;
     }
   }
+
   .question_form1 {
     width : 106%;
     height: 50%;
@@ -259,65 +268,68 @@
   }
 
   .policy_market {
-    font-size: 225% !important;
+    font-size : 225% !important;
     margin-top: 5%;
   }
 
-  .text_developed1{
-      font-size: 150%;
+  .text_developed1 {
+    font-size: 150%;
   }
 
-  .developed-copyright{
+  .developed-copyright {
     margin-top: 3% !important;
   }
 }
 
 
 @media (min-width: 1000px) and (max-width: 1450px) {
-    .footer-right-bottom{
-        margin-top: 10% !important;
-    }
-    .email-telephone {
-      font-size: 100% !important;
-    }
-  
-    .question_form1 {
-      width : 106%;
-      height: 50%;
-    }
-  
+  .footer-right-bottom {
+    margin-top: 10% !important;
+  }
+
+  .email-telephone {
+    font-size: 100% !important;
+  }
+
+  .question_form1 {
+    width : 106%;
+    height: 50%;
+  }
+
+  .policy_market {
+    font-size    : 144% !important;
+    margin-top   : -6%;
+    margin-bottom: 3%;
+  }
+
+  @media (min-width: 1250px) and (max-width: 1450px) {
     .policy_market {
-        font-size: 144% !important;
-        margin-top: -6%;
-        margin-bottom: 3%;
-    }
-    @media (min-width: 1250px) and (max-width: 1450px) {
-        .policy_market {
-            font-size: 192% !important;
-            margin-top: 1%;
-            margin-bottom: 3%;
-        }
-        .copyright1{
-            font-size: 96% !important;
-        }
-    }
-   
-    .question_button{
-        width: 41%;
+      font-size    : 192% !important;
+      margin-top   : 1%;
+      margin-bottom: 3%;
     }
 
-    .text_developed1{
-        font-size: 127%;
-    }
-
-    .copyright1{
-        font-size: 73%;
-    }
-
-    .footer-header{
-        margin-left: 12%;
+    .copyright1 {
+      font-size: 96% !important;
     }
   }
+
+  .question_button {
+    width: 41%;
+  }
+
+  .text_developed1 {
+    font-size: 127%;
+  }
+
+  .copyright1 {
+    font-size: 73%;
+  }
+
+  .footer-header {
+    margin-left: 12%;
+  }
+}
 
 
 

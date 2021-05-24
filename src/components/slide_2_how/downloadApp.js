@@ -1,10 +1,10 @@
 import * as React from "react"
 
-import imgDownload from '../../images/slide_2_how/download.svg'
+import imgDownload from '../../images/slide_2_how/installation.png'
+import hidden_triangle from '../../images/slide_2_how/triangle.svg'
 
 import '../../styles/components/slide_2_how/downloadApp.scss'
 
-// TODO попросить дизайнера исправить фон на пикче (разные оттенки)
 
 const DownloadApp = () => (<div className="wrap-dl" id="download">
 
@@ -12,6 +12,7 @@ const DownloadApp = () => (<div className="wrap-dl" id="download">
   <i className="bg-line n-1" />
   <i className="bg-line n-2" />
   <img alt="download" className="download-img" src={imgDownload} />
+  <img alt="hidden_triangle" id="hidden_triangle" src={hidden_triangle} />
 
 </div>)
 

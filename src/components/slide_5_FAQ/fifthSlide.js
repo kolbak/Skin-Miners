@@ -39,37 +39,32 @@ const FifthSlide = () => {
 
   const [info, setInfo] = useState(FAQ[1])
 
-  // function changeInfo(num) {
+  return (<div id="FAQ" className="wrap-slide">
 
-  // }
-
-  return (
-    <div id="FAQ" className="wrap-slide">
-
-      <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
-      <img id="hidden_square" alt="square" src={hidden_square} />
+    <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
+    <img id="hidden_square" alt="square" src={hidden_square} />
 
 
-      <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>
-      <div id="leftSide" className="w-50">
-        {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
-          onClick={() => setInfo(FAQ[i])} children={
-            <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
-          } />)}
+    <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>
+    <div id="leftSide" className="w-50">
+      {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
+        onClick={() => setInfo(FAQ[i])} children={
+          <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
+        } />)}
+    </div>
+
+    <div id="rightSide" className="w-50">
+      <div id="numZone">
+        <span id="num" children={info.num} />
       </div>
-
-      <div id="rightSide" className="w-50">
-        <div id="numZone">
-          <span id="num" children={info.num} />
-        </div>
-        <div id="answerZone">
-          <h3 id="question">{info.question}</h3>
-          <div id="line" />
-          <p id="answer">{info.answer}</p>
-        </div>
+      <div id="answerZone">
+        <h3 id="question">{info.question}</h3>
+        <div id="line" />
+        <p id="answer">{info.answer}</p>
       </div>
     </div>
-  )
+
+  </div>)
 }
 
 export default FifthSlide

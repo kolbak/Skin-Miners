@@ -1,16 +1,23 @@
 import * as React from "react"
 
-import imgRegistration from '../../images/slide_2_how/registration.png'
-
 import '../../styles/components/slide_2_how/registration.scss'
 
-const Registration = () => {
-  return (
-    <div className="wrap-reg" id="registration">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-      <img alt="registration" className="registration-img" src={imgRegistration} />
-    </div>
-  )
-}
+import imgRegistration from '../../images/slide_2_how/registration.png'
+
+import hidden_account from '../../images/slide_2_how/hidden_account.svg'
+import hidden_circle from '../../images/slide_2_how/circle.svg'
+import hidden_square from '../../images/slide_2_how/square.svg'
+
+
+const Registration = () => (<div className="wrap-reg" id="registration">
+
+  <img alt="hidden_account" id="hidden_account" src={hidden_account} />
+  <img alt="hidden_circle" id="hidden_circle" src={hidden_circle} />
+  <img alt="hidden_square" id="hidden_square" src={hidden_square} />
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+  <img alt="registration" className="registration-img" src={imgRegistration} />
+
+</div>)
 
 export default Registration

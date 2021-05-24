@@ -1,7 +1,7 @@
 .slide-2 {
   ul {
     list-style-type: none;
-    margin-top     : 5vh;
+    margin-top     : 10vh;
     margin-left    : -2vw;
 
     li {
@@ -103,6 +103,30 @@
       // top: -12%;
       // padding: 70px 0 0 0;
       // height    : calc(100% + 70px);
+
+      #hidden_account {
+        position: absolute;
+        right   : 33vw;
+        top     : 13vh;
+      }
+
+      #hidden_circle {
+        position: absolute;
+        left    : 0vw;
+        top     : 34vh;
+      }
+
+      #hidden_square {
+        position: absolute;
+        right   : 39vw;
+        top     : 58vh;
+      }
+
+      #hidden_triangle {
+        position: absolute;
+        right   : 46vw;
+        top     : 38vh;
+      }
     }
   }
 }
