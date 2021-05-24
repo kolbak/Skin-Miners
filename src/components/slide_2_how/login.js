@@ -3,12 +3,16 @@ import * as React from "react"
 import '../../styles/components/slide_2_how/login.scss'
 
 import hidden_square1 from '../../images/slide_2_how/square1.svg'
+import hidden_square2 from '../../images/slide_2_how/square2.svg'
 import hidden_triangle1 from '../../images/slide_2_how/triangle.svg'
 
+import pyramid from '../../images/slide_2_how/pyramid.svg'
+import points from '../../images/slide_2_how/points.svg'
 
 const Login = () => (<div className="wrap-how" id="login">
 
   <img alt="hidden_square1" id="hidden_square1" src={hidden_square1} />
+  <img alt="hidden_square2" id="hidden_square2" src={hidden_square2} />
   <img alt="hidden_triangle1" id="hidden_triangle1" src={hidden_triangle1} />
 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -32,9 +36,11 @@ const Login = () => (<div className="wrap-how" id="login">
     <div className="mt-3" style={{ textAlign: "center" }}>
       <a href="Регистрация">Регистрация</a>
     </div>
+    <img alt="pyramid" id="pyramid" src={pyramid} />
+    <img alt="points" id="points" src={points} />
 
   </form>
-  <div className="blue-back"></div>
+  <div className="offset-md-9 col-4 blue-back"></div>
 
 </div>)
 
