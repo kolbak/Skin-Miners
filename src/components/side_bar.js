@@ -26,7 +26,56 @@ const SideBar = () => {
         className="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
       >
         <ul className="nav flex-column w-100">
-          <a href="#" className="nav-link h3 my-2 sidebar-header">
+          <div className="container-fluid ">
+              <div className="row">
+                  <p className="sidebar-contain">Содержание</p>
+              </div>
+              <div className="row ">
+                  <div className="col-md-3 ">
+                    <p className="sidebar-numbers">1</p>
+                  </div>
+                  <div className="col-md-9 ">
+                    <p className="sidebar-text">Что мы делаем?</p>
+                  </div>
+              </div>
+              <div className="row ">
+                  <div className="col-md-3 ">
+                      <p className="sidebar-numbers">2</p>
+                  </div>
+                  <div className="col-md-9 ">
+                      <p className="sidebar-text">Как это работает?</p>
+                  </div>
+              </div>
+              <div className="row ">
+                  <div className="col-md-3 ">
+                    <p className="sidebar-numbers">3</p>
+                  </div>
+                  <div className="col-md-9 ">
+                      <p className="sidebar-text">Почему мы?</p>
+                  </div>
+              </div>
+              <div className="row ">
+                  <div className="col-md-3 ">
+                    <p className="sidebar-numbers">4</p>
+                  </div>
+                  <div className="col-md-9 ">
+                      <p className="sidebar-text">Регистрация</p>
+                  </div>
+              </div>
+              <div className="row ">
+                  <div className="col-md-3 ">
+                    <p className="sidebar-numbers">5</p>
+                  </div>
+                  <div className="col-md-9 ">
+                      <p className="sidebar-text">Контакты</p>
+                  </div>
+              </div>
+              <div className="row ">
+                <p className="sidebar-enter-market">Войти</p>
+                <p className="sidebar-enter-market">Маркет</p>
+              </div>
+          </div>
+          {/* <a href="#" className="nav-link h3 my-2 sidebar-header">
             Side Nav
           </a>
           <li href="#" className="nav-link">
@@ -38,7 +87,7 @@ const SideBar = () => {
           </li>
           <li href="#" className="nav-link">
             <span className="mx-2 sidebar-text">Contact</span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

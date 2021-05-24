@@ -1,21 +1,27 @@
+.border{
+    border-color:blanchedalmond;
+}
 #menu-btn{
     background-color: red !important;
     position: fixed;
-    left: 50vw;
+    left: 5vw;
     top: 1vh;
+    z-index: 6;
 }
 .side-bar{
     position: absolute;
+    
 }
 #sidebar{
     width: 20vw;
     position: absolute;
     height: 750px;
-    left: 0px;
+    left: -100px;
     top: 0px;
     background: linear-gradient(89.73deg, #000000 19.44%, rgba(20, 20, 20, 0) 99.79%);
     border: 1px solid #000000;
-    background-filter: blur(5px);
+    backdrop-filter: blur(19px);
+    z-index: 5;
 }
 
 .side-navbar {
@@ -27,6 +33,16 @@
     transition: 0.5s;
   }
   
+  .sidebar-contain{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #747474;
+    text-align: center;
+  }
   .sidebar-text{
     font-family: Oswald;
     font-style: normal;
@@ -37,6 +53,21 @@
     color: rgba(116, 116, 116, 0.7) !important;
   }
 
+  .sidebar-enter-market{
+      
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    background: linear-gradient(111.94deg, #C471ED -69.21%, #007BFF 144.76%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
   .sidebar-header{
       
     font-family: PT Serif;
@@ -69,6 +100,7 @@
   
   .active-nav {
     margin-left: 0;
+    left: 0px !important;
   }
   
   /* for main section */
