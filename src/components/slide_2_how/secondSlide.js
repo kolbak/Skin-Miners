@@ -25,7 +25,6 @@ const SecondSlide = () => {
 
   function scrollInto(e) {
     e.preventDefault();
-    console.log('e.target :>> ', e.target);
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
