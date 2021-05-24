@@ -20,9 +20,9 @@ const Footer = () => (<div className="container-fluid  footer">
 
   <div className="row footer">
     <div className="col-md-5 left-side">
-      <h1 className="h1-main">
+      <h1 className="h1-main ">
         <span className="slide-number">5</span>
-        <span className="slide-title">Контакты</span>
+        <span className="slide-title footer-header">Контакты</span>
       </h1>
       <div className="card dark text-white textboxes-card">
         <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
@@ -65,19 +65,19 @@ const Footer = () => (<div className="container-fluid  footer">
           </div>
         </div>
       </div>
-      <div className="row ">
+      <div className="row footer-right-bottom">
         <div className="row  footer-images">
           <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
           <div className="col-md"><img alt="arrow_to_contacts" className="arrow_to_contacts1" src={arrow_to_contacts} /></div>
           <div className="col-md"><img alt="icons" className="icons rounded float-right" src={icons} /></div>
         </div>
-        <div className="row ">
+        <div className="row developed-copyright">
           <div className="col-md-7 ">
-            <p className="text_developed1 fs-2">Developed by <span className="text_underline">Name Surname</span></p>
+            <p className="text_developed1">Developed by <span className="text_underline">Name Surname</span></p>
           </div>
           <div className="col-md-5 ">
-            <p className="copyright1 fs-5">Copyright © skinminers.com, 2021.</p>
-            <p className="copyright1 fs-5">Все права защищены.</p>
+            <p className="copyright1">Copyright © skinminers.com, 2021.</p>
+            <p className="copyright1">Все права защищены.</p>
           </div>
         </div>
       </div>

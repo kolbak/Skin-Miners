@@ -115,32 +115,12 @@
   font-weight   : 400;
   letter-spacing: 0em;
   color         : #747474CC;
+  font-size: 107%;
 }
 
-.footer_slide {
-  height : 100vh;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+.developed-copyright{
+    margin-top: 8%;
 }
-
-.footer_left {
-  width: 43%;
-
-}
-
-.footer_middle {
-  top     : 9%;
-  position: relative;
-}
-
-.footer_right {
-  width: 25%;
-}
-
-.footer_parts {
-  margin-bottom: 12%;
-}
-
 
 
 .question_form {
@@ -226,20 +206,46 @@
   margin-left: 10%;
 }
 
+
 @media (min-width: 1600px) {
   .policy_market {
-    font-size : 200% !important;
-    margin-top: 20%;
+    font-size: 207%;
+    margin-top: 16%;
   }
-
+  .text_developed1{
+    font-size: 171%;
+  }
+  .copyright1{
+    font-size: 120%;
+  }
   .email-telephone {
-    font-size: 169% !important;
+    font-size: 169%;
   }
-
+  @media (min-width: 1900px) {
+    .policy_market {   
+      font-size: 293%;
+    }
+  }
+  @media (min-width: 2200px){
+    .policy_market {
+        font-size: 361%;
+        margin-top: 21%;
+    }
+    .text_developed1 {
+        font-size: 256%;
+    }
+    .copyright1 {
+        font-size: 181%;
+    }
+    .email-telephone {
+        font-size: 245%;
+    }
+  }
   .question_form1 {
     width : 106%;
     height: 50%;
   }
+
 }
 
 @media (min-width: 1450px) and (max-width: 1600px) {
@@ -253,11 +259,65 @@
   }
 
   .policy_market {
-    font-size : 269% !important;
-    margin-top: 16%;
+    font-size: 225% !important;
+    margin-top: 5%;
+  }
+
+  .text_developed1{
+      font-size: 150%;
+  }
+
+  .developed-copyright{
+    margin-top: 3% !important;
   }
 }
 
+
+@media (min-width: 1000px) and (max-width: 1450px) {
+    .footer-right-bottom{
+        margin-top: 10% !important;
+    }
+    .email-telephone {
+      font-size: 100% !important;
+    }
+  
+    .question_form1 {
+      width : 106%;
+      height: 50%;
+    }
+  
+    .policy_market {
+        font-size: 144% !important;
+        margin-top: -6%;
+        margin-bottom: 3%;
+    }
+    @media (min-width: 1250px) and (max-width: 1450px) {
+        .policy_market {
+            font-size: 192% !important;
+            margin-top: 1%;
+            margin-bottom: 3%;
+        }
+        .copyright1{
+            font-size: 96% !important;
+        }
+    }
+   
+    .question_button{
+        width: 41%;
+    }
+
+    .text_developed1{
+        font-size: 127%;
+    }
+
+    .copyright1{
+        font-size: 73%;
+    }
+
+    .footer-header{
+        margin-left: 12%;
+    }
+  }
 
 
 
