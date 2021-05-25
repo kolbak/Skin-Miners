@@ -14,27 +14,24 @@ import SideBar from '../components/side_bar'
 
 import '../styles/main.scss'
 
-const IndexPage = () => {
-  return (
-    <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Skin Miners</title>
-      </Helmet>
-      <div className="side_bar" children={<SideBar />} />
+const IndexPage = () => (
+  <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Skin Miners</title>
+    </Helmet>
 
-      <div className="slide" children={<Welcome />} />
-      <div className="slide" children={<FirstSlide />} />
-      <div className="slide" children={<SecondSlide />} />
-      <div className="slide slide_without_padding" children={<ThirdSlide />} />
+    <div className="side_bar" children={<SideBar />} />
 
-      <div className="slide" children={<FourthSlide />} />
-      <div className="slide" children={<Faq />} />
-      <div className="slide" children={<Footer />} />
+    <div className="slide" children={<Welcome />} />
+    <div className="slide" children={<FirstSlide />} />
+    <div className="slide" children={<SecondSlide />} />
+    <div className="slide slide_without_padding" children={<ThirdSlide />} />
 
-      
-    </div >
-  )
-}
+    <div className="slide" children={<FourthSlide />} />
+    <div className="slide" children={<Faq />} />
+    <div className="slide" children={<Footer />} />
+
+  </div >)
 
 export default IndexPage

@@ -15,7 +15,7 @@ const FirstSlide = () => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
   }, [])
 
-  return (<div className="slide-1">
+  return (<div className="slide-1" id="what-anchor">
 
     <h1 className="h1-main">
       <span className="slide-number">1</span>
