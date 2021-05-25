@@ -12,11 +12,6 @@
   left    : 1.5vw;
 }
 
-.active-btn {
-  // background-image: url('../../images/sidebar/sidebar-unactive.svg') !important;
-  // height          : 3vh !important;
-}
-
 .side-bar {
   position: absolute;
 }
@@ -27,9 +22,6 @@
 }
 
 #sidebar {
-  /* min-width: 20vw; */
-  /* width: 100%; */
-  /* position: absolute; */
   height                 : 100vh;
   width                  : max-content;
   left                   : -100px;
@@ -41,12 +33,6 @@
   backdrop-filter        : blur(19px);
   z-index                : 5;
 }
-
-// @media (max-width: 550px) {
-//   #sidebar {
-//     width: 100%;
-//   }
-// }
 
 .sidebar-lines {
   margin-top: 2vh !important;
