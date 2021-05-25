@@ -194,3 +194,17 @@
     bottom        : 17.5rem;
   }
 }
+
+@media (max-width: 1280px) {
+  .wrap-chart {
+    position        : absolute;
+    box-shadow      : none;
+    background-color: transparent;
+    // display: none;
+
+
+    #first-chart {
+      display: none;
+    }
+  }
+}

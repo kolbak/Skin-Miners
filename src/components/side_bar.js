@@ -26,12 +26,12 @@ const SideBar = () => {
 
   return (<div className="side-bar">
 
-    <div className="p-1 my-container active-cont" ref={container}>
-      <img alt="close sidebar" src={hideBtn}
+    <div className="p-1 my-container" ref={container}>
+      <img alt="close sidebar" src={showBtn}
         id="menu-btn" onClick={toggleSidebar} ref={menubtn} />
     </div>
 
-    <div id="sidebar" ref={sidebar} className="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column">
+    <div id="sidebar" ref={sidebar} className="side-navbar d-flex justify-content-between flex-wrap flex-column">
       <ul className="nav flex-column w-100 must-blur">
         <div className="container-fluid ">
           <div className="row" style={{ marginBottom: "10vh", display: "block" }}>
