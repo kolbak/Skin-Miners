@@ -6,7 +6,7 @@ import bwAmmo from '../../images/slide_1_what/bw-ammo.svg'
 import smile from '../../images/slide_1_what/Smile.svg'
 import triangle from '../../images/slide_1_what/Triangle.svg'
 
-const FirstSlide = () => (<div className="slide-1">
+const FirstSlide = () => (<div className="slide-1" id="what-anchor">
 
   <h1 className="h1-main">
     <span className="slide-number">1</span>

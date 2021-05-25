@@ -198,7 +198,7 @@ const FourthSlide = () => {
   // )
 
 
-  return (<div className="wrap-slide" style={{ height: "100vh" }}>
+  return (<div className="wrap-slide"  id="registration-anchor" style={{ height: "100vh" }}>
 
     <h1 className="h1-main">
       <span className="slide-number">4</span>

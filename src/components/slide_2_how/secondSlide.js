@@ -33,7 +33,7 @@ const SecondSlide = () => {
     });
   }
 
-  return (<div className="wrap-slide slide-2">
+  return (<div className="wrap-slide slide-2" id="how-anchor">
 
     <h1 className="h1-main">
       <span className="slide-number">2</span>
