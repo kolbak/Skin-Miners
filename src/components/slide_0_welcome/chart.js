@@ -33,6 +33,7 @@ const Chart = () => (<div className="wrap-chart">
       </div>
     ))}
   </div>
+
   <button className="btn">Обновить</button>
   <img alt="rhomb" className="rhomb" src={rhomb} />
   <div className="bg-line n-1" />

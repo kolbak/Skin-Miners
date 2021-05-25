@@ -1,6 +1,4 @@
-// import React, { useState } from 'react';
-import React from 'react';
-
+import React, { useState, useEffect } from "react"
 import '../../styles/components/slide_4_registration/fourSlide.scss'
 
 import hint_email from '../../images/slide_4_registration/hint_email.svg'
@@ -13,6 +11,74 @@ import hidden_triangle from '../../images/slide_4_registration/hidden_triangle.s
 
 
 const FourthSlide = () => {
+
+  const [width, setWidth] = useState()
+
+  useEffect(() => {
+    window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
+  }, [])
+
+
+  return (<div className="wrap-slide" id="registration-anchor" style={{ height: "100vh" }}>
+
+    <h1 className="h1-main">
+      <span className="slide-number">4</span>
+      <span className="slide-title">Регистрация</span>
+    </h1>
+
+    <img id="circle" alt="circle" src={circle} />
+    <img id="hidden_triangle" alt="hidden_triangle" src={hidden_triangle} />
+
+    <form id="formRegistration">
+      <div className="mb-custom-4">
+        <input type="email" className="form-control g-light" id="inputEmail" placeholder="Email" />
+        {width > 1000 && <>
+          <p id="hint_email_text" className="hint">Амм, тут должен быть email... <br />
+            <span className="orange">( имейл )</span>
+          </p>
+          <img id="hint_email" alt="hint_email" src={hint_email} />
+        </>}
+      </div>
+      <div className="mb-custom-4">
+        <input type="nickname" className="form-control g-light" id="inputNickname" placeholder="Никнейм" />
+        {width > 1000 && <>
+          <p id="hint_nickname_text" className="hint">Данный никнейм уже занят кем-то другим <br />
+            <span className="orange">( попробуйте ещё какой-нибудь )</span>
+          </p>
+          <img id="hint_nickname" alt="hint_nickname" src={hint_nickname} />
+        </>}
+      </div>
+      <div className="mb-custom-4">
+        <input type="password" className="form-control g-light" id="inputPassword" placeholder="Пароль" />
+      </div>
+      <div className="mb-custom-4">
+        <input type="password" className="form-control r-light" id="inputPasswordCheck" placeholder="Проверка пароля" />
+        {width > 1000 && <>
+          <p id="hint_password_check_text" className="hint">Пароли должны быть одинаковыми <br />
+            <span className="orange">( потому и проверка )</span>
+          </p>
+          <img id="hint_password_check" alt="hint_password_check" src={hint_password_check} />
+        </>}
+      </div>
+      <div className="mb-custom-4">
+        <input type="link" className="form-control" id="inputSteamLink" placeholder="Ссылка на стим" />
+        {width > 1000 && <>
+          <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></p>
+          <img id="hint_steam" alt="hint_steam" src={hint_steam} />
+        </>}
+      </div>
+      <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto" children={"Регистрация"} />
+    </form>
+
+    <p id="desctiption" className="orange">
+      Lorem ipsum dolor sit<br />
+      amet, consectetur adipiscing<br />
+      elit, sed do eiusmod temporinci<br />
+      didunt ut labore et dolore magna.<br />
+    </p>
+  </div>)
+
   // const URL = "http://178.154.195.155:8000/api";
   // const REGISTER = "/register";
   //* ХУКИ |||||||||||||||||||||||||||
@@ -196,58 +262,6 @@ const FourthSlide = () => {
 
   //   </div>
   // )
-
-
-  return (<div className="wrap-slide"  id="registration-anchor" style={{ height: "100vh" }}>
-
-    <h1 className="h1-main">
-      <span className="slide-number">4</span>
-      <span className="slide-title">Регистрация</span>
-    </h1>
-
-    <img id="circle" alt="circle" src={circle} />
-    <img id="hidden_triangle" alt="hidden_triangle" src={hidden_triangle} />
-
-    <form id="formRegistration">
-      <div className="mb-custom-4">
-        <input type="email" className="form-control g-light" id="inputEmail" placeholder="Email" />
-        <p id="hint_email_text" className="hint">Амм, тут должен быть email... <br />
-          <span className="orange">( имейл )</span>
-        </p>
-        <img id="hint_email" alt="hint_email" src={hint_email} />
-      </div>
-      <div className="mb-custom-4">
-        <input type="nickname" className="form-control g-light" id="inputNickname" placeholder="Никнейм" />
-        <p id="hint_nickname_text" className="hint">Данный никнейм уже занят кем-то другим <br />
-          <span className="orange">( попробуйте ещё какой-нибудь )</span>
-        </p>
-        <img id="hint_nickname" alt="hint_nickname" src={hint_nickname} />
-      </div>
-      <div className="mb-custom-4">
-        <input type="password" className="form-control g-light" id="inputPassword" placeholder="Пароль" />
-      </div>
-      <div className="mb-custom-4">
-        <input type="password" className="form-control r-light" id="inputPasswordCheck" placeholder="Проверка пароля" />
-        <p id="hint_password_check_text" className="hint">Пароли должны быть одинаковыми <br />
-          <span className="orange">( потому и проверка )</span>
-        </p>
-        <img id="hint_password_check" alt="hint_password_check" src={hint_password_check} />
-      </div>
-      <div className="mb-custom-4">
-        <input type="link" className="form-control" id="inputSteamLink" placeholder="Ссылка на стим" />
-        <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></p>
-        <img id="hint_steam" alt="hint_steam" src={hint_steam} />
-      </div>
-      <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto" children={"Регистрация"} />
-    </form>
-
-    <p id="desctiption" className="orange">
-      Lorem ipsum dolor sit<br />
-      amet, consectetur adipiscing<br />
-      elit, sed do eiusmod temporinci<br />
-      didunt ut labore et dolore magna.<br />
-    </p>
-  </div>)
 }
 
 export default FourthSlide

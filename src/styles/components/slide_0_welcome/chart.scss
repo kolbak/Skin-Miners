@@ -195,7 +195,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 991px) and(max-width: 1280px) {
   .wrap-chart {
     position        : absolute;
     box-shadow      : none;
@@ -206,5 +206,11 @@
     #first-chart {
       display: none;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .down-arrow {
+    display: none;
   }
 }
