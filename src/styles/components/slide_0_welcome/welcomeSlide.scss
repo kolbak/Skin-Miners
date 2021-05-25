@@ -118,60 +118,98 @@
 @media screen and(max-width: 1601px) {
   .welcome-slide {
     height: 100vh;
+
+    #hidden_square {
+      top : 36vh;
+      left: 30vw;
+    }
+
+    #hidden_triangle {
+      top : 7vh;
+      left: 13vw;
+    }
   }
 
-  .welcome {
-    top  : 37vh;
-    left : 2vw;
-    width: 27vw;
-  }
+  // .welcome {
+  //   top  : 37vh;
+  //   left : 2vw;
+  //   width: 27vw;
+  // }
 
   .wrap-chart {
-    height     : 50vh;
-    width      : 46vw;
-    top        : -19vh;
-    margin-left: 34vw;
-    left       : 6%;
+    height        : 50vh;
+    width         : 46vw;
+    top           : -19vh;
+    // margin-left: 34vw;
+    left          : 6%;
 
     .down-arrow {
-      top : 50%;
-      left: 94%;
+      bottom: 36vh;
+      left  : 34vw;
     }
 
     .ellipse {
-      top : 12%;
-      left: 98%;
+      left  : 27vw;
+      bottom: 61.5vh;
     }
 
     .points {
-      top : -11%;
-      left: 90%;
+      left  : 42.5vw;
+      bottom: 70vh;
     }
 
     .bg-line.n-1.n-1 {
-      top  : -55vh;
+      top  : -62vh;
       width: 37vw;
+      right: 0px;
     }
 
     .bg-line.n-2.n-2 {
-      top  : 52.5vh;
-      width: 43vw;
+      bottom: 0.5vh;
+      width : 43vw;
+      right : -6vw;
     }
 
     .bg-line.n-3.n-3 {
-      top  : 54.5vh;
+      top  : 2.5vh;
       width: 34vw;
+      right: -14vw;
     }
 
     .btn {
-      left: 33rem;
-      top : -42vh;
+      left  : 32vw;
+      bottom: 42.1vh;
     }
 
     .ellipse-blurred {
-      top : -32%;
-      left: 47%;
+      bottom   : 97vh;
+      // left  : 28vw;
     }
+  }
+}
+
+@media screen and(max-width: 1280px) {
+  .wrap-chart {
+    .ellipse-blurred {
+      bottom   : 97vh;
+      // left  : 28vw;
+    }
+
+    .ellipse {
+      left  : 24vw;
+      bottom: 61.5vh;
+    }
+
+    .ellipse-blurred {
+      bottom: 97vh;
+      left  : 20vw;
+    }
+
+    .down-arrow {
+      bottom: 36vh;
+      left  : 31.5vw;
+    }
+
   }
 }
 
