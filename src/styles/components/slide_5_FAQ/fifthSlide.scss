@@ -121,4 +121,12 @@
     box-shadow: -2px -2px 20px 1px rgba(18, 194, 233, 0.5),
       5px 5px 20px 1px rgba(196, 113, 237, 0.5);
   }
+
+  #layout {
+    position    : relative;
+    padding     : 1rem;
+    margin      : 1rem -.75rem 0;
+    border      : solid #dee2e6;
+    border-width: 1px 0 0;
+  }
 }

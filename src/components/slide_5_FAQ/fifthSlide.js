@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import '../../styles/components/slide_5_FAQ/fifthSlide.scss'
 
@@ -35,9 +35,16 @@ const FAQ = [
   }
 ]
 
+
 const FifthSlide = () => {
 
   const [info, setInfo] = useState(FAQ[1])
+  const [width, setWidth] = useState(window.screen.width)
+
+  useEffect(() => {
+    window.addEventListener('resize', _ => setWidth(window.screen.width));
+  }, [])
+
 
   return (<div id="FAQ" className="wrap-slide">
 
@@ -46,23 +53,44 @@ const FifthSlide = () => {
 
 
     <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>
-    <div id="leftSide" className="w-50">
-      {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
-        onClick={() => setInfo(FAQ[i])} children={
-          <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
-        } />)}
-    </div>
 
-    <div id="rightSide" className="w-50">
-      <div id="numZone">
-        <span id="num" children={info.num} />
+    {width >= 1050 && <>
+      <div id="leftSide" className="w-50">
+        {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
+          onClick={() => setInfo(FAQ[i])} children={
+            <span>{x.num}.&nbsp;&nbsp;{x.question}</span>
+          } />)}
       </div>
-      <div id="answerZone">
-        <h3 id="question">{info.question}</h3>
-        <div id="line" />
-        <p id="answer">{info.answer}</p>
+
+      <div id="rightSide" className="w-50">
+        <div id="numZone">
+          <span id="num" children={info.num} />
+        </div>
+        <div id="answerZone">
+          <h3 id="question">{info.question}</h3>
+          <div id="line" />
+          <p id="answer">{info.answer}</p>
+        </div>
       </div>
-    </div>
+    </>}
+
+    {width < 1050 && <>
+      <div id="layout">
+        <div className="bd-example">
+          <p>
+
+            <button className="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-bs-target
+  </button>
+          </p>
+          <div className="collapse" id="collapseExample">
+            <div className="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+          </div>
+        </div>
+      </div>
+    </>}
 
   </div>)
 }
