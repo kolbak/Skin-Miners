@@ -8,11 +8,11 @@ import triangle from '../../images/slide_1_what/Triangle.svg'
 
 
 const FirstSlide = () => {
-
-  const [width, setWidth] = useState(window.screen.width)
+  const [width, setWidth] = useState()
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
   }, [])
 
   return (<div className="slide-1" id="what-anchor">

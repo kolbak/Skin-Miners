@@ -1,119 +1,137 @@
-
-
 @media (min-width: 300px) and (max-width: 779px) {
-  .footer-header{
+  .footer-header {
     margin-left: 17%;
   }
-  .footer-mainheader{
-      margin-bottom: 10%;
+
+  .footer-mainheader {
+    margin-bottom: 10%;
   }
-  .question{
-      height: 30%;
+
+  .question {
+    height: 30%;
   }
-  .question_form1{
-      width: 90%;
-      margin-left: 11%;
+
+  .question_form1 {
+    width      : 90%;
+    margin-left: 11%;
   }
-  #exampleInputEmail1{
-      background-color: transparent;
-      border-color: transparent;
-      border-bottom: 1px solid #353535;
-      border-radius: 0;
-      width: 70%;
-      left: 7%;
-      position: relative;
-      margin-bottom: 15%;
-      font-family: Roboto;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 23px;
-      letter-spacing: 0em;
-      text-align: left;
-  }
-  #exampleFormControlTextarea1{
+
+  #exampleInputEmail1 {
     background-color: transparent;
-    border-color: transparent;
-    border-bottom: 1px solid #353535;
-    border-radius: 0;
-    height: 10%;
-    width: 90%;
-    left: 7%;
-    position: relative;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
+    border-color    : transparent;
+    border-bottom   : 1px solid #353535;
+    border-radius   : 0;
+    width           : 70%;
+    left            : 7%;
+    position        : relative;
+    margin-bottom   : 15%;
+    font-family     : Roboto;
+    font-size       : 20px;
+    font-style      : normal;
+    font-weight     : 400;
+    line-height     : 23px;
+    letter-spacing  : 0em;
+    text-align      : left;
+  }
+
+  #exampleFormControlTextarea1 {
+    background-color: transparent;
+    border-color    : transparent;
+    border-bottom   : 1px solid #353535;
+    border-radius   : 0;
+    height          : 10%;
+    width           : 90%;
+    left            : 7%;
+    position        : relative;
+    font-family     : Roboto;
+    font-size       : 20px;
+    font-style      : normal;
+    font-weight     : 400;
+    line-height     : 23px;
+    letter-spacing  : 0em;
+    text-align      : left;
 
   }
-  .question_button{
-      width: 50%;
+
+  .question_button {
+    width: auto;
   }
-  .email-telephone{
+
+  .email-telephone {
     font-family: Roboto;
-    font-style: normal;
+    font-style : normal;
     font-weight: normal;
-    font-size: 21px;
+    font-size  : 21px;
     line-height: 25px;
-    margin-left: 5%;
-    margin-top: 3%;
+    margin-left: 4%;
+    margin-top : -0.5%;
+    white-space: nowrap;
   }
-  .green-card{
+
+  .green-card {
     left: -12%;
   }
-  .four-words{
+
+  .four-words {
     width: 90%;
   }
-  .policy_market{
+
+  .policy_market {
     font-family: Roboto;
-    font-style: normal;
+    font-style : normal;
     font-weight: normal;
-    font-size: 33px;
+    font-size  : 33px;
     line-height: 39px;
   }
-  .three_figures1{
-      width: 70%;
-      margin-top: 15%;
-      margin-left: 5%;
+
+  .three_figures1 {
+    width      : 70%;
+    margin-top : 15%;
+    margin-left: 5%;
   }
-  .text_developed1{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    margin-top:6% !important;
+
+  .text_developed1 {
+    font-family  : Roboto;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 20px;
+    line-height  : 23px;
+    text-align   : center;
+    margin-top   : 6% !important;
     margin-bottom: 10% !important;
   }
-  .copyright1{
-      text-align: center;
+
+  .copyright1 {
+    text-align: center;
   }
-  @media (min-width: 550px){
-    .email-telephone{
-        font-size: 27px;
-        margin-left: 10%;
-        margin-top: 7%;
+
+  @media (min-width: 550px) {
+    .email-telephone {
+      font-size  : 27px;
+      margin-left: 10%;
+      margin-top : 7%;
     }
-    .policy_market{
-        font-size: 40px;
-        margin-top: 10%;
+
+    .policy_market {
+      font-size : 40px;
+      margin-top: 10%;
     }
-    .text_developed1{
-       
-        margin-bottom: 5% !important;
-      }
-    .question_button{
-        margin-top: 7%;
+
+    .text_developed1 {
+
+      margin-bottom: 5% !important;
     }
-    #exampleInputEmail1{
+
+    .question_button {
+      margin-top: 7%;
+    }
+
+    #exampleInputEmail1 {
       font-size: 26px;
     }
-    #exampleFormControlTextarea1{
-        font-size: 26px;
+
+    #exampleFormControlTextarea1 {
+      font-size: 26px;
     }
   }
 }

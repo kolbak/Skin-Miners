@@ -39,10 +39,11 @@ const FAQ = [
 const FifthSlide = () => {
 
   const [info, setInfo] = useState(FAQ[1])
-  const [width, setWidth] = useState(window.screen.width)
+  const [width, setWidth] = useState()
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
   }, [])
 
 
