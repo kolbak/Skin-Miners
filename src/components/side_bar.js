@@ -5,17 +5,19 @@ import "../styles/components/side-bar.scss";
 const SideBar = () => {
   const sidebar = React.useRef();
   const container = React.useRef();
+  const menubtn = React.useRef();
 
   function showSidebar() {
     console.log("menu_btn :>> ", sidebar);
     sidebar.current.classList.toggle("active-nav");
     container.current.classList.toggle("active-cont");
+    menubtn.current.classList.toggle("active-btn");
   }
 
   return (
     <div className="side-bar">
       <div className="p-1 my-container active-cont" ref={container}>
-        <a className="btn border-0" id="menu-btn" onClick={showSidebar}>
+        <a className="btn border-0" id="menu-btn" onClick={showSidebar}  ref={menubtn}>
           <i className="bx bx-menu"></i>
         </a>
       </div>
@@ -25,52 +27,57 @@ const SideBar = () => {
         id="sidebar"
         className="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
       >
-        <ul className="nav flex-column w-100">
+        <ul className="nav flex-column w-100 must-blur">
           <div className="container-fluid ">
               <div className="row">
                   <p className="sidebar-contain">Содержание</p>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lines" id="sidebar-first-line">
                   <div className="col-md-3 ">
+                    <a  href="#what-anchor" class="swap-to"></a>
                     <p className="sidebar-numbers">1</p>
                   </div>
                   <div className="col-md-9 ">
                     <p className="sidebar-text">Что мы делаем?</p>
                   </div>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lines">
                   <div className="col-md-3 ">
+                      <a  href="#how-anchor" class="swap-to"></a>
                       <p className="sidebar-numbers">2</p>
                   </div>
                   <div className="col-md-9 ">
                       <p className="sidebar-text">Как это работает?</p>
                   </div>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lines">
                   <div className="col-md-3 ">
+                    <a  href="#we-anchor" class="swap-to"></a>
                     <p className="sidebar-numbers">3</p>
                   </div>
                   <div className="col-md-9 ">
                       <p className="sidebar-text">Почему мы?</p>
                   </div>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lines">
                   <div className="col-md-3 ">
+                    <a  href="#registration-anchor" class="swap-to"></a>
                     <p className="sidebar-numbers">4</p>
                   </div>
                   <div className="col-md-9 ">
                       <p className="sidebar-text">Регистрация</p>
                   </div>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lines">
                   <div className="col-md-3 ">
+                    <a  href="#contacts-anchor" class="swap-to"></a>
                     <p className="sidebar-numbers">5</p>
                   </div>
                   <div className="col-md-9 ">
                       <p className="sidebar-text">Контакты</p>
                   </div>
               </div>
-              <div className="row ">
+              <div className="row sidebar-lastline">
                 <p className="sidebar-enter-market">Войти</p>
                 <p className="sidebar-enter-market">Маркет</p>
               </div>

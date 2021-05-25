@@ -19,7 +19,7 @@ import power from '../../images/slide_3_we/power.svg'
 
 // TODO: сделать масштабирование
 
-const ThirdSlide = () => (<div className="wrap-slide slide-3">
+const ThirdSlide = () => (<div className="wrap-slide slide-3"  id="we-anchor">
 
   <img alt="circle" id="hidden_circle" src={hidden_circle} />
   <img alt="square" id="hidden_square" src={hidden_square} />

@@ -1,21 +1,49 @@
-.border{
-    border-color:blanchedalmond;
+.side_bar{
+  position: fixed;
+  z-index: 6;
 }
 #menu-btn{
-    background-color: red !important;
+    //background-color: red !important;
     position: fixed;
     left: 5vw;
-    top: 1vh;
+    top: 3vh;
+    height: 4vh;
     z-index: 6;
+    width: 2%;
+    background-image : url('../../images/sidebar/sidebar-active.svg');
+    background-repeat:no-repeat;
+}
+
+.swap-to{
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  &:hover{
+    .sidebar-text{
+      color: red;
+    }
+  }
+}
+.active-btn{
+  background-image : url('../../images/sidebar/sidebar-unactive.svg') !important;
+  height: 3vh !important;
 }
 .side-bar{
     position: absolute;
     
 }
+#sidebar-first-line{
+  margin-top: 10vh !important;
+}
+
+.sidebar-lastline{
+  margin-top: 10vh !important;
+  margin-right: 1vw !important;
+}
 #sidebar{
     width: 20vw;
     position: absolute;
-    height: 750px;
+    height: 100vh;
     left: -100px;
     top: 0px;
     background: linear-gradient(89.73deg, #000000 19.44%, rgba(20, 20, 20, 0) 99.79%);
@@ -24,6 +52,12 @@
     z-index: 5;
 }
 
+.sidebar-numbers{
+  margin-top: -1vh;
+}
+.sidebar-lines{
+  margin-top: 2vh !important;
+}
 .side-navbar {
     width: 180px;
     height: 100%;
@@ -41,7 +75,11 @@
     line-height: 46px;
     letter-spacing: 0.02em;
     color: #747474;
+    margin-top: 2vh;
     text-align: center;
+    &:hover{
+      color: red;
+    }
   }
   .sidebar-text{
     font-family: Oswald;
@@ -51,8 +89,13 @@
     line-height: 44px;
     letter-spacing: 0.03em;
     color: rgba(116, 116, 116, 0.7) !important;
+    
   }
+  
+  .sidebar-text:hover{
+    color: #1681F5;
 
+  }
   .sidebar-enter-market{
       
     font-family: Oswald;
@@ -63,7 +106,6 @@
     text-align: right;
     letter-spacing: 0.03em;
     background: linear-gradient(111.94deg, #C471ED -69.21%, #007BFF 144.76%);
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -113,3 +155,6 @@
     color: #fff;
     margin-left: -62px;
   }
+
+
+  

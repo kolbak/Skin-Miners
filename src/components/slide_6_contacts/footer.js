@@ -16,7 +16,7 @@ import icons from '../../images/slide_6_contacts/icons.svg'
 
 // import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 
-const Footer = () => (<div className="container-fluid  footer">
+const Footer = () => (<div className="container-fluid  footer"  id="contacts-anchor">
 
   <div className="row footer">
     <div className="col-md-5 left-side">
