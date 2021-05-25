@@ -11,7 +11,7 @@ const Mining = () => (<div className="wrap-mining" id="mining">
 
   <video
     poster={miningPoster}
-    width="500" height="400" preload="true" autoPlay loop controls muted>
+    width="500" height="400" preload="true" autoPlay loop muted>
     <source src={miningVideo} type='video/mp4' />
   </video>
 

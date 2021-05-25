@@ -34,9 +34,9 @@ body {
 }
 
 .slide {
-  padding: 0 5vw;
-  margin : 0;
-  height : 100vh;
+  padding   : 0 5vw;
+  margin    : 0;
+  min-height: 100vh;
 }
 
 h1,
@@ -62,17 +62,6 @@ li {
   font-weight: normal;
   font-family: Oswald;
 
-  .slide-title {
-    font-family   : Oswald;
-    font-style    : normal;
-    font-weight   : normal;
-    font-size     : 42px;
-    line-height   : 62px;
-    letter-spacing: 0.03em;
-    color         : #FFFFFF;
-    border-bottom : 2px solid rgba(53, 53, 53, 0.7);
-  }
-
   .slide-number {
     font-family : Alata;
     font-style  : normal;
@@ -83,6 +72,23 @@ li {
     left        : -4vw;
     font-size   : 100px;
     line-height : 138px;
+  }
+
+  .slide-title {
+    font-family   : Oswald;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 42px;
+    line-height   : 62px;
+    letter-spacing: 0.03em;
+    color         : #FFFFFF;
+    border-bottom : 2px solid rgba(53, 53, 53, 0.7);
+  }
+}
+
+@media (max-width: 767px) {
+  .h1-main .slide-title {
+    margin-left: 2rem;
   }
 }
 
