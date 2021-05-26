@@ -145,7 +145,8 @@ const ThirdSlide = () => {
     <div class="row third-button-container">
       <button type="button" class="btn btn-primary btn-lg third-button">Регистрация</button>
     </div>
-    <div className="borderr"></div>
+    {/* <div className="borderr"></div> */}
+    {/* <div className="test"></div> */}
   </>}
 </div>)
 }

@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 779px) {
+@media (min-width:0px) and (max-width: 779px) {
   .slide-3{
       margin: 0;
       padding: 0;
@@ -48,6 +48,16 @@
     border-radius: 20px;
     margin-left: 5%;
   }
+//   .containers:before{
+//     content: '';
+//     display: block;
+//     position: relative;
+//     top: -10%;
+//     width: 50%;
+//     height: 50%;
+//     left: 7%;
+//     border-bottom: 5px solid #42424233;
+//   }
   .thesis{
       padding-left: 12%!important;
       padding-bottom: 5% !important;
@@ -70,16 +80,21 @@
       margin: 5% 25% 6% 25% !important;
   }
   .trust_container_m{
-    border-bottom: 0px solid #42424233 !important;
+    border-bottom: 5px solid #42424233 !important;
   }
   .mac_container{
     border-top: 5px solid #42424233;
     border-right: 5px solid #42424233;
+  
     margin: 0 1% 5% 5% !important;
     border-radius: 20px;
     padding-bottom: 10%;
-    border-bottom-right-radius: 0 45px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 0 !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
+
   .mac_text{
     font-family: PT Serif;
     font-size: 40px;
@@ -91,9 +106,9 @@
     width: 90%;
     left: 5%;
     top: 15%;
-    position: relative;
-    
+    position: relative; 
   }
+
   .third-button{
       width: 90% !important;
       height: 80% !important;
@@ -108,20 +123,25 @@
       
       
   }
+  .trust-container{
+      border-bottom: 5px solid #42424233 !important;
+  }
   .third-button-container{
-    stroke: linear-Gradient (0% rgba(66, 66, 66, 0.2) 100% rgba(0, 123, 255, 0.4));
-    -webkit-border-clip: stroke;
-    border: 5px solid;
-    border-right: 0px !important;
+    border-top-left-radius: 0;
+    //stroke: linear-Gradient (0% rgba(66, 66, 66, 0.2) 100% rgba(0, 123, 255, 0.4));
+    //-webkit-border-clip: stroke;
+    border: 5px solid #42424233;
+    border-right: 0px  !important;
     padding: 3% 3% 1% 5% !important;
     margin-right: 4.5% !important;
     border-radius: 20px;
     position: relative;
     width: 79%;
-    left: 15%;
+    left: 19%;
     height: 10vh;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
+    top: -5px;
   }
   .borderr{
     position: absolute;
@@ -133,6 +153,27 @@
     border-bottom: 5px solid #42424233;
     top: 94%;
     z-index: 205;
+    z-index: 5;
+    background-color: black;
+  }
+  .test{
+      position: fixed;
+      left: 20vw;
+      top: 20vh;
+      width: 10vw;
+      height: 10vw;
+      border: 0px solid red;
+     
+  }
+  .test:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    border-top: 5px solid red !important;
   }
   @media (max-width: 640px) {
     .nameless_text{
@@ -156,6 +197,26 @@
         }
         .nameless_text{
             font-size: 22px;
+        }
+    }
+    @media (max-width: 380px){
+        .Head_text{
+            font-size: 22px !important;
+        }
+        .thesis{
+            font-size: 18px !important;
+        }
+        .mac_text{
+            font-size: 18px !important;
+            line-height: 20px !important;
+        }
+        .nameless_text{
+            font-size: 15px !important;
+            line-height: 18px !important;
+        }
+        .nameless_container_mobile{
+            left: 47%;
+            width: 80%;
         }
     }
   }
