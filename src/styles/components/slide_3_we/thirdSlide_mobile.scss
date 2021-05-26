@@ -1,0 +1,163 @@
+@media (min-width: 300px) and (max-width: 779px) {
+  .slide-3{
+      margin: 0;
+      padding: 0;
+  }
+  .nameless_container_mobile{ //zxc cursed element
+      top: 143%;
+      width: 65%;
+      position: relative;
+      left: 50%;
+      margin-bottom: 7%;
+      margin-top: 10% !important;  
+  }
+  .nameless_text{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-left   : 3px solid red;
+    border-radius   : 0;
+    padding-left: 20px;
+    
+  }
+  .fourth_background_mobile{
+      width: 115% !important;
+      padding: 0 !important;
+      position: relative;
+      left: -5%;
+      max-width: 200% !important;
+      margin-bottom: 14%!important;
+  }
+  .header-third{
+      margin-left: 10% !important;
+  }
+
+
+  .three_pictures{
+    position: relative !important;
+    margin-left: 70% !important;
+    top: -20% !important;
+  }
+  .containers{
+    border-left: 5px solid #42424233;
+    border-bottom: 5px solid #42424233;
+    border-radius: 20px;
+    margin-left: 5%;
+  }
+  .thesis{
+      padding-left: 12%!important;
+      padding-bottom: 5% !important;
+      position: relative;
+      top: -16%;
+      font-size: 26px!important;
+  }
+  .Head_text{
+    padding-left: 10%;
+    margin-top: 5%;
+    font-size: 40px !important;
+  }
+  .line{
+    left: 10%;
+    position: relative;
+    top: 5%;
+  }
+  .three_triangle{
+      width: 50% !important;
+      margin: 5% 25% 6% 25% !important;
+  }
+  .trust_container_m{
+    border-bottom: 0px solid #42424233 !important;
+  }
+  .mac_container{
+    border-top: 5px solid #42424233;
+    border-right: 5px solid #42424233;
+    margin: 0 1% 5% 5% !important;
+    border-radius: 20px;
+    padding-bottom: 10%;
+    border-bottom-right-radius: 0 45px;
+  }
+  .mac_text{
+    font-family: PT Serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    position: relative;
+    
+  }
+  .third-button{
+      width: 90% !important;
+      height: 80% !important;
+
+      font-family: Roboto;
+      font-size: 30px !important;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px !important;
+      letter-spacing: 0em;
+      text-align: left;
+      
+      
+  }
+  .third-button-container{
+    stroke: linear-Gradient (0% rgba(66, 66, 66, 0.2) 100% rgba(0, 123, 255, 0.4));
+    -webkit-border-clip: stroke;
+    border: 5px solid;
+    border-right: 0px !important;
+    padding: 3% 3% 1% 5% !important;
+    margin-right: 4.5% !important;
+    border-radius: 20px;
+    position: relative;
+    width: 79%;
+    left: 15%;
+    height: 10vh;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .borderr{
+    position: absolute;
+    width: 7%;
+    height: 2%;
+    left: 88%;
+    border-bottom-right-radius: 40px;
+    border-right: 5px solid #42424233;
+    border-bottom: 5px solid #42424233;
+    top: 94%;
+    z-index: 205;
+  }
+  @media (max-width: 640px) {
+    .nameless_text{
+        font-size: 17px;
+    }
+    .Head_text{
+        font-size: 33px !important;
+    }
+    .thesis{
+        font-size: 20px !important;
+    }
+    .mac_text{
+        font-size: 22px !important;
+        line-height: 37px !important;
+    }
+    @media (min-width: 500px){
+        .mac_text{
+            font-size: 31px !important;
+            line-height: 40px !important;
+            margin-top: 3% !important;
+        }
+        .nameless_text{
+            font-size: 22px;
+        }
+    }
+  }
+  //640px maxwidth
+}
