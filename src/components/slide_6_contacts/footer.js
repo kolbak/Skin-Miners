@@ -23,10 +23,11 @@ import four_words_mobile from "../../images/slide_6_contacts/four_words_mobile.s
 // import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 
 const Footer = () => {
-  const [width, setWidth] = useState(window.screen.width)
+  const [width, setWidth] = useState()
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
   }, [])
 
   return (<div className="container-fluid  footer" id="contacts-anchor">

@@ -1,25 +1,51 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react"
 import Chart from "./chart";
 
 import "../../styles/components/slide_0_welcome/welcomeSlide.scss";
+import "../../styles/components/slide_0_welcome/slide_0_mobile.scss";
+
 
 import hidden_triangle from '../../images/slide_0_welcome/triangle.svg'
 import hidden_square from '../../images/slide_0_welcome/square.svg'
 
+import rhomb from '../../images/slide_0_welcome/chart-bg-rhomb.svg'
+import points from '../../images/slide_0_welcome/points.svg'
+import ellipse from '../../images/slide_0_welcome/Ellipse.svg'
+import ellipseBlurred from '../../images/slide_0_welcome/Ellipse-blurred.svg'
+import downArrow from '../../images/slide_0_welcome/down-arrow.svg'
 
-const WelcomeSlide = () => (<div className="welcome-slide">
 
-  <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
-  <img id="hidden_square" alt="square" src={hidden_square} />
+const WelcomeSlide = () => {
+  const [width, setWidth] = useState()
 
-  <div className="welcome">
-    <h1 className="h1-skin-miners">Skin<br />Miners</h1>
-    <p id="p-slogan">Не трать своё время просто так </p>
-    <button className="btn btn-lg">Стать участником</button>
-  </div>
+  useEffect(() => {
+    window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
+  }, [])
 
-  {/* График */}<Chart />
+  return (<div className="welcome-slide">
 
-</div>)
+    <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
+    <img id="hidden_square" alt="square" src={hidden_square} />
+
+    <div className="welcome">
+      <h1 className="h1-skin-miners">Skin<br />Miners</h1>
+      <p id="p-slogan">Не трать своё время просто так </p>
+      <button className="btn btn-lg">Стать участником</button>
+    </div>
+
+    {/* График */}<Chart screenWidth={width} />
+    
+    <div className="bg-line n-1" />
+    <div className="bg-line n-2" />
+    <div className="bg-line n-3" />
+    <img alt="rhomb" className="rhomb" src={rhomb} />
+    <img alt="points" className="points" src={points} />
+    <img alt="ellipse" className="ellipse" src={ellipse} />
+    <img alt="down-arrow" className="down-arrow" src={downArrow} />
+    <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} />
+
+  </div>)
+}
 
 export default WelcomeSlide;

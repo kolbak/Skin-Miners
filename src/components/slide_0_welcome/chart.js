@@ -1,12 +1,8 @@
 import * as React from "react"
 
 import '../../styles/components/slide_0_welcome/chart.scss'
+import "../../styles/components/slide_0_welcome/slide_0_mobile.scss";
 
-import rhomb from '../../images/slide_0_welcome/chart-bg-rhomb.svg'
-import points from '../../images/slide_0_welcome/points.svg'
-import ellipse from '../../images/slide_0_welcome/Ellipse.svg'
-import ellipseBlurred from '../../images/slide_0_welcome/Ellipse-blurred.svg'
-import downArrow from '../../images/slide_0_welcome/down-arrow.svg'
 import user_default from '../../images/slide_0_welcome/user_default.jpg'
 
 const data = [
@@ -17,33 +13,22 @@ const data = [
   { name: 'Полина', number: 5884.32, src: user_default }
 ]
 
-const Chart = () => (<div className="wrap-chart">
-  <div id="first-chart">
-    {/* Данные */}{data.map((item, i) => (
-      <div className={`item  ${i ? '' : 'first-num'}`} key={`${item.name}-${i}`}>
-        <span className={`serial-number ${i ? '' : `first-num`}`}><span>{i + 1}</span></span>
-        <img className="avatar" src={item.src} alt="avatar" />
-        <div>
-          <span className='name' children={item.name} />
-          <div className='line-bg'>
-            <div className='line-bg-inner' />
+const Chart = ({ screenWidth }) => (<div className="wrap-chart">
+  {screenWidth > 991 &&
+    <div id="chart">
+      {data.map((item, i) => (
+        <div className={`item  ${i ? '' : 'first-num'}`} key={`${item.name}-${i}`}>
+          <span className={`serial-number ${i ? '' : `first-num`}`}><span>{i + 1}</span></span>
+          <img className="avatar" src={item.src} alt="avatar" />
+          <div>
+            <span className='name' children={item.name} />
+            <div className='line-bg' children={<div className='line-bg-inner' />} />
           </div>
+          <span className='number' children={item.number} />
         </div>
-        <span className='number' children={item.number} />
-      </div>
-    ))}
-  </div>
-
-  <button className="btn">Обновить</button>
-  <img alt="rhomb" className="rhomb" src={rhomb} />
-  <div className="bg-line n-1" />
-  <div className="bg-line n-2" />
-  <div className="bg-line n-3" />
-  <img alt="points" className="points" src={points} />
-  <img alt="down-arrow" className="down-arrow" src={downArrow} />
-  <img alt="ellipse" className="ellipse" src={ellipse} />
-  <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} />
-
+      ))}
+    </div>}
+  <button className="btn" children={"Обновить"} />
 </div>)
 
 export default Chart
