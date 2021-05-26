@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Chart from "./chart";
 
 import "../../styles/components/slide_0_welcome/welcomeSlide.scss";
@@ -14,14 +14,16 @@ import ellipse from '../../images/slide_0_welcome/Ellipse.svg'
 import ellipseBlurred from '../../images/slide_0_welcome/Ellipse-blurred.svg'
 import downArrow from '../../images/slide_0_welcome/down-arrow.svg'
 
+import arrow from '../../images/slide_0_welcome/arrow.svg'
+
 
 const WelcomeSlide = () => {
-  const [width, setWidth] = useState()
+  // const [width, setWidth] = useState()
 
-  useEffect(() => {
-    window.addEventListener('resize', _ => setWidth(window.screen.width));
-    setWidth(window.screen.width);
-  }, [])
+  // useEffect(() => {
+  //   window.addEventListener('resize', _ => setWidth(window.screen.width));
+  //   setWidth(window.screen.width);
+  // }, [])
 
   return (<div className="welcome-slide">
 
@@ -34,8 +36,11 @@ const WelcomeSlide = () => {
       <button className="btn btn-lg">Стать участником</button>
     </div>
 
-    {/* График */}<Chart screenWidth={width} />
-    
+    {/* График */}<Chart />
+    <h1 id="top-miners">Top miners</h1>
+    <img id="arrow" alt="arrow" src={arrow} />
+
+
     <div className="bg-line n-1" />
     <div className="bg-line n-2" />
     <div className="bg-line n-3" />

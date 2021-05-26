@@ -1,22 +1,161 @@
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .welcome-slide {
     display        : flex;
     justify-content: flex-start;
     display        : -webkit-flex;
     flex-direction : column;
     margin-left    : 10vw;
+    height         : calc(100vh + 4.11*5rem) !important;
+    margin-bottom  : 15vh;
+
+    #hidden_square {
+      top : 86% !important;
+      left: 13% !important;
+    }
+
+    .btn-lg {
+      height: 7vh !important;
+    }
+  }
+
+
+  #top-miners {
+    display             : block !important;
+    width               : fit-content;
+    color               : white;
+    font-family         : Oswald;
+    font-weight         : normal;
+    font-size           : 75px;
+    line-height         : 100px;
+    letter-spacing      : 0.03em;
+    -webkit-margin-after: 0.1rem;
+    margin-block-end    : 0.1rem;
+    position            : absolute;
+    top                 : 110vh;
+    left                : 8vw;
+  }
+
+  #arrow {
+    display  : block !important;
+    left     : 25.5vw;
+    position : absolute;
+    width    : 13vw;
+    top      : 137vh;
+    transform: rotate(115deg);
   }
 
   .welcome {
-    width: 50%;
+    width     : 40% !important;
+    margin-top: 180px !important;
+  }
+
+  .wrap-chart {
+    height     : calc(4.11rem * 5) !important;
+    margin-left: auto;
+    box-shadow : -25px 25px 2px 0px rgb(72 70 92 / 10%),
+      -25px 25px 20px 0px rgb(72 70 92 / 10%);
+
+    .btn {
+      position: relative;
+      top     : 1vh;
+      right   : -2vw;
+    }
+
+    .first-num {
+      height: 4.5rem !important;
+    }
+
+    .name-line {
+      height         : 4rem;
+      display        : flex;
+      flex-direction : column;
+      justify-content: flex-end;
+    }
+
+    .item {
+      height               : 100%;
+      grid-template-columns: 2fr 7fr !important;
+      column-gap           : 10px !important;
+      padding-right        : 1vw;
+
+      img {
+        width       : 75% !important;
+        justify-self: center;
+      }
+
+      span.serial-number,
+      span.number {
+        display: none;
+      }
+
+      span.number-mobile {
+        display       : grid;
+        font-family   : Roboto;
+        font-size     : 19px;
+        font-style    : normal;
+        font-weight   : 100;
+        line-height   : 25px;
+        letter-spacing: 0.04em;
+        text-align    : end;
+        position      : relative;
+        bottom        : 2rem;
+      }
+    }
+
+    #chart {
+      border-bottom-left-radius: 10px;
+
+      :nth-child(5) {
+        height: 100%;
+      }
+
+      :nth-child(5)>span {
+        border-bottom-left-radius: 10px;
+      }
+    }
   }
 
   .down-arrow {
     display: none;
   }
+
+  .points {
+    display: none;
+  }
+
+  .ellipse {
+    right: 14vw !important;
+    top  : 40vh !important;
+  }
+
+  .rhomb {
+    position: absolute !important;
+    right   : 39vw !important;
+    top     : 48vh !important;
+    z-index : -3 !important;
+  }
+
+  .bg-line.n-1 {
+    width: 42vw !important;
+    right: 0vw !important;
+    top  : 77vh !important;
+    left : 11vw !important;
+  }
+
+  .bg-line.n-2 {
+    width     : 36vw !important;
+    top       : calc(4.11rem * 5 + 70vh) !important;
+    right     : 54vw !important;
+    background: none !important;
+  }
+
+  .bg-line.n-3 {
+    top  : calc(4.11rem * 5 + 74.7vh) !important;
+    right: 56vw !important;
+  }
 }
 
-@media (min-width: 575px) and(max-width: 767px) {
+@media (min-width: 575px) and (max-width: 767px) {
   // .welcome-slide {
   // width: 540px;
   // }

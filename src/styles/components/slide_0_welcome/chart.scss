@@ -29,6 +29,10 @@
     margin-right  : 1.25rem;
   }
 
+  span.number-mobile {
+    display: none;
+  }
+
   span.serial-number>span {
     font-family   : Raleway;
     font-size     : 32px;
@@ -124,19 +128,5 @@
     position      : absolute;
     right         : 16.5vw;
     top           : 22.45vh;
-  }
-}
-
-@media (min-width: 991px) and(max-width: 1280px) {
-  .wrap-chart {
-    // position        : absolute;
-    // box-shadow      : none;
-    // background-color: transparent;
-    // display: none;
-
-
-    // #chart {
-    //   display: none;
-    // }
   }
 }
