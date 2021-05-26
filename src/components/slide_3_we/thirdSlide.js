@@ -24,24 +24,25 @@ import mac_fon from '../../images/slide_3_we/mac_fon.svg'
 // TODO: сделать масштабирование
 
 const ThirdSlide = () => {
-  const [width, setWidth] = useState(window.screen.width)
+  const [width, setWidth] = useState()
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
+    setWidth(window.screen.width);
   }, [])
 
-    return (<div className="wrap-slide slide-3"  id="we-anchor">
+  return (<div className="wrap-slide slide-3" id="we-anchor">
     {width >= 780 && <>
       <img alt="circle" id="hidden_circle" src={hidden_circle} />
       <img alt="square" id="hidden_square" src={hidden_square} />
       <img alt="triangle" id="hidden_triangle" src={hidden_triangle} />
       <img alt="fourth_background" className="fourth_background" src={fourth_background} />
-    
+
       <h1 className="h1-main">
         <span className="slide-number">3</span>
         <span className="slide-title">Почему мы?</span>
       </h1>
-    
+
       <div className="big-capture">
         <img alt="grid" src={grid_window} className="grid_window" />
         <div className="power_container containers">
@@ -85,34 +86,34 @@ const ThirdSlide = () => {
       </div>
     </>}
 
-  {width < 780 && <>
-    <div class="row">
-      <h1 className=" header-third h1-main">
-        <span className="slide-number">3</span>
-        <span className="slide-title">Почему мы?</span>
-      </h1>
-    </div>
-    <div class="row nameless_container_mobile">
-          <p className="nameless_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing.
-          </p>
-    </div>
-    <div class="row">
-      <img alt="" className="fourth_background_mobile" src={fourth_background_mobile} />
-    </div>
-    <div class="row">
-      <div className="safety_container_m containers">
-        <p className="Head_text">Безопасность</p>
-        <div className="line" />
-        <img alt="safity" src={safity} className="safity_m  three_pictures" />
-        <p className="thesis">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+    {width < 780 && <>
+      <div class="row">
+        <h1 className=" header-third h1-main">
+          <span className="slide-number">3</span>
+          <span className="slide-title">Почему мы?</span>
+        </h1>
       </div>
-    </div>
-    <div class="row">
-      <div className="power_container_m containers">
+      <div class="row nameless_container_mobile">
+        <p className="nameless_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing.
+          </p>
+      </div>
+      <div class="row">
+        <img alt="" className="fourth_background_mobile" src={fourth_background_mobile} />
+      </div>
+      <div class="row">
+        <div className="safety_container_m containers">
+          <p className="Head_text">Безопасность</p>
+          <div className="line" />
+          <img alt="safity" src={safity} className="safity_m  three_pictures" />
+          <p className="thesis">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        </div>
+      </div>
+      <div class="row">
+        <div className="power_container_m containers">
           <p className="Head_text">Мощность</p>
           <div className="line" />
           <img alt="power" src={power} className="safity three_pictures" />
@@ -121,9 +122,9 @@ const ThirdSlide = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-    </div>
-    <div class="row">
-      <div className="trust_container_m containers">
+      </div>
+      <div class="row">
+        <div className="trust_container_m containers">
           <p className="Head_text">Доверие</p>
           <div className="line" />
           <img alt="trust" src={trust} className="safity three_pictures" />
@@ -131,13 +132,14 @@ const ThirdSlide = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+        </div>
       </div>
-    </div>
-    <div class="row mac_container">
-      <img alt="" src={three_triangle} className="three_triangle" />
+      <div class="row mac_container">
+        <img alt="" src={three_triangle} className="three_triangle" />
         <div class="card dark text-white">
-          <img class="card-img" src={mac_fon}  alt=""/>
+          <img class="card-img" src={mac_fon} alt="" />
           <div class="card-img-overlay">
+
            <p class="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
          </div>
        </div>
@@ -149,5 +151,6 @@ const ThirdSlide = () => {
     {/* <div className="test"></div> */}
   </>}
 </div>)
+
 }
 export default ThirdSlide;
