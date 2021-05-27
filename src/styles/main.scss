@@ -86,9 +86,21 @@ li {
   }
 }
 
+@media (max-width: 1440px) {
+  .h1-main .slide-title {
+    margin-left: 5vw;
+  }
+}
+
 @media (max-width: 767px) {
   .h1-main .slide-title {
-    margin-left: 2rem;
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .h1-main .slide-title {
+    margin-left: 15vw;
   }
 }
 

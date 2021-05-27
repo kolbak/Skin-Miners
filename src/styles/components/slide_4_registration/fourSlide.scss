@@ -225,4 +225,16 @@ button {
   #formRegistration {
     padding: 10vh 10vw !important;
   }
+
+  #desctiption {
+    display: none;
+  }
+
+  #circle {
+    position: absolute;
+    right   : 3%;
+    top     : 12%;
+    z-index : 1;
+    width   : 2rem;
+  }
 }
