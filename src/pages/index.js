@@ -1,7 +1,8 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import bootstrap from 'bootstrap'
+import '../styles/main.scss'
 
+// import bootstrap from 'bootstrap'
 
 //* Импорт компонентов
 import Welcome from '../components/slide_0_welcome/welcomeSlide'
@@ -14,7 +15,8 @@ import Footer from '../components/slide_6_contacts/footer'
 import SideBar from '../components/side_bar'
 
 
-import '../styles/main.scss'
+const bootstrap = typeof window !== `undefined` ? require("bootstrap") : null
+// const bootstrap = require('bootstrap');
 
 const IndexPage = () => (
   <div>

@@ -136,6 +136,9 @@
   #accordionFAQ {
     margin-top: 3vh;
 
+    button:hover {
+      box-shadow: none;
+    }
 
     .accordion-item {
       background   : rgba(22, 22, 27, 0.5);

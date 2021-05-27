@@ -40,7 +40,7 @@ const SideBar = () => {
 
 
           {menu.map((x, i) =>
-            <a href={x.link} className="row swap-to sidebar-lines">
+            <a key={i} href={x.link} className="row swap-to sidebar-lines" style={{ flexWrap: "nowrap" }}>
               <span className="sidebar-numbers col-md-3">{i + 1}</span>
               <span className="sidebar-text col-md-9">{x.title}</span>
             </a>)}

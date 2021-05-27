@@ -27,10 +27,13 @@ const SecondSlide = () => {
     e.preventDefault();
     console.log('object :>> ', e.target);
     const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+
+    if (typeof document !== "undefined") {
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 
   return (<div className="wrap-slide slide-2" id="how-anchor">

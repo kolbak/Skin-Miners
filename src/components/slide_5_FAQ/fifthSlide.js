@@ -76,7 +76,7 @@ const FifthSlide = () => {
     </> : <>
       <div className="accordion" id="accordionFAQ">
         {FAQ.map((x, i) =>
-          <div className="accordion-item">
+          <div key={i} className="accordion-item">
             <h2 className="accordion-header" id={`heading-${i}`}>
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${i}`} aria-expanded="true" aria-controls={`collapse-${i}`}>
                 <span>{x.num}</span>{x.question}

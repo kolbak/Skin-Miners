@@ -87,21 +87,21 @@ const ThirdSlide = () => {
     </>}
 
     {width < 780 && <>
-      <div class="row">
+      <div className="row">
         <h1 className=" header-third h1-main">
           <span className="slide-number">3</span>
           <span className="slide-title">Почему мы?</span>
         </h1>
       </div>
-      <div class="row nameless_container_mobile">
+      <div className="row nameless_container_mobile">
         <p className="nameless_text">
           Lorem ipsum dolor sit amet, consectetur adipiscing.
           </p>
       </div>
-      <div class="row">
+      <div className="row">
         <img alt="" className="fourth_background_mobile" src={fourth_background_mobile} />
       </div>
-      <div class="row">
+      <div className="row">
         <div className="safety_container_m containers">
           <p className="Head_text">Безопасность</p>
           <div className="line" />
@@ -112,7 +112,7 @@ const ThirdSlide = () => {
         </p>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="power_container_m containers">
           <p className="Head_text">Мощность</p>
           <div className="line" />
@@ -123,7 +123,7 @@ const ThirdSlide = () => {
           </p>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="trust_container_m containers">
           <p className="Head_text">Доверие</p>
           <div className="line" />
@@ -134,18 +134,18 @@ const ThirdSlide = () => {
           </p>
         </div>
       </div>
-      <div class="row mac_container">
+      <div className="row mac_container">
         <img alt="" src={three_triangle} className="three_triangle" />
-        <div class="card dark text-white">
-          <img class="card-img" src={mac_fon} alt="" />
-          <div class="card-img-overlay">
+        <div className="card dark text-white">
+          <img className="card-img" src={mac_fon} alt="" />
+          <div className="card-img-overlay">
 
-           <p class="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+           <p className="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
          </div>
        </div>
     </div>
-    <div class="row third-button-container">
-      <button type="button" class="btn btn-primary btn-lg third-button">Регистрация</button>
+    <div className="row third-button-container">
+      <button type="button" className="btn btn-primary btn-lg third-button">Регистрация</button>
     </div>
     {/* <div className="borderr"></div> */}
     {/* <div className="test"></div> */}
