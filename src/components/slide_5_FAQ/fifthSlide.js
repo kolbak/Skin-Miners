@@ -55,7 +55,7 @@ const FifthSlide = () => {
 
     <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>
 
-    {width >= 1050 && <>
+    {width >= 1050 ? <>
       <div id="leftSide" className="w-50">
         {FAQ.map((x, i) => <button key={i} className="btn btn-dark btn-lg mb-3" type="button"
           onClick={() => setInfo(FAQ[i])} children={
@@ -73,27 +73,27 @@ const FifthSlide = () => {
           <p id="answer">{info.answer}</p>
         </div>
       </div>
-    </>}
-
-    {width < 1050 && <>
-      <div id="layout">
-        <div className="bd-example">
-          <p>
-
-            <button className="btn btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Button with data-bs-target
-  </button>
-          </p>
-          <div className="collapse" id="collapseExample">
-            <div className="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-          </div>
-        </div>
+    </> : <>
+      <div className="accordion" id="accordionFAQ">
+        {FAQ.map((x, i) =>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id={`heading-${i}`}>
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${i}`} aria-expanded="true" aria-controls={`collapse-${i}`}>
+                <span>{x.num}</span>{x.question}
+              </button>
+            </h2>
+            <div id={`collapse-${i}`} className="accordion-collapse collapse" aria-labelledby={`heading-${i}`} data-bs-parent="#accordionFAQ">
+              <div className="accordion-body">
+                <p>{x.answer}</p>
+                <div className="endline" />
+              </div>
+            </div>
+          </div>)}
       </div>
+
     </>}
 
-  </div>)
+  </div >)
 }
 
 export default FifthSlide

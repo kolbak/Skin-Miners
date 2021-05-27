@@ -1,4 +1,7 @@
 #FAQ {
+
+  margin-bottom: 10vh;
+
   #leftSide {
     margin-top: 20vh;
     display   : inline-block;
@@ -128,5 +131,79 @@
     margin      : 1rem -.75rem 0;
     border      : solid #dee2e6;
     border-width: 1px 0 0;
+  }
+
+  #accordionFAQ {
+    margin-top: 3vh;
+
+
+    .accordion-item {
+      background   : rgba(22, 22, 27, 0.5);
+      border-radius: 10px;
+
+      .accordion-button::after {
+        background-image: url(../../../images/slide_5_FAQ/plus.svg)
+      }
+
+      .accordion-button {
+        color         : white;
+        background    : #24232C;
+        border-radius : 10px;
+        margin-top    : 2vh;
+        padding-left  : 4vw;
+        padding-right : 4vw;
+        font-family   : PT Serif;
+        font-size     : 18px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 24px;
+        letter-spacing: 0.03em;
+        text-align    : left;
+
+        span {
+          margin-right  : 4vw;
+          font-family   : Roboto;
+          font-size     : 40px;
+          font-style    : normal;
+          font-weight   : 400;
+          line-height   : 47px;
+          letter-spacing: 0em;
+          text-align    : center;
+        }
+      }
+
+      .accordion-body {
+        color         : white;
+        font-family   : Noto Sans;
+        font-size     : 14px;
+        font-style    : normal;
+        font-weight   : 400;
+        line-height   : 25px;
+        letter-spacing: 0.02em;
+        text-align    : center;
+
+        p {
+          margin-bottom: 0px;
+        }
+
+        .endline {
+          width        : 175px;
+          height       : 0px;
+          margin-right : auto;
+          display      : inline-block;
+          border       : 2px solid rgba(17, 249, 210, 0.7);
+          margin-left  : auto;
+          border-radius: 10px;
+          position     : initial;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 1280px) {
+
+  #FAQ #accordionFAQ .accordion-item .accordion-button {
+    font-size: 25px;
   }
 }
