@@ -8,6 +8,11 @@ import DownloadApp from './downloadApp'
 import Login from './login'
 import Mining from './mining'
 
+import reg from '../../images/slide_2_how/mobile/reg.svg'
+import yellow_arrow from '../../images/slide_2_how/mobile/yellow_arrow.svg'
+import download from '../../images/slide_2_how/mobile/download.svg'
+import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
+import miningPoster from '../../images/slide_2_how/schema.png'
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 
@@ -61,7 +66,19 @@ const SecondSlide = () => {
   const active_btn_line3 = React.useRef();
   const rightslide = React.useRef();
   const leftslide = React.useRef();
-
+  
+ 
+  
+  // var blockPosition = active_slider_btn2.offset().top,
+  // windowScrollPosition = (window).scrollTop();
+  // console.log(blockPosition);
+  // console.log(windowScrollPosition);
+  // if( blockPosition < windowScrollPosition ) {
+  //   ('.block').addClass('red');
+  // } else {
+  //   ('.block').removeClass('red');
+  // }
+ 
 
   function togglecolor1() {
     active_slider_btn2.current.classList.remove("active_color");
@@ -221,16 +238,36 @@ const SecondSlide = () => {
        </div>
        <div className="carousel-inner">
          <div key={1} className="carousel-item active">
-           <p className="slide-text">1</p>
+           <div className="row">
+             <p className="slide-header">Регистрация</p>
+             <img src={reg} className="first-slider-image"/>
+             <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+             <img src={yellow_arrow} className="yellow_arrow"/>
+           </div>
          </div>
          <div key={2} className="carousel-item">
-           <p className="slide-text">2</p>
+           <div className="row">
+            <p className="slide-header">Скачать приложение</p>
+            <img src={download} className="download"/>
+            <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+           </div>
          </div>
          <div key={3} className="carousel-item">
-           <p className="slide-text">3</p>
+           <div className="row">
+             <p className="slide-header">Логин</p>
+             <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+           </div>
          </div>
          <div key={4} className="carousel-item">
-           <p className="slide-text">4</p>
+           <div className="row">
+             <p className="slide-header">Майнинг</p>
+             <video
+               poster={miningPoster}
+               width="500" height="400" preload="true" autoPlay loop muted>
+               <source src={miningVideo} type='video/mp4' />
+             </video>
+             <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+           </div>
          </div>
        </div>
        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onClick={PreviousSlide} ref={rightslide}>
@@ -242,6 +279,7 @@ const SecondSlide = () => {
          <span className="visually-hidden">Next</span>
        </button>
      </div>
+
   </>}
   </div>)
 }

@@ -8,8 +8,41 @@
 .active_color{
   background-color: green !important;
 }
-.slide-text{
-  font-size: 200px;
+.slide-header{
+  font-family: Open Sans;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 150px 0px 20px 0px;
+ 
+}
+
+.slide-text {
+  font-family: PT Serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  
+}
+
+.yellow_arrow{
+  position: relative;
+  width: 60%;
+  margin-left: 40%;
+  margin-top: 80px;
+}
+
+.download{
+  margin-bottom: 13%;
+}
+.first-slider-image{
+  margin-bottom: 10%;
 }
 .slider-btns{
   width: 21px !important;
@@ -24,4 +57,42 @@
   height: 5px;
   top: 8px;
   position: relative;
+}
+
+@media (min-width: 350px) {
+  .slide-header{
+    margin-bottom: 65px;
+    margin-top: 200px;
+  }
+  .yellow_arrow{
+    width: 70%;
+    margin-left: 90px;
+  }
+  .slide-text{
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  .first-slider-image{
+    margin-bottom: 60px;
+  }
+  .download{
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 600px){
+  .slide-header{
+    margin-bottom: 45px;
+    margin-top: 150px;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 700px){
+  .slide-header{
+    margin-top: 100px;
+  }
+  .slide-text{
+    line-height: 40px;
+    font-size: 2.1rem;
+    
+  }
 }
