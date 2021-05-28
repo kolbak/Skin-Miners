@@ -21,7 +21,7 @@ import power from '../../images/slide_3_we/power.svg'
 import fourth_background_mobile from '../../images/slide_3_we/fourth_background_mobile.svg'
 import three_triangle from '../../images/slide_3_we/three_triangle.svg'
 import mac_fon from '../../images/slide_3_we/mac_fon.svg'
-// TODO: сделать масштабирование
+
 
 const ThirdSlide = () => {
   const [width, setWidth] = useState()
@@ -32,19 +32,21 @@ const ThirdSlide = () => {
   }, [])
 
   return (<div className="wrap-slide slide-3" id="we-anchor">
-    {width >= 780 && <>
+    {width >= 780 ? <>
+      <h1 className="h1-main">
+        <span className="slide-number">3</span>
+        <span className="slide-title">Почему мы?</span>
+      </h1>
+      
       <img alt="circle" id="hidden_circle" src={hidden_circle} />
       <img alt="square" id="hidden_square" src={hidden_square} />
       <img alt="triangle" id="hidden_triangle" src={hidden_triangle} />
       <img alt="fourth_background" className="fourth_background" src={fourth_background} />
 
-      <h1 className="h1-main">
-        <span className="slide-number">3</span>
-        <span className="slide-title">Почему мы?</span>
-      </h1>
 
       <div className="big-capture">
         <img alt="grid" src={grid_window} className="grid_window" />
+
         <div className="power_container containers">
           <p className="Head_text">Мощность</p>
           <div className="line" />
@@ -75,18 +77,18 @@ const ThirdSlide = () => {
         <div className="nameless_container containers">
           <img alt="nameless" src={nameless_window} className="nameless_window" />
           <p className="nameless_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore.
           </p>
         </div>
         <div className="cardless_container containers">
           <p className="cardless_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>
-    </>}
-
-    {width < 780 && <>
+    </> : <>
       <div className="row">
         <h1 className=" header-third h1-main">
           <span className="slide-number">3</span>
@@ -99,7 +101,7 @@ const ThirdSlide = () => {
           </p>
       </div>
       <div className="row">
-        <img alt="" className="fourth_background_mobile" src={fourth_background_mobile} />
+        <img alt="background" className="fourth_background_mobile" src={fourth_background_mobile} />
       </div>
       <div className="row">
         <div className="safety_container_m containers">
@@ -135,22 +137,21 @@ const ThirdSlide = () => {
         </div>
       </div>
       <div className="row mac_container">
-        <img alt="" src={three_triangle} className="three_triangle" />
+        <img className="three_triangle" src={three_triangle} alt="three triangles" />
         <div className="card dark text-white">
-          <img className="card-img" src={mac_fon} alt="" />
+          <img className="card-img" src={mac_fon} alt="card" />
           <div className="card-img-overlay">
-
-           <p className="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-         </div>
-       </div>
-    </div>
-    <div className="row third-button-container">
-      <button type="button" className="btn btn-primary btn-lg third-button">Регистрация</button>
-    </div>
-    {/* <div className="borderr"></div> */}
-    {/* <div className="test"></div> */}
-  </>}
-</div>)
+            <p className="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+        </div>
+      </div>
+      <div className="row third-button-container">
+        <button type="button" className="btn btn-primary btn-lg third-button">Регистрация</button>
+      </div>
+      {/* <div className="borderr"></div> */}
+      {/* <div className="test"></div> */}
+    </>}
+  </div>)
 
 }
 export default ThirdSlide;

@@ -1,78 +1,154 @@
 .slide.slide_without_padding.slide_without_padding {
-  padding: 0 0vw;
-  margin : 0px;
-  height : 3285px;
+  padding   : 0 0vw;
+  margin    : 0px;
+  // height : 3285px;
 }
 
 .slide-3 {
-  padding: 0 5vw;
-  margin : 8px;
+  // padding: 0 5vw;
+  margin: 8px;
 
   p {
     margin-bottom: 0px;
   }
 
   .big-capture {
-    position    : relative;
-    float       : right;
-    margin-right: 10vw;
+    position: absolute;
+    top     : 0;
+    width   : 100%;
 
     .grid_window {
-      // left    : -64vw;
-      top     : 0vh;
-      z-index : -2;
-      position: absolute;
-      height  : auto;
-      width   : 57vw;
+      display     : block;
+      width       : 57vw;
+      margin-top  : 20vh;
+      margin-left : auto;
+      margin-right: auto;
     }
 
     .power_container {
-      right          : 1vw;
-      top            : 100vh;
-      position       : absolute;
-      background     : rgba(80, 78, 100, 0.7);
-      box-shadow     : 5px 5px 40px 10px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(40px);
-      border-radius  : 30px;
-      width          : 25vw;
-      padding        : 1.5rem;
+      right                  : 11vw;
+      top                    : 56rem;
+      position               : absolute;
+      background             : rgba(80, 78, 100, 0.7);
+      box-shadow             : 5px 5px 40px 10px rgb(0 0 0 / 50%);
+      -webkit-backdrop-filter: blur(40px);
+      backdrop-filter        : blur(40px);
+      border-radius          : 30px;
+      width                  : 29vw;
+      padding                : 1.5rem;
     }
 
     .safety_container {
-      top            : 52vh;
-      left           : -7vw;
+      top            : 19rem;
+      left           : 7vw;
       position       : absolute;
       position       : absolute;
       background     : rgba(80, 78, 100, 0.7);
       box-shadow     : 5px 5px 40px 10px rgb(0 0 0 / 50%);
       backdrop-filter: blur(40px);
       border-radius  : 30px;
-      width          : 25vw;
+      width          : 29vw;
       padding        : 1.5rem;
     }
   }
 
   .trust_container {
-    top            : 158vh;
-    left           : -1vw;
-    position       : absolute;
-    background     : rgba(80, 78, 100, 0.5);
-    box-shadow     : 5px 5px 40px 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(40px);
-    border-radius  : 30px;
-    width          : 25vw;
-    padding        : 1.5rem;
+    top                    : 90rem;
+    left                   : 13vw;
+    position               : absolute;
+    background             : rgba(80, 78, 100, 0.5);
+    box-shadow             : 5px 5px 40px 10px rgb(0 0 0 / 50%);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter        : blur(40px);
+    border-radius          : 30px;
+    width                  : 32vw;
+    padding                : 1.5rem;
+  }
+
+  @media (max-width: 1600px) {
+    .trust_container {
+      top  : 75rem !important;
+      width: 35vw !important;
+    }
+
+    .power_container {
+      top  : 43rem !important;
+      width: 35vw !important;
+    }
+
+    .safety_container {
+      width: 35vw !important;
+    }
+
+    .nameless_text {
+      top: 24.5% !important;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .trust_container {
+      top  : 60rem !important;
+      width: 35vw !important;
+    }
+
+    .power_container {
+      top  : 40rem !important;
+      width: 35vw !important;
+    }
+
+    .safety_container {
+      width: 35vw !important;
+    }
+
+    .thesis {
+      font-size: 20px !important;
+    }
+
+    .nameless_text {
+      font-size: 20px !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    .nameless_container {
+      img {
+        width: 75vw !important;
+      }
+    }
+
+    .trust_container {
+      top  : 46rem !important;
+      width: 50vw !important;
+    }
+
+    .power_container {
+      top  : 31rem !important;
+      width: 50vw !important;
+    }
+
+    .safety_container {
+      top  : 16rem !important;
+      width: 50vw !important;
+    }
+
+    .thesis {
+      font-size: 20px !important;
+    }
   }
 
   .nameless_container {
     right   : 0vw;
-    top     : 1vh;
+    top     : 21vh;
     position: absolute;
+
+    img {
+      width: 57vw;
+    }
   }
 
   .cardless_container {
-    top     : 234vh;
-    position: relative;
+    margin-top: 10vh;
   }
 
   .containers {
@@ -113,12 +189,20 @@
     .thesis {
       padding       : 1rem;
       padding-bottom: 0rem;
-      width         : 90%;
+      width         : 85%;
+      display       : block;
+      font-family   : PT Serif;
+      font-size     : 25px;
+      font-style    : normal;
+      font-weight   : 400;
+      line-height   : 27px;
+      letter-spacing: 0.02em;
+      text-align    : left;
     }
 
     .nameless_text {
       font-family   : PT Serif;
-      font-size     : 22px;
+      font-size     : 25px;
       font-style    : normal;
       font-weight   : 400;
       line-height   : 29px;
@@ -126,13 +210,13 @@
       text-align    : left;
       width         : 74%;
       left          : 11%;
-      top           : 23%;
+      top           : 28.5%;
       position      : absolute;
     }
 
     .cardless_text {
       font-family   : Noto Sans;
-      font-size     : 20px;
+      font-size     : 26px;
       font-style    : normal;
       font-weight   : 400;
       line-height   : 33px;
@@ -140,6 +224,7 @@
       text-align    : center;
       margin-left   : auto;
       margin-right  : auto;
+      width         : 65vw;
     }
   }
 
@@ -150,28 +235,31 @@
   }
 
   #hidden_circle {
+    z-index : 3;
     position: absolute;
-    top     : 139.2vh;
-    left    : 7.4vw;
+    top     : 147.6vh;
+    left    : 8.5vw;
   }
 
   #hidden_square {
+    z-index : 3;
     position: absolute;
-    top     : 76.6vh;
-    right   : 6.15vw;
+    top     : 84.6vh;
+    right   : 5.35vw;
     width   : 92px;
   }
 
   #hidden_triangle {
+    z-index : 3;
     position: absolute;
-    top     : 175vh;
-    right   : 7vw;
+    top     : 181vh;
+    right   : 5.5vw;
   }
 }
 
 .fourth_background {
-  width   : 100vw;
-  z-index : -3;
-  left    : -1vw;
-  position: absolute;
+  width      : 100vw;
+  z-index    : -3;
+  // left    : -1vw;
+  // position: absolute;
 }
