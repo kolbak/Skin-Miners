@@ -8,8 +8,6 @@ import DownloadApp from './downloadApp'
 import Login from './login'
 import Mining from './mining'
 
-const bootstrap = typeof window !== `undefined` ? require("bootstrap") : null
-
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 
@@ -58,6 +56,9 @@ const SecondSlide = () => {
   const active_slider_btn2 = React.useRef();
   const active_slider_btn3 = React.useRef();
   const active_slider_btn4 = React.useRef();
+  const active_btn_line1 = React.useRef();
+  const active_btn_line2 = React.useRef();
+  const active_btn_line3 = React.useRef();
   const rightslide = React.useRef();
   const leftslide = React.useRef();
 
@@ -66,49 +67,83 @@ const SecondSlide = () => {
     active_slider_btn2.current.classList.remove("active_color");
     active_slider_btn3.current.classList.remove("active_color");
     active_slider_btn4.current.classList.remove("active_color");
+    active_btn_line1.current.classList.remove("active_color")
+    active_btn_line2.current.classList.remove("active_color")
+    active_btn_line3.current.classList.remove("active_color")
+   
   }
   function togglecolor2() {
     active_slider_btn1.current.classList.add("active_color");
-    
     active_slider_btn3.current.classList.remove("active_color");
     active_slider_btn4.current.classList.remove("active_color");
+
+    active_btn_line1.current.classList.add("active_color")
+    active_btn_line2.current.classList.remove("active_color")
+    active_btn_line3.current.classList.remove("active_color")
   }
   function togglecolor3() {
     active_slider_btn1.current.classList.add("active_color");
     active_slider_btn2.current.classList.add("active_color");
     active_slider_btn4.current.classList.remove("active_color");
+
+    active_btn_line1.current.classList.add("active_color")
+    active_btn_line2.current.classList.add("active_color")
+    active_btn_line3.current.classList.remove("active_color")
   }
   function togglecolor4() {
     active_slider_btn1.current.classList.add("active_color");
     active_slider_btn2.current.classList.add("active_color");
     active_slider_btn3.current.classList.add("active_color");
+
+    active_btn_line1.current.classList.add("active_color")
+    active_btn_line2.current.classList.add("active_color")
+    active_btn_line3.current.classList.add("active_color")
   }
 
-  
-  let scroll_var;
-  scroll_var = 1;
-  setTimeout(NextSlide, 2000)
+  function disableControls(condition) {
+    leftslide.current.disabled = condition;
+    rightslide.current.disabled = condition;
+  }
+
+  let scroll_var = 1;
+  // setTimeout(NextSlide, 2000)
+
   function NextSlide(){
-    if (scroll_var===4){
-      scroll_var=1;
-    }else{
-      scroll_var+=1;
-    }
-    choosecolor(scroll_var);
-    console.log(scroll_var);
+    
+    // console.log(leftslide.current, rightslide.current);
+    
+    if (leftslide.current.disabled) return;
+    disableControls(true)
 
+    setTimeout(() => {
+      if (scroll_var === 4)
+        scroll_var=1;
+      else
+        scroll_var+=1;
+        
+      disableControls(false)
+      choosecolor(scroll_var);
+      console.log(scroll_var);
+    }, 1000);
+    
   }
    
-  function PreviousSlide(){
-   
-    if (scroll_var!==1){
-      scroll_var-=1;
-    }
-    else {
-      scroll_var=4;
-    }
-    choosecolor(scroll_var);
-    console.log(scroll_var);
+  function PreviousSlide(e){
+    console.log(e);
+    if (leftslide.current.disabled) return;
+
+    disableControls(true)
+    setTimeout(() => {
+      if (scroll_var !== 1)
+        scroll_var-=1;
+      else 
+        scroll_var=4;
+      disableControls(false)
+      choosecolor(scroll_var);
+      console.log(scroll_var);
+    }, 1000);
+    
+    disableControls(true)
   }
   function choosecolor(a){
     if (a===1){
@@ -127,8 +162,6 @@ const SecondSlide = () => {
   }
   //mobile
 
-
- 
   return (<div className="wrap-slide slide-2" id="how-anchor">
     
     <h1 className="h1-main">
@@ -177,10 +210,14 @@ const SecondSlide = () => {
   </> : <>
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
        <div className="carousel-indicators">
-         <button ref={active_slider_btn1} className="active active-slider-btn1" onClick={togglecolor1} type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
-         <button ref={active_slider_btn2} className="active-slider-btn2" onClick={togglecolor2} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-         <button ref={active_slider_btn3} className="active-slider-btn3" onClick={togglecolor3} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-         <button ref={active_slider_btn4} className="active-slider-btn4" onClick={togglecolor4} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         <button ref={active_slider_btn1} className="active active-slider-btn1 slider-btns" onClick={togglecolor1} type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"/>
+         <div ref = {active_btn_line1} class="btn-line"></div>
+         <button ref={active_slider_btn2} className="active-slider-btn2 slider-btns" onClick={togglecolor2} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" />
+         <div ref = {active_btn_line2} class="btn-line"></div>
+         <button ref={active_slider_btn3} className="active-slider-btn3 slider-btns" onClick={togglecolor3} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" />
+         <div ref = {active_btn_line3} class="btn-line"></div>
+         <button ref={active_slider_btn4} className="active-slider-btn4 slider-btns" onClick={togglecolor4} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" />
+      
        </div>
        <div className="carousel-inner">
          <div key={1} className="carousel-item active">
