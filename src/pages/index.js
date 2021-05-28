@@ -27,6 +27,7 @@ const IndexPage = () => (
       maximum-scale=1.0,
       user-scalable=0" />
       <title>Skin Miners</title>
+
     </Helmet>
 
     <div className="side_bar" children={<SideBar />} />
