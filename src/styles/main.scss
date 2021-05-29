@@ -51,6 +51,10 @@ li {
   color: white;
 }
 
+img {
+  user-select: none;
+}
+
 .wrap-slide {
   position      : relative;
   // padding-top: 1vh;
