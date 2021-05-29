@@ -199,28 +199,21 @@ const SecondSlide = () => {
         </div>
         <ul>
           <li className={tab >= 0 || tab === '' ? 'active' : ''} >
-            {/* <i className="circle"></i> */}
             <h2>
               <a onClick={scrollInto} href="#registration">Регистрация</a>
             </h2>
           </li>
-          {/* <i className={`line l1 ${tab >= 1 ? 'active' : ''}`}></i> */}
           <li className={tab >= 1 ? 'active' : ''} >
-            {/* <i className="circle"></i> */}
             <h2>
               <a onClick={scrollInto} href="#download">Скачать приложение</a>
             </h2>
           </li>
-          {/* <i className={`line l2 ${tab >= 2 ? 'active' : ''}`}></i> */}
           <li className={tab >= 2 ? 'active' : ''} >
-            {/* <i className="circle"></i> */}
             <h2>
               <a onClick={scrollInto} href="#login">Логин</a>
             </h2>
           </li>
-          {/* <i className={`line l3 ${tab >= 3 ? 'active' : ''}`}></i> */}
           <li className={tab === 3 ? 'active' : ''} >
-            {/* <i className="circle"></i> */}
             <h2>
               <a onClick={scrollInto} href="#mining">Майнинг</a>
             </h2>
