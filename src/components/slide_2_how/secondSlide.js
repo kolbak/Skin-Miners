@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react"
+import React, { useState, useEffect, getBoundingClientRect} from "react"
 
 import '../../styles/components/slide_2_how/secondSlide.scss'
 import '../../styles/components/slide_2_how/secondSlide_mobile.scss'
@@ -123,12 +123,35 @@ const SecondSlide = () => {
   }
 
   let scroll_var = 1;
-  // setTimeout(NextSlide, 2000)
+ 
 
   function NextSlide(){
-    
-    // console.log(leftslide.current, rightslide.current);
-    
+    var element1 = document.getElementById('first-slide-pos');
+    var element2 = document.getElementById('second-slide-pos');
+    var element3 = document.getElementById('third-slide-pos');
+    var element4 = document.getElementById('fourth-slide-pos');
+
+    let a = element1.getBoundingClientRect();
+    let b = element2.getBoundingClientRect();
+    let c = element3.getBoundingClientRect();
+    let d = element4.getBoundingClientRect();
+    console.log('first: top:' + a.top + ' left: ' + a.left +'');
+    console.log('second: top:' + b.top + ' left: ' + b.left +'');
+    console.log('third: top:' + c.top + ' left: ' + c.left +'');
+    console.log('fourth: top:' + d.top + ' left: ' + d.left +'');
+    //если значение left больше 200 - это слайд до которого скролится
+    if (a.left>200){
+      choosecolor(1);
+    }
+    if (b.left>200){
+      choosecolor(2);
+    }
+    if (c.left>200){
+      choosecolor(3);
+    }
+    if (d.left>200){
+      choosecolor(4);
+    }
     if (leftslide.current.disabled) return;
     disableControls(true)
 
@@ -139,13 +162,40 @@ const SecondSlide = () => {
         scroll_var+=1;
         
       disableControls(false)
-      choosecolor(scroll_var);
+      //choosecolor(scroll_var);
       console.log(scroll_var);
     }, 1000);
     console.log(window.pageXOffset)
   }
    
   function PreviousSlide(e){
+    var element1 = document.getElementById('first-slide-pos');
+    var element2 = document.getElementById('second-slide-pos');
+    var element3 = document.getElementById('third-slide-pos');
+    var element4 = document.getElementById('fourth-slide-pos');
+
+    let a = element1.getBoundingClientRect();
+    let b = element2.getBoundingClientRect();
+    let c = element3.getBoundingClientRect();
+    let d = element4.getBoundingClientRect();
+    console.log('first: top:' + a.top + ' left: ' + a.left +'');
+    console.log('second: top:' + b.top + ' left: ' + b.left +'');
+    console.log('third: top:' + c.top + ' left: ' + c.left +'');
+    console.log('fourth: top:' + d.top + ' left: ' + d.left +'');
+
+    if (a.left<-200){
+      choosecolor(1);
+    }
+    if (b.left<-200){
+      choosecolor(2);
+    }
+    if (c.left<-200){
+      choosecolor(3);
+    }
+    if (d.left<-200){
+      choosecolor(4);
+    }
+    //то значение которое меньше -200 означает слайд до которого скролится
     console.log(e);
     if (leftslide.current.disabled) return;
 
@@ -156,7 +206,7 @@ const SecondSlide = () => {
       else 
         scroll_var=4;
       disableControls(false)
-      choosecolor(scroll_var);
+      //choosecolor(scroll_var);
       console.log(scroll_var);
     }, 1000);
     
@@ -178,9 +228,8 @@ const SecondSlide = () => {
 
   }
   //mobile
+  
 
-  // var rect = getBoundingClientRect(active_slider_btn2);
-  // console.log(rect.top, rect.right, rect.bottom, rect.left);
 
   return (<div className="wrap-slide slide-2" id="how-anchor">
     
@@ -240,7 +289,7 @@ const SecondSlide = () => {
       
        </div>
        <div className="carousel-inner">
-         <div key={1} className="carousel-item active">
+         <div key={1} className="carousel-item active" id="first-slide-pos">
            <div className="row">
              <p className="slide-header">Регистрация</p>
              <img src={reg} className="first-slider-image"/>
@@ -248,20 +297,20 @@ const SecondSlide = () => {
              <img src={yellow_arrow} className="yellow_arrow"/>
            </div>
          </div>
-         <div key={2} className="carousel-item">
+         <div key={2} className="carousel-item" id="second-slide-pos">
            <div className="row">
             <p className="slide-header">Скачать приложение</p>
             <img src={download} className="download"/>
             <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
            </div>
          </div>
-         <div key={3} className="carousel-item">
+         <div key={3} className="carousel-item" id="third-slide-pos">
            <div className="row">
              <p className="slide-header">Логин</p>
              <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
            </div>
          </div>
-         <div key={4} className="carousel-item">
+         <div key={4} className="carousel-item" id="fourth-slide-pos">
            <div className="row">
              <p className="slide-header">Майнинг</p>
              <video
@@ -277,7 +326,7 @@ const SecondSlide = () => {
          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
          <span className="visually-hidden">Previous</span>
        </button>
-       <button  className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onClick={NextSlide} ref={leftslide}>
+       <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onClick={NextSlide} ref={leftslide}>
          <span className="carousel-control-next-icon" aria-hidden="true"></span>
          <span className="visually-hidden">Next</span>
        </button>
