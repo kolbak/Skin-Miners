@@ -1,112 +1,119 @@
 .slide-2 {
-  ul {
-    list-style-type: none;
-    margin-top     : 10vh;
-    margin-left    : -2vw;
-    position       : relative;
-
-    li {
-      margin-bottom: 15vh;
-      position     : relative;
-
-      i.circle {
-        background: #424242;
-      }
-
-      i.circle,
-      h2 {
-        display: inline-block;
-        cursor : pointer;
-      }
-
-      i.circle {
-        width        : 15px;
-        height       : 15px;
-        border-radius: 100%;
-        margin-right : .5vw;
-      }
-
-      h2 {
-        a {
-          transition     : .5s;
-          text-decoration: none;
-          color          : inherit;
-
-          font-family: "Noto Sans";
-          font-weight: normal;
-          opacity    : 0.3;
-
-          // Запрет на выделение текста
-          /* iOS Safari */
-          -webkit-touch-callout: none;
-          /* Chrome/Safari/Opera */
-          -webkit-user-select  : none;
-          /* Konqueror */
-          -khtml-user-select   : none;
-          /* Firefox */
-          -moz-user-select     : none;
-          /* Internet Explorer/Edge */
-          -ms-user-select      : none;
-          /* Non-prefixed version, currently
-          not supported by any browser */
-          user-select          : none;
-        }
-      }
-
-    }
-
-    i.line {
-      background: #424242;
-      position  : absolute;
-      display   : block;
-      z-index   : -1;
-      left      : 2.34vw;
-      width     : 5px;
-      height    : calc(100% - 64vh);
-    }
-
-    i.line.l1 {
-      top: 27px;
-    }
-
-    i.line.l2 {
-      top: calc(20vh + 42px);
-    }
-
-    i.line.l3 {
-      top: calc(40vh + 57px);
-    }
-
-    i.line.active {
-      background: #61CDBB;
-    }
-
-    li.active {
-
-      i.circle {
-        background: #61CDBB;
-      }
-
-      h2 {
-
-        a {
-          opacity              : 1;
-          // Запрет на выделение текста
-          -webkit-touch-callout: initial;
-          -webkit-user-select  : initial;
-          -khtml-user-select   : initial;
-          -moz-user-select     : initial;
-          -ms-user-select      : initial;
-          user-select          : initial;
-
-        }
-      }
-    }
-  }
-
   .wrap-tabs {
     display              : grid;
     grid-template-columns: 2fr 5fr;
+
+    .progress {
+      position  : absolute;
+      margin-top: 12vh;
+      height    : 7px;
+      width     : 60vh;
+
+      transform-origin: top left;
+      transform       : rotate(90deg);
+      background      : #424242;
+      overflow        : visible !important;
+
+      .progress-bar {
+        background: #61CDBB;
+      }
+
+      i.circle {
+        background      : #424242;
+        // outline      : 1px red dotted;
+        position        : absolute;
+        display         : inline-block;
+        width           : 20px;
+        height          : 20px;
+        border-radius   : 100%;
+        transition      : 1.5s;
+      }
+
+      i.circle.c1 {
+        left: -7px;
+        top : -7px;
+      }
+
+      i.circle.c2 {
+        left: calc(20vh - 7px);
+        top : -7px;
+      }
+
+      i.circle.c3 {
+        left: calc(40vh - 7px);
+        top : -7px;
+      }
+
+      i.circle.c4 {
+        left: calc(60vh - 7px);
+        top : -7px;
+      }
+
+
+      i.circle.active {
+        background: #61CDBB;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top     : 10vh;
+      margin-left    : 2vw;
+      position       : relative;
+
+      li {
+        margin-bottom: 15vh;
+        position     : relative;
+
+        h2 {
+          display: inline-block;
+          cursor : pointer;
+        }
+
+        h2 {
+          a {
+            transition     : .5s;
+            text-decoration: none;
+            color          : inherit;
+
+            font-family: "Noto Sans";
+            font-weight: normal;
+            opacity    : 0.3;
+
+            // Запрет на выделение текста
+            /* iOS Safari */
+            -webkit-touch-callout: none;
+            /* Chrome/Safari/Opera */
+            -webkit-user-select  : none;
+            /* Konqueror */
+            -khtml-user-select   : none;
+            /* Firefox */
+            -moz-user-select     : none;
+            /* Internet Explorer/Edge */
+            -ms-user-select      : none;
+            /* Non-prefixed version, currently
+          not supported by any browser */
+            user-select          : none;
+          }
+        }
+
+      }
+
+      li.active {
+        h2 {
+          a {
+            opacity              : 1;
+            // Запрет на выделение текста
+            -webkit-touch-callout: initial;
+            -webkit-user-select  : initial;
+            -khtml-user-select   : initial;
+            -moz-user-select     : initial;
+            -ms-user-select      : initial;
+            user-select          : initial;
+          }
+        }
+      }
+    }
 
     .content {
       overflow-y : scroll;
@@ -156,6 +163,13 @@
         position: absolute;
         left    : 0vw;
         top     : 20vh;
+      }
+    }
+
+    @media (max-width: 1440px) {
+      .content {
+        height    : 70%;
+        align-self: center;
       }
     }
   }
