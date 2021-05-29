@@ -242,11 +242,11 @@ const SecondSlide = () => {
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
           <div className="carousel-indicators">
             <button ref={active_slider_btn1} className="active active-slider-btn1 slider-btns" onClick={togglecolor1} type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" />
-            <div ref={active_btn_line1} class="btn-line"></div>
+            <div ref={active_btn_line1} className="btn-line"></div>
             <button ref={active_slider_btn2} className="active-slider-btn2 slider-btns" onClick={togglecolor2} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" />
-            <div ref={active_btn_line2} class="btn-line"></div>
+            <div ref={active_btn_line2} className="btn-line"></div>
             <button ref={active_slider_btn3} className="active-slider-btn3 slider-btns" onClick={togglecolor3} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" />
-            <div ref={active_btn_line3} class="btn-line"></div>
+            <div ref={active_btn_line3} className="btn-line"></div>
             <button ref={active_slider_btn4} className="active-slider-btn4 slider-btns" onClick={togglecolor4} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" />
 
           </div>
