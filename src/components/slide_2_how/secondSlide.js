@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect} from "react"
 
 import '../../styles/components/slide_2_how/secondSlide.scss'
 import '../../styles/components/slide_2_how/secondSlide_mobile.scss'
@@ -142,7 +142,7 @@ const SecondSlide = () => {
       choosecolor(scroll_var);
       console.log(scroll_var);
     }, 1000);
-    
+    console.log(window.pageXOffset)
   }
    
   function PreviousSlide(e){
@@ -178,6 +178,9 @@ const SecondSlide = () => {
 
   }
   //mobile
+
+  // var rect = getBoundingClientRect(active_slider_btn2);
+  // console.log(rect.top, rect.right, rect.bottom, rect.left);
 
   return (<div className="wrap-slide slide-2" id="how-anchor">
     

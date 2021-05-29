@@ -16,7 +16,7 @@
   line-height: 34px;
   letter-spacing: 0.02em;
   text-align: center;
-  margin: 150px 0px 20px 0px;
+  margin: 30% 0 10% 0;
  
 }
 
@@ -35,7 +35,7 @@
   position: relative;
   width: 60%;
   margin-left: 40%;
-  margin-top: 80px;
+  margin-top: 10%;
 }
 
 .download{
@@ -59,24 +59,26 @@
   position: relative;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 0px) {
   .slide-header{
     margin-bottom: 65px;
-    margin-top: 200px;
+    margin-top: 25%;
   }
   .yellow_arrow{
     width: 70%;
     margin-left: 90px;
+    margin-bottom: 20%;
   }
   .slide-text{
     font-size: 1.6rem;
     line-height: 30px;
+    margin-bottom: 20%;
   }
   .first-slider-image{
     margin-bottom: 60px;
   }
   .download{
-    margin-bottom: 100px;
+    margin-bottom: 20%;
   }
 }
 @media (min-width: 600px){
@@ -92,7 +94,10 @@
   }
   .slide-text{
     line-height: 40px;
-    font-size: 2.1rem;
-    
+    font-size: 2.1rem; 
   }
+}
+
+@media (max-height: 800px){
+ 
 }
