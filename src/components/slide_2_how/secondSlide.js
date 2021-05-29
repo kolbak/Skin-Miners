@@ -117,10 +117,6 @@ const SecondSlide = () => {
     active_btn_line3.current.classList.add("active_color")
   }
 
-  function disableControls(condition) {
-    leftslide.current.disabled = condition;
-    rightslide.current.disabled = condition;
-  }
 
   let scroll_var = 1;
  
@@ -135,10 +131,6 @@ const SecondSlide = () => {
     let b = element2.getBoundingClientRect();
     let c = element3.getBoundingClientRect();
     let d = element4.getBoundingClientRect();
-    console.log('first: top:' + a.top + ' left: ' + a.left +'');
-    console.log('second: top:' + b.top + ' left: ' + b.left +'');
-    console.log('third: top:' + c.top + ' left: ' + c.left +'');
-    console.log('fourth: top:' + d.top + ' left: ' + d.left +'');
     //если значение left больше 200 - это слайд до которого скролится
     if (a.left>200){
       choosecolor(1);
@@ -152,20 +144,7 @@ const SecondSlide = () => {
     if (d.left>200){
       choosecolor(4);
     }
-    if (leftslide.current.disabled) return;
-    disableControls(true)
-
-    setTimeout(() => {
-      if (scroll_var === 4)
-        scroll_var=1;
-      else
-        scroll_var+=1;
-        
-      disableControls(false)
-      //choosecolor(scroll_var);
-      console.log(scroll_var);
-    }, 1000);
-    console.log(window.pageXOffset)
+    
   }
    
   function PreviousSlide(e){
@@ -178,10 +157,6 @@ const SecondSlide = () => {
     let b = element2.getBoundingClientRect();
     let c = element3.getBoundingClientRect();
     let d = element4.getBoundingClientRect();
-    console.log('first: top:' + a.top + ' left: ' + a.left +'');
-    console.log('second: top:' + b.top + ' left: ' + b.left +'');
-    console.log('third: top:' + c.top + ' left: ' + c.left +'');
-    console.log('fourth: top:' + d.top + ' left: ' + d.left +'');
 
     if (a.left<-200){
       choosecolor(1);
@@ -196,21 +171,7 @@ const SecondSlide = () => {
       choosecolor(4);
     }
     //то значение которое меньше -200 означает слайд до которого скролится
-    console.log(e);
-    if (leftslide.current.disabled) return;
-
-    disableControls(true)
-    setTimeout(() => {
-      if (scroll_var !== 1)
-        scroll_var-=1;
-      else 
-        scroll_var=4;
-      disableControls(false)
-      //choosecolor(scroll_var);
-      console.log(scroll_var);
-    }, 1000);
-    
-    disableControls(true)
+  
   }
   function choosecolor(a){
     if (a===1){
