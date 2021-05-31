@@ -8,11 +8,16 @@ import DownloadApp from './downloadApp'
 import Login from './login'
 import Mining from './mining'
 
-import reg from '../../images/slide_2_how/mobile/reg.svg'
+//*------------------------------------------------------- Мобильная версия
+import reg from '../../images/slide_2_how/registration.png'
+// import reg from '../../images/slide_2_how/mobile/reg.svg'
+import download from '../../images/slide_2_how/installation.png'
+// import download from '../../images/slide_2_how/mobile/download.svg'
 import yellow_arrow from '../../images/slide_2_how/mobile/yellow_arrow.svg'
-import download from '../../images/slide_2_how/mobile/download.svg'
-import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
+
+//*------------------------------------------------------- Видео
 import miningPoster from '../../images/slide_2_how/schema.png'
+import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 
