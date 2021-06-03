@@ -69,18 +69,6 @@ const SecondSlide = () => {
   const leftslide = React.useRef();
 
 
-
-  // var blockPosition = active_slider_btn2.offset().top,
-  // windowScrollPosition = (window).scrollTop();
-  // console.log(blockPosition);
-  // console.log(windowScrollPosition);
-  // if( blockPosition < windowScrollPosition ) {
-  //   ('.block').addClass('red');
-  // } else {
-  //   ('.block').removeClass('red');
-  // }
-
-
   function togglecolor1() {
     active_slider_btn2.current.classList.remove("active_color")
     active_slider_btn3.current.classList.remove("active_color")
@@ -117,10 +105,15 @@ const SecondSlide = () => {
     active_btn_line2.current.classList.add("active_color")
     active_btn_line3.current.classList.add("active_color")
   }
-
-
-  let scroll_var = 1;
-
+  function choosecolor(a) {
+    switch (a) {
+      case 1: togglecolor1(); break;
+      case 2: togglecolor2(); break;
+      case 3: togglecolor3(); break;
+      case 4: togglecolor4(); break;
+      default: break;
+    }
+  }
 
   function NextSlide() {
     const element1 = document.getElementById('first-slide-pos');
@@ -138,7 +131,6 @@ const SecondSlide = () => {
     if (c.left > 200) choosecolor(3);
     if (d.left > 200) choosecolor(4);
   }
-
   function PreviousSlide(e) {
     const element1 = document.getElementById('first-slide-pos');
     const element2 = document.getElementById('second-slide-pos');
@@ -157,18 +149,6 @@ const SecondSlide = () => {
     //то значение которое меньше -200 означает слайд до которого скролится
   }
 
-  function choosecolor(a) {
-    switch (a) {
-      case 1: togglecolor1(); break;
-      case 2: togglecolor2(); break;
-      case 3: togglecolor3(); break;
-      case 4: togglecolor4(); break;
-    }
-  }
-  //mobile
-
-
-
   return (<div className="wrap-slide slide-2" id="how-anchor">
 
     <h1 className="h1-main">
@@ -179,25 +159,17 @@ const SecondSlide = () => {
     {width >= 780 ? <>
       <div className="wrap-tabs">
         <div className="progress">
-          <div className="progress-bar" role="progressbar" style={{ width: (tab) * 33.3 + '%' }} aria-valuenow={(tab + 1) * 25} aria-valuemin="0" aria-valuemax="100"></div>
-          <i className={`circle c1 ${tab >= 0 && 'active'}`} ></i>
-          <i className={`circle c2 ${tab >= 1 && 'active'}`} ></i>
-          <i className={`circle c3 ${tab >= 2 && 'active'}`} ></i>
-          <i className={`circle c4 ${tab >= 3 && 'active'}`} ></i>
+          <div className="progress-bar" role="progressbar" style={{ width: (tab) * 33.3 + '%' }} aria-valuenow={(tab + 1) * 25} aria-valuemin="0" aria-valuemax="100" />
+          <i className={`circle c1 ${tab >= 0 && 'active'}`} />
+          <i className={`circle c2 ${tab >= 1 && 'active'}`} />
+          <i className={`circle c3 ${tab >= 2 && 'active'}`} />
+          <i className={`circle c4 ${tab >= 3 && 'active'}`} />
         </div>
         <ul>
-          <li className={tab >= 0 || tab === '' ? 'active' : ''}>
-            <h2><a onClick={scrollInto} href="#registration">Регистрация</a></h2>
-          </li>
-          <li className={tab >= 1 ? 'active' : ''}>
-            <h2><a onClick={scrollInto} href="#download">Скачать приложение</a></h2>
-          </li>
-          <li className={tab >= 2 ? 'active' : ''}>
-            <h2><a onClick={scrollInto} href="#login">Логин</a></h2>
-          </li>
-          <li className={tab === 3 ? 'active' : ''}>
-            <h2><a onClick={scrollInto} href="#mining">Майнинг</a></h2>
-          </li>
+          <li className={tab >= 0 || tab === '' ? 'active' : ''}><h2><a onClick={scrollInto} href="#registration">Регистрация</a></h2></li>
+          <li className={tab >= 1 ? 'active' : ''}><h2><a onClick={scrollInto} href="#download">Скачать приложение</a></h2></li>
+          <li className={tab >= 2 ? 'active' : ''}><h2><a onClick={scrollInto} href="#login">Логин</a></h2></li>
+          <li className={tab === 3 ? 'active' : ''}><h2><a onClick={scrollInto} href="#mining">Майнинг</a></h2></li>
         </ul>
 
         <div className="content" onScroll={contentScroll}>
@@ -223,15 +195,15 @@ const SecondSlide = () => {
           <div key={1} className="carousel-item active" id="first-slide-pos">
             <div className="row">
               <p className="slide-header">Регистрация</p>
-              <img src={reg} className="first-slider-image" />
+              <img alt="registration" src={reg} className="first-slider-image" />
               <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-              <img src={yellow_arrow} className="yellow_arrow" />
+              <img alt="figure" src={yellow_arrow} className="yellow_arrow" />
             </div>
           </div>
           <div key={2} className="carousel-item" id="second-slide-pos">
             <div className="row">
               <p className="slide-header">Скачать приложение</p>
-              <img src={download} className="download" />
+              <img alt="download" src={download} className="download" />
               <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             </div>
           </div>
@@ -262,7 +234,6 @@ const SecondSlide = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
     </>}
 
   </div>)
