@@ -1,64 +1,126 @@
 .wrap-how {
-  position   : relative;
-  width      : 100%;
-  height     : 100%;
-  display    : block;
-  // top     : 12%;
+  position: relative;
+  width   : 100%;
+  height  : 100%;
+  display : block;
+
+  form * {
+    font-size: 2vh;
+  }
+
+  form h4 {
+    font-size: 3vh;
+  }
 
   form {
-    background   : #24232C;
-    box-shadow   : -5px -5px 30px 5px #D9A404;
+    background: #24232C;
+    box-shadow: -5px -5px 30px 5px #D9A404,
+      15px 15px 0px 5px #007BFF;
     border-radius: 25px;
     padding      : 2rem;
-    z-index      : 1;
     margin-top   : 15vh;
     position     : absolute;
+
+    left     : -2vw;
+    min-width: 230px;
+    width    : 20vw;
 
     label {
       font-family: Roboto;
       font-style : normal;
       font-weight: normal;
-      font-size  : 20px;
       line-height: 23px;
       color      : #E1E1E1;
     }
 
     a {
-      text-decoration   : none;
-      text-align        : center;
-      // margin-top     : 1rem;
-    }
-
-    #pyramid {
-      position: absolute;
-      left    : 14vw;
-      bottom  : -5vh;
-    }
-
-    #points {
-      position: absolute;
-      bottom  : 47vh;
-      left    : 10.8vw;
+      text-decoration: none;
+      text-align     : center;
     }
   }
 
-  .blue-back {
-    position     : absolute;
-    width        : 300px;
-    height       : 450px;
-    right        : 81px;
-    top          : 158px;
-    background   : #007BFF;
-    border-radius: 25px;
+  form:before {
+    content : ' ';
+    position: absolute;
+    z-index : -2;
+    right   : -15%;
+    top     : -17%;
+    width   : 120px;
+    height  : 120px;
+
+    background-image : url(../../../images/slide_2_how/points.svg);
+    background-repeat: no-repeat;
+    background-size  : contain;
+  }
+
+  form:after {
+    content : ' ';
+    position: absolute;
+    right   : -15%;
+    bottom  : -10%;
+    width   : 80px;
+    height  : 100px;
+
+    background-image : url(../../../images/slide_2_how/pyramid.svg);
+    background-repeat: no-repeat;
+    background-size  : contain;
   }
 
   p {
     font-size: 1.5rem;
     position : absolute;
-    width    : 65%;
+    width    : 60%;
     opacity  : .6;
     top      : 43vh;
     margin   : 0;
+  }
+
+  @media (max-width: 1440px) {
+    form {
+      margin-top: 10vh;
+    }
+  }
+
+  @media (max-width: 1170px) {
+    form {
+      left: -5vw;
+    }
+
+    p {
+      width: 58%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    form {
+      left: -8vw;
+    }
+
+    p {
+      width: 55%;
+    }
+  }
+
+  @media (max-width: 910px) {
+    form {
+      left: -12vw;
+    }
+
+    p {
+      width: 50%;
+      top  : 36vh;
+    }
+  }
+
+  @media (max-width: 850px) {
+    form {
+      left: -15vw;
+    }
+
+    p {
+      width: 40%;
+      top  : 25vh;
+    }
   }
 
   .bg-line {
