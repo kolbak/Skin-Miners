@@ -6,11 +6,10 @@
   // top     : 12%;
 
   .frame {
-    position: relative;
-    width   : 28%;
-    height  : 30%;
-    top     : 50%;
-    left    : 70%;
+
+    position : relative;
+    top      : 50%;
+    right    : -60%;
 
     img {
       width: 100%;
@@ -21,9 +20,15 @@
       font-size     : 19px;
       font-style    : normal;
       font-weight   : 400;
-      line-height   : 25px;
+      line-height   : 3vh;
       letter-spacing: 0.02em;
       text-align    : left;
+    }
+
+    @media (max-width: 1700px) {
+      p {
+        font-size: 15px !important;
+      }
     }
   }
 

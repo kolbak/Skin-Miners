@@ -17,7 +17,7 @@ const Mining = () => (<div className="wrap-mining" id="mining">
 
   <div className="frame">
     <img alt="frame" src={pinkFrame} />
-    <p style={{ top: "3vh", width: "275px", left: "2vw" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    <p style={{ top: "3.75vh", width: "14vw", left: "2vw" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
   </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 

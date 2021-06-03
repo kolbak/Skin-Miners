@@ -3,7 +3,6 @@ import * as React from "react"
 import '../../styles/components/slide_2_how/registration.scss'
 
 import imgRegistration from '../../images/slide_2_how/registration.png'
-
 import hidden_account from '../../images/slide_2_how/hidden_account.svg'
 import hidden_circle from '../../images/slide_2_how/circle.svg'
 import hidden_square from '../../images/slide_2_how/square.svg'
