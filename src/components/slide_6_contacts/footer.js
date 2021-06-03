@@ -87,11 +87,11 @@ const Footer = () => {
             </div>
             <div className="row developed-copyright">
               <div className="col-md-7 ">
-                <p className="text_developed1">Developed by <span className="text_underline">Name Surname</span></p>
+                <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
               </div>
               <div className="col-md-5 ">
-                <p className="copyright1">Copyright © skinminers.com, 2021.</p>
-                <p className="copyright1">Все права защищены.</p>
+                <p className="copyright">Copyright © skinminers.com, 2021.</p>
+                <p className="copyright">Все права защищены.</p>
               </div>
             </div>
           </div>
@@ -147,9 +147,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="row ">
-        <p className="text_developed1">Developed by <span className="text_underline">Name Surname</span></p>
-        <p className="copyright1">Copyright © skinminers.com, 2021.</p>
-        <p className="copyright1">Все права защищены.</p>
+        <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
+        <p className="copyright">Copyright © skinminers.com, 2021.</p>
+        <p className="copyright">Все права защищены.</p>
       </div>
 
     </>}

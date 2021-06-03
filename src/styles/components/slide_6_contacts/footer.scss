@@ -87,7 +87,7 @@
   margin-bottom: 10%;
 }
 
-.copyright1 {
+.copyright {
   margin-bottom : -1%;
   font-family   : Roboto;
   font-style    : normal;
@@ -108,7 +108,7 @@
   margin-top: 3%;
 }
 
-.text_developed1 {
+.text-developed {
 
   font-family   : Roboto;
   font-style    : normal;
@@ -170,15 +170,6 @@
   position: relative;
 }
 
-.text_developed {
-  top           : 34%;
-  position      : relative;
-  font-family   : Roboto;
-  font-style    : normal;
-  font-weight   : 400;
-  letter-spacing: 0em;
-  color         : #747474CC;
-}
 
 .text_underline {
   font-family    : Roboto;
@@ -213,11 +204,11 @@
     margin-top: 16%;
   }
 
-  .text_developed1 {
+  .text-developed {
     font-size: 171%;
   }
 
-  .copyright1 {
+  .copyright {
     font-size: 120%;
   }
 
@@ -237,11 +228,11 @@
       margin-top: 21%;
     }
 
-    .text_developed1 {
+    .text-developed {
       font-size: 256%;
     }
 
-    .copyright1 {
+    .copyright {
       font-size: 181%;
     }
 
@@ -272,7 +263,7 @@
     margin-top: 5%;
   }
 
-  .text_developed1 {
+  .text-developed {
     font-size: 150%;
   }
 
@@ -297,7 +288,7 @@
   }
 
   .policy_market {
-    font-size    : 144% !important;
+    font-size    : 139% !important;
     margin-top   : -6%;
     margin-bottom: 3%;
   }
@@ -309,7 +300,7 @@
       margin-bottom: 3%;
     }
 
-    .copyright1 {
+    .copyright {
       font-size: 96% !important;
     }
   }
@@ -318,11 +309,11 @@
     width: 41%;
   }
 
-  .text_developed1 {
+  .text-developed {
     font-size: 127%;
   }
 
-  .copyright1 {
+  .copyright {
     font-size: 73%;
   }
 
@@ -358,18 +349,6 @@
   position: relative;
 }
 
-.copyright {
-  font-family   : Roboto;
-  font-style    : normal;
-  font-weight   : 400;
-  letter-spacing: 0em;
-  text-align    : left;
-  color         : #FFFFFF80;
-  position      : relative;
-  top           : -11%;
-  width         : 167%;
-}
-
 #email {
   font-family   : Roboto;
   font-style    : normal;
@@ -386,4 +365,41 @@
   letter-spacing: 0em;
   text-align    : left;
   color         : #BEC6CD;
+}
+
+@media (min-width: 780px) and (max-width: 999px) {
+  .policy_market {
+    font-size: 85% !important;
+    line-height: 158%;
+  }
+
+  .email-telephone{
+    font-size: 70%;
+    line-height: 70%;
+  }
+
+  .copyright{
+    font-size: 54%;
+    line-height: 141%;
+  }
+
+  .text-developed{
+    font-size: 95%;
+  }
+
+  .question_button{
+    width: 56%;
+  }
+
+  .form-control{
+    position: relative;
+    top: -14px;
+    height: 80% !important;
+    font-size: 64%;
+  }
+
+  .question_button{
+    position: relative;
+    top: -25px;
+  }
 }
