@@ -33,11 +33,11 @@ const ThirdSlide = () => {
 
   return (<div className="wrap-slide slide-3" id="we-anchor">
     {width >= 780 ? <>
-      <h1 className="h1-main">
-        <span className="slide-number">3</span>
+      <h1 className="h1-main" style={{ padding: "0 5vw", zIndex: 3 }}>
+        <span className="slide-number" style={{ marginLeft: "5vw" }}>3</span>
         <span className="slide-title">Почему мы?</span>
       </h1>
-      
+
       <img alt="circle" id="hidden_circle" src={hidden_circle} />
       <img alt="square" id="hidden_square" src={hidden_square} />
       <img alt="triangle" id="hidden_triangle" src={hidden_triangle} />
@@ -90,7 +90,7 @@ const ThirdSlide = () => {
       </div>
     </> : <>
       <div className="row">
-        <h1 className=" header-third h1-main">
+        <h1 className="header-third h1-main">
           <span className="slide-number">3</span>
           <span className="slide-title">Почему мы?</span>
         </h1>
@@ -145,13 +145,9 @@ const ThirdSlide = () => {
           </div>
         </div>
       </div>
-      <div className="row third-button-container">
-        <button type="button" className="btn btn-primary btn-lg third-button">Регистрация</button>
-      </div>
-      {/* <div className="borderr"></div> */}
-      {/* <div className="test"></div> */}
-    </>}
-  </div>)
+    </>
+    }
+  </div >)
 
 }
 export default ThirdSlide;

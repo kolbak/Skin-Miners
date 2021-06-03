@@ -48,7 +48,7 @@ const WelcomeSlide = () => {
     <img alt="points" className="points" src={points} />
     <img alt="ellipse" className="ellipse" src={ellipse} />
     <img alt="down-arrow" className="down-arrow" src={downArrow} />
-    <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} />
+    <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} style={{ overflow: "hidden" }} />
 
   </div>)
 }
