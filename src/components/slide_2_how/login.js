@@ -16,7 +16,7 @@ const Login = () => (
     <img alt="hidden_square2" id="hidden_square2" src={hidden_square2} />
     <img alt="hidden_triangle1" id="hidden_triangle1" src={hidden_triangle1} />
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    <p>Войдите в программу. Используйте те же данные, что и на сайте: так мы сможем автоматически начислять вознаграждение.</p>
     <i className="bg-line n-1" />
     <i className="bg-line n-2" />
     <i className="bg-line n-3" />
@@ -30,9 +30,9 @@ const Login = () => (
       <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" /></div>
       <div className="mb-3 form-check">
         <input type="checkbox" className="form-check-input" id="check" />
-        <label className="form-check-label" htmlFor="check">Check me out</label>
+        <label className="form-check-label" htmlFor="check">Не выходить</label>
       </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <button type="submit" className="btn btn-primary">Войти</button>
 
       <div className="mt-3" style={{ textAlign: "center" }}>
         <a href="Регистрация">Регистрация</a>

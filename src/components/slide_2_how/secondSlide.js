@@ -196,7 +196,7 @@ const SecondSlide = () => {
             <div className="row">
               <p className="slide-header">Регистрация</p>
               <img alt="registration" src={reg} className="first-slider-image" />
-              <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <p className="slide-text">Создайте аккаунт на сайте, чтобы получить доступ к приложению. Отслеживайте прогресс прямо из браузера</p>
               <img alt="figure" src={yellow_arrow} className="yellow_arrow" />
             </div>
           </div>
@@ -204,13 +204,18 @@ const SecondSlide = () => {
             <div className="row">
               <p className="slide-header">Скачать приложение</p>
               <img alt="download" src={download} className="download" />
-              <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <p className="slide-text">
+                Скачайте приложение из личного кабинета. Оно автоматически определит мощность и подберет оптимальный режим майнинга.
+              </p>
             </div>
           </div>
           <div key={3} className="carousel-item" id="third-slide-pos">
             <div className="row">
               <p className="slide-header">Логин</p>
-              <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <p className="slide-text">
+                Войдите в программу. Используйте те же данные, что и на сайте:
+                так мы сможем автоматически начислять вознаграждение.
+              </p>
             </div>
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
@@ -219,7 +224,12 @@ const SecondSlide = () => {
               <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
               </video>
-              <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <p className="slide-text">
+                Регулируйте мощность работы: от слабой, при которой можно параллельно
+                играть в игры, до пиковой, с максимально возможной доходностью
+                Первый скин можно вывести уже после суток майнинга через наш
+                внутренний магазин.
+              </p>
             </div>
           </div>
         </div>

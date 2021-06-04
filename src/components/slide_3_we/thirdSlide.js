@@ -47,22 +47,11 @@ const ThirdSlide = () => {
       <div className="big-capture">
         <img alt="grid" src={grid_window} className="grid_window" />
 
-        <div className="power_container containers">
-          <p className="Head_text">Мощность</p>
-          <div className="line" />
-          <img alt="power" src={power} className="safity three_pictures" />
-          <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="trust_container containers">
-          <p className="Head_text">Доверие</p>
-          <div className="line" />
-          <img alt="trust" src={trust} className="safity three_pictures" />
-          <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div className="nameless_container containers">
+          <img alt="nameless" src={nameless_window} className="nameless_window" />
+          <p className="nameless_text">
+            Мы — лучшее решение для геймеров.
+            Мы сделали сложные вещи простым. Мы совмещаем в себе: ↓↓↓
           </p>
         </div>
         <div className="safety_container containers">
@@ -70,21 +59,30 @@ const ThirdSlide = () => {
           <div className="line" />
           <img alt="safity" src={safity} className="safity  three_pictures" />
           <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Оптимально рассчитываем нагрузку для безопасности вашего компьютера.
+            Процессор и видеокарта выполняют математические расчеты — это не опаснее, чем компьютерные игры!
           </p>
         </div>
-        <div className="nameless_container containers">
-          <img alt="nameless" src={nameless_window} className="nameless_window" />
-          <p className="nameless_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore.
+        <div className="power_container containers">
+          <p className="Head_text">Простоту</p>
+          <div className="line" />
+          <img alt="power" src={power} className="safity three_pictures" />
+          <p className="thesis">
+            Скачиваете приложение — зарабатываете скины.
+            Никаких дополнительных действий — заработок в пару кликов.
+          </p>
+        </div>
+        <div className="trust_container containers">
+          <p className="Head_text">Любовь</p>
+          <div className="line" />
+          <img alt="trust" src={trust} className="safity three_pictures" />
+          <p className="thesis">
+            Мы очень ценим выбор нашего сервиса, поэтому часто поощряем различными розыгрышами.
           </p>
         </div>
         <div className="cardless_container containers">
           <p className="cardless_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            При возникновении проблем вы всегда можете написать нам в поддержку, мы разберемся!
           </p>
         </div>
       </div>
@@ -95,10 +93,12 @@ const ThirdSlide = () => {
           <span className="slide-title">Почему мы?</span>
         </h1>
       </div>
+
       <div className="row nameless_container_mobile">
         <p className="nameless_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing.
-          </p>
+          Мы — лучшее решение для геймеров.
+          Мы сделали сложные вещи простым. Мы совмещаем в себе: ↓↓↓
+        </p>
       </div>
       <div className="row">
         <img alt="background" className="fourth_background_mobile" src={fourth_background_mobile} />
@@ -109,30 +109,29 @@ const ThirdSlide = () => {
           <div className="line" />
           <img alt="safity" src={safity} className="safity_m  three_pictures" />
           <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+            Оптимально рассчитываем нагрузку для безопасности вашего компьютера.
+            Процессор и видеокарта выполняют математические расчеты — это не опаснее, чем компьютерные игры!
+          </p>
         </div>
       </div>
       <div className="row">
         <div className="power_container_m containers">
-          <p className="Head_text">Мощность</p>
+          <p className="Head_text">Простоту</p>
           <div className="line" />
           <img alt="power" src={power} className="safity three_pictures" />
           <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Скачиваете приложение — зарабатываете скины.
+            Никаких дополнительных действий — заработок в пару кликов.
           </p>
         </div>
       </div>
       <div className="row">
         <div className="trust_container_m containers">
-          <p className="Head_text">Доверие</p>
+          <p className="Head_text">Любовь</p>
           <div className="line" />
           <img alt="trust" src={trust} className="safity three_pictures" />
           <p className="thesis">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Мы очень ценим выбор нашего сервиса, поэтому часто поощряем различными розыгрышами.
           </p>
         </div>
       </div>
@@ -141,7 +140,9 @@ const ThirdSlide = () => {
         <div className="card dark text-white">
           <img className="card-img" src={mac_fon} alt="card" />
           <div className="card-img-overlay">
-            <p className="card-text mac_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p className="card-text mac_text">
+              При возникновении проблем вы всегда можете написать нам в поддержку, мы разберемся!
+            </p>
           </div>
         </div>
       </div>

@@ -17,9 +17,9 @@ const Mining = () => (<div className="wrap-mining" id="mining">
 
   <div className="frame">
     <img alt="frame" src={pinkFrame} />
-    <p style={{ top: "3.75vh", width: "14vw", left: "2vw" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    <p style={{ top: "3.75vh", width: "14vw", left: "2vw" }}>Первый скин можно вывести уже после суток майнинга через наш внутренний магазин.</p>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+  <p>Регулируйте мощность работы:<br />от слабой, при которой можно параллельно играть в игры, до пиковой, с максимально возможной доходностью</p>
 
 </div>)
 

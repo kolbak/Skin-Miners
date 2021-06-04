@@ -14,7 +14,7 @@ const Registration = () => (<div className="wrap-reg" id="registration">
   <img alt="hidden_circle" id="hidden_circle" src={hidden_circle} />
   <img alt="hidden_square" id="hidden_square" src={hidden_square} />
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+  <p>Создайте аккаунт на сайте, чтобы получить доступ к приложению.<br />Отслеживайте прогресс прямо из браузера</p>
   <img alt="registration" className="registration-img" src={imgRegistration} />
 
 </div>)
