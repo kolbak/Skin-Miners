@@ -150,6 +150,10 @@ img#triangle {
     padding-left  : 10vw;
     padding-right : 10vw;
   }
+
+  .what-header {
+    margin-top: 3vh;
+  }
 }
 
 @media (max-width: 500px) {
@@ -160,5 +164,16 @@ img#triangle {
     margin-left : auto;
     margin-right: auto;
     margin-top  : 3vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .what-desc {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .what-header {
+    font-size: 25px;
   }
 }
