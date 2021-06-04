@@ -10,6 +10,13 @@ import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 import two_textboxes from '../../images/slide_6_contacts/two_textboxes.svg'
 import icons from '../../images/slide_6_contacts/icons.svg'
+import two_lines from '../../images/slide_6_contacts/two_lines.svg'
+import vk_color from '../../images/slide_6_contacts/vk_color.svg'
+import vk_gray from '../../images/slide_6_contacts/vk_gray.svg'
+import telegram_color from '../../images/slide_6_contacts/telegram_color.svg'
+import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
+import discord_color from '../../images/slide_6_contacts/discord_color.svg'
+import discord_gray from '../../images/slide_6_contacts/discord_gray.svg'
 
 import two_textboxes_mobile from '../../images/slide_6_contacts/two_textboxes_mobile.svg'
 import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
@@ -81,7 +88,14 @@ const Footer = () => {
             <div className="row  footer-images">
               <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
               <div className="col-md"><img alt="arrow_to_contacts" className="arrow_to_contacts1" src={arrow_to_contacts} /></div>
-              <div className="col-md"><img alt="icons" className="icons rounded float-right" src={icons} /></div>
+              <div className="col-md col__relative">
+                <img className="two_lines rounded float-right" src={two_lines} />
+                <div className="icons">
+                  <div className="telegram icons__all"></div>
+                  <div className="discord icons__all"></div>
+                  <div className="vk icons__all"></div>
+                </div>
+              </div>
             </div>
             <div className="row developed-copyright">
               <div className="col-md-7 ">

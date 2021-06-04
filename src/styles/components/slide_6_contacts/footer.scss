@@ -22,9 +22,6 @@
   margin-right: 5%;
 }
 
-// .footer-images{
-//     height: 22vh;
-// }
 .textboxes-card {
   background-color: transparent !important;
   margin-top      : 10%;
@@ -77,13 +74,54 @@
   padding : 0% 10% 2% 10%;
 }
 
-.icons {
+.col__relative{
+  position: relative;
+}
+
+.two_lines {
   width        : 60%;
   position     : relative;
   margin-top   : 19%;
   margin-bottom: 10%;
 }
 
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 27%;
+  left: 10%;
+}
+
+.icons__all{
+  width: 46%;
+  height: 56%;
+  margin-bottom: 16%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.telegram{
+  background-image: url("../../../images/slide_6_contacts/telegram_gray.svg");
+}
+.telegram:hover{
+  background-image: url("../../../images/slide_6_contacts/telegram_color.svg");
+}
+.vk{
+  background-image: url("../../../images/slide_6_contacts/vk_gray.svg");
+}
+.vk:hover{
+  background-image: url("../../../images/slide_6_contacts/vk_color.svg");
+}
+.discord{
+  background-image: url("../../../images/slide_6_contacts/discord_gray.svg");
+  margin-left: 7%;
+}
+.discord:hover{
+  background-image: url("../../../images/slide_6_contacts/discord_color.svg");
+}
 .copyright {
   margin-bottom : -1%;
   font-family   : Roboto;
@@ -338,12 +376,6 @@
 .two_icons {
   margin-bottom: 6%;
   margin-top   : 91% !important;
-}
-
-.two_lines {
-  left    : 22%;
-  top     : -12%;
-  position: relative;
 }
 
 #email {
