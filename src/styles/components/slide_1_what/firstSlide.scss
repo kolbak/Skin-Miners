@@ -1,12 +1,24 @@
 .slide-1 {
   ul {
-    margin-top: 20vh;
+    margin-top: 15vh;
     width     : 50%;
     float     : right;
 
     li {
-      font-size    : 1.7rem;
+      font-size    : 1.5rem;
       margin-bottom: 15px;
+      opacity      : 0.6;
+
+    }
+
+    li#li-head {
+      opacity        : 1;
+      font-size      : 2rem;
+      position       : relative;
+      list-style-type: none;
+      right          : 5rem;
+      bottom         : 5vh;
+      width          : max-content;
     }
   }
 
@@ -37,6 +49,12 @@ img#triangle {
       li {
         font-size: 1.3rem;
       }
+
+      li#li-head {
+        font-size: 1.5rem;
+        margin   : auto;
+        right    : 3rem;
+      }
     }
 
     img#bwAmmo {
@@ -50,11 +68,20 @@ img#triangle {
 @media (min-width: 991px) and(max-width: 1280px) {
   .slide-1 {
     ul {
+      margin-top: 5vh;
+
       li {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        opacity  : 0.6;
       }
 
-      margin-top: 15vh;
+      li#li-head {
+        opacity  : 1;
+        font-size: 1.5rem;
+        margin   : auto;
+        right    : 3rem;
+        width    : -webkit-fill-available;
+      }
     }
 
     img#bwAmmo {
@@ -63,22 +90,32 @@ img#triangle {
       width      : 42%;
       margin-left: 1rem;
     }
+
   }
 }
 
 @media (min-width: 767px) and(max-width: 991px) {
   .slide-1 {
     ul {
+      margin-top: 15vh;
+
       li {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        opacity  : 0.6;
       }
 
-      margin-top: 15vh;
+      li#li-head {
+        opacity  : 1;
+        font-size: 1.5rem;
+        margin   : auto;
+        right    : 1rem;
+        width    : -webkit-fill-available;
+      }
     }
 
     img#bwAmmo {
       height     : 100%;
-      margin-top : 13vh;
+      margin-top : 11vh;
       width      : 45%;
       margin-left: 1rem;
     }

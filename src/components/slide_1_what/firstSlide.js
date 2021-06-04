@@ -26,24 +26,24 @@ const FirstSlide = () => {
     <img alt="smile" id="smile" src={smile} />
     <img alt="triangle" id="triangle" src={triangle} />
 
-    {width >= 768 ? <ul>
-      <li>Lorem ipsum dolor sit amet, consectetur</li>
-      <li>adipiscing elit, sed do eiusmod tempor</li>
-      <li>incididunt ut labore et dolore magna aliqua.</li>
-      <li>Ut enim ad minim veniam, quis nostrud</li>
-      <li>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-    </ul> :
-      <p className="what-desc mt-3">
-        Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>}
+    {width >= 768 ?
+      <ul>
+        <li id="li-head">Упрощаем процесс майнинга для геймеров</li>
+        <li>Используем мощности компьютера для генерации криптовалюты</li>
+        <li>Автоматически конвертируем ее в скины, которые передаем пользователям</li>
+        <li>Больше нет нужды создавать крипто кошельки и управлять ими</li>
+        <li>Скачайте приложение для Windows, отслеживайте прогресс на сайте и забирайте скины</li>
+      </ul> : <>
+        <h3>Упрощаем процесс майнинга для геймеров</h3>
+        <p className="what-desc mt-3">
+          Используем мощности компьютера для генерации криптовалюты,
+          автоматически конвертируем ее в скины, которые передаем пользователям.
+        </p></>
+    }
 
 
 
-  </div>)
+  </div >)
 }
 
 export default FirstSlide
