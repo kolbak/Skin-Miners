@@ -180,7 +180,7 @@ const SecondSlide = () => {
         </div>
       </div>
     </> : <>
-      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
         <div className="carousel-indicators">
           <button ref={active_slider_btn1} className="active active-slider-btn1 slider-btns" onClick={togglecolor1} type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" />
           <div ref={active_btn_line1} className="btn-line" />
@@ -216,9 +216,7 @@ const SecondSlide = () => {
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
               <p className="slide-header">Майнинг</p>
-              <video
-                poster={miningPoster}
-                width="500" height="400" preload="true" autoPlay loop muted>
+              <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
               </video>
               <p className="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -226,11 +224,11 @@ const SecondSlide = () => {
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onClick={PreviousSlide} ref={rightslide}>
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="visually-hidden">Previous</span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onClick={NextSlide} ref={leftslide}>
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
         </button>
       </div>
