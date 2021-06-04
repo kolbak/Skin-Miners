@@ -9,13 +9,9 @@ import mail_and_telephone from "../../images/slide_6_contacts/mail_and_telephone
 import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 import two_textboxes from '../../images/slide_6_contacts/two_textboxes.svg'
-import icons from '../../images/slide_6_contacts/icons.svg'
 import two_lines from '../../images/slide_6_contacts/two_lines.svg'
-import vk_color from '../../images/slide_6_contacts/vk_color.svg'
 import vk_gray from '../../images/slide_6_contacts/vk_gray.svg'
-import telegram_color from '../../images/slide_6_contacts/telegram_color.svg'
 import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
-import discord_color from '../../images/slide_6_contacts/discord_color.svg'
 import discord_gray from '../../images/slide_6_contacts/discord_gray.svg'
 
 import two_textboxes_mobile from '../../images/slide_6_contacts/two_textboxes_mobile.svg'
@@ -36,6 +32,17 @@ const Footer = () => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
+ 
+  function areas(){
+    var icons_height = document.getElementById('parsing_image').offsetHeight;
+    let icons_width = document.getElementById('parsing_image').offsetWidth;
+    let a ="0,0"+"," + icons_width + "," + (icons_height/2.8);
+    let b ="0"+","+ (icons_height/2.8) + "," + icons_width  + "," + (icons_height/2.8)*2;
+    let c ="0"+","+ (icons_height/2.8)*2 + "," + icons_width + "," + icons_height;
+    document.getElementById('coords_vk1').coords=a;
+    document.getElementById('coords_vk2').coords=b;
+    document.getElementById('coords_vk3').coords=c;
+  }
 
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
     {width >= 780 && <>
@@ -91,9 +98,9 @@ const Footer = () => {
               <div className="col-md col__relative">
                 <img className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
-                  <div className="telegram icons__all"></div>
-                  <div className="discord icons__all"></div>
-                  <div className="vk icons__all"></div>
+                  <a href="#" class="links__all"><div className="telegram icons__all"></div></a>
+                  <a href="#" class="links__all"><div className="discord icons__all"></div></a>
+                  <a href="#" class="links__all"><div className="vk icons__all"></div></a>
                 </div>
               </div>
             </div>
@@ -145,7 +152,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="row ">
-        <div className="col-5 "><img alt="" className="icons rounded float-right" src={icons_mobile} /></div>
+        <div className="col-5 ">
+          <img id="parsing_image" alt="social networks" className="icons_mobile rounded float-right" src={icons_mobile} useMap="#icons__links"/>
+          <map name="icons__links">
+            <area shape="rect" id="coords_vk1" coords="0,0,10,10" href="inform.html" alt="Информация"/>
+            <area shape="rect" id="coords_vk2" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация"/>
+            <area shape="rect" id="coords_vk3" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация"/>
+          </map>
+        </div>
         <div className="col-7 ">
           <div className="card dark text-white four-words">
             <img alt="four_words" className="card-image" src={four_words_mobile} />
