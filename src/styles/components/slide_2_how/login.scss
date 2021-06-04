@@ -77,17 +77,24 @@
 
   @media (max-width: 1440px) {
     form {
-      margin-top: 10vh;
+      left : -11vw;
+      width: auto;
+    }
+
+    p {
+      width: 46%;
     }
   }
 
   @media (max-width: 1170px) {
     form {
-      left: -5vw;
+      left: -26vw;
+      top : 2vh;
     }
 
     p {
-      width: 58%;
+      display: none;
+      width  : 58%;
     }
   }
 

@@ -8,7 +8,7 @@
   p {
     position : absolute;
     opacity  : .6;
-    top      : 25vh;
+    top      : 22vh;
     margin   : 0;
     font-size: 1.5rem;
   }
@@ -16,7 +16,7 @@
   .download-img {
     position: absolute;
     z-index : -1;
-    bottom  : 11vh;
+    bottom  : 5vh;
     left    : 30%;
     width   : 70%;
     display : inline-block;
@@ -42,6 +42,4 @@
     width     : 23vw;
     background: linear-gradient(90deg, #181519, #A3D9E5);
   }
-
-  @media (max-width: 1700px) {}
 }

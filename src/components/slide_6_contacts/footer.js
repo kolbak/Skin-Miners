@@ -30,7 +30,7 @@ const Footer = () => {
     setWidth(window.screen.width);
   }, [])
 
-  return (<div className="container-fluid  footer" id="contacts-anchor">
+  return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
     {width >= 780 && <>
       <div className="row footer">
         <div className="col-md-5 left-side">
@@ -61,8 +61,8 @@ const Footer = () => {
               <div className="card dark text-white green-card">
                 <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
                 <div className="card-img-overlay wrong_card">
-                  <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
-                  <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
+                  <p className="card-text email-telephone" id="email" style={{ overflowWrap: "initial" }}>skinminers@gmail.com</p>
+                  <p className="card-text email-telephone" id="telephone" style={{ overflowWrap: "initial" }}>+7 (965) 753-45-14</p>
                 </div>
               </div>
             </div>
