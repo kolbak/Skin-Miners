@@ -39,6 +39,19 @@ body {
   min-height: 100vh;
 }
 
+.slide__what {
+  min-height: inherit !important;
+  margin-bottom: 100px;
+}
+
+.slide__slider {
+  min-height: inherit !important;
+}
+
+.slide__footer{
+  min-height: inherit !important;
+}
+
 h1,
 h2,
 h3,

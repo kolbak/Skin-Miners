@@ -204,7 +204,7 @@ const SecondSlide = () => {
             <div className="row">
               <p className="slide-header">Скачать приложение</p>
               <img alt="download" src={download} className="download" />
-              <p className="slide-text">
+              <p className="slide-text slide-text__download">
                 Скачайте приложение из личного кабинета. Оно автоматически определит мощность и подберет оптимальный режим майнинга.
               </p>
             </div>
@@ -220,11 +220,11 @@ const SecondSlide = () => {
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
-              <p className="slide-header">Майнинг</p>
+              <p className="slide-header slide-header__video">Майнинг</p>
               <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
               </video>
-              <p className="slide-text">
+              <p className="slide-text slide-text__video">
                 Регулируйте мощность работы: от слабой, при которой можно параллельно
                 играть в игры, до пиковой, с максимально возможной доходностью
                 Первый скин можно вывести уже после суток майнинга через наш
