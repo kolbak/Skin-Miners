@@ -14,7 +14,7 @@ import hidden_circle from '../../images/slide_3_we/circle.svg'
 import hidden_square from '../../images/slide_3_we/square.svg'
 import hidden_triangle from '../../images/slide_3_we/triangle.svg'
 
-import trust from '../../images/slide_3_we/trust.svg'
+import trust from '../../images/slide_3_we/trust.png'
 import safity from '../../images/slide_3_we/safity.svg'
 import power from '../../images/slide_3_we/power.svg'
 
@@ -75,7 +75,7 @@ const ThirdSlide = () => {
         <div className="trust_container containers">
           <p className="Head_text">Любовь</p>
           <div className="line" />
-          <img alt="trust" src={trust} className="safity three_pictures" />
+          <img alt="trust" src={trust} className="safity three_pictures" style={{ height: "70px", width: "70px" }} />
           <p className="thesis">
             Мы очень ценим выбор нашего сервиса, поэтому часто поощряем различными розыгрышами.
           </p>
@@ -129,7 +129,7 @@ const ThirdSlide = () => {
         <div className="trust_container_m containers">
           <p className="Head_text">Любовь</p>
           <div className="line" />
-          <img alt="trust" src={trust} className="safity three_pictures" />
+          <img alt="trust" src={trust} className="safity three_pictures" style={{ height: "70px", width: "70px" }} />
           <p className="thesis">
             Мы очень ценим выбор нашего сервиса, поэтому часто поощряем различными розыгрышами.
           </p>

@@ -70,13 +70,6 @@ const FourthSlide = () => {
       </div>
       <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto" children={"Регистрация"} />
     </form>
-
-    <p id="desctiption" className="orange">
-      Lorem ipsum dolor sit<br />
-      amet, consectetur adipiscing<br />
-      elit, sed do eiusmod temporinci<br />
-      didunt ut labore et dolore magna.<br />
-    </p>
   </div>)
 
   // const URL = "http://178.154.195.155:8000/api";

@@ -73,8 +73,6 @@ const Footer = () => {
                 <div className="card-img-overlay wrong_card2">
                   <p className="card-text policy_market">Policy</p>
                   <p className="card-text policy_market">Market</p>
-                  <p className="card-text policy_market">Policy</p>
-                  <p className="card-text policy_market">Market</p>
                 </div>
               </div>
             </div>
@@ -140,7 +138,6 @@ const Footer = () => {
             <div className="card-img-overlay">
               <p className="card-text policy_market">Policy</p>
               <p className="card-text policy_market">Market</p>
-              <p className="card-text policy_market">Policy</p>
             </div>
           </div>
           <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
