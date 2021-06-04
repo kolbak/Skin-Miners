@@ -1,3 +1,8 @@
+.slide__what {
+  min-height: inherit !important;
+  margin-bottom: 100px;
+}
+
 .slide-1 {
   ul {
     margin-top: 20vh;
@@ -70,15 +75,15 @@ img#triangle {
   .slide-1 {
     ul {
       li {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
       }
 
-      margin-top: 15vh;
+      margin-top: 8vh;
     }
 
     img#bwAmmo {
       height     : 100%;
-      margin-top : 13vh;
+      margin-top : 5vh;
       width      : 45%;
       margin-left: 1rem;
     }
@@ -89,10 +94,10 @@ img#triangle {
 @media (max-width: 767px) {
   .slide-1 img#bwAmmo {
     display     : block;
-    width       : 60vw;
+    width       : auto;
+    height      : 50vh;
     margin-left : auto;
     margin-right: auto;
-    height      : auto;
     margin-top  : 3vh;
   }
 
@@ -113,10 +118,10 @@ img#triangle {
 @media (max-width: 500px) {
   .slide-1 img#bwAmmo {
     display     : block;
-    width       : 70vw;
+    width       : auto;
+    height      : 50vh;
     margin-left : auto;
     margin-right: auto;
-    height      : auto;
     margin-top  : 3vh;
   }
 }
