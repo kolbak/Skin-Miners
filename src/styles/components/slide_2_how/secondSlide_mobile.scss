@@ -83,6 +83,84 @@
   margin-top: 60px;
 }
 
+.third-slide__mobile{
+  display: flex;
+  flex-direction: column;
+}
+#third-slide-pos{
+  form * {
+    font-size: 4vw;
+  }
+  form h4 {
+    font-size: 6vw;
+  }
+  form {
+    background: #24232C;
+    box-shadow: -5px -5px 30px 5px #D9A404,
+      15px 15px 0px 5px #007BFF;
+    border-radius: 25px;
+    padding      : 2rem;
+    min-width: 230px;
+    width    : 40vw;
+    height: 90vw;
+    position: relative;
+    margin: 8% auto 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    label {
+      font-family: Roboto;
+      font-style : normal;
+      font-weight: normal;
+      line-height: 23px;
+      color      : #E1E1E1;
+    }
+    a {
+      text-decoration: none;
+      text-align     : center;
+    }
+  }
+  
+  form:after {
+    content : ' ';
+    position: absolute;
+    right   : -15%;
+    bottom  : -10%;
+    width   : 80px;
+    height  : 100px;
+    background-image : url(../../../images/slide_2_how/pyramid.svg);
+    background-repeat: no-repeat;
+    background-size  : contain;
+  }
+  .bg-line_m {
+    height       : 5px;
+    border-radius: 5px;
+    z-index      : -1;
+    margin: 1% auto;
+  }
+
+  .bg-line_m.n-1 {
+    width     : 60vw;
+    background: linear-gradient(90deg, #15C1E5, #D9A404);
+  }
+
+  .bg-line_m.n-2 {
+    width     : 45vw;
+    background: linear-gradient(90deg, #161012, #413100);
+  }
+
+  .bg-line_m.n-4 {
+    width     : 45vw;
+    background: linear-gradient(90deg, #151015, #007AFD);
+  }
+
+  .bg-line_m.n-5 {
+    width     : 60vw;
+    background: linear-gradient(90deg, #D484FF, #027BFF);
+    margin-bottom: 5% !important;
+  }
+}
+
 @media (min-width: 0px) {
   .slide-header{
     margin-bottom: 30px;
@@ -137,9 +215,19 @@
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 500px) {
+
   .carousel {
     height: 200vw;
+  }
+  #third-slide-pos{
+    .slide-text{
+      font-size: 1.3rem;
+      line-height: 27px;
+    }
+    form h4 {
+      font-size: 5.3vw;
+    }
   }
 }
 
@@ -147,11 +235,25 @@
  .carousel{
    height: 184vw;
  }
+ #third-slide-pos{
+   form{
+     width: 50vw;
+   }
+   form h4 {
+    font-size: 5.2vw;
+  }
+ }
 }
 
 @media (min-width: 570px){
   .carousel{
     height: 170vw;
+  }
+  #third-slide-pos{
+    form{
+      height: 80vw;
+      width: 45vw;
+    }
   }
  }
 // @media (max-height: 800px){

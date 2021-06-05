@@ -210,12 +210,32 @@ const SecondSlide = () => {
             </div>
           </div>
           <div key={3} className="carousel-item" id="third-slide-pos">
-            <div className="row">
+            <div className="row third-slide__mobile">
               <p className="slide-header">Логин</p>
+              <i className="bg-line_m n-1"/>
+              <i className="bg-line_m n-2"/>
+              <form className="offset-md-8 col-3">
+                <div className="mb-3"><h4 style={{ textAlign: "center" }}>Форма входа</h4></div>
+                <br />
+                <div className="mb-3"><input placeholder="Email" type="email" className="form-control" /></div>
+                <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" /></div>
+                <div className="mb-3 form-check">
+                  <input type="checkbox" className="form-check-input" id="check" />
+                  <label className="form-check-label" htmlFor="check">Не выходить</label>
+                </div>
+                <button type="submit" className="btn btn-primary">Войти</button>
+          
+                <div className="mt-3" style={{ textAlign: "center" }}>
+                  <a href="Регистрация">Регистрация</a>
+                </div>
+              </form>
+              <i className="bg-line_m n-4" />
+              <i className="bg-line_m n-5" />
               <p className="slide-text">
                 Войдите в программу. Используйте те же данные, что и на сайте:
                 так мы сможем автоматически начислять вознаграждение.
               </p>
+             
             </div>
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
