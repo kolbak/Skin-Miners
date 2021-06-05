@@ -40,7 +40,7 @@ const IndexPage = () => (
     <div className="slide" children={<FourthSlide />} />
     <div className="slide" children={<Faq />} />
     <div className="slide slide__footer" children={<Footer />} />
-
+    
   </div >)
 
 export default IndexPage

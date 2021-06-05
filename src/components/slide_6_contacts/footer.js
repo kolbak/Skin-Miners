@@ -10,6 +10,7 @@ import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 import two_textboxes from '../../images/slide_6_contacts/two_textboxes.svg'
 import two_lines from '../../images/slide_6_contacts/two_lines.svg'
+import footer__line from '../../images/slide_6_contacts/footer__line.svg'
 import vk_gray from '../../images/slide_6_contacts/vk_gray.svg'
 import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
 import discord_gray from '../../images/slide_6_contacts/discord_gray.svg'
@@ -32,18 +33,10 @@ const Footer = () => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
- 
-  function areas(){
-    var icons_height = document.getElementById('parsing_image').offsetHeight;
-    let icons_width = document.getElementById('parsing_image').offsetWidth;
-    let a ="0,0"+"," + icons_width + "," + (icons_height/2.8);
-    let b ="0"+","+ (icons_height/2.8) + "," + icons_width  + "," + (icons_height/2.8)*2;
-    let c ="0"+","+ (icons_height/2.8)*2 + "," + icons_width + "," + icons_height;
-    document.getElementById('coords_vk1').coords=a;
-    document.getElementById('coords_vk2').coords=b;
-    document.getElementById('coords_vk3').coords=c;
-  }
 
+ // width < 780 && 
+     
+  //document.addEventListener("DOMContentLoaded", ready);
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
     {width >= 780 && <>
       <div className="row footer">
@@ -152,13 +145,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="row ">
-        <div className="col-5 ">
-          <img id="parsing_image" alt="social networks" className="icons_mobile rounded float-right" src={icons_mobile} useMap="#icons__links"/>
-          <map name="icons__links">
-            <area shape="rect" id="coords_vk1" coords="0,0,10,10" href="inform.html" alt="Информация"/>
-            <area shape="rect" id="coords_vk2" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация"/>
-            <area shape="rect" id="coords_vk3" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация"/>
-          </map>
+        <div className="col-5 icons_mobile">
+          <img className="footer__line footer__line_first" src={footer__line}/>
+          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray}/></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray}/></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray}/></a>
+          <img className="footer__line footer__line_second" src={footer__line}/>
         </div>
         <div className="col-7 ">
           <div className="card dark text-white four-words">
@@ -176,8 +168,10 @@ const Footer = () => {
         <p className="copyright">Copyright © skinminers.com, 2021.</p>
         <p className="copyright">Все права защищены.</p>
       </div>
-
+    
     </>}
   </div>)
+  
 }
+
 export default Footer

@@ -76,11 +76,45 @@
     width: 90%;
   }
   .icons_mobile {
-    width: 68%;
+    width: 37%;
+    height: 100%;
     top: 13%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
   }
-  
+  .footer__links_mobile{
+    height: 16%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+  .footer__line{
+    width: 82%;
+    margin-left: 10%;
+  }
+  .footer__links_mobile_second{
+    height: 20%;
+  }
+  .vk_gray{
+    width: 100%;
+  }
+  .discord_gray{
+    width: 110%;
+  }
+  .footer__links_mobile_third{
+    height: 13%;
+    margin-top: 2%;
+    margin-bottom: 7%;
+    margin-left: 30%;
+  }
+
+  .telegram_gray{
+    width: 80%;
+    height: auto;
+  }
   .policy_market {
     font-family: Roboto;
     font-style : normal;
