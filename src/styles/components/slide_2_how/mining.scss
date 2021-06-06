@@ -19,7 +19,7 @@
     padding: 1%;
 
     p {
-      width        : 80%;
+      width        : 90%;
       margin       : 5% 5% 20% 5%;
       font-size    : 18px;
     }
@@ -45,25 +45,11 @@
     z-index : -1;
   }
 
-  // @media (max-width: 1760px) {
-  //   .frame {
-  //     p{
-
-  //     }
-  //   }
-  // }
-  @media (max-width: 1700px) {
-    .frame {
-      left: 35vw;
-    }
-  }
-
   @media (max-width: 1440px) {
     .frame {
       position: relative;
       top     : 50%;
       right   : 0;
-      // left    : 30vw;
     }
   }
 }
