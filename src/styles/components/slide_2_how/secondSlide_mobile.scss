@@ -27,9 +27,11 @@
     position: relative;
     left: -35%;
     overflow: hidden;
-    width: 158%;
     height: auto;
     max-width: inherit !important;
+    width: 141vw;
+    height: 81vw;
+    margin-bottom: 0 !important;
 }
 
 .slide-text {
@@ -51,14 +53,12 @@
 }
 
 .download{
-  margin-bottom: 13%;
+  width: 90vw;
+  height: 45vw;
   object-fit: cover;
-  width: 100%;
-  height: auto;
 }
-.first-slider-image{
-  //margin-bottom: 10%;
-}
+
+
 .slider-btns{
   width: 21px !important;
   height: 21px !important;
