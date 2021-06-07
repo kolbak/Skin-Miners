@@ -61,77 +61,7 @@
     padding                : 1.5rem;
   }
 
-  @media (max-width: 1600px) {
-    .trust_container {
-      top  : 75rem !important;
-      width: 35vw !important;
-    }
-
-    .power_container {
-      top  : 43rem !important;
-      width: 35vw !important;
-    }
-
-    .safety_container {
-      width: 35vw !important;
-    }
-
-    .nameless_text {
-      top: 24.5% !important;
-    }
-  }
-
-  @media (max-width: 1280px) {
-    .trust_container {
-      top  : 60rem !important;
-      width: 35vw !important;
-    }
-
-    .power_container {
-      top  : 40rem !important;
-      width: 35vw !important;
-    }
-
-    .safety_container {
-      width: 35vw !important;
-    }
-
-    .thesis {
-      font-size: 20px !important;
-    }
-
-    .nameless_text {
-      font-size: 20px !important;
-    }
-  }
-
-  @media (max-width: 1000px) {
-
-    .nameless_container {
-      img {
-        width: 75vw !important;
-      }
-    }
-
-    .trust_container {
-      top  : 46rem !important;
-      width: 50vw !important;
-    }
-
-    .power_container {
-      top  : 31rem !important;
-      width: 50vw !important;
-    }
-
-    .safety_container {
-      top  : 16rem !important;
-      width: 50vw !important;
-    }
-
-    .thesis {
-      font-size: 20px !important;
-    }
-  }
+  
 
   .nameless_container {
     right   : 0vw;
@@ -251,6 +181,77 @@
     position: absolute;
     top     : 181vh;
     right   : 5.5vw;
+  }
+  @media (max-width: 1600px) {
+    .trust_container {
+      top  : 75rem !important;
+      width: 35vw !important;
+    }
+
+    .power_container {
+      top  : 43rem !important;
+      width: 35vw !important;
+    }
+
+    .safety_container {
+      width: 35vw !important;
+    }
+
+    .nameless_text {
+      top: 24.5% !important;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .trust_container {
+      top  : 60rem !important;
+      width: 35vw !important;
+    }
+
+    .power_container {
+      top  : 40rem !important;
+      width: 35vw !important;
+    }
+
+    .safety_container {
+      width: 35vw !important;
+    }
+
+    .thesis {
+      font-size: 20px;
+    }
+
+    .nameless_text {
+      font-size: 20px !important;
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    .nameless_container {
+      img {
+        width: 75vw !important;
+      }
+    }
+
+    .trust_container {
+      top  : 46rem !important;
+      width: 50vw !important;
+    }
+
+    .power_container {
+      top  : 31rem !important;
+      width: 50vw !important;
+    }
+
+    .safety_container {
+      top  : 16rem !important;
+      width: 50vw !important;
+    }
+
+    .thesis {
+      font-size: 20px;
+    }
   }
 }
 

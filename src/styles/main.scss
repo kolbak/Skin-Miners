@@ -50,8 +50,14 @@ body {
 
 .slide__footer{
   min-height: inherit !important;
+  padding-bottom: 25px;
 }
-
+@media (max-width: 760px){
+  .slide{
+    min-height: inherit !important;
+    margin-bottom: 100px !important;
+  }
+}
 h1,
 h2,
 h3,

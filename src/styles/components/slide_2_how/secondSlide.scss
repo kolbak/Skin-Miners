@@ -168,8 +168,11 @@
 
     @media (max-width: 1440px) {
       .content {
-        // height    : 70%;
         align-self: center;
+      }
+
+      .content {
+        height: 80vh;
       }
 
       .wrap-dl .download-img {

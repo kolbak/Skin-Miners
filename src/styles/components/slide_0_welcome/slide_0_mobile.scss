@@ -157,6 +157,12 @@
 
 @media (max-width: 767px) {
   .wrap-chart {
+    .item {
+      grid-template-columns: 1fr 7fr !important;
+    }
+  }
+
+  .wrap-chart {
     width: 75vw;
   }
 
@@ -259,8 +265,14 @@
   }
 }
 
-@media (max-width: 575px) {
-  // .welcome-slide {
-  //   width: 100%;
-  // }
+@media (max-width: 668px) {
+  .wrap-chart {
+    .item {
+      gap: 0px !important;
+
+      .name-line {
+        margin-top: 3%;
+      }
+    }
+  }
 }

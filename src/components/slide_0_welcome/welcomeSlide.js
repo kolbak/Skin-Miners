@@ -25,32 +25,33 @@ const WelcomeSlide = () => {
   //   setWidth(window.screen.width);
   // }, [])
 
-  return (<div className="welcome-slide">
+  return (
+    <div className="welcome-slide">
 
-    <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
-    <img id="hidden_square" alt="square" src={hidden_square} />
+      <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
+      <img id="hidden_square" alt="square" src={hidden_square} />
 
-    <div className="welcome">
-      <h1 className="h1-skin-miners">Skin<br />Miners</h1>
-      <p id="p-slogan">Не трать своё время просто так </p>
-      <button className="btn btn-lg">Стать участником</button>
+      <div className="welcome">
+        <h1 className="h1-skin-miners">Skin<br />Miners</h1>
+        <p id="p-slogan">Не трать своё время просто так </p>
+        <button className="btn btn-lg">Стать участником</button>
+      </div>
+
+      {/* График */}<Chart />
+      <h1 id="top-miners">Top miners</h1>
+      <img id="arrow" alt="arrow" src={arrow} />
+
+      <div className="bg-line n-1" />
+      <div className="bg-line n-2" />
+      <div className="bg-line n-3" />
+      <img alt="rhomb" className="rhomb" src={rhomb} />
+      <img alt="points" className="points" src={points} />
+      <img alt="ellipse" className="ellipse" src={ellipse} />
+      <img alt="down-arrow" className="down-arrow" src={downArrow} />
+      <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} style={{ overflow: "hidden" }} />
+
     </div>
-
-    {/* График */}<Chart />
-    <h1 id="top-miners">Top miners</h1>
-    <img id="arrow" alt="arrow" src={arrow} />
-
-
-    <div className="bg-line n-1" />
-    <div className="bg-line n-2" />
-    <div className="bg-line n-3" />
-    <img alt="rhomb" className="rhomb" src={rhomb} />
-    <img alt="points" className="points" src={points} />
-    <img alt="ellipse" className="ellipse" src={ellipse} />
-    <img alt="down-arrow" className="down-arrow" src={downArrow} />
-    <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} style={{ overflow: "hidden" }} />
-
-  </div>)
+  )
 }
 
 export default WelcomeSlide;

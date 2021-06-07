@@ -237,4 +237,12 @@ button {
     z-index : 1;
     width   : 2rem;
   }
+  @media (max-width: 760px){
+    #registration-anchor{
+      height: inherit !important;
+    }
+    #formRegistration {
+      padding-bottom: 0 !important;
+    }
+  }
 }
