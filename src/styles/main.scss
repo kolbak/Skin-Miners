@@ -26,6 +26,12 @@
   src        : url(../fonts/NotoSans-Regular.ttf);
 }
 
+html {
+  overflow-x   : hidden;
+  width        : 100%;
+  // height    : 100%;
+}
+
 body {
   background: #000000;
   padding   : 0;
@@ -73,8 +79,8 @@ li {
 }
 
 img {
-  user-select: none;
-  overflow   : hidden;
+  user-select   : none;
+  // overflow   : hidden;
 }
 
 .wrap-slide {
@@ -153,11 +159,11 @@ h5 {
 
 body,
 html {
-  width          : 100%;
-  height         : 100%;
-  scrollbar-color: #458245 #714826;
+  width             : 100%;
+  // height         : 100%;
+  scrollbar-color   : #458245 #714826;
   /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin;
+  scrollbar-width   : thin;
   /* толщина */
 }
 
