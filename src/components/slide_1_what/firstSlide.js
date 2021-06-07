@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"
 
 import '../../styles/components/slide_1_what/firstSlide.scss'
 
-import bwAmmo from '../../images/slide_1_what/bw-ammo.svg'
+// import bwAmmo from '../../images/slide_1_what/bw-ammo.svg'
+import bwAmmo from '../../images/slide_1_what/bw-ammo.png'
 import smile from '../../images/slide_1_what/Smile.svg'
 import triangle from '../../images/slide_1_what/Triangle.svg'
 

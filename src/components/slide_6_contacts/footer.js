@@ -16,7 +16,7 @@ import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
 import discord_gray from '../../images/slide_6_contacts/discord_gray.svg'
 
 import two_textboxes_mobile from '../../images/slide_6_contacts/two_textboxes_mobile.svg'
-import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
+// import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
 import mail_and_telephone_mobile from "../../images/slide_6_contacts/mail_and_telephone_mobile.svg";
 import four_words_mobile from "../../images/slide_6_contacts/four_words_mobile.svg";
 // import vk_gray from "../../images/slide_6_contacts/vk_gray.svg";
@@ -34,8 +34,8 @@ const Footer = () => {
     setWidth(window.screen.width);
   }, [])
 
- // width < 780 && 
-     
+  // width < 780 && 
+
   //document.addEventListener("DOMContentLoaded", ready);
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
     {width >= 780 && <>
@@ -89,11 +89,11 @@ const Footer = () => {
               <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
               <div className="col-md"><img alt="arrow_to_contacts" className="arrow_to_contacts1" src={arrow_to_contacts} /></div>
               <div className="col-md col__relative">
-                <img className="two_lines rounded float-right" src={two_lines} />
+                <img alt="two lines" className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
-                  <a href="#" class="links__all"><div className="telegram icons__all"></div></a>
-                  <a href="#" class="links__all"><div className="discord icons__all"></div></a>
-                  <a href="#" class="links__all"><div className="vk icons__all"></div></a>
+                  <a href="#" className="links__all"><div className="telegram icons__all"></div></a>
+                  <a href="#" className="links__all"><div className="discord icons__all"></div></a>
+                  <a href="#" className="links__all"><div className="vk icons__all"></div></a>
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="row ">
+      <div className="row">
         <div className="card dark text-white green-card">
           <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
           <div className="card-img-overlay wrong_card">
@@ -144,13 +144,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="row ">
+      <div className="row">
         <div className="col-5 icons_mobile">
-          <img className="footer__line footer__line_first" src={footer__line}/>
-          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray}/></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray}/></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray}/></a>
-          <img className="footer__line footer__line_second" src={footer__line}/>
+          <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
+          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+          <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
         </div>
         <div className="col-7 ">
           <div className="card dark text-white four-words">
@@ -160,7 +160,9 @@ const Footer = () => {
               <p className="card-text policy_market">Market</p>
             </div>
           </div>
-          <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
+          <div className="col-md">
+            <img alt="three_figures" className="three_figures1 float-left" src={three_figures} />
+          </div>
         </div>
       </div>
       <div className="row ">
@@ -168,10 +170,10 @@ const Footer = () => {
         <p className="copyright">Copyright © skinminers.com, 2021.</p>
         <p className="copyright">Все права защищены.</p>
       </div>
-    
+
     </>}
   </div>)
-  
+
 }
 
 export default Footer

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import pinkFrame from '../../images/slide_2_how/pink-frame.svg'
+// import pinkFrame from '../../images/slide_2_how/pink-frame.svg'
 import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
 import miningPoster from '../../images/slide_2_how/schema.png'
 

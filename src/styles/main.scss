@@ -40,7 +40,7 @@ body {
 }
 
 .slide__what {
-  min-height: inherit !important;
+  min-height   : inherit !important;
   margin-bottom: 100px;
 }
 
@@ -48,16 +48,18 @@ body {
   min-height: inherit !important;
 }
 
-.slide__footer{
-  min-height: inherit !important;
+.slide__footer {
+  min-height    : inherit !important;
   padding-bottom: 25px;
 }
-@media (max-width: 760px){
-  .slide{
-    min-height: inherit !important;
+
+@media (max-width: 760px) {
+  .slide {
+    min-height   : inherit !important;
     margin-bottom: 100px !important;
   }
 }
+
 h1,
 h2,
 h3,
@@ -72,6 +74,7 @@ li {
 
 img {
   user-select: none;
+  overflow   : hidden;
 }
 
 .wrap-slide {
@@ -124,7 +127,7 @@ img {
 @media (max-width: 500px) {
   .h1-main .slide-title {
     margin-left: 15vw;
-    font-size: 36px;
+    font-size  : 36px;
   }
 }
 

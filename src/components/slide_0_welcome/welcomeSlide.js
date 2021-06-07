@@ -4,6 +4,7 @@ import Chart from "./chart";
 import "../../styles/components/slide_0_welcome/welcomeSlide.scss";
 import "../../styles/components/slide_0_welcome/slide_0_mobile.scss";
 
+import logoArt from '../../images/slide_0_welcome/1.png'
 
 import hidden_triangle from '../../images/slide_0_welcome/triangle.svg'
 import hidden_square from '../../images/slide_0_welcome/square.svg'
@@ -32,7 +33,9 @@ const WelcomeSlide = () => {
       <img id="hidden_square" alt="square" src={hidden_square} />
 
       <div className="welcome">
-        <h1 className="h1-skin-miners">Skin<br />Miners</h1>
+        {/* <h1 id="h1-skin-miners">Skin<br />Miners</h1> */}
+        <img id="h1-skin-miners" alt="h1-skin-miners" src={logoArt} />
+
         <p id="p-slogan">Не трать своё время просто так </p>
         <button className="btn btn-lg">Стать участником</button>
       </div>
