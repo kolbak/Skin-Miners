@@ -159,7 +159,7 @@ const SecondSlide = () => {
     {width >= 780 ? <>
       <div className="wrap-tabs">
         <div className="progress">
-          <div className="progress-bar" role="progressbar" style={{ width: (tab) * 33.3 + '%' }} aria-valuenow={(tab + 1) * 25} aria-valuemin="0" aria-valuemax="100" />
+          <div className="progress-bar" role="progressbar" style={{ width: (tab) * 33.3 + '%' }} aria-valuenow={(tab + 1) * 25} aria-label="jump to slide" aria-valuemin="0" aria-valuemax="100" />
           <i className={`circle c1 ${tab >= 0 && 'active'}`} />
           <i className={`circle c2 ${tab >= 1 && 'active'}`} />
           <i className={`circle c3 ${tab >= 2 && 'active'}`} />

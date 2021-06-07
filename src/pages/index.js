@@ -27,7 +27,9 @@ const IndexPage = () => (
       maximum-scale=1.0,
       user-scalable=0" />
       <title>Skin Miners</title>
-
+      <meta name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+      Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,"/>
+      <meta name="keywords" content="skins csgo mining skinminers skins"/>
     </Helmet>
 
     <div className="side_bar" children={<SideBar />} />
