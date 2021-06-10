@@ -227,8 +227,8 @@
   width       : 85%;
   margin      : auto;
   height      : fit-content;
-  margin-top  : 2.5vh;
   padding-left: 2.5rem;
+  margin-top  : 4vh;
 }
 
 // .wrong_card2 {
@@ -304,6 +304,10 @@
 @media (min-width: 1450px) and (max-width: 1600px) {
   .email-telephone {
     font-size: 1.5vw;
+  }
+
+  .wrong_card {
+    margin-top: 2.5vh;
   }
 
   .question_form {
