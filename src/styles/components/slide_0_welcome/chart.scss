@@ -1,4 +1,6 @@
 .wrap-chart {
+  overflow-x      : hidden;
+  position        : relative;
   height          : calc(4.11rem * 5);
   width           : 40vw;
   border-radius   : 10px;
@@ -112,21 +114,23 @@
   }
 
   .btn {
-    background    : #3978f9;
-    border-radius : 10px;
-    width         : 110px;
-    height        : 35px;
-    font-family   : Roboto;
-    font-style    : normal;
-    font-weight   : normal;
-    font-size     : 16px;
-    line-height   : 19px;
-    letter-spacing: 0.04em;
-    box-shadow    : 0px 4px 10px 1px rgb(0 0 0 / 25%);
-    border        : none;
-    color         : #ffffff;
-    position      : absolute;
-    right         : 16.5vw;
-    top           : 22.45vh;
+    background       : #3978f9;
+    border-radius    : 10px;
+    width            : 110px;
+    height           : 35px;
+    font-family      : Roboto;
+    font-style       : normal;
+    font-weight      : normal;
+    font-size        : 16px;
+    line-height      : 19px;
+    letter-spacing   : 0.04em;
+    box-shadow       : 0px 4px 10px 1px rgb(0 0 0 / 25%);
+    border           : none;
+    color            : #ffffff;
+    position         : absolute;
+    // right         : 16.5vw;
+    // top           : 22.45vh;
+    right            : 5.5vw;
+    top              : 9.65vh;
   }
 }

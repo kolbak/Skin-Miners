@@ -32,7 +32,7 @@ const FourthSlide = () => {
 
     <form id="formRegistration">
       <div className="mb-custom-4">
-        <input type="email" className="form-control g-light" id="inputEmail" placeholder="Email" />
+        <input type="email" className="form-control g-light" placeholder="Email" />
         {width > 1000 && <>
           <p id="hint_email_text" className="hint">Амм, тут должен быть email... <br />
             <span className="orange">( имейл )</span>

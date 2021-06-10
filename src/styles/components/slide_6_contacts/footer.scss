@@ -1,4 +1,3 @@
-
 .border {
   border: 1px solid red;
 }
@@ -56,7 +55,7 @@
   width : 66%;
 }
 
-.question_form1 {
+.question_form {
   padding-top: 0%;
 
   top                : 4%;
@@ -74,7 +73,7 @@
   padding : 0% 10% 2% 10%;
 }
 
-.col__relative{
+.col__relative {
   position: relative;
 }
 
@@ -86,46 +85,53 @@
 }
 
 .icons {
-  display: flex;
+  display  : flex;
   flex-wrap: wrap;
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  top: 27%;
-  left: 10%;
+  position : absolute;
+  width    : 40%;
+  height   : 40%;
+  top      : 27%;
+  left     : 10%;
 }
 
-.links__all{
-  width: 46%;
-  height: 56%;
+.links__all {
+  width        : 46%;
+  height       : 56%;
   margin-bottom: 16%;
 }
 
-.icons__all{
-  width: 100%;
-  height: 100%;
+.icons__all {
+  width            : 100%;
+  height           : 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size  : contain;
 }
-.telegram{
+
+.telegram {
   background-image: url("../../../images/slide_6_contacts/telegram_gray.svg");
 }
-.telegram:hover{
+
+.telegram:hover {
   background-image: url("../../../images/slide_6_contacts/telegram_color.svg");
 }
-.vk{
+
+.vk {
   background-image: url("../../../images/slide_6_contacts/vk_gray.svg");
 }
-.vk:hover{
+
+.vk:hover {
   background-image: url("../../../images/slide_6_contacts/vk_color.svg");
 }
-.discord{
+
+.discord {
   background-image: url("../../../images/slide_6_contacts/discord_gray.svg");
-  margin-left: 7%;
+  margin-left     : 7%;
 }
-.discord:hover{
+
+.discord:hover {
   background-image: url("../../../images/slide_6_contacts/discord_color.svg");
 }
+
 .copyright {
   margin-bottom : -1%;
   font-family   : Roboto;
@@ -137,18 +143,18 @@
   position      : relative;
 }
 
-#exampleFormControlTextarea1 {
-  margin-top: 3%;
-}
+
 
 .question_button {
-  float     : right;
-  width     : 31%;
-  margin-top: 3%;
+  width        : fit-content !important;
+  float        : right;
+  margin-top   : 5%;
+  width        : 31%;
+  border-radius: 10px;
+  font-size    : 23px;
 }
 
 .text-developed {
-
   font-family   : Roboto;
   font-style    : normal;
   font-weight   : 400;
@@ -158,22 +164,15 @@
 }
 
 .developed-copyright {
-  margin-top: 8%;
+  margin-top: 5vh;
 }
 
 
 .question_form {
-  top              : 4%;
-  left             : -7%;
-  background-color : transparent;
-  background-image : url('../../../images/slide_6_contacts/two_textboxes.svg');
-  margin           : 0 !important;
-  background-size  : cover;
-  height           : 84%;
-  background-repeat: no-repeat;
-  width            : 100%;
-  position         : relative;
-  padding          : 15% 10% 2% 10%;
+  top     : -3%;
+  left    : -7%;
+  position: relative;
+  padding : 0 12% 3%;
 }
 
 .policy_market {
@@ -189,11 +188,10 @@
 }
 
 
-#exampleFormControlTextarea1 {
-  height: 100%;
-
+#formControlTextarea {
+  height    : 100%;
+  margin-top: 3%;
 }
-
 
 .three_figures {
   width   : 57%;
@@ -226,20 +224,31 @@
 }
 
 .wrong_card {
-  width      : 80%;
-  margin-left: 9%;
-  margin-top : 5%;
+  width       : 85%;
+  margin      : auto;
+  height      : fit-content;
+  padding-left: 2.5rem;
+  margin-top  : 4vh;
 }
 
-.wrong_card2 {
-  width      : 80%;
-  margin-left: 10%;
+// .wrong_card2 {
+//   width      : 80%;
+//   margin-left: 10%;
+// }
+
+#formControlTextarea,
+#inputEmail {
+  background  : #34383c;
+  opacity     : 0.5;
+  border-color: transparent;
+  color       : white;
+  font-size   : 23px;
 }
 
 
 @media (min-width: 1600px) {
   .policy_market {
-    font-size : 207%;
+    font-size : 225%;
     margin-top: 16%;
   }
 
@@ -252,14 +261,14 @@
   }
 
   .email-telephone {
-    font-size: 169%;
+    font-size: 1.5vw;
   }
 
-  @media (min-width: 1900px) {
-    .policy_market {
-      font-size: 293%;
-    }
-  }
+  // @media (min-width: 1900px) {
+  //   .policy_market {
+  //     font-size: 293%;
+  //   }
+  // }
 
   @media (min-width: 2200px) {
     .policy_market {
@@ -275,12 +284,17 @@
       font-size: 181%;
     }
 
+    .wrong_card {
+      margin-top: 3vh;
+      width     : 75%;
+    }
+
     .email-telephone {
-      font-size: 245%;
+      font-size: 1.7vw;
     }
   }
 
-  .question_form1 {
+  .question_form {
     width : 106%;
     height: 50%;
   }
@@ -289,10 +303,14 @@
 
 @media (min-width: 1450px) and (max-width: 1600px) {
   .email-telephone {
-    font-size: 142% !important;
+    font-size: 1.5vw;
   }
 
-  .question_form1 {
+  .wrong_card {
+    margin-top: 2.5vh;
+  }
+
+  .question_form {
     width : 106%;
     height: 50%;
   }
@@ -307,23 +325,28 @@
   }
 
   .developed-copyright {
-    margin-top: 3% !important;
+    margin-top: 7.5vh;
   }
 }
 
 
 @media (min-width: 1000px) and (max-width: 1450px) {
-  .footer-right-bottom {
-    margin-top: 10% !important;
-  }
+  // .footer-right-bottom {
+  //   margin-top: 10% !important;
+  // }
 
   .email-telephone {
-    font-size: 100% !important;
+    font-size: 1.5vw;
   }
 
-  .question_form1 {
+  .question_form {
     width : 106%;
     height: 50%;
+  }
+
+  .wrong_card {
+    margin-top  : 1.5vh;
+    padding-left: 2.5rem;
   }
 
   .policy_market {
@@ -332,17 +355,6 @@
     margin-bottom: 3%;
   }
 
-  @media (min-width: 1250px) and (max-width: 1450px) {
-    .policy_market {
-      font-size    : 192% !important;
-      margin-top   : 1%;
-      margin-bottom: 3%;
-    }
-
-    .copyright {
-      font-size: 96% !important;
-    }
-  }
 
   .question_button {
     width: 41%;
@@ -361,6 +373,17 @@
   }
 }
 
+@media (min-width: 1250px) and (max-width: 1450px) {
+  .policy_market {
+    font-size    : 192% !important;
+    margin-top   : 1%;
+    margin-bottom: 3%;
+  }
+
+  .copyright {
+    font-size: 96% !important;
+  }
+}
 
 
 .dark {
@@ -402,37 +425,41 @@
 
 @media (min-width: 780px) and (max-width: 999px) {
   .policy_market {
-    font-size: 85% !important;
+    font-size  : 85% !important;
     line-height: 158%;
   }
 
-  .email-telephone{
-    font-size: 70%;
+  .email-telephone {
+    font-size  : 70%;
     line-height: 70%;
   }
 
-  .copyright{
-    font-size: 54%;
+  .copyright {
+    font-size  : 54%;
     line-height: 141%;
   }
 
-  .text-developed{
+  .text-developed {
     font-size: 95%;
   }
 
-  .question_button{
+  .question_button {
     width: 56%;
   }
 
-  .form-control{
-    position: relative;
-    top: -14px;
-    height: 80% !important;
+  .form-control {
+    position : relative;
+    top      : -14px;
+    height   : 80% !important;
     font-size: 64%;
   }
 
-  .question_button{
+  .question_button {
     position: relative;
-    top: -25px;
+    top     : -25px;
+  }
+
+  .wrong_card {
+    margin-top: 1.3vh;
   }
 }
