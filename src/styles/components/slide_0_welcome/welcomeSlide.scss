@@ -102,35 +102,35 @@
 
 .rhomb {
   position: absolute;
-  right   : 49vw;
+  right   : 44vw;
   top     : calc(4.11rem * 5 + 12.7vh);
 }
 
 .points {
   position: absolute;
-  right   : 7vw;
-  top     : 5vh;
+  right   : 3vw;
+  top     : 6.5vh;
   z-index : -1;
 }
 
 
 .ellipse {
   position: absolute;
-  right   : 8vw;
+  right   : 3vw;
   top     : 21vh;
 }
 
 .ellipse-blurred {
   position: absolute;
   z-index : -2;
-  right   : 5vw;
+  right   : 3vw;
   top     : -3vh;
 }
 
 .down-arrow {
   position: absolute;
-  right   : 6.5vw;
-  top     : calc(15rem + 6vh);
+  right   : 2vw;
+  top     : calc(15rem + 4vh);
   z-index : -1;
 }
 
@@ -155,11 +155,5 @@
   #hidden_triangle {
     top : 7vh;
     left: 13vw;
-  }
-}
-
-@media (min-width: 991px) and(max-width: 1280px) {
-  .down-arrow {
-    right: 5.5vw;
   }
 }
