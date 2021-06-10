@@ -18,7 +18,7 @@ import yellow_arrow from '../../images/slide_2_how/mobile/yellow_arrow.svg'
 //*------------------------------------------------------- Видео
 import miningPoster from '../../images/slide_2_how/schema.png'
 import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
-import miningVideo_h264 from '../../images/slide_2_how/schema_animation.h264'
+// import miningVideo_h264 from '../../images/slide_2_how/schema_animation.h264'
 import miningVideo_webm from '../../images/slide_2_how/schema_animation.webm'
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
@@ -213,8 +213,8 @@ const SecondSlide = () => {
           <div key={3} className="carousel-item" id="third-slide-pos">
             <div className="row third-slide__mobile">
               <p className="slide-header">Логин</p>
-              <i className="bg-line_m n-1"/>
-              <i className="bg-line_m n-2"/>
+              <i className="bg-line_m n-1" />
+              <i className="bg-line_m n-2" />
               <form className="offset-md-8 col-3">
                 <div className="mb-3"><h4 style={{ textAlign: "center" }}>Форма входа</h4></div>
                 <br />
@@ -225,7 +225,7 @@ const SecondSlide = () => {
                   <label className="form-check-label" htmlFor="check">Не выходить</label>
                 </div>
                 <button type="submit" className="btn btn-primary">Войти</button>
-          
+
                 <div className="mt-3" style={{ textAlign: "center" }}>
                   <a href="Регистрация">Регистрация</a>
                 </div>
@@ -236,7 +236,7 @@ const SecondSlide = () => {
                 Войдите в программу. Используйте те же данные, что и на сайте:
                 так мы сможем автоматически начислять вознаграждение.
               </p>
-             
+
             </div>
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
@@ -244,7 +244,7 @@ const SecondSlide = () => {
               <p className="slide-header slide-header__video">Майнинг</p>
               <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
-                <source src={miningVideo_h264} type='video/h264' />
+                {/* <source src={miningVideo_h264} type='video/h264' /> */}
                 <source src={miningVideo_webm} type='video/webm' />
               </video>
               <p className="slide-text slide-text__video">

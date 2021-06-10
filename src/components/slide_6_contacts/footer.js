@@ -48,13 +48,13 @@ const Footer = () => {
           <div className="card dark text-white textboxes-card">
             <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
             <div className="card-img-overlay">
-              <form className="question_form1">
+              <form className="question_form">
 
                 <div className="form-group justify-content-center">
-                  <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
+                  <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" />
                 </div>
                 <div className="form-group question">
-                  <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Вопрос" />
+                  <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" />
                 </div>
                 <button type="submit" className="btn btn-primary question_button" children={"Отправить"} />
               </form>
@@ -68,7 +68,7 @@ const Footer = () => {
               <div className="card dark text-white green-card">
                 <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
                 <div className="card-img-overlay wrong_card">
-                  <p className="card-text email-telephone" id="email" style={{ overflowWrap: "initial" }}>skinminers@gmail.com</p>
+                  <p className="card-text email-telephone" id="email" style={{ overflowWrap: "initial", marginBottom: "0.5rem" }}>skinminers@gmail.com</p>
                   <p className="card-text email-telephone" id="telephone" style={{ overflowWrap: "initial" }}>+7 (965) 753-45-14</p>
                 </div>
               </div>
@@ -111,68 +111,70 @@ const Footer = () => {
       </div>
     </>}
 
-    {width < 780 && <>
-      <div className="row footer-mainheader">
-        <h1 className="h1-main ">
-          <span className="slide-number">5</span>
-          <span className="slide-title footer-header">Контакты</span>
-        </h1>
-      </div>
-      <div className="row ">
-        <div className="card dark text-white textboxes-card">
-          <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
-          <div className="card-img-overlay">
-            <form className="question_form1">
-
-              <div className="form-group justify-content-center">
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
-              </div>
-              <div className="form-group question">
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Вопрос" />
-              </div>
-              <button type="submit" className="btn btn-primary question_button" children={"Отправить"} />
-            </form>
-          </div>
+    {
+      width < 780 && <>
+        <div className="row footer-mainheader">
+          <h1 className="h1-main ">
+            <span className="slide-number">5</span>
+            <span className="slide-title footer-header">Контакты</span>
+          </h1>
         </div>
-      </div>
-      <div className="row">
-        <div className="card dark text-white green-card">
-          <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
-          <div className="card-img-overlay wrong_card">
-            <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
-            <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-5 icons_mobile">
-          <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
-          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
-          <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
-        </div>
-        <div className="col-7 ">
-          <div className="card dark text-white four-words">
-            <img alt="four_words" className="card-image" src={four_words_mobile} />
+        <div className="row ">
+          <div className="card dark text-white textboxes-card">
+            <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
             <div className="card-img-overlay">
-              <p className="card-text policy_market">Policy</p>
-              <p className="card-text policy_market">Market</p>
+              <form className="question_form">
+
+                <div className="form-group justify-content-center">
+                  <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" />
+                </div>
+                <div className="form-group question">
+                  <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" />
+                </div>
+                <button type="submit" className="btn btn-primary question_button" children={"Отправить"} />
+              </form>
             </div>
           </div>
-          <div className="col-md">
-            <img alt="three_figures" className="three_figures1 float-left" src={three_figures} />
+        </div>
+        <div className="row">
+          <div className="card dark text-white green-card">
+            <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
+            <div className="card-img-overlay wrong_card">
+              <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
+              <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="row ">
-        <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
-        <p className="copyright">Copyright © skinminers.com, 2021.</p>
-        <p className="copyright">Все права защищены.</p>
-      </div>
+        <div className="row">
+          <div className="col-5 icons_mobile">
+            <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
+            <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
+            <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
+            <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+            <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
+          </div>
+          <div className="col-7 ">
+            <div className="card dark text-white four-words">
+              <img alt="four_words" className="card-image" src={four_words_mobile} />
+              <div className="card-img-overlay">
+                <p className="card-text policy_market">Policy</p>
+                <p className="card-text policy_market">Market</p>
+              </div>
+            </div>
+            <div className="col-md">
+              <img alt="three_figures" className="three_figures1 float-left" src={three_figures} />
+            </div>
+          </div>
+        </div>
+        <div className="row ">
+          <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
+          <p className="copyright">Copyright © skinminers.com, 2021.</p>
+          <p className="copyright">Все права защищены.</p>
+        </div>
 
-    </>}
-  </div>)
+      </>
+    }
+  </div >)
 
 }
 

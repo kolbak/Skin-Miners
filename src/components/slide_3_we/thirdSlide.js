@@ -6,7 +6,7 @@ import "../../styles/components/slide_3_we/thirdSlide_mobile.scss";
 // import power_window from "../../images/slide_3_we/power_window.svg";
 // import trust_window from "../../images/slide_3_we/trust_window.svg";
 // import safety_window from "../../images/slide_3_we/safety_window.svg";
-import grid_window from "../../images/slide_3_we/grid_window.svg";
+import grid_window from "../../images/slide_3_we/grid_window_content.png";
 import fourth_background from '../../images/slide_3_we/wall&desk.png'
 import nameless_window from '../../images/slide_3_we/nameless_window.svg'
 
