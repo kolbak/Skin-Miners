@@ -50,7 +50,7 @@
   }
 
   .wrap-chart {
-    height     : calc(4.11rem * 5) !important;
+    height: 354px !important;
     margin-left: auto;
     box-shadow : -25px 25px 2px 0px rgb(72 70 92 / 10%),
       -25px 25px 20px 0px rgb(72 70 92 / 10%);
@@ -156,7 +156,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .welcome-slide{
     height: inherit !important;
   }
@@ -232,6 +232,7 @@
     height: calc(30px + 2vw) !important;
     position: absolute;
     top: calc(495px + 5vw) !important;
+  
   }
   .rhomb {
     right  : 67vw !important;
@@ -292,7 +293,7 @@
   }
 }
 
-@media (min-width: 450px) and (max-width: 760px){
+@media (min-width: 450px) and (max-width: 991px){
   #p-slogan{
     width: 60vw;
   }
@@ -306,11 +307,11 @@
     }
   
     .bg-line.n-2 {
-      top    : calc(170px + 63vw) !important;
+      top    : calc(150px + 63vw) !important;
     }
   
     .bg-line.n-3 {
-      top    : calc(195px + 63vw) !important;
+      top    : calc(175px + 63vw) !important;
     }
 
     .btn-lg{
@@ -328,6 +329,7 @@
       position: relative;
       top     : -1vh;
       right   : -47vw;
+      
     }
     
   }
@@ -353,6 +355,39 @@
       .wrap-chart{
         margin-top: 119px;
       }
+    }
+  }
+  @media (min-width: 850px){
+    .wrap-chart{
+      margin-top: 200px;
+    }
+    #top-miners {
+      top     : calc(818px + 54vw) !important;
+    }
+    #arrow{
+      top     : calc(818px + 54vw) !important;
+      height: 200px;
+    }
+    .rhomb {
+      top    : calc(130px + 63vw) !important;
+      width: 12vw !important;
+    }
+  
+    .bg-line.n-1 {
+      top    : calc(290px + 63vw) !important;
+    }
+  
+    .bg-line.n-2 {
+      top    : calc(150px + 63vw) !important;
+    }
+  
+    .bg-line.n-3 {
+      top    : calc(175px + 63vw) !important;
+    }
+
+    .btn-lg{
+      top    : calc(210px + 63vw) !important;
+      width: 60vw !important;
     }
   }
 }
