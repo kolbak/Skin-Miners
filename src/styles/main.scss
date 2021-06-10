@@ -57,8 +57,9 @@ body {
 }
 
 .slide__footer {
-  min-height       : inherit !important;
-  // padding-bottom: 25px;
+  min-height   : inherit !important;
+  overflow-y   : hidden;
+  padding-right: 0px;
 }
 
 @media (max-width: 760px) {

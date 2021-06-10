@@ -146,6 +146,7 @@
 
 
 .question_button {
+  width        : fit-content !important;
   float        : right;
   margin-top   : 5%;
   width        : 31%;
@@ -163,7 +164,7 @@
 }
 
 .developed-copyright {
-  margin-top: 8%;
+  margin-top: 5vh;
 }
 
 
@@ -223,9 +224,11 @@
 }
 
 .wrong_card {
-  width      : 80%;
-  margin-left: 9%;
-  margin-top : 5%;
+  width       : 85%;
+  margin      : auto;
+  height      : fit-content;
+  margin-top  : 2.5vh;
+  padding-left: 2.5rem;
 }
 
 // .wrong_card2 {
@@ -245,7 +248,7 @@
 
 @media (min-width: 1600px) {
   .policy_market {
-    font-size : 207%;
+    font-size : 225%;
     margin-top: 16%;
   }
 
@@ -258,7 +261,7 @@
   }
 
   .email-telephone {
-    font-size: 169%;
+    font-size: 1.5vw;
   }
 
   // @media (min-width: 1900px) {
@@ -281,8 +284,13 @@
       font-size: 181%;
     }
 
+    .wrong_card {
+      margin-top: 3vh;
+      width     : 75%;
+    }
+
     .email-telephone {
-      font-size: 245%;
+      font-size: 1.7vw;
     }
   }
 
@@ -295,7 +303,7 @@
 
 @media (min-width: 1450px) and (max-width: 1600px) {
   .email-telephone {
-    font-size: 142% !important;
+    font-size: 1.5vw;
   }
 
   .question_form {
@@ -313,23 +321,28 @@
   }
 
   .developed-copyright {
-    margin-top: 3% !important;
+    margin-top: 7.5vh;
   }
 }
 
 
 @media (min-width: 1000px) and (max-width: 1450px) {
-  .footer-right-bottom {
-    margin-top: 10% !important;
-  }
+  // .footer-right-bottom {
+  //   margin-top: 10% !important;
+  // }
 
   .email-telephone {
-    font-size: 100% !important;
+    font-size: 1.5vw;
   }
 
   .question_form {
     width : 106%;
     height: 50%;
+  }
+
+  .wrong_card {
+    margin-top  : 1.5vh;
+    padding-left: 2.5rem;
   }
 
   .policy_market {
@@ -338,17 +351,6 @@
     margin-bottom: 3%;
   }
 
-  @media (min-width: 1250px) and (max-width: 1450px) {
-    .policy_market {
-      font-size    : 192% !important;
-      margin-top   : 1%;
-      margin-bottom: 3%;
-    }
-
-    .copyright {
-      font-size: 96% !important;
-    }
-  }
 
   .question_button {
     width: 41%;
@@ -367,6 +369,17 @@
   }
 }
 
+@media (min-width: 1250px) and (max-width: 1450px) {
+  .policy_market {
+    font-size    : 192% !important;
+    margin-top   : 1%;
+    margin-bottom: 3%;
+  }
+
+  .copyright {
+    font-size: 96% !important;
+  }
+}
 
 
 .dark {
@@ -440,5 +453,9 @@
   .question_button {
     position: relative;
     top     : -25px;
+  }
+
+  .wrong_card {
+    margin-top: 1.3vh;
   }
 }
