@@ -14,7 +14,7 @@
     }
 
     .btn-lg {
-      height: 7vh !important;
+      height: 7vh;
     }
   }
 
@@ -41,6 +41,7 @@
     width    : 13vw;
     top      : calc(4.11rem * 5 + 83vh);
     transform: rotate(115deg);
+
   }
 
   .welcome {
@@ -156,6 +157,9 @@
 }
 
 @media (max-width: 767px) {
+  .welcome-slide{
+    height: inherit !important;
+  }
   .wrap-chart {
     .item {
       grid-template-columns: 1fr 7fr !important;
@@ -174,11 +178,11 @@
 
   .welcome-slide {
     // margin-right: 10vw;
-    margin-bottom: 50vh;
+    margin-bottom: 300px;
 
     #top-miners {
       position: absolute;
-      top     : calc(4.11rem * 5 + 109vh);
+      top     : calc(961px + 5vw);
     }
 
     #hidden_triangle {
@@ -187,6 +191,8 @@
 
     #arrow {
       width: 24vw;
+      top: calc(977px + 5vw);
+      left: 220px;
     }
   }
 
@@ -200,8 +206,8 @@
     display  : block !important;
     left     : 62.5vw;
     position : absolute;
-    width    : 22vw;
-    top      : calc(4.11rem * 5 + 109vh);
+    width    : 94px;
+    height: 150px;
     transform: rotate(0deg);
   }
 
@@ -211,34 +217,38 @@
 
   .ellipse-blurred {
     z-index: 1 !important;
-    width  : 63vw !important;
-    top    : -8vh !important;
-    right  : -17vw !important;
+    width  : 260px !important;
+    top    : -50px !important;
+    right  : -68px !important;
   }
 
   .ellipse {
     right  : 6vw !important;
-    top    : 20vh !important;
+    top    : calc(120px + 5vw) !important;
     width  : 12vw;
     z-index: 3;
   }
-
+  .btn-lg{
+    height: calc(30px + 2vw) !important;
+    position: absolute;
+    top: calc(495px + 5vw) !important;
+  }
   .rhomb {
     right  : 67vw !important;
-    top    : 68vh !important;
+    top    : calc(420px + 5vw) !important;
     z-index: 0 !important;
     width  : 17vw;
   }
 
   .bg-line.n-1 {
     width: 49vw !important;
-    top  : 92vh !important;
+    top  : calc(540px + 10vw) !important;
   }
 
   .bg-line.n-2 {
     transform : rotate(180deg);
     background: linear-gradient(90deg, #14c2e7, #d9a404) !important;
-    top       : 67vh !important;
+    top       : calc(445px + 5vw) !important;
     right     : 8vw !important;
     width     : 52vw !important;
     height    : 5px;
@@ -247,7 +257,7 @@
   .bg-line.n-3 {
     transform: rotate(180deg);
     width    : 43.25vw !important;
-    top      : 69.7vh !important;
+    top      : calc(470px + 5vw) !important;
     right    : 10vw !important;
     height   : 5px;
   }
@@ -258,10 +268,15 @@
 
   .welcome {
     width: 100% !important;
+    height: inherit !important;
   }
 
   .welcome #p-slogan {
-    margin-bottom: 150px !important;
+    margin-bottom: 100px !important;
+  }
+
+  .wrap-chart{
+    margin-top: 100px;
   }
 }
 
@@ -272,6 +287,71 @@
 
       .name-line {
         margin-top: 3%;
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 760px){
+  #p-slogan{
+    width: 60vw;
+  }
+  @media (min-width: 500px){
+    .rhomb {
+      top    : calc(130px + 63vw) !important;
+    }
+  
+    .bg-line.n-1 {
+      top    : calc(270px + 63vw) !important;
+    }
+  
+    .bg-line.n-2 {
+      top    : calc(170px + 63vw) !important;
+    }
+  
+    .bg-line.n-3 {
+      top    : calc(195px + 63vw) !important;
+    }
+
+    .btn-lg{
+      top    : calc(210px + 63vw) !important;
+    }
+    #top-miners {
+      position: absolute;
+      top     : calc(748px + 54vw) !important
+    }
+    #arrow{
+      top: calc(768px + 54vw) !important;
+      left   : 47vw !important;
+    }
+    .wrap-chart .btn {
+      position: relative;
+      top     : -1vh;
+      right   : -47vw;
+    }
+    
+  }
+  @media(min-width: 600px){
+    .rhomb{
+      width: 14vw;
+    }
+    #p-slogan{
+      width: 45vw;
+    }
+    #h1-skin-miners{
+      width: 66vw !important;
+      margin-top: 10vw !important;
+    }
+    .ellipse-blurred{
+      width: 48vw !important;
+    }
+    .ellipse{
+      width: 10vw;
+      top: calc(150px + 5vw) !important;
+    }
+    @media (min-width: 700px){
+      .wrap-chart{
+        margin-top: 119px;
       }
     }
   }

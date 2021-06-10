@@ -18,7 +18,7 @@ import yellow_arrow from '../../images/slide_2_how/mobile/yellow_arrow.svg'
 //*------------------------------------------------------- Видео
 import miningPoster from '../../images/slide_2_how/schema.png'
 import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
-import miningVideo_h264 from '../../images/slide_2_how/schema_animation.h264'
+// import miningVideo_h264 from '../../images/slide_2_how/schema_animation.h264'
 import miningVideo_webm from '../../images/slide_2_how/schema_animation.webm'
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
@@ -244,7 +244,7 @@ const SecondSlide = () => {
               <p className="slide-header slide-header__video">Майнинг</p>
               <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
-                <source src={miningVideo_h264} type='video/h264' />
+                {/* <source src={miningVideo_h264} type='video/h264' />  */}
                 <source src={miningVideo_webm} type='video/webm' />
               </video>
               <p className="slide-text slide-text__video">
