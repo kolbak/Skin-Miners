@@ -43,12 +43,13 @@ const SideBar = () => {
             <a key={i} href={x.link} className="row swap-to sidebar-lines" style={{ flexWrap: "nowrap" }}>
               <span className="sidebar-numbers col-md-3">{i + 1}</span>
               <span className="sidebar-text col-md-9">{x.title}</span>
-            </a>)}
+            </a>
+          )}
 
 
           <div className="row sidebar-lastline">
-            <p className="sidebar-enter-market">Войти</p>
-            <p className="sidebar-enter-market">Маркет</p>
+            <a href="https://miningskins.com/personal-office" className="sidebar-enter-market">Войти</a>
+            <a href="https://miningskins.com/market" className="sidebar-enter-market">Маркет</a>
           </div>
         </div>
 
