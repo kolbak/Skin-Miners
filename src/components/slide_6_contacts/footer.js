@@ -78,8 +78,8 @@ const Footer = () => {
               <div className="card dark text-white four-words ">
                 <img alt="four_words" className="card-image" src={four_words} />
                 <div className="card-img-overlay wrong_card2">
-                  <p className="card-text policy_market">Policy</p>
-                  <p className="card-text policy_market">Market</p>
+                  <a href="#" class=""><p className="card-text policy_market">Policy</p></a>
+                  <a href="#" class=""><p className="card-text policy_market">Market</p></a>
                 </div>
               </div>
             </div>
@@ -157,8 +157,8 @@ const Footer = () => {
             <div className="card dark text-white four-words">
               <img alt="four_words" className="card-image" src={four_words_mobile} />
               <div className="card-img-overlay">
-                <p className="card-text policy_market">Policy</p>
-                <p className="card-text policy_market">Market</p>
+                <a href="#" class=""><p className="card-text policy_market">Policy</p></a>
+                <a href="#" class=""><p className="card-text policy_market">Market</p></a>
               </div>
             </div>
             <div className="col-md">

@@ -232,17 +232,14 @@ const SecondSlide = () => {
               </form>
               <i className="bg-line_m n-4" />
               <i className="bg-line_m n-5" />
-              <p className="slide-text">
-                Войдите в программу. Используйте те же данные, что и на сайте:
-                так мы сможем автоматически начислять вознаграждение.
-              </p>
+              
 
             </div>
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
               <p className="slide-header slide-header__video">Майнинг</p>
-              <video poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
+              <video class="slide-video" poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
                 {/* <source src={miningVideo_h264} type='video/h264' />  */}
                 <source src={miningVideo_webm} type='video/webm' />

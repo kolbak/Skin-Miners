@@ -292,7 +292,16 @@
     }
   }
 }
+@media (min-width: 400px) and (max-width: 991px){
+  #top-miners {
+  
+    top     : calc(788px + 54vw) !important
+  }
+  #arrow{
+    top: calc(808px + 54vw) !important;
 
+  }
+}
 @media (min-width: 450px) and (max-width: 991px){
   #p-slogan{
     width: 60vw;
@@ -319,10 +328,10 @@
     }
     #top-miners {
       position: absolute;
-      top     : calc(748px + 54vw) !important
+      top     : calc(768px + 54vw) !important
     }
     #arrow{
-      top: calc(768px + 54vw) !important;
+      top: calc(788px + 54vw) !important;
       left   : 47vw !important;
     }
     .wrap-chart .btn {
@@ -362,10 +371,10 @@
       margin-top: 200px;
     }
     #top-miners {
-      top     : calc(818px + 54vw) !important;
+      top     : calc(938px + 40vw) !important;
     }
     #arrow{
-      top     : calc(818px + 54vw) !important;
+      top     : calc(938px + 40vw) !important;
       height: 200px;
     }
     .rhomb {
@@ -388,6 +397,15 @@
     .btn-lg{
       top    : calc(210px + 63vw) !important;
       width: 60vw !important;
+    }
+  }
+  @media (min-width: 900px){
+    #top-miners {
+      top     : calc(808px + 54vw) !important;
+    }
+    #arrow{
+      top     : calc(808px + 54vw) !important;
+      height: 180px;
     }
   }
 }

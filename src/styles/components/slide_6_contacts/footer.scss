@@ -298,10 +298,12 @@
     width : 106%;
     height: 50%;
   }
-
 }
 
 @media (min-width: 1450px) and (max-width: 1600px) {
+  .footer-header{
+    margin-left: 1%;
+  }
   .email-telephone {
     font-size: 1.5vw;
   }
@@ -368,9 +370,6 @@
     font-size: 73%;
   }
 
-  .footer-header {
-    margin-left: 12%;
-  }
 }
 
 @media (min-width: 1250px) and (max-width: 1450px) {
