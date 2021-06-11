@@ -199,6 +199,7 @@
 
     .nameless_text {
       top: 24.5% !important;
+      font-size: 19px !important;
     }
   }
 
@@ -222,18 +223,21 @@
     }
 
     .nameless_text {
-      font-size: 20px !important;
+      font-size: 17px !important;
     }
   }
 
   @media (max-width: 1000px) {
 
     .nameless_container {
+      top: 11vh;
       img {
         width: 75vw !important;
       }
     }
-
+    .nameless_text{
+      font-size: 18px !important;
+    }
     .trust_container {
       top  : 46rem !important;
       width: 50vw !important;
