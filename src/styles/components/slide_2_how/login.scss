@@ -130,7 +130,40 @@
     }
   }
 
-  .bg-line {
+  @media (min-width: 910px) and (max-width: 1170px){
+    .login-computer__form{
+      margin: 30% 55% 25% 45% !important;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width: 910px){
+    .login-computer__form{
+      margin: 35% 45% 25% 50% !important;  
+    }
+  }
+  @media (min-width: 760px) and (max-width: 850px){
+    .login-computer__form{
+      margin: 40% 50% 25% 55% !important;  
+    }
+  }
+  @media (min-width: 760px) and (max-width: 1170px){
+    .bg-line_computer_login.n-1 {
+      margin-left: 20% !important; 
+    }
+    .bg-line_computer_login.n-2 {
+      margin-left: 10% !important; 
+    }
+    .bg-line_computer_login.n-3 {
+      margin-left: 10% !important; 
+    }
+    .bg-line_computer_login.n-4 {
+      margin-left: 10% !important; 
+    }
+    .bg-line_computer_login.n-5 {
+      margin-left: 15% !important; 
+    }
+  }
+  .bg-line_computer_login {
     display      : block;
     height       : 5px;
     border-radius: 5px;
@@ -138,35 +171,35 @@
     z-index      : -1;
   }
 
-  .bg-line.n-1 {
+  .bg-line_computer_login.n-1 {
     top       : 5.5vh;
     left      : 0vw;
     width     : 39vw;
     background: linear-gradient(90deg, #15C1E5, #D9A404);
   }
 
-  .bg-line.n-2 {
+  .bg-line_computer_login.n-2 {
     top       : 8.5vh;
     left      : 13vw;
     width     : 25vw;
     background: linear-gradient(90deg, #161012, #413100);
   }
 
-  .bg-line.n-3 {
+  .bg-line_computer_login.n-3 {
     top       : 11.5vh;
     left      : 18vw;
     width     : 19vw;
     background: linear-gradient(90deg, #151013, #110D00);
   }
 
-  .bg-line.n-4 {
+  .bg-line_computer_login.n-4 {
     top       : 68.5vh;
     left      : 13vw;
     width     : 25vw;
     background: linear-gradient(90deg, #151015, #007AFD);
   }
 
-  .bg-line.n-5 {
+  .bg-line_computer_login.n-5 {
     top       : 73vh;
     left      : 6vw;
     width     : 34vw;

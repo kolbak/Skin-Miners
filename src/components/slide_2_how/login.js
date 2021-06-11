@@ -17,13 +17,13 @@ const Login = () => (
     <img alt="hidden_triangle1" id="hidden_triangle1" src={hidden_triangle1} />
 
     <p>Войдите в программу. Используйте те же данные, что и на сайте: так мы сможем автоматически начислять вознаграждение.</p>
-    <i className="bg-line n-1" />
-    <i className="bg-line n-2" />
-    <i className="bg-line n-3" />
-    <i className="bg-line n-4" />
-    <i className="bg-line n-5" />
+    <i className="bg-line_computer_login n-1" />
+    <i className="bg-line_computer_login n-2" />
+    <i className="bg-line_computer_login n-3" />
+    <i className="bg-line_computer_login n-4" />
+    <i className="bg-line_computer_login n-5" />
 
-    <form className="offset-md-8 col-3">
+    <form className="offset-md-8 login-computer__form col-3">
       <div className="mb-3"><h4 style={{ textAlign: "center" }}>Форма входа</h4></div>
       <br />
       <div className="mb-3"><input placeholder="Email" type="email" className="form-control" /></div>

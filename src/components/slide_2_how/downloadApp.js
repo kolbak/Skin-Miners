@@ -9,8 +9,8 @@ import '../../styles/components/slide_2_how/downloadApp.scss'
 const DownloadApp = () => (<div className="wrap-dl" id="download">
 
   <p>Скачайте приложение из личного кабинета. Оно автоматически определит мощность и подберет оптимальный режим майнинга.</p>
-  <i className="bg-line n-1" />
-  <i className="bg-line n-2" />
+  <i className="bg-line_computer n-1" />
+  <i className="bg-line_computer n-2" />
   <img alt="download" className="download-img" src={imgDownload} />
   <img alt="hidden_triangle" id="hidden_triangle" src={hidden_triangle} />
 

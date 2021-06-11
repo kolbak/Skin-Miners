@@ -22,21 +22,21 @@
     display : inline-block;
   }
 
-  .bg-line {
+  .bg-line_computer {
     display      : block;
     height       : 5px;
     border-radius: 5px;
     position     : absolute;
   }
 
-  .bg-line.n-1 {
+  .bg-line_computer.n-1 {
     top       : 5.5vh;
     right     : 3vw;
     width     : 39vw;
     background: linear-gradient(90deg, #C172ED, #12C2E9);
   }
 
-  .bg-line.n-2 {
+  .bg-line_computer.n-2 {
     top       : 8.5vh;
     right     : 0.4vw;
     width     : 23vw;
