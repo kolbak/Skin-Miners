@@ -23,6 +23,10 @@
  
 }
 
+.carousel-inner{
+  height: 100%;
+  overflow: hidden;
+}
 .first-slider-image{
     position: relative;
     left: -35%;
@@ -94,6 +98,7 @@
   height: auto;
   margin: 2rem 0rem;
   padding: 0px;
+  height: 50%;
 }
 #third-slide-pos{
   form * {
@@ -223,7 +228,11 @@
     height: 210vw;
   }
 }
-
+@media (min-width: 0) and (max-width: 500px){
+  .second-title{
+    font-size: 33px !important;
+  }
+}
 @media (min-width: 400px) and (max-width: 500px) {
 
   .carousel {

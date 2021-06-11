@@ -154,7 +154,7 @@ const SecondSlide = () => {
 
     <h1 className="h1-main">
       <span className="slide-number">2</span>
-      <span className="slide-title">Как это работает?</span>
+      <span className="slide-title second-title">Как это работает?</span>
     </h1>
 
     {width >= 780 ? <>
