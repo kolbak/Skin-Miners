@@ -28,14 +28,11 @@ const Login = () => (
       <br />
       <div className="mb-3"><input placeholder="Email" type="email" className="form-control" /></div>
       <div className="mb-3"><input placeholder="Пароль" type="password" className="form-control" /></div>
-      <div className="mb-3 form-check">
-        <input type="checkbox" className="form-check-input" id="check" />
-        <label className="form-check-label" htmlFor="check">Не выходить</label>
-      </div>
+      <br />
       <button type="submit" className="btn btn-primary">Войти</button>
 
       <div className="mt-3" style={{ textAlign: "center" }}>
-        <a href="Регистрация">Регистрация</a>
+        <a href="#registration-anchor">Регистрация</a>
       </div>
     </form>
   </div>
