@@ -55,7 +55,9 @@ body {
 .slide__slider {
   min-height: inherit !important;
 }
-
+.slide_without_padding{
+  margin-bottom: 100px !important;
+}
 .slide__footer {
   min-height   : inherit !important;
   overflow-y   : hidden;

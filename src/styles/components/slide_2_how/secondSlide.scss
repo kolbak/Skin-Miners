@@ -1,3 +1,6 @@
+.second-slide__links{
+  font-size: calc(1.325rem + 0.3vw) !important;
+}
 .slide-2 {
   .wrap-tabs {
     display              : grid;
@@ -28,7 +31,8 @@
         border-radius   : 100%;
         transition      : 1.5s;
       }
-
+      
+     
       i.circle.c1 {
         left: -7px;
         top : -7px;
