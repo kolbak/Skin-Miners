@@ -6,7 +6,7 @@ import hideBtn from '../images/sidebar/sidebar-active.svg'
 import showBtn from '../images/sidebar/sidebar-unactive.svg'
 
 const menu = [
-  { link: "#what-anchor", title: "Что мы делаем?" },
+  { link: "#what-anchor", title: "Что мы делаем?"},
   { link: "#how-anchor", title: "Как это работает?" },
   { link: "#we-anchor", title: "Почему мы?" },
   { link: "#registration-anchor ", title: "Регистрация" },
@@ -40,7 +40,7 @@ const SideBar = () => {
 
 
           {menu.map((x, i) =>
-            <a key={i} href={x.link} className="row swap-to sidebar-lines" style={{ flexWrap: "nowrap" }}>
+            <a key={i} href={x.link} className="row swap-to sidebar-lines"  onClick={toggleSidebar} style={{ flexWrap: "nowrap" }}>
               <span className="sidebar-numbers col-md-3">{i + 1}</span>
               <span className="sidebar-text col-md-9">{x.title}</span>
             </a>

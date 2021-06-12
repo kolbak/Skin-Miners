@@ -37,7 +37,7 @@ const WelcomeSlide = () => {
         <img id="h1-skin-miners" alt="h1-skin-miners" src={logoArt} />
 
         <p id="p-slogan">Не трать своё время просто так </p>
-        <button className="btn btn-lg">Стать участником</button>
+        <button className="btn slide-0__btn-lg">Стать участником</button>
       </div>
 
       {/* График */}<Chart />
