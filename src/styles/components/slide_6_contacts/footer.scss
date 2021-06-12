@@ -143,7 +143,9 @@
   position      : relative;
 }
 
-
+.policy_market_link>p:hover {
+  color: #623977;
+}
 
 .question_button {
   width        : fit-content !important;
@@ -301,9 +303,10 @@
 }
 
 @media (min-width: 1450px) and (max-width: 1600px) {
-  .footer-header{
+  .footer-header {
     margin-left: 1%;
   }
+
   .email-telephone {
     font-size: 1.5vw;
   }

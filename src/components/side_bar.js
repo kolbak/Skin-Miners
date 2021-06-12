@@ -19,6 +19,7 @@ const SideBar = () => {
   const menubtn = React.useRef();
 
   function toggleSidebar() {
+    console.log("Toggle");
     sidebar.current.classList.toggle("active-nav");
     container.current.classList.toggle("active-cont");
     menubtn.current.src = menubtn.current.src === showBtn ? hideBtn : showBtn;
@@ -40,7 +41,7 @@ const SideBar = () => {
 
 
           {menu.map((x, i) =>
-            <a key={i} href={x.link} className="row swap-to sidebar-lines" style={{ flexWrap: "nowrap" }}>
+            <a onClick={toggleSidebar} key={i} href={x.link} className="row swap-to sidebar-lines" style={{ flexWrap: "nowrap" }}>
               <span className="sidebar-numbers col-md-3">{i + 1}</span>
               <span className="sidebar-text col-md-9">{x.title}</span>
             </a>

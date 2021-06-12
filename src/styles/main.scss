@@ -62,10 +62,14 @@ body {
   padding-right: 0px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 780px) {
   .slide {
     min-height   : inherit !important;
     margin-bottom: 100px !important;
+  }
+
+  .slide__slider {
+    padding: 0 !important;
   }
 }
 
@@ -120,11 +124,13 @@ img {
     border-bottom : 2px solid rgba(53, 53, 53, 0.7);
   }
 }
+
 @media (max-width: 2500px) {
   .h1-main .slide-title {
     margin-left: 1vw;
   }
 }
+
 @media (max-width: 1440px) {
   .h1-main .slide-title {
     margin-left: 5vw;

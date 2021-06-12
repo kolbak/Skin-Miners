@@ -133,7 +133,7 @@ const SecondSlide = () => {
     if (c.left > 200) choosecolor(3);
     if (d.left > 200) choosecolor(4);
   }
-  function PreviousSlide(e) {
+  function PreviousSlide() {
     const element1 = document.getElementById('first-slide-pos');
     const element2 = document.getElementById('second-slide-pos');
     const element3 = document.getElementById('third-slide-pos');
@@ -197,13 +197,13 @@ const SecondSlide = () => {
             <div className="row">
               <p className="slide-header">Регистрация</p>
               <img alt="registration" src={reg} className="first-slider-image" style={{ maxHeight: "80vh" }} />
-              <p className="slide-text">Создайте аккаунт на сайте, чтобы получить доступ к приложению. Отслеживайте прогресс прямо из браузера</p>
+              <p className="slide-text slide-text__registration">Создайте аккаунт на сайте, чтобы получить доступ к приложению. Отслеживайте прогресс прямо из браузера</p>
               <img alt="figure" src={yellow_arrow} className="yellow_arrow" />
             </div>
           </div>
           <div key={2} className="carousel-item" id="second-slide-pos">
             <div className="row">
-              <p className="slide-header">Скачать приложение</p>
+              <p className="slide-header">Скачайте приложение</p>
               <img alt="download" src={download} className="download" style={{ maxHeight: "80vh" }} />
               <p className="slide-text slide-text__download">
                 Скачайте приложение из личного кабинета. Оно автоматически определит мощность и подберет оптимальный режим майнинга.
@@ -227,19 +227,19 @@ const SecondSlide = () => {
                 <button type="submit" className="btn btn-primary">Войти</button>
 
                 <div className="mt-3" style={{ textAlign: "center" }}>
-                  <a href="Регистрация">Регистрация</a>
+                  <a href="#registration-anchor">Регистрация</a>
                 </div>
               </form>
               <i className="bg-line_m n-4" />
               <i className="bg-line_m n-5" />
-              
+
 
             </div>
           </div>
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
               <p className="slide-header slide-header__video">Майнинг</p>
-              <video class="slide-video" poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
+              <video className="slide-video" poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
                 {/* <source src={miningVideo_h264} type='video/h264' />  */}
                 <source src={miningVideo_webm} type='video/webm' />
