@@ -47,7 +47,7 @@
 
   div.item {
     display              : grid;
-    grid-template-columns: 1fr 1fr 8fr 2fr;
+    grid-template-columns: 1.5fr 1fr 8fr 25%;
     align-items          : center;
     column-gap           : 15px;
     height               : 4rem;
@@ -57,16 +57,16 @@
       width      : 100%;
       line-height: 4rem;
       position   : relative;
-      background : #424242;
-      background : linear-gradient(89.3deg, #3c3a50 -92.83%, rgba(80, 78, 100, 0.5) 229.57%);
+      background : #454359;
+      text-align : center;
 
       span {
-        font-weight: 500;
-        font-size  : 40px;
-        line-height: 4rem;
-        position   : relative;
-        top        : 30%;
-        left       : 30%;
+        font-weight   : 500;
+        font-size     : 40px;
+        line-height   : 4rem;
+        position      : relative;
+        top           : 30%;
+        // left       : 30%;
       }
     }
 
@@ -94,13 +94,20 @@
       border-radius: 10px;
 
       .line-bg-inner {
-        position        : relative;
-        top             : 0.15rem;
-        left            : 0.15rem;
-        width           : 10vw;
-        border-radius   : 10px;
-        background-color: #61cdbb;
-        border          : 2px solid #61cdbb;
+        margin-top         : 0.15rem;
+        margin-left        : 0.15rem;
+        margin-right       : 0.15rem;
+        width              : 10vw;
+        border-radius      : 10px;
+        background-color   : #61cdbb;
+        border             : 2px solid #61cdbb;
+        // position        : relative;
+        // top             : 0.15rem;
+        // left            : 0.15rem;
+        // width           : 10vw;
+        // border-radius   : 10px;
+        // background-color: #61cdbb;
+        // border          : 2px solid #61cdbb;
       }
     }
   }
@@ -130,7 +137,13 @@
     position         : absolute;
     // right         : 16.5vw;
     // top           : 22.45vh;
-    right            : 5.5vw;
-    top              : 9.65vh;
+    right            : 8.5vw;
+    top              : calc(4rem + -1.25vh);
+
+    .spinner-grow {
+      // position: absolute;
+      // left    : -0.75rem;
+      margin: 0 0.1rem;
+    }
   }
 }
