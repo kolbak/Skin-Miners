@@ -4,7 +4,6 @@ import '../../styles/components/slide_2_how/login.scss'
 
 import hidden_square1 from '../../images/slide_2_how/square1.svg'
 import hidden_square2 from '../../images/slide_2_how/square2.svg'
-import hidden_triangle1 from '../../images/slide_2_how/triangle.svg'
 
 // import pyramid from '../../images/slide_2_how/pyramid.svg'
 // import points from '../../images/slide_2_how/points.svg'
@@ -61,7 +60,6 @@ const Login = () => {
 
     <img alt="hidden_square1" id="hidden_square1" src={hidden_square1} />
     <img alt="hidden_square2" id="hidden_square2" src={hidden_square2} />
-    <img alt="hidden_triangle1" id="hidden_triangle1" src={hidden_triangle1} />
 
     <p id="login_desс">Войдите в программу. Используйте те же данные, что и на сайте: так мы сможем автоматически начислять вознаграждение.</p>
     <i className="bg-line_computer_login n-1" />

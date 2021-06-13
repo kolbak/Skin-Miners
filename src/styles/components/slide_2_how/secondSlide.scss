@@ -1,6 +1,7 @@
-.second-slide__links{
+.second-slide__links {
   font-size: calc(1.325rem + 0.3vw) !important;
 }
+
 .slide-2 {
   .wrap-tabs {
     display              : grid;
@@ -31,8 +32,8 @@
         border-radius   : 100%;
         transition      : 1.5s;
       }
-      
-     
+
+
       i.circle.c1 {
         left: -7px;
         top : -7px;
@@ -68,12 +69,14 @@
       position       : relative;
 
       li {
-        margin-bottom: 12vh;
-        position     : relative;
+        margin-bottom   : calc(20vh - 3rem);
+        // margin-bottom: 12vh;
+        position        : relative;
 
         h2 {
-          display: inline-block;
-          cursor : pointer;
+          display  : inline-block;
+          cursor   : pointer;
+          font-size: 32px;
 
           a {
             transition     : .5s;
@@ -155,12 +158,6 @@
         position: absolute;
         right   : 33vw;
         top     : 32vh;
-      }
-
-      #hidden_triangle1 {
-        position: absolute;
-        left    : 0vw;
-        top     : 76vh;
       }
 
       #hidden_square2 {
