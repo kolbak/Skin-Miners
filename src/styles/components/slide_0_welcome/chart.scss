@@ -21,14 +21,14 @@
   }
 
   span.number {
-    font-family   : Roboto;
-    font-size     : 28px;
-    font-style    : normal;
-    font-weight   : 300;
-    line-height   : 33px;
-    letter-spacing: 0.04em;
-    text-align    : left;
-    margin-right  : 1.25rem;
+    font-family      : Roboto;
+    font-size        : 28px;
+    font-style       : normal;
+    font-weight      : 300;
+    line-height      : 33px;
+    letter-spacing   : 0.04em;
+    text-align       : center;
+    // margin-right  : 1.25rem;
   }
 
   span.number-mobile {
@@ -138,7 +138,7 @@
     // right         : 16.5vw;
     // top           : 22.45vh;
     right            : 8.5vw;
-    top              : calc(4rem + -1.25vh);
+    top              : calc(4rem + -1vh);
 
     .spinner-grow {
       // position: absolute;
