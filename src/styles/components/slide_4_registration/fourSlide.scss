@@ -47,6 +47,48 @@ button {
   width: 100%;
 }
 
+.error {
+  position           : absolute;
+  z-index            : 1;
+  top                : 5vh;
+  left               : 35vw;
+  right              : 35vw;
+  opacity            : 0;
+  transition         : 0.3s;
+  animation          : showError 1s 1;
+  animation-fill-mode: forwards;
+}
+
+
+.hint,
+.hint-arrow {
+  opacity            : 0;
+  transition         : 0.9s;
+  animation          : showError 2.5s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showError {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+form#formRegistration .error {
+  transition   : all 0.3s;
+  text-align   : center;
+  color        : tomato;
+  border-radius: 10px;
+  border       : tomato 3px solid;
+  min-height   : 2rem;
+  height       : auto;
+  padding      : 0.5rem;
+}
 
 // Стрелочки подсказок
 #hint_email {
@@ -148,9 +190,6 @@ button {
 
 // Адаптация 
 
-// Не нужно
-// @media (min-width: 1450px) and (max-width: 1600px) {}
-
 @media (min-width: 1250px) and (max-width: 1450px) {
   #hint_nickname_text {
     position: absolute;
@@ -237,10 +276,12 @@ button {
     z-index : 1;
     width   : 2rem;
   }
-  @media (max-width: 760px){
-    #registration-anchor{
+
+  @media (max-width: 760px) {
+    #registration-anchor {
       height: inherit !important;
     }
+
     #formRegistration {
       padding-bottom: 0 !important;
     }

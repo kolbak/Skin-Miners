@@ -11,20 +11,11 @@ import hidden_triangle1 from '../../images/slide_2_how/triangle.svg'
 
 const Login = () => {
   //* ХУКИ |||||||||||||||||||||||||||
-  // const history = React.useHistory();
   const [errorMessage, setErrorMessage] = React.useState({
     isError: false, message: "Неверный логин или пароль"
   });
   const [loading, setLoading] = React.useState(false);
   //* ||||||||||||||||||||||||||||||||
-
-  // function inputData(e) {
-  //   setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  // }
-
-  // function hideError() {
-  //   setErrorMessage({ isError: false, message: "" });
-  // }
   function showError(message) {
     setErrorMessage({ isError: true, message: message });
 
