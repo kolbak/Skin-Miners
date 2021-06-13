@@ -4,6 +4,32 @@
   height  : 100%;
   display : block;
 
+  .errorInput {
+    color: red !important;
+  }
+
+  .errorInput::placeholder {
+    color: red;
+  }
+
+  .errorDiv {
+    transition: all 0.3s;
+    border    : tomato 4px solid !important;
+    box-shadow: none;
+  }
+
+  .error {
+    transition    : all .3s;
+    text-align    : center;
+    color         : tomato;
+    border-radius : 10px;
+    border        : tomato 3px solid;
+    min-height    : 2rem;
+    height        : auto;
+    padding-bottom: 4px;
+  }
+
+
   form * {
     font-size: 2vh;
   }
@@ -66,7 +92,7 @@
     background-size  : contain;
   }
 
-  p {
+  p#login_desс {
     font-size: 1.5rem;
     position : absolute;
     width    : 60%;
@@ -92,7 +118,7 @@
       top : 2vh;
     }
 
-    p {
+    p#login_desс {
       display: none;
       width  : 58%;
     }
@@ -103,7 +129,7 @@
       left: -8vw;
     }
 
-    p {
+    p#login_desс {
       width: 55%;
     }
   }
@@ -113,7 +139,7 @@
       left: -12vw;
     }
 
-    p {
+    p#login_desс {
       width: 50%;
       top  : 36vh;
     }
@@ -124,45 +150,52 @@
       left: -15vw;
     }
 
-    p {
+    p#login_desс {
       width: 40%;
       top  : 25vh;
     }
   }
 
-  @media (min-width: 910px) and (max-width: 1170px){
-    .login-computer__form{
+  @media (min-width: 910px) and (max-width: 1170px) {
+    .login-computer__form {
       margin: 30% 55% 25% 45% !important;
     }
   }
-  
-  @media (min-width: 850px) and (max-width: 910px){
-    .login-computer__form{
-      margin: 35% 45% 25% 50% !important;  
+
+  @media (min-width: 850px) and (max-width: 910px) {
+    .login-computer__form {
+      margin: 35% 45% 25% 50% !important;
     }
   }
-  @media (min-width: 760px) and (max-width: 850px){
-    .login-computer__form{
-      margin: 40% 50% 25% 55% !important;  
+
+  @media (min-width: 760px) and (max-width: 850px) {
+    .login-computer__form {
+      margin: 40% 50% 25% 55% !important;
     }
   }
-  @media (min-width: 760px) and (max-width: 1170px){
+
+  @media (min-width: 760px) and (max-width: 1170px) {
     .bg-line_computer_login.n-1 {
-      margin-left: 20% !important; 
+      margin-left: 20% !important;
     }
+
     .bg-line_computer_login.n-2 {
-      margin-left: 10% !important; 
+      margin-left: 10% !important;
     }
+
     .bg-line_computer_login.n-3 {
-      margin-left: 10% !important; 
+      margin-left: 10% !important;
     }
+
     .bg-line_computer_login.n-4 {
-      margin-left: 10% !important; 
+      margin-left: 10% !important;
     }
+
     .bg-line_computer_login.n-5 {
-      margin-left: 15% !important; 
+      margin-left: 15% !important;
     }
   }
+
   .bg-line_computer_login {
     display      : block;
     height       : 5px;

@@ -167,10 +167,10 @@ const SecondSlide = () => {
           <i className={`circle c4 ${tab >= 3 && 'active'}`} />
         </div>
         <ul>
-          <li className={tab >= 0 || tab === '' ? 'active' : ''}><h2><a class="second-slide__links" onClick={scrollInto} href="#registration">Регистрация</a></h2></li>
-          <li className={tab >= 1 ? 'active' : ''}><h2><a class="second-slide__links" onClick={scrollInto} href="#download">Скачать приложение</a></h2></li>
-          <li className={tab >= 2 ? 'active' : ''}><h2><a class="second-slide__links" onClick={scrollInto} href="#login">Логин</a></h2></li>
-          <li className={tab === 3 ? 'active' : ''}><h2><a class="second-slide__links" onClick={scrollInto} href="#mining">Майнинг</a></h2></li>
+          <li className={tab >= 0 || tab === '' ? 'active' : ''}><h2><a className="second-slide__links" onClick={scrollInto} href="#registration">Регистрация</a></h2></li>
+          <li className={tab >= 1 ? 'active' : ''}><h2><a className="second-slide__links" onClick={scrollInto} href="#download">Скачать приложение</a></h2></li>
+          <li className={tab >= 2 ? 'active' : ''}><h2><a className="second-slide__links" onClick={scrollInto} href="#login">Логин</a></h2></li>
+          <li className={tab === 3 ? 'active' : ''}><h2><a className="second-slide__links" onClick={scrollInto} href="#mining">Майнинг</a></h2></li>
         </ul>
 
         <div className="content" onScroll={contentScroll}>
