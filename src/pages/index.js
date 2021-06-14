@@ -40,7 +40,7 @@ const IndexPage = () => (
     <div className="slide slide_without_padding" children={<ThirdSlide />} />
 
     <div className="slide slide__registration" children={<FourthSlide />} />
-    <div className="slide" children={<Faq />} />
+    <div className="slide slide__faq" children={<Faq />} />
     <div className="slide slide__footer" children={<Footer />} />
     
   </div >)
