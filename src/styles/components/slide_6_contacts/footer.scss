@@ -240,11 +240,15 @@
 
 #formControlTextarea,
 #inputEmail {
-  background  : #34383c;
-  opacity     : 0.5;
+  background  : #1a1c1e;
   border-color: transparent;
   color       : white;
   font-size   : 23px;
+}
+
+.support-email-error {
+  box-shadow: 0px 0px 25px 3px #dd1427;
+  border    : #dd1427 3px solid !important;
 }
 
 

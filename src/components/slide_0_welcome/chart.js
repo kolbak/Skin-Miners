@@ -45,7 +45,7 @@ const Chart = () => {
         <div className={`item  ${i ? '' : 'first-num'}`} key={`${item.name}-${i}`}>
           <span className={`serial-number ${i ? '' : `first-num`}`}><span>{i + 1}</span></span>
           <img className="avatar" src={item.src ?? user_default} alt="avatar" />
-          <div className="name-line"> 
+          <div className="name-line">
             <span className='name' children={item.name} />
             <div className='line-bg' children={<ChartLine current={item.total} max={miners.max} />} />
             <span className='number-mobile' children={item.total} />

@@ -27,17 +27,52 @@ import four_words_mobile from "../../images/slide_6_contacts/four_words_mobile.s
 // import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 
 const Footer = () => {
+  // * ХУКИ |||||||||||||||||||||||||||
   const [width, setWidth] = useState()
+  const [notEmail, setNotEmail] = useState();
+  const [notEmpty, setNotEmpty] = useState();
+  const [loading, setLoading] = useState(false);
+  //* ||||||||||||||||||||||||||||||||
+
+  function checkEmail(e) {
+    const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // console.log('checkEmail :>> ', regex.test(e.target.value));
+    if (e.target.value.length === 0)
+      setNotEmail(undefined)
+    else
+      setNotEmail(!regex.test(e.target.value))
+  }
+  function checkEmpty(e) {
+    setNotEmpty(e.target.value.length === 0 ? undefined : false)
+  }
+
+  async function sendMessge(e) {
+    e.preventDefault()
+    console.log(e.target[0].value, e.target[1].value);
+    setLoading(true)
+
+    setTimeout(() => { setLoading(false) }, 2000)
+    const response = await fetch("https://miningskins.com/api/send-support-message", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from: e.target[0].value,
+        text: e.target[1].value
+      })
+    })
+    if (await response.json()) {
+
+    }
+
+  }
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
 
-  // width < 780 && 
-
-  //document.addEventListener("DOMContentLoaded", ready);
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
+
     {width >= 780 && <>
       <div className="row footer">
         <div className="col-md-5 left-side">
@@ -48,15 +83,24 @@ const Footer = () => {
           <div className="card dark text-white textboxes-card">
             <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
             <div className="card-img-overlay">
-              <form className="question_form">
 
+              <form className="question_form" onSubmit={sendMessge}>
                 <div className="form-group justify-content-center">
-                  <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" />
+                  <input type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
+                    className={"form-control " + (notEmail ? "support-email-error" : "")} onChange={checkEmail} disabled={loading} />
                 </div>
                 <div className="form-group question">
-                  <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" />
+                  <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" onChange={checkEmpty} disabled={loading} />
                 </div>
-                <button type="submit" className="btn btn-primary question_button" children={"Отправить"} />
+                <button type="submit" className="btn btn-primary question_button"
+                  disabled={loading || (notEmail ?? true) || (notEmpty ?? true)}>
+                  {loading && <>
+                    &nbsp;&nbsp;<span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;&nbsp;
+                  </>}
+                  {!loading && "Отправить"}
+                </button>
               </form>
             </div>
           </div>
@@ -111,68 +155,76 @@ const Footer = () => {
       </div>
     </>}
 
-    {
-      width < 780 && <>
-        <div className="row footer-mainheader">
-          <h1 className="h1-main ">
-            <span className="slide-number">5</span>
-            <span className="slide-title footer-header">Контакты</span>
-          </h1>
-        </div>
-        <div className="row ">
-          <div className="card dark text-white textboxes-card">
-            <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
-            <div className="card-img-overlay">
-              <form className="question_form">
+    {width < 780 && <>
+      <div className="row footer-mainheader">
+        <h1 className="h1-main ">
+          <span className="slide-number">5</span>
+          <span className="slide-title footer-header">Контакты</span>
+        </h1>
+      </div>
+      <div className="row ">
+        <div className="card dark text-white textboxes-card">
+          <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
+          <div className="card-img-overlay">
+            <form className="question_form" onSubmit={sendMessge}>
 
-                <div className="form-group justify-content-center">
-                  <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" />
-                </div>
-                <div className="form-group question">
-                  <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" />
-                </div>
-                <button type="submit" className="btn btn-primary question_button" children={"Отправить"} />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="card dark text-white green-card">
-            <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
-            <div className="card-img-overlay wrong_card">
-              <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
-              <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-5 icons_mobile">
-            <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
-            <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
-            <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
-            <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
-            <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
-          </div>
-          <div className="col-7 ">
-            <div className="card dark text-white four-words">
-              <img alt="four_words" className="card-image" src={four_words_mobile} />
-              <div className="card-img-overlay">
-                <a href="#" className=""><p className="card-text policy_market">Policy</p></a>
-                <a href="#" className=""><p className="card-text policy_market">Market</p></a>
+              <div className="form-group justify-content-center">
+                <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
+                  onChange={checkEmail} disabled={loading} />
               </div>
-            </div>
-            <div className="col-md">
-              <img alt="three_figures" className="three_figures1 float-left" src={three_figures} />
-            </div>
+              <div className="form-group question">
+                <textarea className="form-control" id="formControlTextarea" rows="3" placeholder="Вопрос" disabled={loading} />
+              </div>
+              <button type="submit" className="btn btn-primary question_button"
+                disabled={loading || (notEmail ?? true) || (notEmpty ?? true)}>
+                {loading && <>
+                  &nbsp;<span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;
+                  <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;
+                  <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />&nbsp;
+                </>}
+                {!loading && "Отправить"}
+              </button>
+            </form>
+
           </div>
         </div>
-        <div className="row ">
-          <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
-          <p className="copyright">Copyright © skinminers.com, 2021.</p>
-          <p className="copyright">Все права защищены.</p>
+      </div>
+      <div className="row">
+        <div className="card dark text-white green-card">
+          <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
+          <div className="card-img-overlay wrong_card">
+            <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
+            <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
+          </div>
         </div>
-
-      </>
+      </div>
+      <div className="row">
+        <div className="col-5 icons_mobile">
+          <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
+          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
+          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+          <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
+        </div>
+        <div className="col-7 ">
+          <div className="card dark text-white four-words">
+            <img alt="four_words" className="card-image" src={four_words_mobile} />
+            <div className="card-img-overlay">
+              <a href="#" className=""><p className="card-text policy_market">Policy</p></a>
+              <a href="#" className=""><p className="card-text policy_market">Market</p></a>
+            </div>
+          </div>
+          <div className="col-md">
+            <img alt="three_figures" className="three_figures1 float-left" src={three_figures} />
+          </div>
+        </div>
+      </div>
+      <div className="row ">
+        <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
+        <p className="copyright">Copyright © skinminers.com, 2021.</p>
+        <p className="copyright">Все права защищены.</p>
+      </div>
+    </>
     }
   </div >)
 

@@ -40,8 +40,7 @@ const FourthSlide = () => {
 
   function checkEmail(e) {
     const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const regexArr = e.target.value.match(regex);
-    console.log('checkEmail :>> ', regex.test(e.target.value));
+    // console.log('checkEmail :>> ', regex.test(e.target.value));
     if (e.target.value.length === 0)
       setNotEmail(undefined)
     else
@@ -212,7 +211,12 @@ const FourthSlide = () => {
       </div>
       <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto"
         disabled={loading || (notEmail ?? true) || (notNickname ?? true) || (notPassword ?? true) || (notPasswordRepeat ?? true) || (notSteamLink ?? true)}>
-        Регистрация
+        {loading && <>
+          <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />
+          <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />
+          <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" />
+        </>}
+        {!loading && "Регистрация"}
       </button>
     </form>
   </div>)
