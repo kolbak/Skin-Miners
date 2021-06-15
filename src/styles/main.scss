@@ -202,3 +202,22 @@ html {
 //   background-color: transparent;
 //   // border          : 1.5px solid rgba(240, 248, 255, 0.397);
 // }
+
+/*Текст при альбомной ориентации на телефоне*/
+.ask-for-portrait{
+  text-align: center;
+  font-size: 40;
+  font-size: 50px;
+  margin-top: 40vh;
+  display: none;
+}
+@media (min-width: 150px) and (max-width: 760px){
+  @media screen and (orientation: landscape) {
+    .all-slides{
+      display: none;
+    }
+    .ask-for-portrait{
+      display: block;
+    }
+  }
+}
