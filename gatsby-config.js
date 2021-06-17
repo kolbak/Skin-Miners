@@ -6,4 +6,8 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet"
   ],
+  // proxy: {
+  //   prefix: "/",
+  //   url: "http://сайт",
+  // },
 };
