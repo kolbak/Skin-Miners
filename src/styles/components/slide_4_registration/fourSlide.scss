@@ -60,7 +60,15 @@ button {
 }
 
 label.label-error {
-  color: #DD1427;
+  color     : #DD1427;
+  text-align: center;
+  width     : 100%;
+  transition: 1s;
+}
+
+.mb-custom-2 {
+  margin-bottom: 1rem;
+  position     : relative;
 }
 
 .hint,

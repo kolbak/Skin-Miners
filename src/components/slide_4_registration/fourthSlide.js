@@ -28,11 +28,11 @@ const FourthSlide = () => {
   const [width, setWidth] = useState()
   const [loading, setLoading] = useState(false);
 
-  const [notEmail, setNotEmail] = useState(true);
-  const [notNickname, setNotNickname] = useState(true);
-  const [notPassword, setNotPassword] = useState(true);
-  const [notPasswordRepeat, setNotPasswordRepeat] = useState(true);
-  const [notSteamLink, setNotSteamLink] = useState(true);
+  const [notEmail, setNotEmail] = useState(); //true
+  const [notNickname, setNotNickname] = useState(); //true
+  const [notPassword, setNotPassword] = useState(); //true
+  const [notPasswordRepeat, setNotPasswordRepeat] = useState(); //true
+  const [notSteamLink, setNotSteamLink] = useState(); //true
 
   const password = useRef(null);
   const passwordRepeat = useRef(null);
@@ -164,7 +164,7 @@ const FourthSlide = () => {
     <form id="formRegistration" onSubmit={signUp}>
       {errorMessage.isError && <p className="error" children={errorMessage.message} />}
 
-      <div className="mb-custom-4">
+      <div className={notEmail === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
         <input type="email" name="login" id="login-registration" required placeholder="Email" disabled={loading} onBlur={checkEmail}
           className={"form-control " + (notEmail === undefined || notEmail === null ? "" : notEmail === true ? "errorInput errorInputReg r-light" : "g-light")} />
         {width <= 1000 && notEmail && <label htmlFor="login-registration" className="label-error">Тут должен быть email...</label>}
@@ -175,7 +175,7 @@ const FourthSlide = () => {
           <img id="hint_email" className="hint-arrow" alt="hint_email" src={hint_email} />
         </>}
       </div>
-      <div className="mb-custom-4">
+      <div className={notNickname === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
         <input name="name" id="inputNickname" placeholder="Никнейм" required disabled={loading} onChange={checkNickname}
           className={"form-control " + (notNickname === undefined ? "" : notNickname === true ? "errorInput errorInputReg r-light" : "g-light")} />
         {width <= 1000 && notNickname && <label htmlFor="inputNickname" className="label-error">Данный никнейм занят</label>}
@@ -186,13 +186,13 @@ const FourthSlide = () => {
           <img id="hint_nickname" className="hint-arrow" alt="hint_nickname" src={hint_nickname} />
         </>}
       </div>
-      <div className="mb-custom-4">
+      <div className={notPassword === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
         <input type="password" placeholder="Пароль" disabled={loading} required
           className={"form-control " + (notPassword === undefined ? "" : notPassword === true ? "errorInput errorInputReg r-light" : "g-light")}
           ref={password} onChange={checkPassword} name="password" id="inputPassword" />
         <label htmlFor="inputPassword" style={{ display: "none" }} />
       </div>
-      <div className="mb-custom-4">
+      <div className={notPasswordRepeat === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
         <input type="password" placeholder="Проверка пароля" disabled={loading} required
           className={"form-control " + (notPasswordRepeat === undefined ? "" : notPasswordRepeat === true ? "errorInput errorInputReg r-light " : "g-light")}
           ref={passwordRepeat} onChange={checkSame} name="passwordRepeat" id="inputPasswordCheck" />
@@ -205,11 +205,11 @@ const FourthSlide = () => {
           <img id="hint_password_check" className="hint-arrow" alt="hint_password_check" src={hint_password_check} />
         </>}
       </div>
-      <div className="mb-custom-4">
+      <div className={notSteamLink === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
         <input type="link" name="steam_url" id="inputSteamLink" disabled={loading}
           className={"form-control " + (notSteamLink === undefined ? "" : notSteamLink === true ? "errorInput errorInputReg r-light" : "g-light")}
           onChange={checkSteamLink} placeholder="Ссылка на стим" required />
-        {width <= 1000 && notSteamLink && <label className="label-error" htmlFor="inputSteamLink">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></label>}
+        {width <= 1000 && notSteamLink && <label className="label-error" htmlFor="inputSteamLink">Её можно найти в <a href="http://steamcommunity.com/my/tradeoffers/privacy">Steam</a></label>}
         {width > 1000 && notSteamLink && <>
           <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></p>
           <img id="hint_steam" className="hint-arrow" alt="hint_steam" src={hint_steam} />
