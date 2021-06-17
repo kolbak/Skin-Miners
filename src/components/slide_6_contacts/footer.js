@@ -135,9 +135,9 @@ const Footer = () => {
               <div className="col-md col__relative">
                 <img alt="two lines" className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
-                  <a href="#" className="links__all"><div className="telegram icons__all"></div></a>
-                  <a href="#" className="links__all"><div className="discord icons__all"></div></a>
-                  <a href="#" className="links__all"><div className="vk icons__all"></div></a>
+                  <a href="#telegram" className="links__all"><div className="telegram icons__all"></div></a>
+                  <a href="#discord" className="links__all"><div className="discord icons__all"></div></a>
+                  <a href="#vk" className="links__all"><div className="vk icons__all"></div></a>
                 </div>
               </div>
             </div>
@@ -201,17 +201,17 @@ const Footer = () => {
       <div className="row">
         <div className="col-5 icons_mobile">
           <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
-          <a href="#" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
-          <a href="#" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+          <a href="#vk" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
+          <a href="#discord" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
+          <a href="#telegram" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
           <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
         </div>
         <div className="col-7 ">
           <div className="card dark text-white four-words">
             <img alt="four_words" className="card-image" src={four_words_mobile} />
             <div className="card-img-overlay">
-              <a href="#" className=""><p className="card-text policy_market">Policy</p></a>
-              <a href="#" className=""><p className="card-text policy_market">Market</p></a>
+              <a href="#Policy" className=""><p className="card-text policy_market">Policy</p></a>
+              <a href="https://miningskins.com/market" className=""><p className="card-text policy_market">Market</p></a>
             </div>
           </div>
           <div className="col-md">
@@ -224,10 +224,8 @@ const Footer = () => {
         <p className="copyright">Copyright © skinminers.com, 2021.</p>
         <p className="copyright">Все права защищены.</p>
       </div>
-    </>
-    }
+    </>}
   </div >)
-
 }
 
 export default Footer
