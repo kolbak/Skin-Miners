@@ -39,7 +39,7 @@ const FourthSlide = () => {
   //* ||||||||||||||||||||||||||||||||
 
   function checkEmail(e) {
-    const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     // console.log('checkEmail :>> ', regex.test(e.target.value));
     if (e.target.value.length === 0)
       setNotEmail(undefined)
@@ -108,7 +108,7 @@ const FourthSlide = () => {
       token: steam_token
     });
     //* Запрос на регистрацию
-    return await fetch("https://miningskins.com/api/register", {
+    return await fetch(`${process.env.GATSBY_URL}/api/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
