@@ -53,38 +53,52 @@ const Footer = () => {
     console.log(e.target[0].value, e.target[1].value);
     setLoading(true)
 
-    setTimeout(() => { setLoading(false) }, 2000)
-    const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: e.target[0].value,
-        text: e.target[1].value
-      })
-    })
-    if (await response.json()) {
-
-   }
+   // setTimeout(() => { setLoading(false) }, 2000)
+   // const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
+   //   method: "POST",
+   //   headers: { "Content-Type": "application/json" },
+   //   body: JSON.stringify({
+   //     from: e.target[0].value,
+   //     text: e.target[1].value
+   //   })
+   // })
+   // if (await response.json()) {
+//
+   //}
   }
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
 
-  function sucsess(boolean__value){
+  function footer__sucsess(boolean__value){
     document.getElementById('form_footer').src=two_textboxes_sucs;
     if (boolean__value===true){
       document.getElementById('formControlTextarea').placeholder="Ваш запрос отправлен, ожидайте ответа";
-      document.getElementById('formControlTextarea').classList.add("form__sucs-text");
+      document.getElementById('formControlTextarea').classList.add("footer__form__sucs-text");
     }
     else{
       document.getElementById('formControlTextarea').placeholder="Ваш запрос не отправлен, повторите попытку позже";
-      document.getElementById('formControlTextarea').classList.add("form__fail-text");
+      document.getElementById('formControlTextarea').classList.add("footer__form__fail-text");
     }
     //let div = document.createElement('div');
     //div.className = "form__sucs-text";
     //div.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
     //document.getElementById('append-text').append(div);  
+  }
+ 
+  function footer__sucsess_m(boolean__value){ 
+    if (boolean__value===true){
+      let p = document.createElement('p');
+      p.className = "footer__form__sucs_m-text";
+      p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
+      document.getElementById('footer__form_append-text').append(p);  
+    }else{
+      let p = document.createElement('p');
+      p.className = "footer__form__fail_m-text";
+      p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
+      document.getElementById('footer__form_append-text').append(p);  
+    }
   }
 
 
@@ -183,8 +197,7 @@ const Footer = () => {
         <div className="card dark text-white textboxes-card">
           <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
           <div className="card-img-overlay">
-            <form className="question_form" onSubmit={sendMessge}>
-
+            <form id="footer__form_append-text" className="question_form" onSubmit={sendMessge}>             
               <div className="form-group justify-content-center">
                 <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
                   onChange={checkEmail} disabled={loading} />

@@ -151,6 +151,20 @@ const FourthSlide = () => {
   }, [])
 
 
+  function fourth__sucsess_m(boolean__value){ 
+    if (boolean__value===true){
+      let p = document.createElement('p');
+      p.className = "fourth__form_sucs-text";
+      p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
+      document.getElementById('formRegistration').append(p);  
+    }else{
+      let p = document.createElement('p');
+      p.className = "fourth__form_fail-text";
+      p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
+      document.getElementById('formRegistration').append(p); 
+    }
+  }
+
   return (<div className="wrap-slide" id="registration-anchor" style={{ height: "100vh" }}>
 
     <h1 className="h1-main">
