@@ -71,20 +71,22 @@ const Footer = () => {
     setWidth(window.screen.width);
   }, [])
 
-  function sucsess(){
+  function sucsess(boolean__value){
     document.getElementById('form_footer').src=two_textboxes_sucs;
-    document.getElementById('formControlTextarea').placeholder="Ваш запрос отправлен, ожидайте ответа";
-    document.getElementById('formControlTextarea').classList.add("form__sucs-text");
+    if (boolean__value===true){
+      document.getElementById('formControlTextarea').placeholder="Ваш запрос отправлен, ожидайте ответа";
+      document.getElementById('formControlTextarea').classList.add("form__sucs-text");
+    }
+    else{
+      document.getElementById('formControlTextarea').placeholder="Ваш запрос не отправлен, повторите попытку позже";
+      document.getElementById('formControlTextarea').classList.add("form__fail-text");
+    }
     //let div = document.createElement('div');
     //div.className = "form__sucs-text";
     //div.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
     //document.getElementById('append-text').append(div);  
   }
-  function fail(){
-    document.getElementById('form_footer').src=two_textboxes_sucs;
-    document.getElementById('formControlTextarea').placeholder="Ваш запрос не отправлен, повторите попытку позже";
-    document.getElementById('formControlTextarea').classList.add("form__fail-text");
-  }
+
 
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
 
