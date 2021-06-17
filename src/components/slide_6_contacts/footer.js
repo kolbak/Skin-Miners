@@ -36,7 +36,8 @@ const Footer = () => {
   //* ||||||||||||||||||||||||||||||||
 
   function checkEmail(e) {
-    const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     // console.log('checkEmail :>> ', regex.test(e.target.value));
     if (e.target.value.length === 0)
       setNotEmail(undefined)
@@ -52,19 +53,18 @@ const Footer = () => {
     console.log(e.target[0].value, e.target[1].value);
     setLoading(true)
 
-   //setTimeout(() => { setLoading(false) }, 2000)
-   //const response = await fetch("https://miningskins.com/api/send-support-message", {
-   //  method: "POST",
-   //  headers: { "Content-Type": "application/json" },
-   //  body: JSON.stringify({
-   //    from: e.target[0].value,
-   //    text: e.target[1].value
-   //  })
-   //})
-   //if (await response.json()) {
+    setTimeout(() => { setLoading(false) }, 2000)
+    const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from: e.target[0].value,
+        text: e.target[1].value
+      })
+    })
+    if (await response.json()) {
 
-   //}
-
+   }
   }
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
@@ -138,7 +138,7 @@ const Footer = () => {
                 <img alt="four_words" className="card-image" src={four_words} />
                 <div className="card-img-overlay wrong_card2">
                   <a href="#policy" className="policy_market_link"><p className="card-text policy_market">Policy</p></a>
-                  <a href="https://miningskins.com/market" className="policy_market_link"><p className="card-text policy_market">Market</p></a>
+                  <a href={`${process.env.GATSBY_URL}/market`} className="policy_market_link"><p className="card-text policy_market">Market</p></a>
                 </div>
               </div>
             </div>
@@ -226,7 +226,7 @@ const Footer = () => {
             <img alt="four_words" className="card-image" src={four_words_mobile} />
             <div className="card-img-overlay">
               <a href="#Policy" className=""><p className="card-text policy_market">Policy</p></a>
-              <a href="https://miningskins.com/market" className=""><p className="card-text policy_market">Market</p></a>
+              <a href={`${process.env.GATSBY_URL}/market`}><p className="card-text policy_market">Market</p></a>
             </div>
           </div>
           <div className="col-md">

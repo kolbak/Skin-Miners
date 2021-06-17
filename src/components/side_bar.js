@@ -49,8 +49,8 @@ const SideBar = () => {
 
 
           <div className="row sidebar-lastline">
-            <a href="https://miningskins.com/personal-office" className="sidebar-enter-market">Войти</a>
-            <a href="https://miningskins.com/market" className="sidebar-enter-market">Маркет</a>
+            <a href={`${process.env.GATSBY_URL}/personal-office`} className="sidebar-enter-market">Войти</a>
+            <a href={`${process.env.GATSBY_URL}/market`} className="sidebar-enter-market">Маркет</a>
           </div>
         </div>
 

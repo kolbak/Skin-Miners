@@ -36,7 +36,7 @@ const Login = () => {
     setLoading(true);
     // hideError();
     console.log("login", e.target[0].value, e.target[1].value);
-    const response = await fetch("https://miningskins.com/api/login", {
+    const response = await fetch(`${process.env.GATSBY_URL}/api/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -46,7 +46,7 @@ const Login = () => {
     })
 
     if (response.ok && typeof window !== `undefined`) {
-      window.location.href = "https://miningskins.com/statistic"
+      window.location.href = `${process.env.GATSBY_URL}/statistic`
     } else {
       const status = await response.text()
       console.log('/login message :>> ', status)
