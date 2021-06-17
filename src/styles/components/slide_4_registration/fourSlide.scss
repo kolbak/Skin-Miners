@@ -59,6 +59,17 @@ button {
   animation-fill-mode: forwards;
 }
 
+label.label-error {
+  color     : #DD1427;
+  text-align: center;
+  width     : 100%;
+  transition: 1s;
+}
+
+.mb-custom-2 {
+  margin-bottom: 1rem;
+  position     : relative;
+}
 
 .hint,
 .hint-arrow {
