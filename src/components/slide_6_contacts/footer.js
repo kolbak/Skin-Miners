@@ -9,6 +9,7 @@ import mail_and_telephone from "../../images/slide_6_contacts/mail_and_telephone
 import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
 import two_textboxes from '../../images/slide_6_contacts/two_textboxes.svg'
+import two_textboxes_sucs from '../../images/slide_6_contacts/two_textboxes_sucs.svg'
 import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 import footer__line from '../../images/slide_6_contacts/footer__line.svg'
 import vk_gray from '../../images/slide_6_contacts/vk_gray.svg'
@@ -51,25 +52,39 @@ const Footer = () => {
     console.log(e.target[0].value, e.target[1].value);
     setLoading(true)
 
-    setTimeout(() => { setLoading(false) }, 2000)
-    const response = await fetch("https://miningskins.com/api/send-support-message", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: e.target[0].value,
-        text: e.target[1].value
-      })
-    })
-    if (await response.json()) {
+   //setTimeout(() => { setLoading(false) }, 2000)
+   //const response = await fetch("https://miningskins.com/api/send-support-message", {
+   //  method: "POST",
+   //  headers: { "Content-Type": "application/json" },
+   //  body: JSON.stringify({
+   //    from: e.target[0].value,
+   //    text: e.target[1].value
+   //  })
+   //})
+   //if (await response.json()) {
 
-    }
+   //}
 
   }
-
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
+
+  function sucsess(){
+    document.getElementById('form_footer').src=two_textboxes_sucs;
+    document.getElementById('formControlTextarea').placeholder="Ваш запрос отправлен, ожидайте ответа";
+    document.getElementById('formControlTextarea').classList.add("form__sucs-text");
+    //let div = document.createElement('div');
+    //div.className = "form__sucs-text";
+    //div.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
+    //document.getElementById('append-text').append(div);  
+  }
+  function fail(){
+    document.getElementById('form_footer').src=two_textboxes_sucs;
+    document.getElementById('formControlTextarea').placeholder="Ваш запрос не отправлен, повторите попытку позже";
+    document.getElementById('formControlTextarea').classList.add("form__fail-text");
+  }
 
   return (<div className="container-fluid footer" id="contacts-anchor" style={{ display: "inline-block" }}>
 
@@ -81,10 +96,10 @@ const Footer = () => {
             <span className="slide-title footer-header">Контакты</span>
           </h1>
           <div className="card dark text-white textboxes-card">
-            <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
+            <img id="form_footer" alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
             <div className="card-img-overlay">
 
-              <form className="question_form" onSubmit={sendMessge}>
+              <form  className="question_form" onSubmit={sendMessge}>
                 <div className="form-group justify-content-center">
                   <input type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
                     className={"form-control " + (notEmail ? "support-email-error" : "")} onChange={checkEmail} disabled={loading} />
