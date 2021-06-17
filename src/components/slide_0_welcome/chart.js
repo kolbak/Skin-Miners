@@ -24,7 +24,7 @@ const Chart = () => {
   async function update() {
     if (!loading) setLoading(true)
 
-    fetch("https://miningskins.com/api/top-users", {
+    fetch(`${process.env.GATSBY_URL}/api/top-users`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

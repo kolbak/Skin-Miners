@@ -108,7 +108,7 @@ const FourthSlide = () => {
       token: steam_token
     });
     //* Запрос на регистрацию
-    return await fetch("https://miningskins.com/api/register", {
+    return await fetch(`${process.env.GATSBY_URL}/api/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

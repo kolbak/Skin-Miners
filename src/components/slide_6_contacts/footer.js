@@ -53,7 +53,7 @@ const Footer = () => {
     setLoading(true)
 
     setTimeout(() => { setLoading(false) }, 2000)
-    const response = await fetch("https://miningskins.com/api/send-support-message", {
+    const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -124,7 +124,7 @@ const Footer = () => {
                 <img alt="four_words" className="card-image" src={four_words} />
                 <div className="card-img-overlay wrong_card2">
                   <a href="#policy" className="policy_market_link"><p className="card-text policy_market">Policy</p></a>
-                  <a href="https://miningskins.com/market" className="policy_market_link"><p className="card-text policy_market">Market</p></a>
+                  <a href={`${process.env.GATSBY_URL}/market`} className="policy_market_link"><p className="card-text policy_market">Market</p></a>
                 </div>
               </div>
             </div>
@@ -212,7 +212,7 @@ const Footer = () => {
             <img alt="four_words" className="card-image" src={four_words_mobile} />
             <div className="card-img-overlay">
               <a href="#Policy" className=""><p className="card-text policy_market">Policy</p></a>
-              <a href="https://miningskins.com/market" className=""><p className="card-text policy_market">Market</p></a>
+              <a href={`${process.env.GATSBY_URL}/market`}><p className="card-text policy_market">Market</p></a>
             </div>
           </div>
           <div className="col-md">
