@@ -53,18 +53,17 @@ const Footer = () => {
     console.log(e.target[0].value, e.target[1].value);
     setLoading(true)
 
-   // setTimeout(() => { setLoading(false) }, 2000)
-   // const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
-   //   method: "POST",
-   //   headers: { "Content-Type": "application/json" },
-   //   body: JSON.stringify({
-   //     from: e.target[0].value,
-   //     text: e.target[1].value
-   //   })
-   // })
-   // if (await response.json()) {
-//
-   //}
+   setTimeout(() => { setLoading(false) }, 2000)
+   const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
+     method: "POST",
+     headers: { "Content-Type": "application/json" },
+     body: JSON.stringify({
+       from: e.target[0].value,
+       text: e.target[1].value
+     })
+   })
+   if (await response.json()) {
+  }
   }
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
