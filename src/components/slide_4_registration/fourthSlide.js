@@ -158,7 +158,7 @@ const FourthSlide = () => {
 
     if (response.ok && typeof window !== `undefined`) {
       const data = await response.json();
-      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}&balance=${data.balance}`
+      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}`
     } else {
       const status = await response.text()
       console.log('/login message :>> ', status)
