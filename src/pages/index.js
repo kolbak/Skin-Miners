@@ -13,7 +13,7 @@ import FourthSlide from '../components/slide_4_registration/fourthSlide'
 import Faq from '../components/slide_5_FAQ/fifthSlide'
 import Footer from '../components/slide_6_contacts/footer'
 import SideBar from '../components/side_bar'
-
+import Favicon from '../images/Icon_skniminners.png'
 
 const bootstrap = typeof window !== `undefined` ? require("bootstrap") : null
 // const bootstrap = require('bootstrap');
@@ -21,6 +21,7 @@ const bootstrap = typeof window !== `undefined` ? require("bootstrap") : null
 const IndexPage = () => (
   <div>
     <Helmet>
+      <link rel="icon" href={Favicon} />
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width,
       initial-scale=1.0,
@@ -29,7 +30,7 @@ const IndexPage = () => (
       <title>Skin Miners</title>
       <meta name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
       Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,"/>
-      <meta name="keywords" content="skins csgo mining skinminers skins"/>
+      <meta name="keywords" content="skins csgo mining skinminers skins" />
     </Helmet>
 
     <div className="side_bar" children={<SideBar />} />
@@ -42,7 +43,7 @@ const IndexPage = () => (
     <div className="slide slide__registration" children={<FourthSlide />} />
     <div className="slide slide__faq" children={<Faq />} />
     <div className="slide slide__footer" children={<Footer />} />
-    
+
   </div >)
 
 export default IndexPage
