@@ -469,3 +469,15 @@
     margin-top: 1.3vh;
   }
 }
+.footer__form__sucs-text::placeholder{
+  text-align: center;
+  color: springgreen;
+  font-size: 2em;
+  padding-top: 3.5rem;
+}
+.footer__form__fail-text::placeholder{
+  text-align: center;
+  color: red;
+  font-size: 2em;
+  padding-top: 3.5rem;
+}

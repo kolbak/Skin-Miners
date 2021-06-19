@@ -271,7 +271,7 @@ form#formRegistration .error {
   }
 }
 
-@media (min-width: 375px) and (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 1000px) {
   #formRegistration {
     padding: 10vh 10vw !important;
   }
@@ -297,4 +297,16 @@ form#formRegistration .error {
       padding-bottom: 0 !important;
     }
   }
+}
+
+.fourth__form_sucs-text{
+  margin-top: 5%;
+  text-align: center;
+  color: springgreen;
+}
+
+.fourth__form_fail-text{
+  margin-top: 5%;
+  text-align: center;
+  color: red;
 }
