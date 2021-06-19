@@ -32,19 +32,19 @@ const IndexPage = () => (
       Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,"/>
       <meta name="keywords" content="skins csgo mining skinminers skins" />
     </Helmet>
-    <div class="all-slides">
+    <div className="all-slides">
       <div className="side_bar" children={<SideBar />} />
-  
+
       <div className="slide" children={<Welcome />} />
       <div className="slide slide__what" children={<FirstSlide />} />
       <div className="slide slide__slider" children={<SecondSlide />} />
       <div className="slide slide_without_padding" children={<ThirdSlide />} />
-  
+
       <div className="slide slide__registration" children={<FourthSlide />} />
       <div className="slide slide__faq" children={<Faq />} />
       <div className="slide slide__footer" children={<Footer />} />
     </div>
-    <h1 class="ask-for-portrait">Переведите устройство в портретный режим</h1>
+    <h1 className="ask-for-portrait">Переведите устройство в портретный режим</h1>
   </div >)
 
 export default IndexPage

@@ -46,7 +46,8 @@ const Login = () => {
     })
 
     if (response.ok && typeof window !== `undefined`) {
-      window.location.href = `${process.env.GATSBY_URL}/statistic`
+      const data = await response.json();
+      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}&balance=${data.balance}`
     } else {
       const status = await response.text()
       console.log('/login message :>> ', status)

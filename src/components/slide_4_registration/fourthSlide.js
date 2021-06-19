@@ -142,8 +142,31 @@ const FourthSlide = () => {
       showError(response.message);
       return;
     }
+
+    signIn(e.target[0].value, e.target[2].value);
     // history.push("/about");
   }
+
+  async function signIn(login, password) {
+    setLoading(true);
+    // hideError();
+    const response = await fetch(`${process.env.GATSBY_URL}/api/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ login, password })
+    })
+
+    if (response.ok && typeof window !== `undefined`) {
+      const data = await response.json();
+      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}&balance=${data.balance}`
+    } else {
+      const status = await response.text()
+      console.log('/login message :>> ', status)
+      setLoading(false)
+      showError("Неверный логин или пароль")
+    }
+  }
+
 
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
@@ -151,17 +174,17 @@ const FourthSlide = () => {
   }, [])
 
 
-  function fourth__sucsess_m(boolean__value){ 
-    if (boolean__value===true){
+  function fourth__success_m(boolean__value) {
+    if (boolean__value === true) {
       let p = document.createElement('p');
       p.className = "fourth__form_sucs-text";
       p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
-      document.getElementById('formRegistration').append(p);  
-    }else{
+      document.getElementById('formRegistration').append(p);
+    } else {
       let p = document.createElement('p');
       p.className = "fourth__form_fail-text";
       p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
-      document.getElementById('formRegistration').append(p); 
+      document.getElementById('formRegistration').append(p);
     }
   }
 
