@@ -299,14 +299,35 @@ form#formRegistration .error {
   }
 }
 
-.fourth__form_sucs-text{
+.second__form_sucs-text{
   margin-top: 5%;
   text-align: center;
   color: springgreen;
+  font-size: 1rem !important;
 }
 
-.fourth__form_fail-text{
+.second__form_fail-text{
   margin-top: 5%;
   text-align: center;
   color: red;
+  font-size: 1rem !important;
+}
+
+@media (min-width: 760px) and (max-width: 1300px){
+  .second__form_sucs-text{
+    font-size: 0.7rem !important;
+  }
+  
+  .second__form_fail-text{
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .second__form_sucs-text{
+    font-size: 0.5rem !important;
+  }
+  
+  .second__form_fail-text{
+    font-size: 0.5rem !important;
+  }
 }

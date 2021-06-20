@@ -151,6 +151,21 @@ const SecondSlide = () => {
     if (d.left < -200) choosecolor(4);
     //то значение которое меньше -200 означает слайд до которого скролится
   }
+
+  function second__success(boolean__value) {
+    if (boolean__value===true){
+      let p = document.createElement('p');
+      p.className = "second__form_sucs-text";
+      p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
+      document.getElementById('second__form').append(p);
+    }else{
+      let p = document.createElement('p');
+      p.className = "second__form_fail-text";
+      p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
+      document.getElementById('second__form').append(p);
+    }
+  }
+
   return (<div className="wrap-slide slide-2" id="how-anchor">
 
     <h1 className="h1-main">

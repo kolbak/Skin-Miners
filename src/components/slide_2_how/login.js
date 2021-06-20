@@ -56,6 +56,19 @@ const Login = () => {
     }
   }
 
+  function second__success_m(boolean__value) {
+    if (boolean__value===true){
+      let p = document.createElement('p');
+      p.className = "second__form_sucs-text";
+      p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
+      document.getElementById('second__form_m').append(p);
+    }else{
+      let p = document.createElement('p');
+      p.className = "second__form_fail-text";
+      p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
+      document.getElementById('second__form_m').append(p);
+    }
+  }
 
   return <div className="wrap-how" id="login">
 
