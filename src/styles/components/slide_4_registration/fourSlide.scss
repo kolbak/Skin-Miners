@@ -6,6 +6,8 @@ input {
 #formRegistration {
   padding: 10vh 35vw;
   margin : auto;
+  margin-top: -7vh;
+  margin-bottom: 6vh;
 }
 
 label.next-in-group {
@@ -269,6 +271,10 @@ form#formRegistration .error {
     top     : -3.7vh;
     left    : 42.5vw;
   }
+}
+
+#registration-anchor {
+  height: inherit !important;
 }
 
 @media (min-width: 0px) and (max-width: 1000px) {
