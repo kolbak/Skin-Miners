@@ -22,6 +22,7 @@ import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
 import miningVideo_webm from '../../images/slide_2_how/schema_animation.webm'
 // import three_figures from "../../images/slide_6_contacts/three_figures.svg";
 // import arrow_to_contacts from '../../images/slide_6_contacts/arrow_to_contacts.svg'
+import miningVideo_gif from '../../images/slide_2_how/schema_animation.gif'
 
 const SecondSlide = () => {
 
@@ -239,11 +240,13 @@ const SecondSlide = () => {
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
               <p className="slide-header slide-header__video">Майнинг</p>
-              <video className="slide-video" poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
+              {/* <video className="slide-video" poster={miningPoster} width="500" height="400" preload="true" autoPlay loop muted>
                 <source src={miningVideo} type='video/mp4' />
-                {/* <source src={miningVideo_h264} type='video/h264' />  */}
+                {/* <source src={miningVideo_h264} type='video/h264' />  
                 <source src={miningVideo_webm} type='video/webm' />
-              </video>
+              </video> 
+            */}
+             <img src={miningVideo_gif} className="slide-video" width="500" height="400"></img>
               <p className="slide-text slide-text__video">
                 Регулируйте мощность работы: от слабой, при которой можно параллельно
                 играть в игры, до пиковой, с максимально возможной доходностью
