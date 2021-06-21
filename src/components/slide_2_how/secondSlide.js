@@ -60,6 +60,7 @@ const SecondSlide = () => {
       });
     }
   }
+  
   //mobile
   const active_slider_btn1 = React.useRef();
   const active_slider_btn2 = React.useRef();
@@ -152,6 +153,20 @@ const SecondSlide = () => {
     //то значение которое меньше -200 означает слайд до которого скролится
   }
 
+  function test(){
+    let coord = document.getElementById('second__content_id');
+    let a = coord.getBoundingClientRect();
+    if (Math.abs(a.top)<=350){
+      coord.style.removeProperty('overflowY');
+      coord.style.overflowY = "scroll";
+    }
+    else{
+      coord.style.removeProperty('overflowY');
+      coord.style.overflowY = "hidden";
+    }
+  }
+  window.addEventListener('scroll', test);
+
   function second__success(boolean__value) {
     if (boolean__value===true){
       let p = document.createElement('p');
@@ -189,7 +204,7 @@ const SecondSlide = () => {
           <li className={tab === 3 ? 'active' : ''}><h2><a className="second-slide__links" onClick={scrollInto} href="#mining">Майнинг</a></h2></li>
         </ul>
 
-        <div className="content" onScroll={contentScroll}>
+        <div className="content" onScroll={contentScroll} id="second__content_id">
           <Registration />
           <DownloadApp />
           <Login />
