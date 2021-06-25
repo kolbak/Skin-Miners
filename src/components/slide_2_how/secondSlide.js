@@ -60,7 +60,7 @@ const SecondSlide = () => {
       });
     }
   }
-  
+
   //mobile
   const active_slider_btn1 = React.useRef();
   const active_slider_btn2 = React.useRef();
@@ -153,27 +153,28 @@ const SecondSlide = () => {
     //то значение которое меньше -200 означает слайд до которого скролится
   }
 
-  function test(){
+  function test() {
     let coord = document.getElementById('second__content_id');
     let a = coord.getBoundingClientRect();
-    if (Math.abs(a.top)<=350){
+    if (Math.abs(a.top) <= 350) {
       coord.style.removeProperty('overflowY');
       coord.style.overflowY = "scroll";
     }
-    else{
+    else {
       coord.style.removeProperty('overflowY');
       coord.style.overflowY = "hidden";
     }
   }
-  window.addEventListener('scroll', test);
+  if (typeof window !== "undefined")
+    window.addEventListener('scroll', test);
 
   function second__success(boolean__value) {
-    if (boolean__value===true){
+    if (boolean__value === true) {
       let p = document.createElement('p');
       p.className = "second__form_sucs-text";
       p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
       document.getElementById('second__form').append(p);
-    }else{
+    } else {
       let p = document.createElement('p');
       p.className = "second__form_fail-text";
       p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
@@ -274,8 +275,8 @@ const SecondSlide = () => {
                 <source src={miningVideo} type='video/mp4' />
                 <source src="../../images/slide_2_how/schema_animation.h264" type='video/h264' />
                 <source src={miningVideo_webm} type='video/webm' />
-              </video> 
-            
+              </video>
+
               {/*<img src={miningVideo_gif} className="slide-video" width="500" height="400"></img> */}
               <p className="slide-text slide-text__video">
                 Регулируйте мощность работы: от слабой, при которой можно параллельно
