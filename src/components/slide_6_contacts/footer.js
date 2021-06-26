@@ -159,9 +159,9 @@ const Footer = () => {
               <div className="col-md col__relative">
                 <img loading="lazy" alt="two lines" className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
-                  <a href="#telegram" className="links__all"><div className="telegram icons__all"></div></a>
-                  <a href="#discord" className="links__all"><div className="discord icons__all"></div></a>
-                  <a href="#vk" className="links__all"><div className="vk icons__all"></div></a>
+                  <a href={process.env.SOCIAL_TELEGRAM} className="links__all"><div className="telegram icons__all"></div></a>
+                  <a href={process.env.SOCIAL_DISCORD} className="links__all"><div className="discord icons__all"></div></a>
+                  <a href={process.env.SOCIAL_VK} className="links__all"><div className="vk icons__all"></div></a>
                 </div>
               </div>
             </div>
@@ -224,9 +224,9 @@ const Footer = () => {
       <div className="row">
         <div className="col-5 icons_mobile">
           <img loading="lazy" alt="figure" className="footer__line footer__line_first" src={footer__line} />
-          <a href="#vk" className="footer__links_mobile"><img loading="lazy" alt="vk" className="vk_gray" src={vk_gray} /></a>
-          <a href="#discord" className="footer__links_mobile footer__links_mobile_second"><img loading="lazy" alt="discord" className="discord_gray" src={discord_gray} /></a>
-          <a href="#telegram" className="footer__links_mobile footer__links_mobile_third"><img loading="lazy" alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+          <a href={process.env.SOCIAL_VK} className="footer__links_mobile"><img loading="lazy" alt="vk" className="vk_gray" src={vk_gray} /></a>
+          <a href={process.env.SOCIAL_TELEGRAM} className="footer__links_mobile footer__links_mobile_second"><img loading="lazy" alt="discord" className="discord_gray" src={discord_gray} /></a>
+          <a href={process.env.SOCIAL_DISCORD} className="footer__links_mobile footer__links_mobile_third"><img loading="lazy" alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
           <img loading="lazy" alt="figure" className="footer__line footer__line_second" src={footer__line} />
         </div>
         <div className="col-7 ">
