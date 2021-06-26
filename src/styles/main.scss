@@ -55,15 +55,19 @@ body {
 .slide__slider {
   min-height: inherit !important;
 }
-.slide_without_padding{
+
+.slide_without_padding {
   margin-bottom: 100px !important;
 }
-.slide__registration{
+
+.slide__registration {
   min-height: inherit !important;
 }
-.slide__faq{
+
+.slide__faq {
   overflow: hidden;
 }
+
 .slide__footer {
   min-height   : inherit !important;
   overflow-y   : hidden;
@@ -207,20 +211,63 @@ html {
 // }
 
 /*Текст при альбомной ориентации на телефоне*/
-.ask-for-portrait{
+.ask-for-portrait {
   text-align: center;
-  font-size: 40;
-  font-size: 50px;
+  font-size : 40;
+  font-size : 50px;
   margin-top: 40vh;
-  display: none;
+  display   : none;
 }
-@media (min-width: 150px) and (max-width: 760px){
+
+@media (min-width: 150px) and (max-width: 760px) {
   @media screen and (orientation: landscape) {
-    .all-slides{
+    .all-slides {
       display: none;
     }
-    .ask-for-portrait{
+
+    .ask-for-portrait {
       display: block;
     }
   }
+}
+
+// Loader
+.preloader {
+  position        : fixed;
+  left            : 0;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  overflow        : hidden;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  z-index         : 1001;
+  color           : #eee;
+}
+
+.preloader__image {
+  position   : relative;
+  top        : 50%;
+  left       : 50%;
+  width      : 70px;
+  height     : 70px;
+  margin-top : -35px;
+  margin-left: -35px;
+  text-align : center;
+  animation  : preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding.preloader {
+  transition: 1s opacity;
+  opacity   : 0;
+}
+
+.loaded.preloader {
+  display: none;
 }
