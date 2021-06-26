@@ -50,7 +50,7 @@ const SecondSlide = () => {
 
   function scrollInto(e) {
     e.preventDefault();
-    console.log('object :>> ', e.target);
+    // console.log('object :>> ', e.target);
     const id = e.target.getAttribute('href');
 
     if (typeof document !== "undefined") {
@@ -228,15 +228,15 @@ const SecondSlide = () => {
           <div key={1} className="carousel-item active" id="first-slide-pos">
             <div className="row">
               <p className="slide-header">Регистрация</p>
-              <img alt="registration" src={reg} className="first-slider-image" style={{ maxHeight: "80vh" }} />
+              <img loading="lazy" alt="registration" src={reg} className="first-slider-image" style={{ maxHeight: "80vh" }} />
               <p className="slide-text slide-text__registration">Создайте аккаунт на сайте, чтобы получить доступ к приложению. Отслеживайте прогресс прямо из браузера</p>
-              <img alt="figure" src={yellow_arrow} className="yellow_arrow" />
+              <img loading="lazy" alt="figure" src={yellow_arrow} className="yellow_arrow" />
             </div>
           </div>
           <div key={2} className="carousel-item" id="second-slide-pos">
             <div className="row">
               <p className="slide-header">Скачайте приложение</p>
-              <img alt="download" src={download} className="download" style={{ maxHeight: "80vh" }} />
+              <img loading="lazy" alt="download" src={download} className="download" style={{ maxHeight: "80vh" }} />
               <p className="slide-text slide-text__download">
                 Скачайте приложение из личного кабинета. Оно автоматически определит мощность и подберет оптимальный режим майнинга.
               </p>

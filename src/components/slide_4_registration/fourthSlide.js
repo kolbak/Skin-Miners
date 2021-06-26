@@ -195,8 +195,8 @@ const FourthSlide = () => {
       <span className="slide-title">Регистрация</span>
     </h1>
 
-    <img id="circle" alt="circle" src={circle} />
-    <img id="hidden_triangle" alt="hidden_triangle" src={hidden_triangle} />
+    <img loading="lazy" id="circle" alt="circle" src={circle} />
+    <img loading="lazy" id="hidden_triangle" alt="hidden_triangle" src={hidden_triangle} />
 
     <form id="formRegistration" onSubmit={signUp}>
       {errorMessage.isError && <p className="error" children={errorMessage.message} />}
@@ -209,7 +209,7 @@ const FourthSlide = () => {
           <p id="hint_email_text" className="hint">Амм, тут должен быть email... <br />
             <span className="orange">( имейл )</span>
           </p>
-          <img id="hint_email" className="hint-arrow" alt="hint_email" src={hint_email} />
+          <img loading="lazy" id="hint_email" className="hint-arrow" alt="hint_email" src={hint_email} />
         </>}
       </div>
       <div className={notNickname === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
@@ -220,7 +220,7 @@ const FourthSlide = () => {
           <p id="hint_nickname_text" className="hint">Данный никнейм уже занят кем-то другим <br />
             <span className="orange">( попробуйте ещё какой-нибудь )</span>
           </p>
-          <img id="hint_nickname" className="hint-arrow" alt="hint_nickname" src={hint_nickname} />
+          <img loading="lazy" id="hint_nickname" className="hint-arrow" alt="hint_nickname" src={hint_nickname} />
         </>}
       </div>
       <div className={notPassword === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
@@ -239,7 +239,7 @@ const FourthSlide = () => {
             Пароли должны быть одинаковыми <br />
             <span className="orange">( потому и проверка )</span>
           </p>
-          <img id="hint_password_check" className="hint-arrow" alt="hint_password_check" src={hint_password_check} />
+          <img loading="lazy" id="hint_password_check" className="hint-arrow" alt="hint_password_check" src={hint_password_check} />
         </>}
       </div>
       <div className={notSteamLink === true && width <= 1000 ? "mb-custom-2" : "mb-custom-4"}>
@@ -249,7 +249,7 @@ const FourthSlide = () => {
         {width <= 1000 && notSteamLink && <label className="label-error" htmlFor="inputSteamLink">Её можно найти в <a href="http://steamcommunity.com/my/tradeoffers/privacy">Steam</a></label>}
         {width > 1000 && notSteamLink && <>
           <p id="hint_steam_text" className="hint">Для нахождения этой ссылки, <a href="http://steamcommunity.com/my/tradeoffers/privacy">перейдите на официальный сайт Steam</a></p>
-          <img id="hint_steam" className="hint-arrow" alt="hint_steam" src={hint_steam} />
+          <img loading="lazy" id="hint_steam" className="hint-arrow" alt="hint_steam" src={hint_steam} />
         </>}
       </div>
       <button style={{ marginTop: "1rem" }} type="submit" className="btn btn-primary btn-lg d-block w-75 m-auto"

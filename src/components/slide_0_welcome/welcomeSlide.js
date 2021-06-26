@@ -29,8 +29,8 @@ const WelcomeSlide = () => {
   return (
     <div className="welcome-slide">
 
-      <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
-      <img id="hidden_square" alt="square" src={hidden_square} />
+      <img loading="lazy" id="hidden_triangle" alt="triangle" src={hidden_triangle} />
+      <img loading="lazy" id="hidden_square" alt="square" src={hidden_square} />
 
       <div className="welcome">
         {/* <h1 id="h1-skin-miners">Skin<br />Miners</h1> */}
@@ -42,16 +42,16 @@ const WelcomeSlide = () => {
 
       {/* График */}<Chart />
       <h1 id="top-miners">Top miners</h1>
-      <img id="arrow" alt="arrow" src={arrow} />
+      <img loading="lazy" id="arrow" alt="arrow" src={arrow} />
 
       <div className="bg-line n-1" />
       <div className="bg-line n-2" />
       <div className="bg-line n-3" />
-      <img alt="rhomb" className="rhomb" src={rhomb} />
-      <img alt="points" className="points" src={points} />
-      <img alt="ellipse" className="ellipse" src={ellipse} />
-      <img alt="down-arrow" className="down-arrow" src={downArrow} />
-      <img alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} style={{ overflow: "hidden" }} />
+      <img loading="lazy" alt="rhomb" className="rhomb" src={rhomb} />
+      <img loading="lazy" alt="points" className="points" src={points} />
+      <img loading="lazy" alt="ellipse" className="ellipse" src={ellipse} />
+      <img loading="lazy" alt="down-arrow" className="down-arrow" src={downArrow} />
+      <img loading="lazy" alt="ellipse-blurred" className="ellipse-blurred" src={ellipseBlurred} style={{ overflow: "hidden" }} />
 
     </div>
   )

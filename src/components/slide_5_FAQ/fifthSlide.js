@@ -49,8 +49,8 @@ const FifthSlide = () => {
 
   return (<div id="FAQ" className="wrap-slide">
 
-    <img id="hidden_triangle" alt="triangle" src={hidden_triangle} />
-    <img id="hidden_square" alt="square" src={hidden_square} />
+    <img loading="lazy" id="hidden_triangle" alt="triangle" src={hidden_triangle} />
+    <img loading="lazy" id="hidden_square" alt="square" src={hidden_square} />
 
 
     <h1 className="m-auto" style={{ width: "fit-content" }}>Я хотел бы узнать...</h1>

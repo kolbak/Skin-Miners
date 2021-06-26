@@ -38,9 +38,9 @@ const ThirdSlide = () => {
         <span className="slide-title">Почему мы?</span>
       </h1>
 
-      <img alt="circle" id="hidden_circle" src={hidden_circle} />
-      <img alt="square" id="hidden_square" src={hidden_square} />
-      <img alt="triangle" id="hidden_triangle" src={hidden_triangle} />
+      <img loading="lazy" alt="circle" id="hidden_circle" src={hidden_circle} />
+      <img loading="lazy" alt="square" id="hidden_square" src={hidden_square} />
+      <img loading="lazy" alt="triangle" id="hidden_triangle" src={hidden_triangle} />
       <img alt="fourth_background" className="fourth_background" src={fourth_background} />
 
 
@@ -101,7 +101,7 @@ const ThirdSlide = () => {
         </p>
       </div>
       <div className="row">
-        <img alt="background" className="fourth_background_mobile" src={fourth_background_mobile} />
+        <img loading="lazy" alt="background" className="fourth_background_mobile" src={fourth_background_mobile} />
       </div>
       <div className="row">
         <div className="safety_container_m containers">
@@ -136,9 +136,9 @@ const ThirdSlide = () => {
         </div>
       </div>
       <div className="row mac_container">
-        <img className="three_triangle" src={three_triangle} alt="three triangles" />
+        <img loading="lazy" className="three_triangle" src={three_triangle} alt="three triangles" />
         <div className="card dark text-white">
-          <img className="card-img" src={mac_fon} alt="card" />
+          <img loading="lazy" className="card-img" src={mac_fon} alt="card" />
           <div className="card-img-overlay">
             <p className="card-text mac_text">
               При возникновении проблем вы всегда можете написать нам в поддержку, мы разберемся!

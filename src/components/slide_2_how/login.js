@@ -56,12 +56,12 @@ const Login = () => {
   }
 
   function second__success_m(boolean__value) {
-    if (boolean__value===true){
+    if (boolean__value === true) {
       let p = document.createElement('p');
       p.className = "second__form_sucs-text";
       p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
       document.getElementById('second__form_m').append(p);
-    }else{
+    } else {
       let p = document.createElement('p');
       p.className = "second__form_fail-text";
       p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
@@ -71,7 +71,7 @@ const Login = () => {
 
   return <div className="wrap-how" id="login">
 
-    <img alt="hidden_square1" id="hidden_square1" src={hidden_square1} />
+    <img loading="lazy" alt="hidden_square1" id="hidden_square1" src={hidden_square1} />
 
     <p id="login_desс">Войдите в программу. Используйте те же данные, что и на сайте: так мы сможем автоматически начислять вознаграждение.</p>
     <i className="bg-line_computer_login n-1" />

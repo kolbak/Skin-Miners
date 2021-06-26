@@ -20,12 +20,6 @@ import two_textboxes_mobile from '../../images/slide_6_contacts/two_textboxes_mo
 // import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
 import mail_and_telephone_mobile from "../../images/slide_6_contacts/mail_and_telephone_mobile.svg";
 import four_words_mobile from "../../images/slide_6_contacts/four_words_mobile.svg";
-// import vk_gray from "../../images/slide_6_contacts/vk_gray.svg";
-// import facebook_gray from "../../images/slide_6_contacts/facebook_gray.svg";
-// import instagram_gray from '../../images/slide_6_contacts/instagram_gray.svg'
-// import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
-
-// import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 
 const Footer = () => {
   // * ХУКИ |||||||||||||||||||||||||||
@@ -53,31 +47,31 @@ const Footer = () => {
     console.log(e.target[0].value, e.target[1].value);
     setLoading(true)
 
-   setTimeout(() => { setLoading(false) }, 2000)
-   const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
-     method: "POST",
-     headers: { "Content-Type": "application/json" },
-     body: JSON.stringify({
-       from: e.target[0].value,
-       text: e.target[1].value
-     })
-   })
-   if (await response.json()) {
-  }
+    setTimeout(() => { setLoading(false) }, 2000)
+    const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from: e.target[0].value,
+        text: e.target[1].value
+      })
+    })
+    if (await response.json()) {
+    }
   }
   useEffect(() => {
     window.addEventListener('resize', _ => setWidth(window.screen.width));
     setWidth(window.screen.width);
   }, [])
 
-  function footer__sucsess(boolean__value){
-    document.getElementById('form_footer').src=two_textboxes_sucs;
-    if (boolean__value===true){
-      document.getElementById('formControlTextarea').placeholder="Ваш запрос отправлен, ожидайте ответа";
+  function footer__sucsess(boolean__value) {
+    document.getElementById('form_footer').src = two_textboxes_sucs;
+    if (boolean__value === true) {
+      document.getElementById('formControlTextarea').placeholder = "Ваш запрос отправлен, ожидайте ответа";
       document.getElementById('formControlTextarea').classList.add("footer__form__sucs-text");
     }
-    else{
-      document.getElementById('formControlTextarea').placeholder="Ваш запрос не отправлен, повторите попытку позже";
+    else {
+      document.getElementById('formControlTextarea').placeholder = "Ваш запрос не отправлен, повторите попытку позже";
       document.getElementById('formControlTextarea').classList.add("footer__form__fail-text");
     }
     //let div = document.createElement('div');
@@ -85,18 +79,18 @@ const Footer = () => {
     //div.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
     //document.getElementById('append-text').append(div);  
   }
- 
-  function footer__sucsess_m(boolean__value){ 
-    if (boolean__value===true){
+
+  function footer__sucsess_m(boolean__value) {
+    if (boolean__value === true) {
       let p = document.createElement('p');
       p.className = "footer__form__sucs_m-text";
       p.innerHTML = "Ваш запрос отправлен, ожидайте ответа";
-      document.getElementById('footer__form_append-text').append(p);  
-    }else{
+      document.getElementById('footer__form_append-text').append(p);
+    } else {
       let p = document.createElement('p');
       p.className = "footer__form__fail_m-text";
       p.innerHTML = "Ваш запрос не отправлен, повторите попытку позже";
-      document.getElementById('footer__form_append-text').append(p);  
+      document.getElementById('footer__form_append-text').append(p);
     }
   }
 
@@ -114,7 +108,7 @@ const Footer = () => {
             <img id="form_footer" alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes} />
             <div className="card-img-overlay">
 
-              <form  className="question_form" onSubmit={sendMessge}>
+              <form className="question_form" onSubmit={sendMessge}>
                 <div className="form-group justify-content-center">
                   <input type="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
                     className={"form-control " + (notEmail ? "support-email-error" : "")} onChange={checkEmail} disabled={loading} />
@@ -140,7 +134,7 @@ const Footer = () => {
           <div className="row ">
             <div className="col-md-7 ">
               <div className="card dark text-white green-card">
-                <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
+                <img loading="lazy" alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
                 <div className="card-img-overlay wrong_card">
                   <p className="card-text email-telephone" id="email" style={{ overflowWrap: "initial", marginBottom: "0.5rem" }}>skinminers@gmail.com</p>
                   <p className="card-text email-telephone" id="telephone" style={{ overflowWrap: "initial" }}>+7 (965) 753-45-14</p>
@@ -150,7 +144,7 @@ const Footer = () => {
 
             <div className="col-md-5 right-side middle-side">
               <div className="card dark text-white four-words ">
-                <img alt="four_words" className="card-image" src={four_words} />
+                <img loading="lazy" alt="four_words" className="card-image" src={four_words} />
                 <div className="card-img-overlay wrong_card2">
                   <a href="#policy" className="policy_market_link"><p className="card-text policy_market">Policy</p></a>
                   <a href={`${process.env.GATSBY_URL}/market`} className="policy_market_link"><p className="card-text policy_market">Market</p></a>
@@ -160,10 +154,10 @@ const Footer = () => {
           </div>
           <div className="row footer-right-bottom">
             <div className="row  footer-images">
-              <div className="col-md"><img alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
-              <div className="col-md"><img alt="arrow_to_contacts" className="arrow_to_contacts1" src={arrow_to_contacts} /></div>
+              <div className="col-md"><img loading="lazy" alt="three_figures" className="three_figures1 float-left" src={three_figures} /></div>
+              <div className="col-md"><img loading="lazy" alt="arrow_to_contacts" className="arrow_to_contacts1" src={arrow_to_contacts} /></div>
               <div className="col-md col__relative">
-                <img alt="two lines" className="two_lines rounded float-right" src={two_lines} />
+                <img loading="lazy" alt="two lines" className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
                   <a href="#telegram" className="links__all"><div className="telegram icons__all"></div></a>
                   <a href="#discord" className="links__all"><div className="discord icons__all"></div></a>
@@ -196,7 +190,7 @@ const Footer = () => {
         <div className="card dark text-white textboxes-card">
           <img alt="two_textboxes" className="card-image two-textboxe1s" src={two_textboxes_mobile} />
           <div className="card-img-overlay">
-            <form id="footer__form_append-text" className="question_form" onSubmit={sendMessge}>             
+            <form id="footer__form_append-text" className="question_form" onSubmit={sendMessge}>
               <div className="form-group justify-content-center">
                 <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email"
                   onChange={checkEmail} disabled={loading} />
@@ -220,7 +214,7 @@ const Footer = () => {
       </div>
       <div className="row">
         <div className="card dark text-white green-card">
-          <img alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
+          <img loading="lazy" alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
           <div className="card-img-overlay wrong_card">
             <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
             <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
@@ -229,11 +223,11 @@ const Footer = () => {
       </div>
       <div className="row">
         <div className="col-5 icons_mobile">
-          <img alt="figure" className="footer__line footer__line_first" src={footer__line} />
-          <a href="#vk" className="footer__links_mobile"><img alt="vk" className="vk_gray" src={vk_gray} /></a>
-          <a href="#discord" className="footer__links_mobile footer__links_mobile_second"><img alt="discord" className="discord_gray" src={discord_gray} /></a>
-          <a href="#telegram" className="footer__links_mobile footer__links_mobile_third"><img alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
-          <img alt="figure" className="footer__line footer__line_second" src={footer__line} />
+          <img loading="lazy" alt="figure" className="footer__line footer__line_first" src={footer__line} />
+          <a href="#vk" className="footer__links_mobile"><img loading="lazy" alt="vk" className="vk_gray" src={vk_gray} /></a>
+          <a href="#discord" className="footer__links_mobile footer__links_mobile_second"><img loading="lazy" alt="discord" className="discord_gray" src={discord_gray} /></a>
+          <a href="#telegram" className="footer__links_mobile footer__links_mobile_third"><img loading="lazy" alt="telegram" className="telegram_gray" src={telegram_gray} /></a>
+          <img loading="lazy" alt="figure" className="footer__line footer__line_second" src={footer__line} />
         </div>
         <div className="col-7 ">
           <div className="card dark text-white four-words">

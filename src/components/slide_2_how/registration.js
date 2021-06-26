@@ -10,12 +10,12 @@ import hidden_square from '../../images/slide_2_how/square.svg'
 
 const Registration = () => (<div className="wrap-reg" id="registration">
 
-  <img alt="hidden_account" id="hidden_account" src={hidden_account} />
-  <img alt="hidden_circle" id="hidden_circle" src={hidden_circle} />
-  <img alt="hidden_square" id="hidden_square" src={hidden_square} />
+  <img loading="lazy" alt="hidden_account" id="hidden_account" src={hidden_account} />
+  <img loading="lazy" alt="hidden_circle" id="hidden_circle" src={hidden_circle} />
+  <img loading="lazy" alt="hidden_square" id="hidden_square" src={hidden_square} />
 
   <p>Создайте аккаунт на сайте, чтобы получить доступ к приложению.<br />Отслеживайте прогресс прямо из браузера</p>
-  <img alt="registration" className="registration-img" src={imgRegistration} />
+  <img loading="lazy" alt="registration" className="registration-img" src={imgRegistration} />
 
 </div>)
 
