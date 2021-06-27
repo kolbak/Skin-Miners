@@ -1,6 +1,6 @@
 import * as React from "react"
 
-// import pinkFrame from '../../images/slide_2_how/pink-frame.svg'
+import pinkFrame from '../../images/slide_2_how/pink-frame.svg'
 import miningVideo from '../../images/slide_2_how/schema_animation.mp4'
 import miningPoster from '../../images/slide_2_how/schema.png'
 
@@ -15,7 +15,7 @@ const Mining = () => (<div className="wrap-mining" id="mining">
     <source src={miningVideo} type='video/mp4' />
   </video>
 
-  <div className="frame">
+  <div style={{ borderImageSource: `url(${pinkFrame})` }} className="frame">
     {/* <img alt="frame" src={pinkFrame} /> */}
     <p id="platform-opportunity">Первый скин можно вывести уже после суток майнинга через наш внутренний магазин.</p>
   </div>

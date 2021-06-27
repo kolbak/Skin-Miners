@@ -12,18 +12,24 @@ import two_textboxes from '../../images/slide_6_contacts/two_textboxes.svg'
 import two_textboxes_sucs from '../../images/slide_6_contacts/two_textboxes_sucs.svg'
 import two_lines from '../../images/slide_6_contacts/two_lines.svg'
 import footer__line from '../../images/slide_6_contacts/footer__line.svg'
+
 import vk_gray from '../../images/slide_6_contacts/vk_gray.svg'
 import telegram_gray from '../../images/slide_6_contacts/telegram_gray.svg'
 import discord_gray from '../../images/slide_6_contacts/discord_gray.svg'
 
+import vk_color from "../../images/slide_6_contacts/vk_color.svg";
+import telegram_color from "../../images/slide_6_contacts/telegram_color.svg";
+import discord_color from "../../images/slide_6_contacts/discord_color.svg";
+
 import two_textboxes_mobile from '../../images/slide_6_contacts/two_textboxes_mobile.svg'
-// import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
 import mail_and_telephone_mobile from "../../images/slide_6_contacts/mail_and_telephone_mobile.svg";
 import four_words_mobile from "../../images/slide_6_contacts/four_words_mobile.svg";
+// import icons_mobile from '../../images/slide_6_contacts/icons_mobile.svg'
 
 const Footer = () => {
   // * ХУКИ |||||||||||||||||||||||||||
-  const [width, setWidth] = useState()
+  const [width, setWidth] = useState();
+  const [hover, setHover] = useState({ telegram: false, vk: false, discord: false });
   const [notEmail, setNotEmail] = useState();
   const [notEmpty, setNotEmpty] = useState();
   const [loading, setLoading] = useState(false);
@@ -159,9 +165,24 @@ const Footer = () => {
               <div className="col-md col__relative">
                 <img loading="lazy" alt="two lines" className="two_lines rounded float-right" src={two_lines} />
                 <div className="icons">
-                  <a href={process.env.SOCIAL_TELEGRAM} className="links__all"><div className="telegram icons__all"></div></a>
-                  <a href={process.env.SOCIAL_DISCORD} className="links__all"><div className="discord icons__all"></div></a>
-                  <a href={process.env.SOCIAL_VK} className="links__all"><div className="vk icons__all"></div></a>
+                  <a href={process.env.SOCIAL_TELEGRAM} className="links__all">
+                    <div className="icons__all" style={{ backgroundImage: `url(${hover.telegram ? telegram_color : telegram_gray})` }}
+                      onMouseEnter={_ => { setHover(x => ({ ...x, telegram: true })) }}
+                      onMouseLeave={_ => { setHover(x => ({ ...x, telegram: false })) }}
+                    />
+                  </a>
+                  <a href={process.env.SOCIAL_DISCORD} className="links__all">
+                    <div className="icons__all" style={{ backgroundImage: `url(${hover.discord ? discord_color : discord_gray})`, marginLeft: "7%" }}
+                      onMouseEnter={_ => { setHover(x => ({ ...x, discord: true })) }}
+                      onMouseLeave={_ => { setHover(x => ({ ...x, discord: false })) }}
+                    />
+                  </a>
+                  <a href={process.env.SOCIAL_VK} className="links__all">
+                    <div className="icons__all" style={{ backgroundImage: `url(${hover.vk ? vk_color : vk_gray})` }}
+                      onMouseEnter={_ => { setHover(x => ({ ...x, vk: true })) }}
+                      onMouseLeave={_ => { setHover(x => ({ ...x, vk: false })) }}
+                    />
+                  </a>
                 </div>
               </div>
             </div>

@@ -11,10 +11,10 @@
     width   : 30%;
     left    : 70%;
 
-    border             : 10px solid transparent;
-    border-image-source: url(../../../images/slide_2_how/pink-frame.svg);
-    border-image-slice : 20 fill;
-    border-image-repeat: stretch;
+    border                : 10px solid transparent;
+    // border-image-source: url(../../../images/slide_2_how/pink-frame.svg);
+    border-image-slice    : 20 fill;
+    border-image-repeat   : stretch;
 
     padding: 1%;
 
