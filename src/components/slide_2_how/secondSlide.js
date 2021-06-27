@@ -271,9 +271,9 @@ const SecondSlide = () => {
           <div key={4} className="carousel-item" id="fourth-slide-pos">
             <div className="row">
               <p className="slide-header slide-header__video">Майнинг</p>
-              <video className="slide-video" poster={miningPoster} width="500" height="400" preload="true" playsInline loop muted>
-                <source src={miningVideo} type='video/mp4' />
-                <source src="../../images/slide_2_how/schema_animation.h264" type='video/h264' />
+              <video className="slide-video" poster={miningPoster} width="500" height="400" preload="true" playsInline loop muted onError={alert}>
+                <source src={miningVideo} type='video/mp4' onError={alert} />
+                {/* <source src="../../images/slide_2_how/schema_animation.h264" type='video/h264' onError={alert} /> */}
                 <source src={miningVideo_webm} type='video/webm' />
               </video>
 
