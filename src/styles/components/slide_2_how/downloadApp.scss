@@ -14,15 +14,17 @@
   }
 
   .download-img {
-    position: absolute;
-    z-index : -1;
-    bottom  : 5vh;
-    left    : 30%;
-    width   : 70%;
-    display : inline-block;
+    will-change: transform;
+    position   : absolute;
+    z-index    : -1;
+    bottom     : 5vh;
+    left       : 30%;
+    width      : 70%;
+    display    : inline-block;
   }
 
   .bg-line_computer {
+    will-change  : transform;
     display      : block;
     height       : 5px;
     border-radius: 5px;
@@ -30,16 +32,18 @@
   }
 
   .bg-line_computer.n-1 {
-    top       : 5.5vh;
-    right     : 3vw;
-    width     : 39vw;
-    background: linear-gradient(90deg, #C172ED, #12C2E9);
+    will-change: transform;
+    top        : 5.5vh;
+    right      : 3vw;
+    width      : 39vw;
+    background : linear-gradient(90deg, #C172ED, #12C2E9);
   }
 
   .bg-line_computer.n-2 {
-    top       : 8.5vh;
-    right     : 0.4vw;
-    width     : 23vw;
-    background: linear-gradient(90deg, #181519, #A3D9E5);
+    will-change: transform;
+    top        : 8.5vh;
+    right      : 0.4vw;
+    width      : 23vw;
+    background : linear-gradient(90deg, #181519, #A3D9E5);
   }
 }
