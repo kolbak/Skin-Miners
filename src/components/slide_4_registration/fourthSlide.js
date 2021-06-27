@@ -108,7 +108,7 @@ const FourthSlide = () => {
       token: steam_token
     });
     //* Запрос на регистрацию
-    return await fetch(`${process.env.GATSBY_URL}/api/register`, {
+    return await fetch(`${process.env.LK_URL}/api/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -150,7 +150,7 @@ const FourthSlide = () => {
   async function signIn(login, password) {
     setLoading(true);
     // hideError();
-    const response = await fetch(`${process.env.GATSBY_URL}/api/login`, {
+    const response = await fetch(`${process.env.LK_URL}/api/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ login, password })
@@ -158,7 +158,7 @@ const FourthSlide = () => {
 
     if (response.ok && typeof window !== `undefined`) {
       const data = await response.json();
-      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}`
+      window.location.href = `${/*process.env.LK_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}`
     } else {
       const status = await response.text()
       console.log('/login message :>> ', status)

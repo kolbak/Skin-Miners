@@ -35,7 +35,7 @@ const Login = () => {
     setLoading(true);
     // hideError();
     console.log("login", e.target[0].value, e.target[1].value);
-    const response = await fetch(`${process.env.GATSBY_URL}/api/login`, {
+    const response = await fetch(`${process.env.LK_URL}/api/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -46,7 +46,7 @@ const Login = () => {
 
     if (response.ok && typeof window !== `undefined`) {
       const data = await response.json();
-      window.location.href = `${/*process.env.GATSBY_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}`
+      window.location.href = `${/*process.env.LK_URL*/"https://ac-for-vs.web.app/"}/sign-in?token=${data.token}`
     } else {
       const status = await response.text()
       console.log('/login message :>> ', status)

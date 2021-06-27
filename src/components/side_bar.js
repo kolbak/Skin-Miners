@@ -6,7 +6,7 @@ import hideBtn from '../images/sidebar/sidebar-active.svg'
 import showBtn from '../images/sidebar/sidebar-unactive.svg'
 
 const menu = [
-  { link: "#what-anchor", title: "Что мы делаем?"},
+  { link: "#what-anchor", title: "Что мы делаем?" },
   { link: "#how-anchor", title: "Как это работает?" },
   { link: "#we-anchor", title: "Почему мы?" },
   { link: "#registration-anchor ", title: "Регистрация" },
@@ -49,8 +49,8 @@ const SideBar = () => {
 
 
           <div className="row sidebar-lastline">
-            <a href={`${process.env.GATSBY_URL}/personal-office`} className="sidebar-enter-market">Войти</a>
-            <a href={`${process.env.GATSBY_URL}/market`} className="sidebar-enter-market">Маркет</a>
+            <a href={`${process.env.LK_URL}/personal-office`} className="sidebar-enter-market">Войти</a>
+            <a href={`${process.env.LK_URL}/market`} className="sidebar-enter-market">Маркет</a>
           </div>
         </div>
 

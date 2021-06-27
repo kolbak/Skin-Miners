@@ -155,16 +155,19 @@ const SecondSlide = () => {
 
   function test() {
     let coord = document.getElementById('second__content_id');
-    let a = coord.getBoundingClientRect();
-    if (Math.abs(a.top) <= 350) {
-      coord.style.removeProperty('overflowY');
-      coord.style.overflowY = "scroll";
-    }
-    else {
-      coord.style.removeProperty('overflowY');
-      coord.style.overflowY = "hidden";
+    if (coord) {
+      let a = coord.getBoundingClientRect();
+      if (Math.abs(a.top) <= 350) {
+        coord.style.removeProperty('overflowY');
+        coord.style.overflowY = "scroll";
+      }
+      else {
+        coord.style.removeProperty('overflowY');
+        coord.style.overflowY = "hidden";
+      }
     }
   }
+
   if (typeof window !== "undefined")
     window.addEventListener('scroll', test);
 

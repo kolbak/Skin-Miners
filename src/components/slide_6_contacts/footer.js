@@ -54,7 +54,7 @@ const Footer = () => {
     setLoading(true)
 
     setTimeout(() => { setLoading(false) }, 2000)
-    const response = await fetch(`${process.env.GATSBY_URL}/api/send-support-message`, {
+    const response = await fetch(`${process.env.LK_URL}/api/send-support-message`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -142,8 +142,8 @@ const Footer = () => {
               <div className="card dark text-white green-card">
                 <img loading="lazy" alt="two_textboxes" className="img-fluid" src={mail_and_telephone} />
                 <div className="card-img-overlay wrong_card">
-                  <p className="card-text email-telephone" id="email" style={{ overflowWrap: "initial", marginBottom: "0.5rem" }}>skinminers@gmail.com</p>
-                  <p className="card-text email-telephone" id="telephone" style={{ overflowWrap: "initial" }}>+7 (965) 753-45-14</p>
+                  <p className="card-text email-telephone" children={process.env.SOCIAL_EMAIL} id="email" style={{ overflowWrap: "initial", marginBottom: "0.5rem" }} />
+                  <p className="card-text email-telephone" children={process.env.SOCIAL_PHONE} id="telephone" style={{ overflowWrap: "initial" }} />
                 </div>
               </div>
             </div>
@@ -152,8 +152,8 @@ const Footer = () => {
               <div className="card dark text-white four-words ">
                 <img loading="lazy" alt="four_words" className="card-image" src={four_words} />
                 <div className="card-img-overlay wrong_card2">
-                  <a href="#policy" className="policy_market_link"><p className="card-text policy_market">Policy</p></a>
-                  <a href={`${process.env.GATSBY_URL}/market`} className="policy_market_link"><p className="card-text policy_market">Market</p></a>
+                  <a href={process.env.LK_POLICY} className="policy_market_link"><p className="card-text policy_market">Policy</p></a>
+                  <a href={`${process.env.LK_URL}/market`} className="policy_market_link"><p className="card-text policy_market">Market</p></a>
                 </div>
               </div>
             </div>
@@ -188,10 +188,10 @@ const Footer = () => {
             </div>
             <div className="row developed-copyright">
               <div className="col-md-7 ">
-                <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
+                <p className="text-developed">Developed by <span className="text_underline">Yohan Loshop</span></p>
               </div>
               <div className="col-md-5 ">
-                <p className="copyright">Copyright © skinminers.com, 2021.</p>
+                <p className="copyright">Copyright © {process.env.LK_URL}, 2021.</p>
                 <p className="copyright">Все права защищены.</p>
               </div>
             </div>
@@ -237,8 +237,8 @@ const Footer = () => {
         <div className="card dark text-white green-card">
           <img loading="lazy" alt="two_textboxes" className="img-fluid" src={mail_and_telephone_mobile} />
           <div className="card-img-overlay wrong_card">
-            <p className="card-text email-telephone" id="email">skinminers@gmail.com</p>
-            <p className="card-text email-telephone" id="telephone">+7 (965) 753-45-14</p>
+            <p className="card-text email-telephone" id="email" children={process.env.SOCIAL_EMAIL} />
+            <p className="card-text email-telephone" id="telephone" children={process.env.SOCIAL_PHONE} />
           </div>
         </div>
       </div>
@@ -254,8 +254,8 @@ const Footer = () => {
           <div className="card dark text-white four-words">
             <img alt="four_words" className="card-image" src={four_words_mobile} />
             <div className="card-img-overlay">
-              <a href="#Policy" className=""><p className="card-text policy_market">Policy</p></a>
-              <a href={`${process.env.GATSBY_URL}/market`}><p className="card-text policy_market">Market</p></a>
+              <a href={process.env.LK_POLICY} className=""><p className="card-text policy_market">Policy</p></a>
+              <a href={`${process.env.LK_URL}/market`}><p className="card-text policy_market">Market</p></a>
             </div>
           </div>
           <div className="col-md">
@@ -264,8 +264,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="row ">
-        <p className="text-developed">Developed by <span className="text_underline">Name Surname</span></p>
-        <p className="copyright">Copyright © skinminers.com, 2021.</p>
+        <p className="text-developed">Developed by <span className="text_underline">Yohan Loshop</span></p>
+        <p className="copyright">Copyright © {process.env.LK_URL}, 2021.</p>
         <p className="copyright">Все права защищены.</p>
       </div>
     </>}
