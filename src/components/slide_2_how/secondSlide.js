@@ -291,11 +291,11 @@ const SecondSlide = () => {
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onClick={PreviousSlide} ref={rightslide}>
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: "100%" }} />
           <span className="visually-hidden">Previous</span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onClick={NextSlide} ref={leftslide}>
-          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: "100%" }} />
           <span className="visually-hidden">Next</span>
         </button>
       </div>
